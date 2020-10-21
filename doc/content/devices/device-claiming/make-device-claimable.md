@@ -36,7 +36,7 @@ In order to be claimable, the device needs to be registered on The Things Indust
 
 After registering your devices, you need to generate QR codes for claiming.
 
-Learn how to [Generate QR Codes]({{< ref "/devices/generate-qr-code/end-devices#generate-qr-code-for-claiming" >}})
+Learn how to [Generate QR Codes]({{< ref "/devices/generate-qr-code" >}})
 
 ## Authorize Claiming
   
