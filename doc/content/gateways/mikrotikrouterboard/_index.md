@@ -10,7 +10,7 @@ This guide shows how to connect this gateway to {{% tts %}}.
 
 <!--more-->
 
-It's technical specifications can be found in [the MikroTik official documentation](https://mikrotik.com/product/wap_lora8_kit). 
+Its technical specifications can be found in [the MikroTik official documentation](https://mikrotik.com/product/wap_lora8_kit). 
 
 >**Note:** This gateway does not currently support changing Frequency Plans.
 
