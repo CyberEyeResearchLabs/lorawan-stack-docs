@@ -2,6 +2,7 @@
 title: "AWS IoT"
 description: ""
 distributions: "Marketplace Launcher"
+weight: 50
 ---
 
 {{% tts %}} integrates directly with AWS IoT via a default integration that you deploy in your AWS account via CloudFormation.
