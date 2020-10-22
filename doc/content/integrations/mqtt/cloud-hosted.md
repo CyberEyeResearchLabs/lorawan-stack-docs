@@ -12,9 +12,9 @@ Login using an MQTT client with the application ID and tenant ID `app1@tenant1` 
 
 Replace all instances of username `app1` with username `app1@tenant`.
 
- ```bash
- # Tip: when using `mosquitto_sub`, pass the `-d` flag to see the topics messages get published on.
- # For example:
+```bash
+# Tip: when using `mosquitto_sub`, pass the `-d` flag to see the topics messages get published on.
+# For example:
 
 $ mosquitto_sub -h thethings.example.com -t "#" -u "app1@tenant1" -P "NNSXS.VEEBURF3KR77ZR.." -d
 ```
