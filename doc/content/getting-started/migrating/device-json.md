@@ -1,7 +1,7 @@
 ---
 title: "Create JSON file to be imported"
 description: ""
-weight: 1
+weight: 70
 ---
 
 {{% tts %}} allows you to import devices from other networks using a JSON file describing those devices. Devices imported this way can be migrated without the need for a rejoin.
@@ -95,4 +95,4 @@ Below is an example `devices.json` file. The file may contain multiple devices, 
 }
 ```
 
-For more information on configuring MAC settings, see [Fine-tuning MAC Settings]({{< ref "getting-started/migrating-from-v2/configure-mac-settings" >}}).
+For more information on configuring MAC settings, see [Fine-tuning MAC Settings]({{< ref "getting-started/migrating/configure-mac-settings" >}}).
