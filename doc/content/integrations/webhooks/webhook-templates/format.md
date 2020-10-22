@@ -19,7 +19,7 @@ All of the webhook templates must contain the following fields which describe th
 - `info-url`: The URL of the main page of the service.
 - `documentation-url`: The URL of the documentation of the service. 
 
-> Note: The difference between `documentation-url` and `info-url` is that `info-url` should lead to the home page of the service (i.e. `https://www.thethingsnetwork.org/`), while `documentation-url` should lead directly to the location of the documentation (i.e. `https://www.thethingsnetwork.org/docs/applications/example/`).
+>**Note:** The difference between `documentation-url` and `info-url` is that `info-url` should lead to the home page of the service (i.e. `https://www.thethingsnetwork.org/`), while `documentation-url` should lead directly to the location of the documentation (i.e. `https://www.thethingsnetwork.org/docs/applications/example/`).
 
 ## Template Fields
 
@@ -53,4 +53,4 @@ The message paths are provided in the `paths` object which can contain the follo
 - `downlink-queued`: The path to which downlink queued status will be sent. Can contain template fields.
 - `location-solved`: The path to which the location of the device will be sent when resolved. Can contain template fields.
 
-> Note: Not all of the messages types must be handled by the service. By omitting the field in the `paths` object the message type will be disabled in the final webhook and the related messages will not be passed to the endpoint.
+>**Note:** Not all of the messages types must be handled by the service. By omitting the field in the `paths` object, the message type will be disabled in the final webhook and the related messages will not be passed to the endpoint.
