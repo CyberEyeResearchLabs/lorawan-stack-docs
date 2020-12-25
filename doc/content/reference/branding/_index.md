@@ -7,6 +7,8 @@ This reference gives details on how to customize the branding of the login pages
 
 <!--more-->
 
+{{< note >}} For Cloud distributions, you can either send us a ZIP file with the listed files or upload them to your CDN and send us the URL. {{</ note >}}
+
 ## Title, Subtitle and Description
 
 The title, subtitle and description of the login pages and the console can be changed using configuration options. See for details the [Identity Server configuration reference]({{< ref "/reference/configuration/identity-server#oauth-ui-options" >}}) and the [Console configuration reference]({{< ref "/reference/configuration/console" >}}).
