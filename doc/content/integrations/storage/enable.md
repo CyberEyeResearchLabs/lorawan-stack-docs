@@ -32,31 +32,3 @@ $ ttn-lw-cli applications packages associations set "app1" "dev1" 100 --package-
 {{< note >}} The `f_port` value is irrelevant. {{</ note >}}
 
 {{< warning >}} **Do not configure multiple associations for the same end device**, since that will lead to storing duplicate uplinks in the persistent storage. {{</ warning >}}
-
-## Disable the Storage Integration
-
-Delete the package association, or the default association:
-
-```bash
-# List default associations
-$ ttn-lw-cli applications packages default-associations list "app1"
-{
-  "defaults": [
-    {
-      "ids": {
-        "application_ids": {
-          "application_id": "app1"
-        },
-        "f_port": 100
-      },
-      "created_at": "2020-08-24T21:09:44.649890166Z",
-      "updated_at": "2020-08-24T21:09:44.649890166Z",
-      "package_name": "storage-integration"
-    }
-  ]
-}
-```
-
-```bash
-$ ttn-lw-cli applications packages default-associations delete "app1" 100
-```
