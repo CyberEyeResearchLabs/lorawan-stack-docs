@@ -33,9 +33,13 @@ Download the minimal certificate list <a href="ca.pem" download>here</a>.
 
 Many {{% tts %}} deployments use the Let's Encrypt ISRG Root X1 Trust. If using Let's Encrypt to secure your domain, you may download the ISRG Root X1 Trust file [here](https://letsencrypt.org/certs/isrgrootx1.pem).
 
-### DST Root X3
+### DST Root CA X3
 
-Some {{% tts %}} deployments use the Let's Encrypt DST Root X3 Trust, although it expires in 2021 and is being phased out. If your deployment uses the legacy DST Root X3 Trust, download it [here](https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem).
+Some {{% tts %}} deployments use the Let's Encrypt DST Root CA X3 Trust, although it expires in 2021 and is being phased out. If your deployment uses the legacy DST Root CA X3 Trust, download it [here](https://www.identrust.com/dst-root-ca-x3).
+
+{{< note >}} The Things Stack Cloud, LNS Ports for `eu1`, `au1`, and `nam1` clusters use DST Root CA X3 at the moment. We are planning a migration path for all the gateways to migrate them to `ISRG Root X1`.
+
+Also, all our new clusters will use `ISRG Root X1` by default. {{</ note >}}
 
 {{< warning >}} Unfortunately, if you use a single certificate and that certificate expires, your gateway will stop connecting until you update the certificate. 
 
