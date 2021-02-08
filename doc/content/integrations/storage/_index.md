@@ -22,3 +22,5 @@ A gRPC service and an HTTP API is exposed so that stored messages can then be re
 
 - Long-term storage of historical data for end-devices.
 - No need to maintain a connection with {{% tts %}} at all times, e.g. for end devices that send messages infrequently.
+
+{{< note >}} TTS Cloud is configured to store only uplink messages, and support for other message types may come in the future if there is a request for it by customers. {{</ note >}}
