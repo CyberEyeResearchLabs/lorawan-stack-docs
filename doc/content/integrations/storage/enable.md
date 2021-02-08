@@ -9,8 +9,8 @@ The Storage Integration is implemented as an [Application Package]({{< ref "/ref
 
 {{< cli-only >}}
 
-{{< warning >}}The Storage Integration is new in {{% tts %}} 3.10. You may need to update the CLI to use the new features. See instructions in [Installing the CLI]({{< ref "/getting-started/cli/installing-cli" >}})
-{{</ warning >}}
+{{< note >}} The `f_port` for the default association and association is set to `100`. This value is irrelevant. **The storage integration will receive and store all uplink messages, regardless of `f_port`**. The `f_port` value is only needed because of the way application packages work with {{% tts %}}. {{</ note >}}
+
 
 ## Enable for an Application
 
@@ -19,8 +19,6 @@ Set up a default association between the desired application and the `storage-in
 ```bash
 $ ttn-lw-cli applications packages default-associations set "app1" 100 --package-name storage-integration
 ```
-
-{{< note >}} The `f_port` for the default association is set to `100`. This value is irrelevant. **The storage integration will receive and store all uplink messages, regardless of `f_port`**. The `f_port` value is only needed because of the way application packages work with {{% tts %}}. {{</ note >}}
 
 {{< warning >}} **Do not configure more than one default association for the same application**, since that will lead to storing duplicate messages in the persistent storage. {{</ warning >}}
 
@@ -32,34 +30,4 @@ Set up an association between the desired end device and the `storage-integratio
 $ ttn-lw-cli applications packages associations set "app1" "dev1" 100 --package-name storage-integration
 ```
 
-{{< note >}} The `f_port` value is irrelevant. {{</ note >}}
-
 {{< warning >}} **Do not configure multiple associations for the same end device**, since that will lead to storing duplicate uplinks in the persistent storage. {{</ warning >}}
-
-## Disable the Storage Integration
-
-Delete the package association, or the default association:
-
-```bash
-# List default associations
-$ ttn-lw-cli applications packages default-associations list "app1"
-{
-  "defaults": [
-    {
-      "ids": {
-        "application_ids": {
-          "application_id": "app1"
-        },
-        "f_port": 100
-      },
-      "created_at": "2020-08-24T21:09:44.649890166Z",
-      "updated_at": "2020-08-24T21:09:44.649890166Z",
-      "package_name": "storage-integration"
-    }
-  ]
-}
-```
-
-```bash
-$ ttn-lw-cli applications packages default-associations delete "app1" 100
-```
