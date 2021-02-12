@@ -43,6 +43,10 @@ Many {{% tts %}} deployments use the Let's Encrypt ISRG Root X1 Trust. If using 
 
 Some {{% tts %}} deployments use the Let's Encrypt DST Root X3 Trust, although it expires in 2021 and is being phased out. If your deployment uses the legacy DST Root X3 Trust, download it [here](https://letsencrypt.org/certs/trustid-x3-root.pem).
 
+ {{< note >}} The Things Stack Cloud, LNS Ports for `eu1`, `au1`, and `nam1` clusters use `DST Root X3` at the moment. `DST Root X3` is valid till September 2021. Let's Encrypt will start switching from `DST Root X3` to `ISRG Root X1` from September 2021. We were preparing for this switch, which requires a change of configured DST Root X3 in the gateways. These gateways need to be migrated to ISRG Root X1 later this year which is valid till 2035. 
+
+Also, all our new clusters will use `ISRG Root X1` by default. {{</ note >}}
+
 {{< warning >}} Unfortunately, if you use a single certificate and that certificate expires, your gateway will stop connecting until you update the certificate.
 
 The minimal and complete certificate lists contain the ISRG Root X1 and DST Root X3 certificates, but some gateways do not support concatenated certificate lists, even though they are part of the [ietf spec](https://tools.ietf.org/html/rfc1421). :(
