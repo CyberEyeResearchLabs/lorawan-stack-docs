@@ -17,6 +17,20 @@ To follow your gateway `gtw1` and application `app1` events at the same time:
 $ ttn-lw-cli events subscribe --gateway-id gtw1 --application-id app1
 ```
 
+#### Subscribing events for a longer duration:
+Login on to the CLI using the OAuth Access token will allow subscribing to the events for a shorter-duration since the OAuth Access tokens had an expiry of one hour. Login to CLI using a User API Key to avoid the problem with the expiry of the OAuth token and can log events without interruptions for a longer duration.
+
+**To login to CLI using the User API key follow the below steps:**
+1. Login to The Things Stack Console.
+1. Click on Username from the top right corner of the Console.
+1. Click on Personal API keys from the dropdown
+1. Click +Add API key button
+1. You can create a User API Key in The Things Stack Console by assigning the rights of your choice.
+1. Now, login to CLI using the below ttn-lw-cli command.
+
+```bash
+$ ttn-lw-cli login --api-key <API KEY>	
+```
 ## Subscribe with HTTP
 
 You can get streaming events with `curl`. For this, you need an API key for the entities you want to watch, for example:
