@@ -93,3 +93,8 @@ Your application is now linked, so you can proceed with using the MQTT server an
 {{< /tabs/tab >}}
 
 {{< /tabs/container >}}
+
+
+## Best Practices
+
+When you are dealing with multiple customer deployments, try to maintain devices in separate applications for each one of them. In this way, it would be easy to maintain and manage permissions. 
