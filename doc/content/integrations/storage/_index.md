@@ -17,6 +17,8 @@ The Storage Integration runs on the Application Server and watches for upstream 
 
 A gRPC service and an HTTP API is exposed so that stored messages can then be retrieved.
 
+{{< note >}} TTS Cloud is configured to store only uplink messages currently. {{</ note >}}
+
 ## Typical use cases
 
 - Long-term storage of historical data for end-devices.
