@@ -116,4 +116,8 @@ $ ttn-lw-migrate application --verbose --dry-run --source ttnv2 "my-ttn-app" > a
 $ ttn-lw-migrate application --source ttnv2 "my-ttn-app" > all-devices.json
 ```
 
+{{< note >}} In TTS V3, underscores ( _ ) are not allowed in the end device ID. Using the `ttn-lw-migrate` tool will replace an underscore ( _ ) with a dash ( - ). {{</ note >}}
+
 After exporting the end devices in to a json file you can refer to [Import End Devices Document]({{< ref "getting-started/migrating/import-devices.md" >}}) in {{% tts %}} for next steps.
+
+
