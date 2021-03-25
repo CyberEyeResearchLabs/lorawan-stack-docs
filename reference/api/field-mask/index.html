@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <title>Fields and Field Masks | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/api/field-mask/" />
+  <link rel="alternate icon" href="/docs/favicon.ico">
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.f929bbcfe7661748a056d8d8a4908e1280a5376b425518dbe446a7f00c4d9ce7.css" integrity="sha256-&#43;Sm7z&#43;dmF0igVtjYpJCOEoClN2tCVRjb5Ean8AxNnOc=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta itemprop="name" content="Fields and Field Masks">
+  <meta itemprop="description" content="">
+  <meta itemprop="keywords" content="">
+  <meta property="og:title" content="Fields and Field Masks">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/api/field-mask/">
+  <meta name="twitter:title" content="Fields and Field Masks" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div id="migration-info">
+      <div id="migration-text">thethingsstack.io has moved to thethingsindustries.com/docs</div>
+      <div id="migration-button" class="button is-primary">Got it</div>
+  </div>
+  <div class="container is-fluid">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+        <p class="navbar-item is-size-7">v3.11</p>
+      </a>
+      <span class="navbar-burger burger" data-target="topMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="topMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+      </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="search-container">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="field has-addons has-addons-centered">
+            <div class="control">
+              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: "",
+indexName: "thethingsstack",
+inputSelector: '#search-input',
+debug: false 
+});
+</script>
+<div class="container" role="document">
+  <div class="columns my-0 is-desktop">
+      <div class="column is-3-desktop is-2-widescreen sidebar-left">
+        
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Reference</h2>
+
+<ul class="menu-list">
+<a href="https://www.thethingsindustries.com/docs/reference/" class="">Overview</a>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/stripe/" class="">Billing with Stripe</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/" class="">API</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/authentication/" class="">Authentication</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/field-mask/" class="is-active">Fields and Field Masks</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application/" class="">Application APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_pub_sub/" class="">Application Pub/Sub APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_server/" class="">Application Server APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_webhooks/" class="">Application Webhook APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device_claiming/" class="">End Device Claiming APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/events/" class="">Events API</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/gateway/" class="">Gateway APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/gateway_server/" class="">Gateway Server APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/gateway_server_mqtt/" class="">Gateway Server MQTT</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/network_server/" class="">Network Server APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/organization/" class="">Organization APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/storage_integration/" class="">Storage Integration API</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/tenant/" class="">Tenant APIs</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/user/" class="">User APIs</a>
+    
+  </li>
+
+</ul>
+
+
+    
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/application-packages/" class="">Application Packages</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/cli/" class="">Command-Line Interface</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/components/" class="">Components</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/federated-auth/" class="">Federated Authentication</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+      </div>
+      <div class="column is-9-desktop is-8-widescreen sidebar-middle">
+
+<div class="docs-content">
+<h1 class="title is-size-2">Fields and Field Masks
+  
+  
+  
+  
+</h1>
+
+<div class="content">
+  <h2 id="field-masks">Field Masks</h2>
+<p>The Things Stack APIs use field masks to specify a subset of fields that should be returned by a reading request, or to specify fields that should be updated in a writing request. See Google&rsquo;s <a href="https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMask">Protocol Buffers reference</a> for more information about field masks.</p>
+<h2 id="fields-and-field-masks-in-http-queries">Fields and Field Masks in HTTP Queries</h2>
+<p>Fields may be specified in HTTP requests by appending them as query string parameters. For example, to request the <code>name</code>, <code>description</code>, and <code>locations</code> of devices in an <code>EndDeviceRegistry.Get</code> request, add these fields to the <code>field_mask</code> field. To get this data for device <code>dev1</code> in application <code>app1</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl --location --header <span class="s2">&#34;Authorization: Bearer NNSXS.XXXXXXXXX&#34;</span> https://thethings.example.com/api/v3/applications/app1/devices/dev1?field_mask<span class="o">=</span>name,description,locations
+</code></pre></div><h3 id="post-requests">POST Requests</h3>
+<p>Some endpoints require a message to be sent as part of the request. For example, to request an <a href="https://www.thethingsindustries.com/docs/reference/api/events/#the-event-service">Event Stream</a>, you must <code>POST</code> a <a href="https://www.thethingsindustries.com/docs/reference/api/events/#message:StreamEventsRequest">StreamEventsRequest message</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl --location <span class="se">\
+</span><span class="se"></span>  --header <span class="s1">&#39;Authorization: Bearer NNSXS.XXXXXXXXX&#39;</span> <span class="se">\
+</span><span class="se"></span>  --header <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\
+</span><span class="se"></span>  --request POST <span class="se">\
+</span><span class="se"></span>  --data-raw <span class="s1">&#39;{
+</span><span class="s1">    &#34;identifiers&#34;:[{
+</span><span class="s1">        &#34;device_ids&#34;:{
+</span><span class="s1">            &#34;device_id&#34;:&#34;dev1&#34;,
+</span><span class="s1">            &#34;application_ids&#34;:{&#34;application_id&#34;:&#34;app1&#34;}
+</span><span class="s1">        }
+</span><span class="s1">    }]
+</span><span class="s1">  }&#39;</span> <span class="se">\
+</span><span class="se"></span>  <span class="s1">&#39;https://thethings.example.com/api/v3/events&#39;</span>
+</code></pre></div><blockquote>
+<p>Fields that are empty or zero are not returned in requests, even if they are specified in a field mask.</p>
+</blockquote>
+
+</div>
+<div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/reference/api/authentication/">← Authentication</a>
+<a class="button is-pulled-right" href="/docs/reference/api/application/">Application APIs →</a>
+</div>
+
+<script>window.emojicom_widget = { campaign: "" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+
+<div class='feedback has-vertical-space'>
+  <div id="emojicom-widget-inline"></div>
+</div>
+</div>
+
+
+      </div>
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
+
+
+  <ul class="menu-list">
+    
+      <li><a href='#field-masks'>Field Masks</a></li>
+    
+      <li><a href='#fields-and-field-masks-in-http-queries'>Fields and Field Masks in HTTP Queries</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">The Things Stack</h3>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
+      </nav>
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">Contributing</h3>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
+        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
+      </nav>
+      
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">About Us</h3>
+        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
+        <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
+      </nav>
+      <div class="column is-one-quarter">
+        <h3 class="title is-6">About this page</h3>
+        <div class="content">
+<p class="is-size-7">
+  Last changed by benolayinka on 08 Oct 2020.
+  <br>
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/b503684d9bcc4a26426a6eb170e668cfe8c96ea7">
+      doc: Add api curl examples
+    </a>
+</p>
+
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/api/field-mask.md" class="button">Edit on Github</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.595b97b16778e75a16096b7412b5ce1e7fff37a56e4e45e7f89921711a3cd177.js" integrity="sha256-WVuXsWd451oWCWt0ErXOHn//N6VuTkXn&#43;JkhcRo80Xc=" crossorigin="anonymous"></script><script>
+  window.intercomSettings = {
+    app_id: "",
+  };
+</script>
+
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+
+</html>

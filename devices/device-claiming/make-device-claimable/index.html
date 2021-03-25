@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>Make a Device Claimable | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://thethingsstack.io/devices/device-claiming/make-device-claimable/" />
-  <link rel="alternate icon" href="/favicon.ico">
-  <link rel="alternate icon" type="image/png" href="/favicon.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="https://thethingsstack.io/css/theme.min.9835fa4d3cf6ec9a456f001bc45ec24ab74b80de487e212542e2b2c9770d1229.css" integrity="sha256-mDX6TTz27JpFbwAbxF7CSrdLgN5IfiElQuKyyXcNEik="><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <title>Make a Device Claimable | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/devices/device-claiming/make-device-claimable/" />
+  <link rel="alternate icon" href="/docs/favicon.ico">
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.f929bbcfe7661748a056d8d8a4908e1280a5376b425518dbe446a7f00c4d9ce7.css" integrity="sha256-&#43;Sm7z&#43;dmF0igVtjYpJCOEoClN2tCVRjb5Ean8AxNnOc=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Make a Device Claimable">
@@ -19,21 +19,21 @@
   <meta itemprop="keywords" content="">
   <meta property="og:title" content="Make a Device Claimable">
   <meta property="og:description" content="">
-  <meta property="og:url" content="https://thethingsstack.io/devices/device-claiming/make-device-claimable/">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/devices/device-claiming/make-device-claimable/">
   <meta name="twitter:title" content="Make a Device Claimable" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
-
-
-<body>
-
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container">
+<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div id="migration-info">
+      <div id="migration-text">thethingsstack.io has moved to thethingsindustries.com/docs</div>
+      <div id="migration-button" class="button is-primary">Got it</div>
+  </div>
+  <div class="container is-fluid">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img class="logo" src="/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.10</p>
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+        <p class="navbar-item is-size-7">v3.11</p>
       </a>
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
@@ -43,16 +43,15 @@
     </div>
     <div id="topMenu" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item" href="/getting-started/">Getting Started</a>
-        <a class="navbar-item" href="/devices/">Devices</a>
-        <a class="navbar-item" href="/gateways/">Gateways</a>
-        <a class="navbar-item" href="/integrations/">Integrations</a>
-        <a class="navbar-item" href="/reference/">Reference</a>
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
       </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a class="button is-primary" href="/download/">Get The Things Stack</a>
-        </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+          </div>
       </div>
     </div>
   </div>
@@ -73,141 +72,253 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript"> docsearch({
-apiKey: "4372282a02970d8402d43457bf95d486",
+apiKey: "",
 indexName: "thethingsstack",
 inputSelector: '#search-input',
 debug: false 
 });
 </script>
+<div class="container" role="document">
+  <div class="columns my-0 is-desktop">
+      <div class="column is-3-desktop is-2-widescreen sidebar-left">
+        
 
-<main>
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      
-      <div class="column is-one-third">
+<nav class="side-navigation" aria-label="Main navigation">
 
-
-<h2 class="title is-size-4">Device Claiming</h2>
+<h2 class="title is-size-5">Devices</h2>
 
 <ul class="menu-list">
-<a href="https://thethingsstack.io/devices/device-claiming/" class="">Overview</a>
+<a href="https://www.thethingsindustries.com/docs/devices/" class="">Overview</a>
 <li>
-  <a href="https://thethingsstack.io/devices/device-claiming/make-device-claimable/" class="is-active">Make a Device Claimable</a>
-</li>
+    <a href="https://www.thethingsindustries.com/docs/devices/abp-vs-otaa/" class="">ABP vs OTAA</a>
+  </li>
 <li>
-  <a href="https://thethingsstack.io/devices/device-claiming/claim-devices/" class="">Claim a Device</a>
-</li>
+    <a href="https://www.thethingsindustries.com/docs/devices/adding-devices/" class="">Adding Devices</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/best-practices/" class="">Best Practices</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/claim-atecc608a/" class="">Claim ATECC608A Secure Elements</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/class-b/" class="">Class B</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/class-c/" class="">Class C</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/device-claiming/" class="">Device Claiming</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/devices/device-claiming/make-device-claimable/" class="is-active">Make a Device Claimable</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/devices/device-claiming/claim-devices/" class="">Claim a Device</a>
+    
+  </li>
+
 </ul>
+
+
+    
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/downlink-queue-ops/" class="">Downlink Queue Operations</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/end-device-templates/" class="">End Device Templates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/generate-qr-code/" class="">Generating a QR Code</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/mac-settings/" class="">MAC Settings</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/multicast/" class="">Multicast</a>
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
 
 
 
 
 
       </div>
-      
-      <div class="column is-two-thirds">
+      <div class="column is-9-desktop is-8-widescreen sidebar-middle">
 
-<h1 class="title is-size-2">Make a Device Claimable</h1>
+<div class="docs-content">
+<h1 class="title is-size-2">Make a Device Claimable
+  
+  
+    
+    
+
+
+
+
+  
+
+  
+
+<a href="/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+  
+    
+    <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
+  
+    
+    <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
+  
+</a>
+
+
+  
+  
+  
+</h1>
 
 <div class="content">
-
-  
-  
-  
-
-
-  
-
-  
-
-
-<div class="notification is-primary">
-  <h3 class="has-text-light">Enterprise and Cloud Only</h3>
-  <p>The following instructions apply to Enterprise and Cloud distributions. See the <a href="/download">downloads page</a> for a feature breakdown of distributions of The Things Stack.</p>
-</div>
-
-
-
-<p>This guide explains the process of making a device claimable</p>
-<div class="notification is-primary">
-  <h3 class="has-text-light">Command-line interface only</h3>
+  <p>This guide explains the process of making a device claimable. When a device is claimable, someone else can claim the device in a secure manner.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>An application in The Things Stack Cloud. <a href="https://www.thethingsindustries.com/docs/integrations/adding-applications/">See instructions</a></li>
+</ol>
+<h2 id="authorize-claiming">Authorize Claiming</h2>
+<p>In order for anyone to claim devices that are registered in your application, you need to authorize claiming. This is needed for The Things Stack to move the device out of your application. This needs to be done once, per application.</p>
+<div class="notification is-primary is-light has-text-dark">
+  <h3 class="title has-text-dark mb-1">Command-line interface only</h3>
   <p>The instructions below use the command-line interface (CLI).</p>
   <div class="buttons">
-    <a class="button is-primary is-inverted is-outlined" href="https://thethingsstack.io/getting-started/cli/installing-cli/">Learn how to install the CLI</a>
+    <a class="button is-dark is-outlined" href="https://www.thethingsindustries.com/docs/getting-started/cli/installing-cli/">Learn how to install the CLI</a>
   </div>
 </div>
 
-<h2 id="prerequisites">Prerequisites</h2>
-<ol>
-<li>Access to The Things Industries Cloud. <a href="mailto:cloud@thethingsindustries.com">Contact The Things Industries</a> to get onboarded.</li>
-<li>An application in The Things Industries Cloud. <a href="https://thethingsstack.io/integrations/adding-applications/">See instructions</a></li>
-</ol>
-<h2 id="register-devices">Register Devices</h2>
-<p>In order to be claimable the device needs to be registered on The Things Industries Join Server. This can be done in multiple ways.</p>
-<h3 id="registered-on-the-things-industries-join-server-only">Registered on The Things Industries Join Server Only</h3>
-<ol>
-<li>
-<p>With root keys and claim authentication code<br>
-Follow the <a href="https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/register-devices/">Register Devices</a> guide.</p>
-</li>
-<li>
-<p>With secure element claiming<br>
-Follow the <a href="https://thethingsstack.io/devices/claim-atecc608a/">Claim ATECC608A Secure Elements</a> guide.</p>
-</li>
-</ol>
-<h3 id="registered-on-the-things-industries-join-server-and-configured-in-a-cloud-cluster">Registered on The Things Industries Join Server and Configured in a Cloud Cluster</h3>
-<ol>
-<li>
-<p>With root keys and claim authentication code<br>
-Follow the <a href="https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/">Activating Devices on Cloud</a> guide.</p>
-</li>
-<li>
-<p>With secure element claiming<br>
-Follow the <a href="https://thethingsstack.io/devices/claim-atecc608a/">Claim ATECC608A Secure Elements</a> and <a href="https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/">Activating Devices on Cloud</a> guides.</p>
-</li>
-</ol>
-<h2 id="generate-qr-code-for-claiming">Generate QR code for claiming</h2>
-<p>After registering your devices, you need to generate QR codes for claiming</p>
-<p>Learn here how to <a href="https://thethingsstack.io/devices/generate-qr-code/end-devices/#generate-qr-code-for-claiming">Generate QR Codes</a>.</p>
-<h2 id="authorize-claiming">Authorize Claiming</h2>
 <p>Replace <code>&lt;app-id&gt;</code> with the <strong>Application ID</strong> of the application that you created in prerequisites, and run the following command in the CLI:</p>
-<pre><code>$ ttn-lw-cli applications claim authorize &lt;app-id&gt;
-</code></pre><p>The device is now ready to be claimed. You can test it by creating a second application and claiming a device there.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli applications claim authorize &lt;app-id&gt;
+</code></pre></div><p>To undo the action:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli application claim unauthorize &lt;app-id&gt;
+</code></pre></div><h2 id="register-device">Register Device</h2>
+<p>In order to make a device claimable, the device first needs to be added first in the application that has been authorized for claiming.</p>
+<p>If you already have devices in your application that can be claimed, i.e. to transfer the ownership, you can go ahead to the next section.</p>
+<p>If you don&rsquo;t have a device in the application yet, you can add it by using one of the following ways:</p>
+<ol>
+<li><a href="/docs/devices/adding-devices/">Add a device</a> in The Things Stack</li>
+<li><a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/tti-join-server/register-devices/">Register a device</a> on The Things Join Server (i.e. not in a Network Server or Application Server yet)</li>
+<li><a href="/docs/devices/claim-atecc608a/">Import ATECC608A Secure Elements</a> on The Things Join Server. Make sure to enable the <strong>Set claim authentication code</strong> option</li>
+</ol>
+<h2 id="claiming-settings">Claiming Settings</h2>
+<p>When your device is added in The Things Stack, you can go ahead and configure claiming settings. This is comprised of a claim authentication code and a validity window. The claim authentication code is a secret value. The validity window is an optional start and end date on which the claim authentication code can be used.</p>
+<div class="tabs is-boxed">
+  <ul>
+    
+    <li data-tab="console">
+      <a>
+        <span>Console</span>
+      </a>
+    </li>
+    
+    <li data-tab="cli">
+      <a>
+        <span>CLI</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+<div class="tab-content content">
+  <section data-content="console">
+  <p>Go to your application in The Things Stack Console. Go to <strong>End devices</strong> in the left menu and find the device you want to configure for claiming.</p>
+<p>Find the claiming settings in the <strong>Claiming</strong> tab:</p>
+<figure>
+    <img src="../claiming-settings.png"
+         alt="Claiming settings"/> 
+</figure>
+<p>To save the claiming settings you edited, click <strong>Save changes</strong>.</p>
+<p>To disallow claiming, click <strong>Delete claim authentication code</strong>.</p>
+</section>
+<section data-content="cli">
+  <p>To configure claiming using the CLI, use the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli end-device &lt;app-id&gt; &lt;device-id&gt; --claim-authentication-code.value ABCD <span class="se">\
+</span><span class="se"></span>  --claim-authentication-code.valid-from 2021-03-01T00:00:00Z <span class="se">\
+</span><span class="se"></span>  --claim-authentication-code.valid-from 2021-03-31T23:59:59Z
+</code></pre></div><p>This sets the secret claim authentication code to <code>ABCD</code>, that can be used in March 2021.</p>
+</section>
+<h2 id="generate-qr-code-for-claiming">Generate QR Code for Claiming</h2>
+<p>You can use QR codes to make claiming really easy. The QR code includes the unique identifiers of the device as well as the secret claim authentication code.</p>
+<p>Learn how to <a href="/docs/devices/generate-qr-code/#generate-qr-code-for-claiming">Generate QR Codes</a></p>
+
+</div>
+</div>
+<div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/devices/device-claiming/">← Device Claiming</a>
+<a class="button is-pulled-right" href="/docs/devices/device-claiming/claim-devices/">Claim a Device →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "NEDHszRC2r2KaGj1mhj7" };</script>
+<script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-<div class="is-clearfix">
-<a class="button is-pulled-left" href="/devices/device-claiming/">← Device Claiming</a>
-<a class="button is-pulled-right" href="/devices/device-claiming/claim-devices/">Claim a Device →</a>
 </div>
 
 
       </div>
-    </div>
-  </div>
-</section>
-</main>
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
 
-<footer class="footer background-footer">
+
+  <ul class="menu-list">
+    
+      <li><a href='#prerequisites'>Prerequisites</a></li>
+    
+      <li><a href='#authorize-claiming'>Authorize Claiming</a></li>
+    
+      <li><a href='#register-device'>Register Device</a></li>
+    
+      <li><a href='#claiming-settings'>Claiming Settings</a></li>
+    
+      <li><a href='#generate-qr-code-for-claiming'>Generate QR Code for Claiming</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+  </div>
+</div>
+
+
+<footer class="footer">
   <div class="container">
     <div class="columns">
       <nav class="column is-one-quarter">
         <h3 class="title is-6">The Things Stack</h3>
-        <p><a class="" href="/getting-started/">Getting Started</a></p>
-        <p><a class="" href="/devices/">Devices</a></p>
-        <p><a class="" href="/gateways/">Gateways</a></p>
-        <p><a class="" href="/integrations/">Integrations</a></p>
-        <p><a class="" href="/reference/">Reference</a></p>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
       <nav class="column is-one-quarter">
         <h3 class="title is-6">Contributing</h3>
-        <p><a class="" href="https://github.com/TheThingsNetwork/lorawan-stack">GitHub</a></p>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
         <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
@@ -220,28 +331,29 @@ Follow the <a href="https://thethingsstack.io/devices/claim-atecc608a/">Claim AT
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Ben Olayinka on 22 Oct 2020.
+  Last changed by Johan Stokking on 16 Mar 2021.
   <br>
-  <a href="https://github.com/TheThingsNetwork/lorawan-stack/commit/1f7bb7a68bc1bb08e7b8778edb68275ed49839c3">
-      Merge pull request #23 from TheThingsIndustries/util/update-css
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/c6981870131fdd15168ab3e9d2c3d86ae3b29fd4">
+      doc: Address review comments
     </a>
 </p>
 
-<a href="https://github.com/TheThingsNetwork/lorawan-stack/blob/default/doc/content/devices/device-claiming/make-device-claimable.md" class="button">Edit on Github</a>
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/devices/device-claiming/make-device-claimable.md" class="button">Edit on Github</a>
 </div>
 
       </div>
     </div>
   </div>
 </footer>
-<script src="https://thethingsstack.io/js/theme.min.4feb1389331adbef9047157f884dbdbd63af1c61ac83f327e60eef42f999cb26.js" integrity="sha256-T&#43;sTiTMa2&#43;&#43;QRxV/iE29vWOvHGGsg/Mn5g7vQvmZyyY="></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.595b97b16778e75a16096b7412b5ce1e7fff37a56e4e45e7f89921711a3cd177.js" integrity="sha256-WVuXsWd451oWCWt0ErXOHn//N6VuTkXn&#43;JkhcRo80Xc=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
-    app_id: "pp8esr7h",
+    app_id: "",
   };
 </script>
 
 <script>
-(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pp8esr7h';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
 
 </body>

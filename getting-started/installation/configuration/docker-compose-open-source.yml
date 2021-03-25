@@ -5,7 +5,7 @@ services:
   cockroach:
     # In production, replace 'latest' with tag from https://hub.docker.com/r/cockroachdb/cockroach/tags
     image: cockroachdb/cockroach:latest
-    command: start --http-port 26256 --insecure
+    command: start-single-node --http-port 26256 --insecure
     restart: unless-stopped
     volumes:
       - ${DEV_DATA_DIR:-.env/data}/cockroach:/cockroach/cockroach-data
@@ -52,7 +52,7 @@ services:
       - ./blob:/srv/ttn-lorawan/public/blob
       - ./config/stack:/config:ro
       # If using Let's Encrypt:
-      # - ./acme:/var/lib/acme
+      - ./acme:/var/lib/acme
     environment:
       TTN_LW_BLOB_LOCAL_DIRECTORY: /srv/ttn-lorawan/public/blob
       TTN_LW_REDIS_ADDRESS: redis:6379

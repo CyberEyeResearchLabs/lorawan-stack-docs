@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <title>Telemetry | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/telemetry/" />
+  <link rel="alternate icon" href="/docs/favicon.ico">
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.f929bbcfe7661748a056d8d8a4908e1280a5376b425518dbe446a7f00c4d9ce7.css" integrity="sha256-&#43;Sm7z&#43;dmF0igVtjYpJCOEoClN2tCVRjb5Ean8AxNnOc=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta itemprop="name" content="Telemetry">
+  <meta itemprop="description" content="">
+  <meta itemprop="keywords" content="">
+  <meta property="og:title" content="Telemetry">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/telemetry/">
+  <meta name="twitter:title" content="Telemetry" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div id="migration-info">
+      <div id="migration-text">thethingsstack.io has moved to thethingsindustries.com/docs</div>
+      <div id="migration-button" class="button is-primary">Got it</div>
+  </div>
+  <div class="container is-fluid">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+        <p class="navbar-item is-size-7">v3.11</p>
+      </a>
+      <span class="navbar-burger burger" data-target="topMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="topMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+      </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="search-container">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="field has-addons has-addons-centered">
+            <div class="control">
+              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: "",
+indexName: "thethingsstack",
+inputSelector: '#search-input',
+debug: false 
+});
+</script>
+<div class="container" role="document">
+  <div class="columns my-0 is-desktop">
+      <div class="column is-3-desktop is-2-widescreen sidebar-left">
+        
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Reference</h2>
+
+<ul class="menu-list">
+<a href="https://www.thethingsindustries.com/docs/reference/" class="">Overview</a>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/stripe/" class="">Billing with Stripe</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/" class="">API</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/application-packages/" class="">Application Packages</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/cli/" class="">Command-Line Interface</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/components/" class="">Components</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/federated-auth/" class="">Federated Authentication</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="is-active">Telemetry</a>
+    
+
+
+
+    
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+      </div>
+      <div class="column is-9-desktop is-8-widescreen sidebar-middle">
+
+<div class="docs-content">
+<h1 class="title is-size-2">Telemetry
+  
+  
+  
+  
+</h1>
+
+<div class="content">
+  <p>The Things Stack exports <a href="https://prometheus.io/">Prometheus</a> telemetry on the <code>/metrics</code> endpoint. This reference gives an overview of the most important metrics.</p>
+<div class="notification is-warning is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
+  Metrics are not covered by our compatibility commitment. This means that metrics may be changed or removed in major, minor, or patch releases. This page only lists metrics that are considered relatively stable, but even these metrics may be changed.
+</div>
+
+<h2 id="process-and-go-metrics">Process and Go Metrics</h2>
+<p>The Things Stack uses the <a href="https://github.com/prometheus/client_golang/">Prometheus instrumentation library for Go</a> that includes a collector for the state of the process (on Linux) and metrics from the Go runtime.</p>
+<h2 id="grpc-metrics">gRPC metrics</h2>
+<p>The Things Stack uses the <a href="https://github.com/grpc-ecosystem/go-grpc-prometheus">Prometheus gRPC instrumentation library</a> that exposes metrics about gRPC method calls.</p>
+<ul>
+<li><code>grpc_server_conns_opened_total</code> and <code>grpc_server_conns_closed_total</code> can be used to see how many gRPC connections to The Things Stack are opened, and how many are currently open.</li>
+<li><code>grpc_server_started_total</code> and <code>grpc_server_handled_total</code> can be used to see how many RPCs to The Things Stack are started, active and finished (including response code).</li>
+<li><code>grpc_server_msg_sent_total</code> and <code>grpc_server_msg_received_total</code> can be used to see how many RPC messages are sent/received by the server.</li>
+</ul>
+<p>Similar metrics exist for gRPC client connections opened by The Things Stack, and RPCs made by The Things Stack.</p>
+<h2 id="general-metrics">General Metrics</h2>
+<ul>
+<li><code>ttn_lw_license_expiry_seconds</code> can be used to keep track of license expiry 
+
+
+
+
+
+  
+
+<a href="/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Enterprise Only">
+  
+    
+    <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
+  
+</a>
+
+
+</li>
+<li><code>ttn_lw_log_log_messages_total</code> can be used to track the log messages written by different log namespaces at different log levels.</li>
+<li><code>ttn_lw_events_publishes_total</code> can be used to track the published events by event type.</li>
+<li><code>ttn_lw_events_channel_dropped_total</code> can be used to watch for dropped events, which typically indicates that a consumer (such as a user&rsquo;s web browser) can&rsquo;t keep up.</li>
+</ul>
+<p>For the Gateway Server:</p>
+<ul>
+<li><code>ttn_lw_gs_connected_gateways</code> indicates the number of connected gateways.</li>
+<li><code>ttn_lw_gs_uplink_received_total</code> indicates the number of uplink messages received from gateways.</li>
+<li><code>ttn_lw_gs_downlink_sent_total</code> indicates the number of downlink messages sent to gateways.</li>
+<li><code>ttn_lw_gs_status_received_total</code> indicates the number of status messages received from gateways.</li>
+<li><code>ttn_lw_gs_uplink_forwarded_total</code> indicates the number of uplink messages forwarded to the Network Server or Packet Broker.</li>
+<li><code>ttn_lw_gs_uplink_dropped_total</code> indicates the number of uplink messages that are dropped for various reasons.</li>
+</ul>
+<p>For the Packet Broker Agent: <span class="new-in-version">New in 3.11.2</span>
+
+</p>
+<ul>
+<li><code>ttn_lw_pba_uplink_received_total</code> indicates the number of uplink messages received from Packet Broker (as a home network).</li>
+<li><code>ttn_lw_pba_downlink_forwarded_total</code> indicates the number of downlink messages sent to Packet Broker (as a home network).</li>
+<li><code>ttn_lw_pba_downlink_received_total</code> indicates the number of downlink messages received from Packet Broker (as a forwarder).</li>
+<li><code>ttn_lw_pba_uplink_forwarded_total</code> indicates the number of uplink messages sent to Packet Broker (as a forwarder).</li>
+</ul>
+<p>For the Network Server:</p>
+<ul>
+<li><code>ttn_lw_ns_uplink_received_total</code> indicates the number of uplink messages received from the Gateway Server or Packet Broker.</li>
+<li><code>ttn_lw_ns_uplink_duplicates_total</code> indicates the number of duplicate uplinks that are merged into a single uplink.</li>
+<li><code>ttn_lw_ns_uplink_processed_total</code> indicates the number of processed uplinks, meaning uplinks that are matched to a device.</li>
+<li><code>ttn_lw_ns_uplink_forwarded_total</code> indicates the number of uplinks forwarded to an Application Server.</li>
+<li><code>ttn_lw_ns_uplink_dropped_total</code> indicates the number of uplinks that are dropped for various reasons.</li>
+<li><code>ttn_lw_ns_downlink_attempted_total</code> indicates the number of downlink attempts.</li>
+<li><code>ttn_lw_ns_downlink_forwarded_total</code> indicates the number of downlinks forwarded to the Gateway Server.</li>
+<li><code>ttn_lw_ns_uplink_gateways</code> is a histogram that indicates the number of gateways that received a given uplink.</li>
+</ul>
+<p>For the Application Server:</p>
+<ul>
+<li><code>ttn_lw_as_subscriptions_started_total</code> and <code>ttn_lw_as_subscriptions_stopped_total</code> indicate the number of started/stopped uplink subscriptions from integrations and external applications.</li>
+<li><code>ttn_lw_as_pubsub_integrations_started_total</code> and <code>ttn_lw_as_pubsub_integrations_stopped_total</code> indicate the number of started/stopped pub/sub integrations.</li>
+<li><code>ttn_lw_as_uplink_received_total</code> indicates the number of uplink messages received from the Network Server.</li>
+<li><code>ttn_lw_as_uplink_forwarded_total</code> indicates the number of uplink messages forwarded to integrations and external applications.</li>
+<li><code>ttn_lw_as_uplink_dropped_total</code> indicates the number of uplink messages dropped for various reasons.</li>
+<li><code>ttn_lw_as_downlink_received_total</code> indicates the number of downlink messages received from integrations and external applications.</li>
+<li><code>ttn_lw_as_downlink_forwarded_total</code> indicates the number of downlink messages forwarded to the Network Server.</li>
+<li><code>ttn_lw_as_downlink_dropped_total</code> indicates the number of downlink messages dropped for various reasons.</li>
+<li><code>ttn_lw_javascript_run_latency_seconds</code> is a histogram that indicates the duration of executing JavaScript payload formatters.</li>
+</ul>
+<p>For the Join Server:</p>
+<ul>
+<li><code>ttn_lw_js_join_accepted_total</code> and <code>ttn_lw_js_join_rejected_total</code> indicate the number of accepted and rejected join requests.</li>
+</ul>
+</div>
+
+<div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/reference/root-certificates/">← Root Certificates</a>
+<a class="button is-pulled-right" href="/docs/reference/branding/">Web UI Branding →</a>
+</div>
+
+<script>window.emojicom_widget = { campaign: "" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+
+<div class='feedback has-vertical-space'>
+  <div id="emojicom-widget-inline"></div>
+</div>
+</div>
+
+
+      </div>
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
+
+
+  <ul class="menu-list">
+    
+      <li><a href='#process-and-go-metrics'>Process and Go Metrics</a></li>
+    
+      <li><a href='#grpc-metrics'>gRPC metrics</a></li>
+    
+      <li><a href='#general-metrics'>General Metrics</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">The Things Stack</h3>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
+      </nav>
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">Contributing</h3>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
+        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
+      </nav>
+      
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">About Us</h3>
+        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
+        <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
+      </nav>
+      <div class="column is-one-quarter">
+        <h3 class="title is-6">About this page</h3>
+        <div class="content">
+<p class="is-size-7">
+  Last changed by Hylke Visser on 10 Mar 2021.
+  <br>
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/941e37ea96f0fe564c6130e271fc56257f32ea62">
+      doc: Add PBA telemetry descriptions
+    </a>
+</p>
+
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/telemetry/_index.md" class="button">Edit on Github</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.595b97b16778e75a16096b7412b5ce1e7fff37a56e4e45e7f89921711a3cd177.js" integrity="sha256-WVuXsWd451oWCWt0ErXOHn//N6VuTkXn&#43;JkhcRo80Xc=" crossorigin="anonymous"></script><script>
+  window.intercomSettings = {
+    app_id: "",
+  };
+</script>
+
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+
+</html>

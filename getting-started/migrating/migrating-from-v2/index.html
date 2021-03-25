@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <title>Migrating from The Things Network Stack V2 | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/migrating/migrating-from-v2/" />
+  <link rel="alternate icon" href="/docs/favicon.ico">
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.f929bbcfe7661748a056d8d8a4908e1280a5376b425518dbe446a7f00c4d9ce7.css" integrity="sha256-&#43;Sm7z&#43;dmF0igVtjYpJCOEoClN2tCVRjb5Ean8AxNnOc=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta itemprop="name" content="Migrating from The Things Network Stack V2">
+  <meta itemprop="description" content="">
+  <meta itemprop="keywords" content="">
+  <meta property="og:title" content="Migrating from The Things Network Stack V2">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/getting-started/migrating/migrating-from-v2/">
+  <meta name="twitter:title" content="Migrating from The Things Network Stack V2" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div id="migration-info">
+      <div id="migration-text">thethingsstack.io has moved to thethingsindustries.com/docs</div>
+      <div id="migration-button" class="button is-primary">Got it</div>
+  </div>
+  <div class="container is-fluid">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+        <p class="navbar-item is-size-7">v3.11</p>
+      </a>
+      <span class="navbar-burger burger" data-target="topMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="topMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+      </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="search-container">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="field has-addons has-addons-centered">
+            <div class="control">
+              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: "",
+indexName: "thethingsstack",
+inputSelector: '#search-input',
+debug: false 
+});
+</script>
+<div class="container" role="document">
+  <div class="columns my-0 is-desktop">
+      <div class="column is-3-desktop is-2-widescreen sidebar-left">
+        
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Getting Started</h2>
+
+<ul class="menu-list">
+<a href="https://www.thethingsindustries.com/docs/getting-started/" class="">Overview</a>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/major-changes/" class="">Major Changes In The Things Stack</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/" class="">Migrating Gateways</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/migrating-from-v2/" class="is-active">Migrating from The Things Network Stack V2</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/migrate-from-chirpstack/" class="">Migrating from ChirpStack</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/device-json/" class="">Importable JSON File Reference</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/import-devices/" class="">Import End Devices in The Things Stack</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/configure-mac-settings/" class="">Fine-tuning MAC Settings for End Devices</a>
+    
+  </li>
+
+</ul>
+
+
+    
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">AWS</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/api/" class="">Using the API</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/events/" class="">Working with Events</a>
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+      </div>
+      <div class="column is-9-desktop is-8-widescreen sidebar-middle">
+
+<div class="docs-content">
+<h1 class="title is-size-2">Migrating from The Things Network Stack V2
+  
+  
+  
+  
+</h1>
+
+<div class="content">
+  <p>This section documents the process of migrating end devices from The Things Network Stack V2
+to The Things Stack.</p>
+<p>For a breakdown of differences between The Things Network Stack V2
+and The Things Stack, see the <a href="/docs/getting-started/migrating/major-changes/">Major Changes</a> section.</p>
+<h2 id="suggested-migration-process">Suggested Migration Process</h2>
+<p><strong>First</strong>: Update your integrations to support the The Things Stack <a href="https://www.thethingsindustries.com/docs/reference/data-formats/">Data Format</a>. If you are using <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/">Payload Formatters</a>, make sure to set them correctly from the Application settings page.</p>
+<p><strong>Second</strong>: Follow this guide in order to migrate a single end device (and gateway, if needed) to The Things Stack. Continue by gradually migrating your end devices in small batches. Avoid migrating production workloads before you are certain that they will work as expected.</p>
+<p><strong>Finally</strong>: Once you are confident that your end devices are working properly, migrate the rest of your devices and gateways to The Things Stack.</p>
+<h2 id="migrating-active-sessions-hahahugoshortcode-s10-hbhb">Migrating Active Sessions 
+
+
+
+
+
+  
+
+<a href="/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud Only">
+  
+    
+    <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
+  
+</a>
+
+
+</h2>
+<p>When migrating devices from the public The Things Network Stack V2
+ to The Things Stack Cloud, you may choose to transfer the active device sessions as well, which means that your devices will continue to work with The Things Stack without rejoining.</p>
+<p>When migrating from a private The Things Network Stack V2
+, devices that are outside of the DevAddr address block supported by The Things Stack Cloud will have to rejoin the network, otherwise The Things Stack will be unable to route their uplink and downlink traffic.</p>
+<div class="notification is-warning is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
+  Migrating device sessions will be available in The Things Stack <code>v3.12</code> release.
+</div>
+
+<h2 id="pre-requisites">Pre-requisites</h2>
+<ol>
+<li>User account in The Things Network Stack V2
+.</li>
+<li>User account in The Things Stack V3.</li>
+<li>Install <a href="#ttn-lw-migrate-tool">LoRaWAN stack migrate</a> tool.</li>
+</ol>
+<h2 id="ttn-lw-migrate-tool"><code>ttn-lw-migrate</code> Tool</h2>
+<p>End devices and applications can easily be migrated from The Things Network Stack V2
+to The Things Stack with the <a href="https://github.com/TheThingsNetwork/lorawan-stack-migrate"><code>ttn-lw-migrate</code></a> tool. This tool is used for exporting end devices and applications to a <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/device-json/">JSON file</a> containing their description. This file can later be imported in The Things Stack as described in the <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/import-devices/">Import End Devices in The Things Stack</a> section.</p>
+<h3 id="installation">Installation</h3>
+<p>Binaries are available on <a href="https://github.com/TheThingsNetwork/lorawan-stack-migrate/releases">GitHub</a>. Download the latest version asset according to your OS.</p>
+<h3 id="configuration">Configuration</h3>
+<p>Configure the environment with the following variables modified according to your setup:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">export</span> <span class="nv">TTNV2_APP_ID</span><span class="o">=</span><span class="s2">&#34;my-ttn-app&#34;</span>                    <span class="c1"># TTN App ID</span>
+$ <span class="nb">export</span> <span class="nv">TTNV2_APP_ACCESS_KEY</span><span class="o">=</span><span class="s2">&#34;ttn-account-v2.a...&#34;</span>   <span class="c1"># TTN App Access Key (needs `devices` permissions)</span>
+$ <span class="nb">export</span> <span class="nv">FREQUENCY_PLAN_ID</span><span class="o">=</span><span class="s2">&#34;EU_863_870_TTN&#34;</span>           <span class="c1"># Frequency Plan ID for exported devices</span>
+</code></pre></div><p>See <a href="">Frequency Plans</a> for the list of frequency plans available on The Things Stack. Make sure to specify the correct Frequency Plan ID. For example, the ID <code>EU_863_870_TTN</code> corresponds to the <strong>Europe 863-870 MHz (SF9 for RX2 - recommended)</strong> frequency plan.</p>
+<div class="notification is-info is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
+  For Windows OS, while configuring the app_id, app_access_key, frequency_plan_id replace <code>export</code> with <code>set</code>  and remove double-quotes as shown below.
+</div>
+
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">set</span> <span class="nv">TTNV2_APP_ID</span><span class="o">=</span>my-ttn-app                    <span class="c1"># TTN App ID</span>
+$ <span class="nb">set</span> <span class="nv">TTNV2_APP_ACCESS_KEY</span><span class="o">=</span>ttn-account-v2.a...   <span class="c1"># TTN App Access Key (needs `devices` permissions)</span>
+$ <span class="nb">set</span> <span class="nv">FREQUENCY_PLAN_ID</span><span class="o">=</span>EU_863_870_TTN           <span class="c1"># Frequency Plan ID for exported devices</span>
+</code></pre></div><h3 id="configuration-for-the-things-network-stack-v2">Configuration for The Things Network Stack V2</h3>
+<p>private deployments</p>
+<p>Private The Things Network Stack V2
+deployments are also supported, and require extra configuration. See <code>ttn-lw-migrate device --help</code> for more details. For most cases, it is enough to configure <code>ttn-lw-migrate</code> to use the Discovery Server of your installation, by setting the following environment variables:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">export</span> <span class="nv">TTNV2_DISCOVERY_SERVER_ADDRESS</span><span class="o">=</span><span class="s2">&#34;&lt;instance-id&gt;.thethings.industries:1900&#34;</span>
+</code></pre></div><div class="notification is-info is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
+  If the Discovery Server is not using TLS, you will need to use the <code>--ttnv2.discovery-server-insecure</code> flag when running the <code>ttn-lw-migrate</code> commands below.
+</div>
+
+<h2 id="export-end-devices-from-the-things-network-stack-v2">Export End Devices from The Things Network Stack V2</h2>
+<p>Migration from The Things Network Stack V2
+to The Things Stack is one-way. LoRaWAN devices may only be handled by one Network Server at a time. The commands below will clear both the root keys and the session keys from The Things Network Stack V2
+after the devices are exported. <strong>This means that the devices will no longer work in The Things Network Stack V2
+.</strong></p>
+<p>Execute commands with the <code>--dry-run</code> flag first to test exporting the devices without deleting the device keys from The Things Network Stack V2
+. When you are ready to migrate, be sure to export the devices <strong>without</strong> the <code>--dry-run</code> flag to remove the device keys from The Things Network Stack V2
+, as having the session keys present on both Network Servers is not supported, and will most likely lead to traffic issues and/or a corrupted device MAC state.</p>
+<p>In order to export a single device, use the following command. The device with ID <code>mydevice</code> will exported and saved to <code>device.json</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dry run first, verify that no errors occur</span>
+$ ttn-lw-migrate devices --dry-run --verbose --source ttnv2 <span class="s2">&#34;mydevice&#34;</span> &gt; devices.json
+<span class="c1"># export device and delete keys from The Things Network Stack V2</span>
+
+$ ttn-lw-migrate device --source ttnv2 <span class="s2">&#34;mydevice&#34;</span> &gt; devices.json
+</code></pre></div><div class="notification is-warning is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
+  The export process will clear the device root keys (<strong>AppKey</strong>) and session (<strong>AppSKey</strong>, <strong>NwkSKey</strong>, <strong>DevAddr</strong>, <strong>FCntUp</strong> and <strong>FCntDown</strong>) from The Things Network Stack V2
+by default. You can disable this by using the  <code>--ttnv2.with-session=false</code> flag.
+</div>
+
+<div class="notification is-info is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
+  The export process will halt if any error occurs.
+</div>
+
+<p>In order to export a large number of devices, create a file named <code>device_ids.txt</code> with one device ID per line:</p>
+<pre><code>mydevice
+otherdevice
+device3
+device4
+device5
+</code></pre><p>And then export with:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dry run first, verify that no errors occur</span>
+$ ttn-lw-migrate devices --verbose --dry-run --source ttnv2 &lt; device_ids.txt &gt; devices.json
+<span class="c1"># export devices</span>
+$ ttn-lw-migrate devices --source ttnv2 &lt; device_ids.txt &gt; devices.json
+</code></pre></div><p>Alternatively, you can export all the end devices associated with your application, and save them in <code>all-devices.json</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dry run first, verify that no errors occur</span>
+$ ttn-lw-migrate application --verbose --dry-run --source ttnv2 <span class="s2">&#34;my-ttn-app&#34;</span> &gt; all-devices.json
+<span class="c1"># export devices</span>
+$ ttn-lw-migrate application --source ttnv2 <span class="s2">&#34;my-ttn-app&#34;</span> &gt; all-devices.json
+</code></pre></div><p>After exporting the end devices in to a json file you can refer to <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/import-devices/">Import End Devices Document</a> in The Things Stack for next steps.</p>
+</div>
+<div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/getting-started/migrating/gateway-migration/">← Migrating Gateways</a>
+<a class="button is-pulled-right" href="/docs/getting-started/migrating/migrate-from-chirpstack/">Migrating from ChirpStack →</a>
+</div>
+
+<script>window.emojicom_widget = { campaign: "" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+
+<div class='feedback has-vertical-space'>
+  <div id="emojicom-widget-inline"></div>
+</div>
+</div>
+
+
+      </div>
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
+
+
+  <ul class="menu-list">
+    
+      <li><a href='#suggested-migration-process'>Suggested Migration Process</a></li>
+    
+      <li><a href='#pre-requisites'>Pre-requisites</a></li>
+    
+      <li><a href='#ttn-lw-migrate-tool'>ttn-lw-migrate Tool</a></li>
+    
+      <li><a href='#export-end-devices-from-the-things-network-stack-v2'>Export End Devices from The Things Network Stack V2</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">The Things Stack</h3>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
+      </nav>
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">Contributing</h3>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
+        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
+      </nav>
+      
+      <nav class="column is-one-quarter">
+        <h3 class="title is-6">About Us</h3>
+        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
+        <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
+      </nav>
+      <div class="column is-one-quarter">
+        <h3 class="title is-6">About this page</h3>
+        <div class="content">
+<p class="is-size-7">
+  Last changed by ymgupta on 18 Mar 2021.
+  <br>
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/31b26e43cc397371623ea6bea8767003f43da097">
+      Update version information
+    </a>
+</p>
+
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/getting-started/migrating/migrating-from-v2.md" class="button">Edit on Github</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.595b97b16778e75a16096b7412b5ce1e7fff37a56e4e45e7f89921711a3cd177.js" integrity="sha256-WVuXsWd451oWCWt0ErXOHn//N6VuTkXn&#43;JkhcRo80Xc=" crossorigin="anonymous"></script><script>
+  window.intercomSettings = {
+    app_id: "",
+  };
+</script>
+
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+
+</html>
