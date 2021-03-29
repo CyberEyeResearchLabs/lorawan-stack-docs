@@ -118,6 +118,16 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/devices/atecc608a/claim/</loc>
+    <lastmod>2021-03-28T15:42:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/connect/</loc>
+    <lastmod>2021-03-28T15:56:17+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/aws-iot/default/</loc>
     <lastmod>2021-02-17T17:52:20+01:00</lastmod>
   </url>
@@ -149,12 +159,12 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/migrating/major-changes/</loc>
-    <lastmod>2021-02-18T12:22:32+01:00</lastmod>
+    <lastmod>2021-03-28T16:05:42+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/devices/device-claiming/make-device-claimable/</loc>
-    <lastmod>2021-03-16T14:10:59+01:00</lastmod>
+    <lastmod>2021-03-26T13:36:53+01:00</lastmod>
   </url>
   
   <url>
@@ -170,6 +180,11 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/pubsub/nats-client/</loc>
     <lastmod>2020-11-26T19:26:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/configure/registration/</loc>
+    <lastmod>2021-03-28T15:56:17+02:00</lastmod>
   </url>
   
   <url>
@@ -195,6 +210,11 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/installation/configuration/</loc>
     <lastmod>2021-03-23T18:21:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/configure/</loc>
+    <lastmod>2021-03-25T09:50:01+01:00</lastmod>
   </url>
   
   <url>
@@ -235,6 +255,11 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/node-red/receive/</loc>
     <lastmod>2020-11-25T18:29:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/devices/atecc608a/transfer/</loc>
+    <lastmod>2021-03-28T15:42:45+02:00</lastmod>
   </url>
   
   <url>
@@ -288,13 +313,18 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/configure/routing-policies/</loc>
+    <lastmod>2021-03-28T15:56:17+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/node-red/send/</loc>
     <lastmod>2020-11-25T18:29:23+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/aws/ami/troubleshooting/</loc>
-    <lastmod>2020-11-20T14:05:06+01:00</lastmod>
+    <lastmod>2021-03-28T15:42:45+02:00</lastmod>
   </url>
   
   <url>
@@ -369,7 +399,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/addresses/</loc>
-    <lastmod>2021-01-11T15:43:13+02:00</lastmod>
+    <lastmod>2021-03-28T15:42:45+02:00</lastmod>
   </url>
   
   <url>
@@ -399,7 +429,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/</loc>
-    <lastmod>2020-12-09T17:51:38+01:00</lastmod>
+    <lastmod>2021-03-26T13:36:53+01:00</lastmod>
   </url>
   
   <url>
@@ -598,6 +628,11 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/devices/atecc608a/</loc>
+    <lastmod>2021-03-26T13:36:53+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/aws/</loc>
     <lastmod>2020-12-23T10:48:29+01:00</lastmod>
   </url>
@@ -610,11 +645,6 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/payload-formatters/cayenne/</loc>
     <lastmod>2021-02-18T13:12:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/devices/claim-atecc608a/</loc>
-    <lastmod>2020-12-09T17:51:38+01:00</lastmod>
   </url>
   
   <url>
@@ -660,11 +690,6 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/configuration/</loc>
     <lastmod>2020-11-26T19:26:14+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/enable/</loc>
-    <lastmod>2021-03-08T15:53:25+02:00</lastmod>
   </url>
   
   <url>
@@ -999,7 +1024,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/configuration/network-server/</loc>
-    <lastmod>2021-02-10T12:03:08+02:00</lastmod>
+    <lastmod>2021-03-28T16:05:42+02:00</lastmod>
   </url>
   
   <url>
@@ -1029,7 +1054,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/</loc>
-    <lastmod>2021-02-18T12:22:32+01:00</lastmod>
+    <lastmod>2021-03-28T16:05:42+02:00</lastmod>
   </url>
   
   <url>
@@ -1039,7 +1064,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/configuration/packet-broker-agent/</loc>
-    <lastmod>2020-04-03T13:34:24+02:00</lastmod>
+    <lastmod>2021-03-24T18:10:39+01:00</lastmod>
   </url>
   
   <url>
