@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>Semtech UDP Packet Forwarder | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/" />
+  <title>Connect RAK7240 in Basic Station Mode | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/rak-7240/bs/" />
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
   <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="Semtech UDP Packet Forwarder">
+  <meta itemprop="name" content="Connect RAK7240 in Basic Station Mode">
   <meta itemprop="description" content="">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="Semtech UDP Packet Forwarder">
+  <meta property="og:title" content="Connect RAK7240 in Basic Station Mode">
   <meta property="og:description" content="">
-  <meta property="og:url" content="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/">
-  <meta name="twitter:title" content="Semtech UDP Packet Forwarder" />
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/gateways/rak-7240/bs/">
+  <meta name="twitter:title" content="Connect RAK7240 in Basic Station Mode" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
@@ -96,21 +96,7 @@ debug: false
     <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/" class="">LoRa Basics™ Station</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/" class="is-active">Semtech UDP Packet Forwarder</a>
-    
-
-
-<ul class="menu-list">
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/troubleshooting/" class="">Troubleshooting Semtech UDP Packet Forwarder</a>
-    
-  </li>
-
-</ul>
-
-
-    
+    <a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/" class="">Semtech UDP Packet Forwarder</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/ciscowirelessgateway/" class="">Cisco Wireless Gateway for LoRaWAN</a>
@@ -120,6 +106,25 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/rak-7240/" class="">RAK7240 WisGate Edge Prime</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/gateways/rak-7240/bs/" class="is-active">Connect RAK7240 in Basic Station Mode</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/gateways/rak-7240/pf/" class="">Connect RAK7240 in Packet Forwarder Mode</a>
+    
+  </li>
+
+</ul>
+
+
+    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/dragino-lps8/" class="">Dragino LPS8</a>
@@ -171,7 +176,7 @@ debug: false
       <div class="column sidebar-middle">
 
 <div class="docs-content">
-<h1 class="title is-size-2">Semtech UDP Packet Forwarder
+<h1 class="title is-size-2">Connect RAK7240 in Basic Station Mode
   
   
   
@@ -179,72 +184,26 @@ debug: false
 </h1>
 
 <div class="content">
-  <p>The <a href="https://github.com/lora-net/packet_forwarder">Semtech UDP Packet Forwarder
-</a> is the original LoRaWAN packet forwarder, connecting to servers through the Semtech UDP protocol. Many gateways include a pre-compiled version of the Semtech UDP Packet Forwarder
-, often adapted to the specific gateway.</p>
-<div class="notification is-warning is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
-  The Semtech UDP Packet Forwarder
-has many security and scalability drawbacks, so if possible, use <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/">LoRa Basics™ Station
-</a> to connect your gateway to The Things Stack.
-</div>
-
-<h2 id="configuration">Configuration</h2>
-<p>When the packet forwarder starts, it looks in the current directory for a <code>global_conf.json</code>, a <code>local_conf.json</code> and a <code>debug_conf.json</code>. The Gateway EUI, Network Server Address, Frequency Plan, Ports, and other parameters are configurable in these files.</p>
-<p>If <code>debug_conf.json</code> exists, the other files are ignored - otherwise, the parameters in <code>local_conf.json</code> override those in <code>global_conf.json</code>.</p>
-<p>An example <code>global_conf.json</code> is available in the <a href="https://github.com/Lora-net/packet_forwarder/blob/master/lora_pkt_fwd/global_conf.json">Semtech UDP Packet Forwarder
-Github repository</a>. It is also possible to download a <code>global_conf.json</code> configured with your Gateway EUI and Frequency Plan directly from The Things Stack.</p>
-<div class="tabs is-boxed">
-  <ul>
-    
-    <li data-tab="console">
-      <a>
-        <span>Console</span>
-      </a>
-    </li>
-    
-    <li data-tab="cli">
-      <a>
-        <span>CLI</span>
-      </a>
-    </li>
-    
-  </ul>
-</div>
-<div class="tab-content content">
-  <section data-content="console">
-  <h2 id="download-configuration-in-the-console-span-classnew-in-versionnew-in-310span">Download Configuration in the Console <span class="new-in-version">New in 3.10</span></h2>
-<p>{#download-configuration-in-the-console}</p>
-<p>To download a <code>global_conf.json</code> file for your gateway, open the Gateway overview page in the console. Click the <strong>Download global_conf.json</strong> button to download the file.</p>
-<figure>
-    <img src="conf.png"
-         alt="Download global_conf.json"/> 
+  <p>RAK7240&rsquo;s <strong>Basic Station</strong> mode utilizes the <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/">LoRa Basics™ Station
+</a> protocol. As part of the Basic Station mode, RAK7240 supports two LoRa Basics™ Station
+subprotocols - <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/lns/">LNS</a> and <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/cups/">CUPS</a>. Follow this section to learn how to connect to The Things Stack Network Server using this mode.</p>
+<p>To configure the gateway to use LNS or CUPS, first navigate to <strong>LoRa Network → Network Settings → LoRa Basic Station</strong>.</p>
+<h2 id="cups">CUPS</h2>
+<p>To connect the gateway to via CUPS protocol, follow the instructions for <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/cups/">Connecting CUPS</a>.</p>
+<p>Select <strong>TLS Server Authentication</strong> for the <strong>Authentication Mode</strong>. Copy your CUPS Server Certificate and paste it in the <strong>trust</strong> field.</p>
+<h2 id="lns">LNS</h2>
+<p>To connect the gateway to via LNS protocol, fill in the info in the <strong>LNS Server</strong> section instead.</p>
+<p>Follow the instructions for <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/lns/">Connecting LNS</a>.</p>
+<p>Select <strong>TLS Server Authentication</strong> for the <strong>Authentication Mode</strong>. Copy your LNS Server Certificate and paste it in the <strong>trust</strong> field.</p>
+<p>Whichever subprotocol you have configured, press <strong>Save &amp; Apply</strong> and your gateway should appear as connected in The Things Stack Console.</p>
+<figure class="plain">
+    <img src="../cups-lns.jpg"
+         alt="Configuring CUPS and LNS"/> 
 </figure>
-</section>
-<section data-content="cli">
-  <h2 id="download-configuration-via-terminal">Download Configuration via Terminal</h2>
-<p>To download a <code>global_conf.json</code> file using the terminal, you will need a Gateway API key with the <code>View gateway information</code> right enabled. To create an API key, see instructions for in the <a href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/">Adding Gateways</a> guide.</p>
-<p>Open the command prompt in Windows or any Linux terminal to run a curl command (as shown below) to generate the required <code>global_conf.json</code> file in your current working directory.</p>
-<p>Make sure you replace <code>thethings.example.com</code> with your server address, <code>{GATEWAY_ID}</code> with your Gateway ID, and <code>{GATEWAY_API_KEY}</code> with the API key you generated:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl -XGET <span class="se">\
-</span><span class="se"></span>    <span class="s2">&#34;https://thethings.example.com/api/v3/gcs/gateways/{GATEWAY_ID}/semtechudp/global_conf.json&#34;</span> <span class="se">\
-</span><span class="se"></span>    -H <span class="s2">&#34;Authorization: Bearer {GATEWAY_API_KEY}&#34;</span> &gt; global_conf.json
-</code></pre></div>
-</section>
-
 </div>
-
-<div class="notification is-info is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  <p>The <code>global_conf.json</code> file you download from The Things Stack contains the <code>gateway_ID</code> field, that has a different value than the <strong>Gateway ID</strong> in The Things Stack Console.</p>
-<p><strong>Gateway ID</strong> in The Things Stack Console represents the name of your gateway used to register it, while the <code>gateway_ID</code> field in the <code>global_conf.json</code> file contains your gateway&rsquo;s EUI.</p>
-
-</div>
-</div>
-
 <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/gateways/lora-basics-station/troubleshooting/">← Troubleshooting LoRa Basics™ Station</a>
-<a class="button is-pulled-right" href="/docs/gateways/semtech-udp-packet-forwarder/troubleshooting/">Troubleshooting Semtech UDP Packet Forwarder →</a>
+<a class="button is-pulled-left" href="/docs/gateways/rak-7240/">← RAK7240 WisGate Edge Prime</a>
+<a class="button is-pulled-right" href="/docs/gateways/rak-7240/pf/">Connect RAK7240 in Packet Forwarder Mode →</a>
 </div>
 
 <script>window.emojicom_widget = { campaign: "" };</script>
@@ -265,11 +224,9 @@ Github repository</a>. It is also possible to download a <code>global_conf.json<
 
   <ul class="menu-list">
     
-      <li><a href='#configuration'>Configuration</a></li>
+      <li><a href='#cups'>CUPS</a></li>
     
-      <li><a href='#download-configuration-in-the-console-new-in-310'>Download Configuration in the Console New in 3.10</a></li>
-    
-      <li><a href='#download-configuration-via-terminal'>Download Configuration via Terminal</a></li>
+      <li><a href='#lns'>LNS</a></li>
     
   </ul>
 
@@ -309,12 +266,12 @@ Github repository</a>. It is also possible to download a <code>global_conf.json<
 <p class="is-size-7">
   Last changed by Nejra on 24 Mar 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/fd89598533d8d74b3eb3a40057178769d6d79e80">
-      doc: Note about gateway ID inconsistency
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/3fa99116c4e03044ba44452eb0a817fd0c4b38e3">
+      doc: Document using RAK7240 gw
     </a>
 </p>
 
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/gateways/semtech-udp-packet-forwarder/_index.md" class="button">Edit on Github</a>
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/gateways/rak-7240/bs.md" class="button">Edit on Github</a>
 </div>
 
       </div>
