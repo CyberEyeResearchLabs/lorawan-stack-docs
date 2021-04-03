@@ -53,7 +53,7 @@ The message is a JSON object with the following format:
 
 ```js
 {
-  "thingName": "<DevEUI>",
+  "thingName": "<thingName>",
 
   "bytes": "AQ==", // Base64 encoded FRMPayload
   // or
