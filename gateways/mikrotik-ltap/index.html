@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>Connect Multitech Conduit with UDP Packet Forwarder | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/udp/" />
+  <title>MikroTik LtAP | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/" />
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
   <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="Connect Multitech Conduit with UDP Packet Forwarder">
+  <meta itemprop="name" content="MikroTik LtAP">
   <meta itemprop="description" content="">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="Connect Multitech Conduit with UDP Packet Forwarder">
+  <meta property="og:title" content="MikroTik LtAP">
   <meta property="og:description" content="">
-  <meta property="og:url" content="https://www.thethingsindustries.com/docs/gateways/multitechconduit/udp/">
-  <meta name="twitter:title" content="Connect Multitech Conduit with UDP Packet Forwarder" />
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/">
+  <meta name="twitter:title" content="MikroTik LtAP" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
@@ -102,7 +102,12 @@ debug: false
     <a href="https://www.thethingsindustries.com/docs/gateways/ciscowirelessgateway/" class="">Cisco Wireless Gateway for LoRaWAN</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/" class="">MikroTik LtAP</a>
+    <a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/" class="is-active">MikroTik LtAP</a>
+    
+
+
+
+    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/mikrotikrouterboard/" class="">MikroTik Routerboard wAP LoRa8 kit</a>
@@ -127,25 +132,6 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/" class="">MultiTech Conduit AEP</a>
-    
-
-
-<ul class="menu-list">
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/lbs/" class="">Connect Multitech Conduit with LoRa Basics™ Station</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/udp/" class="is-active">Connect Multitech Conduit with UDP Packet Forwarder</a>
-    
-  </li>
-
-</ul>
-
-
-    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit-mlinux/" class="">MultiTech Conduit mLinux</a>
@@ -182,7 +168,7 @@ debug: false
       <div class="column sidebar-middle">
 
 <div class="docs-content">
-<h1 class="title is-size-2">Connect Multitech Conduit with UDP Packet Forwarder
+<h1 class="title is-size-2">MikroTik LtAP
   
   
   
@@ -190,65 +176,80 @@ debug: false
 </h1>
 
 <div class="content">
-  <p>This section contains instructions for connecting the Multitech Conduit AEP to The Things Stack using the UDP Packet Forwarder.</p>
+  <figure class="plain float">
+    <img src="LtaP.jpg"
+         alt="LtAP"/> 
+</figure>
+
+<p>The LtAP LTE kit is a compact weatherproof wireless access point with a built-in cellular modem that supports 4G (LTE) connectivity.</p>
+<p>Connect to the LtAP’s built-in high power 2.4 GHz 802.11B/G/N wireless and access the LTE network from your phone or any other wireless device. The LtAP LTE kit also has one Gigabit Ethernet LAN port for wired devices.</p>
+<p>For more info, see Mikrotik&rsquo;s <a href="https://mikrotik.com/product/ltap_lte_kit">official product page</a></p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>2.4 GHz AP in a rugged case</li>
+<li>LTE installed in miniPCIe slot</li>
+<li>Second miniPCIe slot for expansions</li>
+<li>Three Mini SIM slots</li>
+<li>Gigabit Ethernet port</li>
+<li>Built-in GPS</li>
+<li>Many powering options (DC jack, POE-in, automotive)</li>
+<li>Serial port and full size USB for other devices</li>
+<li>Perfect for cars or outdoor mobile applications</li>
+</ul>
+<div class="notification is-warning is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
+  Currently, this gateway does not support changing Frequency Plans.
+</div>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>User account on The Things Stack with rights to create Gateways.</li>
+<li>MikroTik LtAP kit connected via Ethernet, LTE or LTE-M.</li>
+<li>A web browser (see section <a href="#configuration-via-browser">Configuration via Browser</a>), or the <a href="https://mikrotik.com/mobile_app">MikroTik Mobile App</a> installed on a smartphone.</li>
+</ol>
+<h2 id="registration">Registration</h2>
+<p>Create a gateway by following the instructions for <a href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/">Adding Gateways</a>. The <strong>EUI</strong> of the gateway can be found on the back panel of the gateway under the field <strong>GW ID</strong>, or under the <strong>Gateway ID</strong> in the LoRa tab of the MikroTik web GUI.</p>
+<h2 id="configuration-via-browser">Configuration via Browser</h2>
+<p>The MikroTik Routerboard exposes a WiFi Access Point (AP) with SSID <code>MikroTik-xxxxxx</code>, where <code>xxxxxx</code> are the last 6 digits of the device&rsquo;s MAC Address.</p>
+<p>Use your PC, tablet or smartphone to connect to this AP. You will not need a password to connect to this AP.</p>
+<p>Open a browser to <code>http://192.168.88.1/webfig/#Interfaces</code>.</p>
+<p><img src="portal.png" alt="MikroTik-portal.png"></p>
+<p>Select <strong>LoRa</strong> on the left hand menu. The status of the gateway should be <strong>Disabled</strong> - if needed, press the <strong>D</strong> button to disable it.</p>
+<p><img src="portal-lora.png" alt="MikroTik-portal-lora.png"></p>
 <div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  The UDP Packet Forwarder does not correctly handle unstable connectivity and has no security. It also does not support configuration of frequency plans from the Network Server. The Things Stack supports LoRa Basics™ Station
-, which solves all of these problems, so please <a href="/docs/gateways/multitechconduit/lbs/">use that instead</a>.
+  <p>If you don&rsquo;t see any devices listed in the <strong>Devices</strong> tab of the <strong>LoRa</strong> menu, you will need to enable the LoRa interface first. To do so, click the <strong>Terminal</strong> button in the upper right corner and enter the command:</p>
+<pre><code>system routerboard usb set type=mini-PCIe
+</code></pre>
 </div>
 
-<h2 id="configuration">Configuration</h2>
-<p>To configure the gateway for the correct channel plans, you need a <code>global_conf.json</code>.</p>
-<p>The Gateway Configuration Server can be used to retrieve a proper <code>global_conf.json</code> configuration file for your gateway. Follow instructions <a href="">here</a>.</p>
-<p>Once the <code>global_conf.json</code> file is generated, you will need to add this to your gateway. In a web browser, open the gateway’s configuration page by navigating to its IP Address obtained from the network it is connected to. Once logged in, you can configure the gateway to connect to The Things Stack by following the steps below:</p>
-<p>Click on <strong>LoRaWAN<sup>®</sup></strong> in the menu on the left. It opens the Gateway's configuration page.</p>
-<figure>
-    <img src="../main-menu.png"
-         alt="MultiTech Conduit gateway home page"/> 
-</figure>
-
-<p>Under <strong>Network Settings</strong>, select the mode as &quot;Packet Forwarder&quot;.</p>
-<figure>
-    <img src="../packet-forwarder-menu.png"
-         alt="MultiTech Conduit packet forwarder settings"/> 
-</figure>
-
-<p>On the right side of the &quot;LoRa Packet Forwarder Configuration&quot; section, you can find &quot;Manual Configuration &quot;. Click on it to setup the channel plan manually.</p>
-<figure>
-    <img src="../manual-config.png"
-         alt="Switch to manual configuration mode"/> 
-</figure>
-
-<p>The above step will lead you to the gateway configuration editor tagged as &quot;Config&quot;.</p>
-<figure>
-    <img src="../manual-config-2.png"
-         alt="Manual Configuration"/> 
-</figure>
-
-<p>Copy the contents of the <code>global_conf.json</code> file downloaded earlier and paste them in the gateway console configuration editor.</p>
-<p>Once pasted, modify the value of <code>clksrc</code> to set it to <code>0</code>.</p>
-<p>Click on <strong>Submit</strong> to save the configuration.</p>
-<p>Now, click on <strong>Save and Restart</strong> from the menu.</p>
-<figure>
-    <img src="../save-and-restart.png"
-         alt="Saving the Network Interfaces Configuration"/> 
-</figure>
-
-<p>You will be prompted to confirm the restart. Choose <strong>OK</strong> to proceed.</p>
-<figure>
-    <img src="../confirm.png"
-         alt="Configuration restart prompt"/> 
-</figure>
-
-<p>This will apply the custom settings and reboot the gateway. If all the steps have been followed correctly, your gateway will now connect to The Things Stack.</p>
 <div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  To know more about other features of the MultiTech Conduit gateway, you can refer to the <strong>mPower Edge AEP software guide</strong> on the <a href="http://www.multitech.net/developer/products/multiconnect-conduit-platform/conduit/">Multitech Website</a>.
+  The Gateway ID you see here is the Gateway EUI you need to register the gateway in The Things Stack.
 </div>
+
+<p>From the top menu, select the <strong>Servers</strong> Tab and press the <strong>Add New</strong> button.</p>
+<p><img src="servers.png" alt="MikroTik-server"></p>
+<p>Edit the server parameters.</p>
+<ul>
+<li><strong>Name</strong>: A distinct name</li>
+<li><strong>Address</strong>: Address of the Gateway Server. If you followed the <a href="https://www.thethingsindustries.com/docs/getting-started/">Getting Started guide</a> this is the same as what you use instead of <code>thethings.example.com</code>.</li>
+<li><strong>Up port</strong>: UDP upstream port of the Gateway Server, typically <code>1700</code>.</li>
+<li><strong>Down port</strong>: UDP downstream port of the Gateway Server, typically <code>1700</code>.</li>
+</ul>
+<p>Press <strong>OK</strong> to save the parameters.</p>
+<p><img src="parameters.png" alt="MikroTik-paramters"></p>
+<p>From the top menu, select the <strong>Devices</strong> tab. Click the <strong>Gateway ID</strong> to configure it.</p>
+<p><img src="portal-lora-disable.png" alt="MikroTik-Devices"></p>
+<p>In the device settings, click the <strong>Network Servers</strong> drop-down menu to view available servers. Choose the server you just created.</p>
+<p>Select <strong>Public</strong> for the <strong>Network</strong> and click <strong>OK</strong> to save these parameters.</p>
+<p>Press the <strong>E</strong> button to enable the gateway device (it is enabled when <strong>E</strong> becomes <strong>D</strong>) and the device status will update.</p>
+<p>If your configuration was successful, your gateway will connect to The Things Stack after a couple of seconds.</p>
 </div>
+
 <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/gateways/multitechconduit/lbs/">← Connect Multitech Conduit with LoRa Basics™ Station</a>
-<a class="button is-pulled-right" href="/docs/gateways/multitechconduit-mlinux/">MultiTech Conduit mLinux →</a>
+<a class="button is-pulled-left" href="/docs/gateways/ciscowirelessgateway/">← Cisco Wireless Gateway for LoRaWAN</a>
+<a class="button is-pulled-right" href="/docs/gateways/mikrotikrouterboard/">MikroTik Routerboard wAP LoRa8 kit →</a>
 </div>
 
 <script>window.emojicom_widget = { campaign: "" };</script>
@@ -269,7 +270,11 @@ debug: false
 
   <ul class="menu-list">
     
-      <li><a href='#configuration'>Configuration</a></li>
+      <li><a href='#prerequisites'>Prerequisites</a></li>
+    
+      <li><a href='#registration'>Registration</a></li>
+    
+      <li><a href='#configuration-via-browser'>Configuration via Browser</a></li>
     
   </ul>
 
@@ -307,14 +312,14 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Nejra on 17 Dec 2020.
+  Last changed by Laurens Slats on 02 Apr 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/bdc3988bf1e2eb3a98b0958be845134929d16d58">
-      doc: Differentiate section names
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/1bf654d69b37b471340ececb07b4bbe22d0e54df">
+      Update doc/content/gateways/mikrotik-ltap/_index.md
     </a>
 </p>
 
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/gateways/multitechconduit/udp.md" class="button">Edit on Github</a>
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/gateways/mikrotik-ltap/_index.md" class="button">Edit on Github</a>
 </div>
 
       </div>
