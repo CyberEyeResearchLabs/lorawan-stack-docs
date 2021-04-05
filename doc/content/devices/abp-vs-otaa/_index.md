@@ -3,7 +3,7 @@ title: "ABP vs OTAA"
 description: ""
 ---
 
-This section can help you understand the differences between ABP and OTAA activation modes for LORaWAN end devices, and comprehend why using OTAA is recommended. 
+This section can help you understand the differences between ABP and OTAA activation modes for LoRaWAN end devices, and comprehend why using OTAA is recommended. 
 
 <!--more-->
 
@@ -11,17 +11,17 @@ A `DevEUI` is a 64-bit unique ID assigned to an end device by the manufacturer. 
 
 Unlike `DevEUI`, which identifies an end device globally, a 32-bit `DevAddr` identifies the end device within the current network and all communication after joining the network is done with it. A `DevAddr` value consists of `NwkAddr` (end device address within network) prefixed by a `NwkID` (network identifier).
 
-**Note:** `DevAddr` is not unique - multiple devices can have the same `DevAddr`. 
+**Note:** `DevAddr` is not unique - multiple devices can have the same `DevAddr`.
 
 A `DevAddr` and session keys are assigned to an end device during a procedure called **activation**. LoRaWAN supports two modes of activating an end device: **ABP (Activation By Personalization)** and **OTAA (Over-The-Air Activation)**.
-
-## ABP
-
-In ABP activation, a **fixed** `DevAddr` and **session keys** for a pre-selected network are hardcoded into the end device, and they remain the same throughout the lifetime of an ABP end device. With this mode, an end device skips the join procedure which seems to be simpler, but there are quite a few limitations of using ABP, which are explained below. 
 
 ## OTAA
 
 OTAA end devices are provisioned with **root keys**. In OTAA activation, an end device performs a join procedure with a LoRaWAN network, during which a **dynamic** `DevAddr` is assigned to an end device, and root keys are utilized to derive **session keys**. Hence, `DevAddr` and session keys change as each new session is established.
+
+## ABP
+
+In ABP activation, a **fixed** `DevAddr` and **session keys** for a pre-selected network are hardcoded into the end device, and they remain the same throughout the lifetime of an ABP end device. With this mode, an end device skips the join procedure which seems to be simpler, but there are quite a few limitations of using ABP, which are explained below. 
 
 ## Why is OTAA better than ABP?
 
