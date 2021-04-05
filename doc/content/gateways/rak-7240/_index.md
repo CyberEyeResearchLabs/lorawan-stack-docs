@@ -8,7 +8,7 @@ The [RAK7240 (WisGate Edge Prime)](https://docs.rakwireless.com/Product-Categori
 
 {{< note >}} Configuring and connecting **RAK7249** and **RAK7258** gateways to {{% tts %}} should be identical as for the **RAK7240**. {{</ note >}}
 
-This guide will help you set up the RAK2470 gateway to communicate over {{%tts%}}.
+This guide will help you set up the RAK7240 gateway to communicate over {{%tts%}}.
 
 {{< figure src="rak7240.jpg" alt="RAK7240 WisGate Edge Prime gateway" class="float plain" >}}
 
