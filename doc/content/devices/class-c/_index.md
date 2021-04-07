@@ -23,7 +23,10 @@ This will enable the Class C downlink scheduling of the device. That's it! Downl
 
 To disable Class C scheduling, reset with `--supports-class-c=false`.
 
-{{< note >}} For unicast devices, Class C downlink scheduling starts after the end device sends an uplink in the session. This means that an OTAA end device should send an uplink message after receiving the join-accept in order to enable Class C downlink scheduling. {{</ note >}}
+{{< note >}} 
+1. For unicast devices, Class C downlink scheduling starts after the end device sends an uplink in the session. This means that an OTAA end device should send an uplink message after receiving the join-accept in order to enable Class C downlink scheduling. 
+2. For an active device, if you enable the supports-class-c option, the setting will take effect after OTAA join or ABP FCnt reset, ResetInd, or after MAC state reset. So, please ensure to re-join a device after you have enabled the supports-class-c option.
+{{</ note >}}
 
 ## Multicast Group
 
