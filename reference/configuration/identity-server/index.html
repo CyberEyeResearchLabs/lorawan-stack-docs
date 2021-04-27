@@ -11,7 +11,7 @@
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.6cfa3f65f4261ffebfcd3dec8ec1fbb74dc5578581ec4c630140cbb0214fd122.css" integrity="sha256-bPo/ZfQmH/6/zT3sjsH7t03FV4WB7ExjAUDLsCFP0SI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Identity Server Options">
@@ -33,7 +33,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.11</p>
+        <p class="navbar-item is-size-7">v3.12</p>
       </a>
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
@@ -205,6 +205,9 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -423,6 +426,12 @@ debug: false
 <li><code>is.user-registration.password-requirements.min-length</code>: Minimum password length</li>
 <li><code>is.user-registration.password-requirements.min-special</code>: Minimum number of special characters</li>
 <li><code>is.user-registration.password-requirements.min-uppercase</code>: Minimum number of uppercase letters</li>
+<li><code>is.user-registration.password-requirements.reject-common</code>: Reject common passwords <span class="new-in-version">New in 3.12.1</span>
+
+</li>
+<li><code>is.user-registration.password-requirements.reject-user-id</code>: Reject passwords that contain user ID <span class="new-in-version">New in 3.12.1</span>
+
+</li>
 </ul>
 <h2 id="user-rights-options">User Rights Options</h2>
 <p>By default users can create applications, gateways, organizations and OAuth clients. With the following configuration options it is possible to restrict this, in which case only admin users are allowed to create these entities. By adding users to organizations, and assigning the appropriate rights, they can still create these entities in the organization.</p>
@@ -432,16 +441,12 @@ debug: false
 <li><code>is.user-rights.create-gateways</code>: Allow non-admin users to create gateways in their user account</li>
 <li><code>is.user-rights.create-organizations</code>: Allow non-admin users to create organizations in their user account</li>
 </ul>
-<h2 id="admin-rights-options">Admin Rights Options <span class="new-in-version">New in 3.10.6</span>
-
-</h2>
+<h2 id="admin-rights-options">Admin Rights Options</h2>
 <p>By default admins are granted <em>almost</em> all rights on all entities in the network. The default configuration does not allow admins to read secrets, such as the root keys of end devices, and the CUPS/LNS secrets of gateways. This also means that admins can not assign those rights to others. The following option can be used to grant admin users all possible rights.</p>
 <ul>
 <li><code>is.admin-rights.all</code>: Grant all rights to admins, including <code>_KEYS</code> and <code>_ALL</code></li>
 </ul>
-<h2 id="gateway-secrets-encryption-options">Gateway Secrets Encryption Options <span class="new-in-version">New in 3.10</span>
-
-</h2>
+<h2 id="gateway-secrets-encryption-options">Gateway Secrets Encryption Options</h2>
 <ul>
 <li><code>is.gateways.encryption-key-id</code>: ID of the key used to encrypt gateway secrets at rest.</li>
 </ul>
@@ -531,6 +536,10 @@ debug: false
     
       <li><a href='#user-rights-options'>User Rights Options</a></li>
     
+      <li><a href='#admin-rights-options'>Admin Rights Options</a></li>
+    
+      <li><a href='#gateway-secrets-encryption-options'>Gateway Secrets Encryption Options</a></li>
+    
   </ul>
 
 
@@ -567,10 +576,10 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Ben Olayinka on 10 Feb 2021.
+  Last changed by Nejra on 16 Apr 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/b8e89583c4eaf1f4d1023f4dd846e50b0161d488">
-      util: Replace distributions-inline with distributions shortcode
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/fcc7921ae70778fb1380f38d7e21eac00dace6a5">
+      doc: Remove old new-in-version tags, small fixes
     </a>
 </p>
 

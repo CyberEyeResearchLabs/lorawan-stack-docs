@@ -11,7 +11,7 @@
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.6cfa3f65f4261ffebfcd3dec8ec1fbb74dc5578581ec4c630140cbb0214fd122.css" integrity="sha256-bPo/ZfQmH/6/zT3sjsH7t03FV4WB7ExjAUDLsCFP0SI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Upgrading The Things Stack">
@@ -33,7 +33,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.11</p>
+        <p class="navbar-item is-size-7">v3.12</p>
       </a>
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
@@ -90,27 +90,10 @@ debug: false
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/getting-started/" class="">Overview</a>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/" class="">Quick Start</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="is-active">Upgrading The Things Stack</a>
-    
-
-
-
-    
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">AWS</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
@@ -119,7 +102,30 @@ debug: false
     <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="">The Things Network</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">The Things Stack AWS Launcher</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="is-active">Upgrading The Things Stack</a>
+    
+
+
+
+    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
@@ -291,8 +297,6 @@ Starting &lt;directory&gt;_redis_1 ... <span class="k">done</span>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack is-db migrate
 </code></pre></div><p>Migrate the Network Server Database.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack ns-db migrate
-</code></pre></div><p>Update the device repository indices.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack dr-db migrate
 </code></pre></div><p>Migrate the Device Claiming Server Database.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack dcs-db migrate
 </code></pre></div><p>Migrate the Application Server Database.</p>
@@ -304,8 +308,6 @@ Starting &lt;directory&gt;_redis_1 ... <span class="k">done</span>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack is-db migrate
 </code></pre></div><p>Migrate the Network Server Database.</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack ns-db migrate
-</code></pre></div><p>Update the device repository indices.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ docker-compose run --rm stack dr-db migrate
 </code></pre></div>
 </section>
 
@@ -318,8 +320,8 @@ Starting &lt;directory&gt;_redis_1 ... <span class="k">done</span>
 </div>
 
 <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/getting-started/migrating/configure-mac-settings/">← Fine-tuning MAC Settings for End Devices</a>
-<a class="button is-pulled-right" href="/docs/getting-started/cloud-hosted/">The Things Stack Cloud →</a>
+<a class="button is-pulled-left" href="/docs/getting-started/troubleshooting/">← Troubleshooting Getting Started</a>
+<a class="button is-pulled-right" href="/docs/getting-started/user-management/">Users and Organizations →</a>
 </div>
 
 <script>window.emojicom_widget = { campaign: "" };</script>
@@ -372,10 +374,10 @@ Starting &lt;directory&gt;_redis_1 ... <span class="k">done</span>
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Krishna Iyer Easwaran on 25 Mar 2021.
+  Last changed by Ben Olayinka on 23 Mar 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/64694a123de5400ab2c06ed8bf9e9aac82ba5215">
-      doc: Add backup notes
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9390f34b45bf922466477aac320618093a3e9a8b">
+      doc: Remove getting started weights
     </a>
 </p>
 

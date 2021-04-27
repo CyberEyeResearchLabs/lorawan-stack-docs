@@ -11,7 +11,7 @@
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.6cfa3f65f4261ffebfcd3dec8ec1fbb74dc5578581ec4c630140cbb0214fd122.css" integrity="sha256-bPo/ZfQmH/6/zT3sjsH7t03FV4WB7ExjAUDLsCFP0SI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Application Pub/Sub CLI Commands">
@@ -33,7 +33,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.11</p>
+        <p class="navbar-item is-size-7">v3.12</p>
       </a>
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
@@ -195,6 +195,9 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -1732,104 +1735,6 @@ type: <code>string</code>
 <p>
 </p>
 </dd>
-<dt><code>--aws-iot</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>use the AWS IoT provider
-</p>
-</dd>
-<dt><code>--aws-iot.access-key.access-key-id</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.access-key.secret-access-key</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.access-key.session-token</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.assume-role.arn</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.assume-role.external-id</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.assume-role.session-duration</code></dt>
-<dd>
-<p>
-type: <code>duration</code>
-</p>
-
-<p>
-default: <code>0s</code>
-</p>
-
-<p>(1h2m3s)
-</p>
-</dd>
-<dt><code>--aws-iot.deployment.default.stack-name</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.endpoint-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--aws-iot.region</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
 <dt><code>--base-topic</code></dt>
 <dd>
 <p>
@@ -1930,162 +1835,6 @@ type: <code>string</code>
 </p>
 </dd>
 <dt><code>--location-solved.topic</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--mqtt</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>use the MQTT provider
-</p>
-</dd>
-<dt><code>--mqtt.client-id</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--mqtt.password</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--mqtt.publish-qos</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>allowed values: AT_LEAST_ONCE, AT_MOST_ONCE, EXACTLY_ONCE
-</p>
-</dd>
-<dt><code>--mqtt.server-url</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--mqtt.subscribe-qos</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>allowed values: AT_LEAST_ONCE, AT_MOST_ONCE, EXACTLY_ONCE
-</p>
-</dd>
-<dt><code>--mqtt.tls-ca</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(hex)
-</p>
-</dd>
-<dt><code>--mqtt.tls-ca-local-file</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(local file name)
-</p>
-</dd>
-<dt><code>--mqtt.tls-client-cert</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(hex)
-</p>
-</dd>
-<dt><code>--mqtt.tls-client-cert-local-file</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(local file name)
-</p>
-</dd>
-<dt><code>--mqtt.tls-client-key</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(hex)
-</p>
-</dd>
-<dt><code>--mqtt.tls-client-key-local-file</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>(local file name)
-</p>
-</dd>
-<dt><code>--mqtt.use-tls</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--mqtt.username</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--nats</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>use the NATS provider
-</p>
-</dd>
-<dt><code>--nats.server-url</code></dt>
 <dd>
 <p>
 type: <code>string</code>

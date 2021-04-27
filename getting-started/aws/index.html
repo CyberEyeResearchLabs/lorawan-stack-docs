@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>AWS | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/aws/" />
+  <title>The Things Stack AWS Launcher | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/aws/" />
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.65a9b35ee028e02a37b1c52cf749fd0282297d1c6431a14269fa6f7437792af6.css" integrity="sha256-ZamzXuAo4Co3scUs90n9AoIpfRxkMaFCafpvdDd5KvY=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.6cfa3f65f4261ffebfcd3dec8ec1fbb74dc5578581ec4c630140cbb0214fd122.css" integrity="sha256-bPo/ZfQmH/6/zT3sjsH7t03FV4WB7ExjAUDLsCFP0SI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="AWS">
+  <meta itemprop="name" content="The Things Stack AWS Launcher">
   <meta itemprop="description" content="">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="AWS">
+  <meta property="og:title" content="The Things Stack AWS Launcher">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/getting-started/aws/">
-  <meta name="twitter:title" content="AWS" />
+  <meta name="twitter:title" content="The Things Stack AWS Launcher" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
@@ -33,7 +33,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.11</p>
+        <p class="navbar-item is-size-7">v3.12</p>
       </a>
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
@@ -90,7 +90,16 @@ debug: false
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/getting-started/" class="">Overview</a>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/" class="">Quick Start</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
@@ -99,13 +108,10 @@ debug: false
     <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="">The Things Network</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="is-active">AWS</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="is-active">The Things Stack AWS Launcher</a>
     
 
 
@@ -127,13 +133,13 @@ debug: false
     
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
@@ -161,7 +167,7 @@ debug: false
       <div class="column sidebar-middle">
 
 <div class="docs-content">
-<h1 class="title is-size-2">AWS
+<h1 class="title is-size-2">The Things Stack AWS Launcher
   
   
   
@@ -184,7 +190,7 @@ debug: false
 </div>
 
 <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/getting-started/cloud-hosted/tti-join-server/">← The Things Join Server</a>
+<a class="button is-pulled-left" href="/docs/getting-started/ttn/addresses/">← Addresses</a>
 <a class="button is-pulled-right" href="/docs/getting-started/aws/ami/">AWS Marketplace AMI →</a>
 </div>
 
@@ -238,10 +244,10 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Nejra on 23 Dec 2020.
+  Last changed by Ben Olayinka on 23 Mar 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/86414ae66c1a8cc37895007ae3efc7a4b1c12a31">
-      doc: Cross-referencing integration guides
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9390f34b45bf922466477aac320618093a3e9a8b">
+      doc: Remove getting started weights
     </a>
 </p>
 
