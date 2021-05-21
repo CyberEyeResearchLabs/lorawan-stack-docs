@@ -49,7 +49,7 @@ If you do not mind your gateway's location to be publicly displayed, check the *
 
 The gateway location can be manually set by entering the **Latitude**, **Longitude** and **Altitude** values. 
 
-You can also check the **Update from status messages** box if you want to update the location based on the metadata from the incoming uplink gateway status messages. 
+You can also check the **Update from status messages** box if you want to update the location based on the metadata from the incoming uplink gateway status messages. This works for gateways connecting with **authentication**; gateways connected over UDP are not supported.
 
 {{< note >}} The location settings you manually entered will be overwritten by the updates from the gateway status messages. {{</ note >}}
 
