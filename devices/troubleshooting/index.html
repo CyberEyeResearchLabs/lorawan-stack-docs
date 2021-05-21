@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>Troubleshooting Devices | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/devices/adding-devices/troubleshooting/" />
+  <title>Troubleshooting Devices | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/devices/troubleshooting/" />
   <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.8ad74acd91b5a12241eda8028141f254d94c46a257f9dc8b717a8d4f6c5ef678.css" integrity="sha256-itdKzZG1oSJB7agCgUHyVNlMRqJX&#43;dyLcXqNT2xe9ng=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.07bd6845af106c056072b394b0aba314a5ea0d3b3ad4fba538a2fa137f338b3b.css" integrity="sha256-B71oRa8QbAVgcrOUsKujFKXqDTs61PulOKL6E38zizs=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Troubleshooting Devices">
@@ -19,7 +19,7 @@
   <meta itemprop="keywords" content="">
   <meta property="og:title" content="Troubleshooting Devices">
   <meta property="og:description" content="">
-  <meta property="og:url" content="https://www.thethingsindustries.com/docs/devices/adding-devices/troubleshooting/">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/devices/troubleshooting/">
   <meta name="twitter:title" content="Troubleshooting Devices" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
@@ -94,20 +94,6 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/adding-devices/" class="">Adding Devices</a>
-    
-
-
-<ul class="menu-list">
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/adding-devices/troubleshooting/" class="is-active">Troubleshooting Devices</a>
-    
-  </li>
-
-</ul>
-
-
-    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/atecc608a/" class="">ATECC608A/B Secure Elements</a>
@@ -139,6 +125,14 @@ debug: false
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/multicast/" class="">Multicast</a>
   </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/troubleshooting/" class="is-active">Troubleshooting Devices</a>
+    
+
+
+
+    
+  </li>
 </ul>
 
 
@@ -164,36 +158,40 @@ debug: false
 </h1>
 
 <div class="content">
-  
-<p>This section provides help for common issues and frequently asked questions you may have when adding devices.</p>
-<h3 id="how-do-i-see-device-events">How do I see device events?&nbsp;<a class="header-hash" href="#how-do-i-see-device-events">#</a> </h3>
+  <p>This section provides help for common issues and frequently asked questions you may have when adding devices.</p>
+<h3 id="how-do-i-see-device-events">How do I see device events?</h3>
 <p>Device event logs can be found in the console in the device&rsquo;s general information page. See <a href="https://www.thethingsindustries.com/docs/getting-started/events/">Working with Events</a> for other ways of subscribing to events.</p>
-<h3 id="my-device-wont-join-what-do-i-do">My device won&rsquo;t join. What do I do?&nbsp;<a class="header-hash" href="#my-device-wont-join-what-do-i-do">#</a> </h3>
+<h3 id="my-device-wont-join-what-do-i-do">My device won&rsquo;t join. What do I do?</h3>
 <ul>
 <li>Double check your DevEUI, JoinEUI or AppEUI, LoRaWAN and Regional Parameters Version, root keys (AppKey, and with LoRaWAN 1.1 or higher, NwkKey)</li>
-<li>Check gateway and application events for traffic from your device</li>
-<li>Double check frequency plan settings in your end device and gateways (they must be the same LoRaWAN band)</li>
+<li>Check gateway and device events for traffic from your device. Below are a few common issues
+<ul>
+<li><strong>MIC mismatch</strong> error in the device events: Possible mismatch of AppKey in device firmware to the AppKey registered in The Things Stack console. Update the AppKey in the console accordingly</li>
+<li><strong>Uplink channel not found</strong> error in the gateway events: Indicates there is a mismatch of the frequency plans. Double check frequency plan settings in your end device and gateways (they must be the same LoRaWAN band)</li>
+<li><strong>DevNonce has already been used</strong> error in the device events: Indicates a duplicate use of Devnonce. Generally happens when the device has sent too many unsuccessful Join Requests</li>
+<li><strong>Uplink channel not found</strong> error in the device events: The device is transmitting Join Requests in the non-default channels of the band which is not in line with the LoRaWAN Specification. Contact the end-device manufacturer</li>
+</ul>
+</li>
 <li>Double check your network connection. If there is a slow connection from the server to the gateway, the join accept message may be sent too late (this can happen when a gateway uses 3G as a backhaul). If using the CLI, run <code>ttn-lw-cli gateways connection-stats &lt;gateway-id&gt;</code> to see the round trip time (RTT) for your gateway</li>
-<li>Check for duplicate use of JoinNonce (or AppNonce) and/or DevNonce</li>
+<li>Check for duplicate use of JoinNonce (or AppNonce)</li>
 <li>Adjust ADR and link check settings to conditions which the device is located in</li>
 </ul>
-<h3 id="no-downlinks-are-reaching-my-device-what-do-i-do">No downlinks are reaching my device. What do I do?&nbsp;<a class="header-hash" href="#no-downlinks-are-reaching-my-device-what-do-i-do">#</a> </h3>
+<h3 id="no-downlinks-are-reaching-my-device-what-do-i-do">No downlinks are reaching my device. What do I do?</h3>
 <ul>
 <li>Check gateway and application events for traffic from your device</li>
 <li>Check duty cycle restrictions</li>
 <li>Device clock drift often occurs when SF12 is used</li>
 <li>Check your antenna connections</li>
 </ul>
-<h3 id="the-things-stack-is-no-longer-receiving-uplinks-from-my-device-what-do-i-do">The Things Stack is no longer receiving uplinks from my device. What do I do?&nbsp;<a class="header-hash" href="#the-things-stack-is-no-longer-receiving-uplinks-from-my-device-what-do-i-do">#</a> </h3>
+<h3 id="the-things-stack-is-no-longer-receiving-uplinks-from-my-device-what-do-i-do">The Things Stack is no longer receiving uplinks from my device. What do I do?</h3>
 <ul>
 <li>Check <a href="#how-do-i-see-gateway-events">gateway events</a> and <a href="#how-do-i-see-device-events">device events</a> for traffic from your device</li>
 <li>Check for FCnt mismatch on ABP devices</li>
 </ul>
-
 </div>
+
 <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/devices/adding-devices/">← Adding Devices</a>
-<a class="button is-pulled-right" href="/docs/devices/atecc608a/">ATECC608A/B Secure Elements →</a>
+<a class="button is-pulled-left" href="/docs/devices/multicast/">← Multicast</a>
 </div>
 
 <script>window.emojicom_widget = { campaign: "" };</script>
@@ -246,14 +244,14 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Nejra on 04 Feb 2021.
+  Last changed by i3mSuperMan on 27 Mar 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/b9b4d9ee0536b1be334ba546e3e34f7f465f6427">
-      doc: Add troubleshooting for UDP gws and devices
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/53846568e7c8c5ace6e72253896feac64518a7c6">
+      doc: Add troubleshooting points for join issues
     </a>
 </p>
 
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/devices/adding-devices/troubleshooting.md" class="button">Edit on Github</a>
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/devices/troubleshooting/_index.md" class="button">Edit on Github</a>
 </div>
 
       </div>
@@ -261,7 +259,7 @@ debug: false
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.595b97b16778e75a16096b7412b5ce1e7fff37a56e4e45e7f89921711a3cd177.js" integrity="sha256-WVuXsWd451oWCWt0ErXOHn//N6VuTkXn&#43;JkhcRo80Xc=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.0591382a7eda937afd29a067f0682efe7f966ea310ee0e055021aa6365233405.js" integrity="sha256-BZE4Kn7ak3r9KaBn8Ggu/n&#43;WbqMQ7g4FUCGqY2UjNAU=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };
