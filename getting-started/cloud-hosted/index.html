@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
   <title>The Things Stack Cloud | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" />
-  <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.448201dae984e04b2579a9ee482b5768bcd23d222184681e69f3a8b1146f3bb2.css" integrity="sha256-RIIB2umE4EsleanuSCtXaLzSPSIhhGgeafOosRRvO7I=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="The Things Stack Cloud">
@@ -24,13 +23,22 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
+
+
 <body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
         <p class="navbar-item is-size-7">v3.13</p>
-      </a>
+      </a><div class="navbar-item navbar-search-brand">
+        <div class="field has-addons has-addons-centered">
+          <div class="control">
+            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+          </div>
+        </div>
+      </div>
+      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -43,40 +51,37 @@
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a>
-      </div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+              </div>
+            </div>
+          </div></div>
       <div class="navbar-end"><div class="navbar-item">
             <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav>
-<section class="search-container">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="field has-addons has-addons-centered">
-            <div class="control">
-              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: "",
-indexName: "thethingsstack",
-inputSelector: '#search-input',
-debug: false 
-});
-</script>
-<div class="container" role="document">
-  <div class="columns my-0">
-      <div class="column is-one-fifth-tablet is-one-third sidebar-left">
+</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-brand',
+      debug: false 
+    });
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-menu',
+      debug: false 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -92,22 +97,22 @@ debug: false
     <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="">The Things Network</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">The Things Stack AWS Launcher</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="is-active">The Things Stack Cloud</a>
@@ -132,10 +137,7 @@ debug: false
     
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">The Things Stack AWS Launcher</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
@@ -145,6 +147,9 @@ debug: false
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/events/" class="">Working with Events</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
   </li>
 </ul>
 
@@ -160,18 +165,15 @@ debug: false
 
 
       </div>
-      <div class="column sidebar-middle">
-
-<div class="docs-content">
-<h1 class="title is-size-2">The Things Stack Cloud
-  
-  
-  
-  
-</h1>
-
-<div class="content">
-  <p>The Things Industries offers The Things Enterprise Stack as hosted software as a service (SaaS).</p>
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">The Things Stack Cloud
+          
+        </h1>
+        
+        <div class="content">
+          <p>The Things Industries offers The Things Enterprise Stack as hosted software as a service (SaaS).</p>
 <p>This guide explains what that means and shows how to work with The Things Industries Cloud.</p>
 <h2 id="tenants-on-shared-infrastructure">Tenants on Shared Infrastructure</h2>
 <p>The Things Industries Cloud is a multi-tenant environment. This means that while each customer has their own isolated network, the underlying infrastructure is shared with other customers.</p>
@@ -205,24 +207,23 @@ debug: false
 </tr>
 </tbody>
 </table>
-</div>
-
-<div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/getting-started/aws/ecs/">← AWS ECS</a>
+        </div>
+        
+          <div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/getting-started/ttn/addresses/">← Addresses</a>
 <a class="button is-pulled-right" href="/docs/getting-started/cloud-hosted/addresses/">Cloud Addresses →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "" };</script>
+          <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-</div>
-
-
+        </div>
       </div>
-      <div class="column is-hidden-touch is-one-quarter is-one-fifth-widescreen sidebar-right">
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
         <nav class="toc" aria-label="Page navigation">
     <h2 class="title is-size-6">On this page</h2>
     
@@ -242,8 +243,10 @@ debug: false
   </nav>
 
       </div>
+      
   </div>
 </div>
+
 
 
 <footer class="footer">
@@ -272,10 +275,10 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Ben Olayinka on 23 Mar 2021.
+  Last changed by Nejra Selimović on 10 Jun 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9390f34b45bf922466477aac320618093a3e9a8b">
-      doc: Remove getting started weights
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/aea847e4a5b06db18fe91950625da9cc60eaf291">
+      Docs reorganization (#374)
     </a>
 </p>
 

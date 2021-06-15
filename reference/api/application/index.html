@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
   <title>Application APIs | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/api/application/" />
-  <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.448201dae984e04b2579a9ee482b5768bcd23d222184681e69f3a8b1146f3bb2.css" integrity="sha256-RIIB2umE4EsleanuSCtXaLzSPSIhhGgeafOosRRvO7I=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Application APIs">
@@ -24,13 +23,22 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
+
+
 <body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
         <p class="navbar-item is-size-7">v3.13</p>
-      </a>
+      </a><div class="navbar-item navbar-search-brand">
+        <div class="field has-addons has-addons-centered">
+          <div class="control">
+            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+          </div>
+        </div>
+      </div>
+      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -43,40 +51,37 @@
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a>
-      </div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+              </div>
+            </div>
+          </div></div>
       <div class="navbar-end"><div class="navbar-item">
             <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav>
-<section class="search-container">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="field has-addons has-addons-centered">
-            <div class="control">
-              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: "",
-indexName: "thethingsstack",
-inputSelector: '#search-input',
-debug: false 
-});
-</script>
-<div class="container" role="document">
-  <div class="columns my-0">
-      <div class="column is-one-fifth-tablet is-one-third sidebar-left">
+</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-brand',
+      debug: false 
+    });
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-menu',
+      debug: false 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -253,20 +258,17 @@ debug: false
 
 
       </div>
-      <div class="column sidebar-middle">
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Application APIs
+          
+        </h1>
+        
+        <div class="content">
+          <h2 id="the-applicationregistry-service">The <code>ApplicationRegistry</code> service</h2>
 
-<div class="docs-content">
-<h1 class="title is-size-2">Application APIs
-  
-  
-  
-  
-</h1>
-
-<div class="content">
-  <h2 id="the-applicationregistry-service">The <code>ApplicationRegistry</code> service</h2>
-
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -316,7 +318,7 @@ first collaborator with all possible rights.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -366,7 +368,7 @@ More or less fields may be returned, depending on the rights of the caller.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -420,7 +422,7 @@ More or less fields may be returned, depending on the rights of the caller.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -468,7 +470,7 @@ More or less fields may be returned, depending on the rights of the caller.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -518,7 +520,7 @@ All end devices must be deleted from the application before it can be deleted.
 
 <h2 id="the-entityregistrysearch-service">The <code>EntityRegistrySearch</code> service</h2>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -568,7 +570,7 @@ Non-admin users will only match applications that they have rights on.
 
 <h2 id="the-applicationaccess-service">The <code>ApplicationAccess</code> service</h2>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -616,7 +618,7 @@ Non-admin users will only match applications that they have rights on.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -664,7 +666,7 @@ Non-admin users will only match applications that they have rights on.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -712,7 +714,7 @@ Non-admin users will only match applications that they have rights on.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -760,7 +762,7 @@ Non-admin users will only match applications that they have rights on.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -810,7 +812,7 @@ The caller is required to have all assigned or/and removed rights.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -861,7 +863,7 @@ Pseudo-rights in the response (such as the &ldquo;_ALL&rdquo; right) are not exp
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -911,7 +913,7 @@ The caller is required to have all assigned or/and removed rights.
 </table>
 
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -960,7 +962,21 @@ The caller is required to have all assigned or/and removed rights.
 
 <h2 id="messages">Messages</h2>
 <h3 id="message:APIKey">Message <code>APIKey</code></h3>
-<table>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "id": "",
+  "key": "",
+  "name": "",
+  "rights": [],
+  "created_at": "0001-01-01T00:00:00Z",
+  "updated_at": "0001-01-01T00:00:00Z",
+  "expires_at": "0001-01-01T00:00:00Z",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -990,7 +1006,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1020,7 +1036,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1050,7 +1066,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1081,7 +1097,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1101,7 +1117,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1121,7 +1137,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1151,20 +1167,16 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:APIKeys">Message <code>APIKeys</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "id": "",
-  "key": "",
-  "name": "",
-  "rights": [],
-  "created_at": "0001-01-01T00:00:00Z",
-  "updated_at": "0001-01-01T00:00:00Z",
-  "expires_at": "0001-01-01T00:00:00Z",
+  "api_keys": [],
 }</code></pre>
 </details>
 
-<h3 id="message:APIKeys">Message <code>APIKeys</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1194,15 +1206,24 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:Application">Message <code>Application</code></h3>
+<p>Application is the message that defines an Application in the network.</p>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "api_keys": [],
+  "ids": {},
+  "created_at": "0001-01-01T00:00:00Z",
+  "updated_at": "0001-01-01T00:00:00Z",
+  "deleted_at": "0001-01-01T00:00:00Z",
+  "name": "",
+  "description": "",
+  "attributes": {},
+  "contact_info": [],
 }</code></pre>
 </details>
 
-<h3 id="message:Application">Message <code>Application</code></h3>
-<p>Application is the message that defines an Application in the network.</p>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1231,7 +1252,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1251,7 +1272,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1271,7 +1292,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1291,7 +1312,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1320,7 +1341,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1349,7 +1370,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1384,7 +1405,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1416,21 +1437,16 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:ApplicationIdentifiers">Message <code>ApplicationIdentifiers</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "ids": {},
-  "created_at": "0001-01-01T00:00:00Z",
-  "updated_at": "0001-01-01T00:00:00Z",
-  "deleted_at": "0001-01-01T00:00:00Z",
-  "name": "",
-  "description": "",
-  "attributes": {},
-  "contact_info": [],
+  "application_id": "",
 }</code></pre>
 </details>
 
-<h3 id="message:ApplicationIdentifiers">Message <code>ApplicationIdentifiers</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1461,14 +1477,16 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:Applications">Message <code>Applications</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application_id": "",
+  "applications": [],
 }</code></pre>
 </details>
 
-<h3 id="message:Applications">Message <code>Applications</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1498,14 +1516,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:Collaborator">Message <code>Collaborator</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "applications": [],
+  "ids": {},
+  "rights": [],
 }</code></pre>
 </details>
 
-<h3 id="message:Collaborator">Message <code>Collaborator</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1534,7 +1555,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1565,15 +1586,16 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:Collaborators">Message <code>Collaborators</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "ids": {},
-  "rights": [],
+  "collaborators": [],
 }</code></pre>
 </details>
 
-<h3 id="message:Collaborators">Message <code>Collaborators</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1603,14 +1625,19 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:CreateApplicationAPIKeyRequest">Message <code>CreateApplicationAPIKeyRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "collaborators": [],
+  "application_ids": {},
+  "name": "",
+  "rights": [],
+  "expires_at": "0001-01-01T00:00:00Z",
 }</code></pre>
 </details>
 
-<h3 id="message:CreateApplicationAPIKeyRequest">Message <code>CreateApplicationAPIKeyRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1639,7 +1666,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1668,7 +1695,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1700,7 +1727,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1730,17 +1757,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:CreateApplicationRequest">Message <code>CreateApplicationRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application_ids": {},
-  "name": "",
-  "rights": [],
-  "expires_at": "0001-01-01T00:00:00Z",
+  "application": {},
+  "collaborator": {},
 }</code></pre>
 </details>
 
-<h3 id="message:CreateApplicationRequest">Message <code>CreateApplicationRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1769,7 +1796,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1800,15 +1827,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:GetApplicationAPIKeyRequest">Message <code>GetApplicationAPIKeyRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application": {},
-  "collaborator": {},
+  "application_ids": {},
+  "key_id": "",
 }</code></pre>
 </details>
 
-<h3 id="message:GetApplicationAPIKeyRequest">Message <code>GetApplicationAPIKeyRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1837,7 +1866,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1867,15 +1896,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:GetApplicationCollaboratorRequest">Message <code>GetApplicationCollaboratorRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
   "application_ids": {},
-  "key_id": "",
+  "collaborator": {},
 }</code></pre>
 </details>
 
-<h3 id="message:GetApplicationCollaboratorRequest">Message <code>GetApplicationCollaboratorRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1904,7 +1935,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1934,15 +1965,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:GetApplicationRequest">Message <code>GetApplicationRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
   "application_ids": {},
-  "collaborator": {},
+  "field_mask": {},
 }</code></pre>
 </details>
 
-<h3 id="message:GetApplicationRequest">Message <code>GetApplicationRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -1971,7 +2004,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2001,15 +2034,17 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:GetCollaboratorResponse">Message <code>GetCollaboratorResponse</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application_ids": {},
-  "field_mask": {},
+  "ids": {},
+  "rights": [],
 }</code></pre>
 </details>
 
-<h3 id="message:GetCollaboratorResponse">Message <code>GetCollaboratorResponse</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2029,7 +2064,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2059,15 +2094,18 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:ListApplicationAPIKeysRequest">Message <code>ListApplicationAPIKeysRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "ids": {},
-  "rights": [],
+  "application_ids": {},
+  "limit": 0,
+  "page": 0,
 }</code></pre>
 </details>
 
-<h3 id="message:ListApplicationAPIKeysRequest">Message <code>ListApplicationAPIKeysRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2096,7 +2134,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2126,7 +2164,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2155,17 +2193,19 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-
-<details><summary>Show object example</summary>
-<pre><code>{
-  "application_ids": {},
-  "limit": 0,
-  "page": 0,
-}</code></pre>
-</details>
 
 <h3 id="message:ListApplicationCollaboratorsRequest">Message <code>ListApplicationCollaboratorsRequest</code></h3>
-<table>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "application_ids": {},
+  "limit": 0,
+  "page": 0,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2194,7 +2234,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2224,7 +2264,7 @@ Generated by the Access Server.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2254,16 +2294,21 @@ Generated by the Access Server.</p>
 </table>
 
 
+<h3 id="message:ListApplicationsRequest">Message <code>ListApplicationsRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application_ids": {},
+  "collaborator": {},
+  "field_mask": {},
+  "order": "",
   "limit": 0,
   "page": 0,
+  "deleted": false,
 }</code></pre>
 </details>
 
-<h3 id="message:ListApplicationsRequest">Message <code>ListApplicationsRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2294,7 +2339,7 @@ where the user or organization is collaborator on.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2323,7 +2368,7 @@ where the user or organization is collaborator on.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2354,7 +2399,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2384,7 +2429,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2413,7 +2458,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2443,20 +2488,22 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:OrganizationOrUserIdentifiers">Message <code>OrganizationOrUserIdentifiers</code></h3>
+<p>OrganizationOrUserIdentifiers contains either organization or user identifiers.</p>
+<b>Restrictions:</b>
+<ul>
+  <li>Only one of <code>organization_ids</code>, <code>user_ids</code> can be set.</li>
+</ul>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "collaborator": {},
-  "field_mask": {},
-  "order": "",
-  "limit": 0,
-  "page": 0,
-  "deleted": false,
+  "organization_ids": {},
+  "user_ids": {},
 }</code></pre>
 </details>
 
-<h3 id="message:OrganizationOrUserIdentifiers">Message <code>OrganizationOrUserIdentifiers</code></h3>
-<p>OrganizationOrUserIdentifiers contains either organization or user identifiers.</p>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2476,7 +2523,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2496,28 +2543,17 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
-  <thead>
-    <th>Restrictions</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        Only one of <code>organization_ids</code>, <code>user_ids</code> can be set.
-      </td>
-    </tr>
-  </tbody>
-</table>
+
+<h3 id="message:Rights">Message <code>Rights</code></h3>
 
 <details><summary>Show object example</summary>
 <pre><code>{
-  "organization_ids": {},
-  "user_ids": {},
+  "rights": [],
 }</code></pre>
 </details>
 
-<h3 id="message:Rights">Message <code>Rights</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2548,15 +2584,25 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:SearchApplicationsRequest">Message <code>SearchApplicationsRequest</code></h3>
+<p>This message is used for finding applications in the EntityRegistrySearch service.</p>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "rights": [],
+  "id_contains": "",
+  "name_contains": "",
+  "description_contains": "",
+  "attributes_contain": {},
+  "field_mask": {},
+  "order": "",
+  "limit": 0,
+  "page": 0,
+  "deleted": false,
 }</code></pre>
 </details>
 
-<h3 id="message:SearchApplicationsRequest">Message <code>SearchApplicationsRequest</code></h3>
-<p>This message is used for finding applications in the EntityRegistrySearch service.</p>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2586,7 +2632,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2616,7 +2662,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2646,7 +2692,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2681,7 +2727,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2701,7 +2747,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2731,7 +2777,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2761,7 +2807,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2790,7 +2836,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2820,22 +2866,17 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:SetApplicationCollaboratorRequest">Message <code>SetApplicationCollaboratorRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "id_contains": "",
-  "name_contains": "",
-  "description_contains": "",
-  "attributes_contain": {},
-  "field_mask": {},
-  "order": "",
-  "limit": 0,
-  "page": 0,
-  "deleted": false,
+  "application_ids": {},
+  "collaborator": {},
 }</code></pre>
 </details>
 
-<h3 id="message:SetApplicationCollaboratorRequest">Message <code>SetApplicationCollaboratorRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2864,7 +2905,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2894,15 +2935,18 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:UpdateApplicationAPIKeyRequest">Message <code>UpdateApplicationAPIKeyRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
   "application_ids": {},
-  "collaborator": {},
+  "api_key": {},
+  "field_mask": {},
 }</code></pre>
 </details>
 
-<h3 id="message:UpdateApplicationAPIKeyRequest">Message <code>UpdateApplicationAPIKeyRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2931,7 +2975,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2960,7 +3004,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -2990,16 +3034,17 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:UpdateApplicationRequest">Message <code>UpdateApplicationRequest</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application_ids": {},
-  "api_key": {},
+  "application": {},
   "field_mask": {},
 }</code></pre>
 </details>
 
-<h3 id="message:UpdateApplicationRequest">Message <code>UpdateApplicationRequest</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -3028,7 +3073,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -3058,15 +3103,17 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
+<h3 id="message:UserIdentifiers">Message <code>UserIdentifiers</code></h3>
+
 <details><summary>Show object example</summary>
 <pre><code>{
-  "application": {},
-  "field_mask": {},
+  "user_id": "",
+  "email": "",
 }</code></pre>
 </details>
 
-<h3 id="message:UserIdentifiers">Message <code>UserIdentifiers</code></h3>
-<table>
+<p><b>Fields:</b></p>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -3097,7 +3144,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </tbody>
 </table>
 
-<table>
+<table class="api">
   <tbody>
     <tr>
       <th style="width: 150px">
@@ -3127,31 +3174,23 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 </table>
 
 
-<details><summary>Show object example</summary>
-<pre><code>{
-  "user_id": "",
-  "email": "",
-}</code></pre>
-</details>
 
-
-</div>
-<div class="is-clearfix">
+        </div>
+        <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/reference/api/field-mask/">← Fields and Field Masks</a>
 <a class="button is-pulled-right" href="/docs/reference/api/application_pub_sub/">Application Pub/Sub APIs →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "" };</script>
+        <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-</div>
-
-
+        </div>
       </div>
-      <div class="column is-hidden-touch is-one-quarter is-one-fifth-widescreen sidebar-right">
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
         <nav class="toc" aria-label="Page navigation">
     <h2 class="title is-size-6">On this page</h2>
     
@@ -3177,8 +3216,10 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </nav>
 
       </div>
+      
   </div>
 </div>
+
 
 
 <footer class="footer">

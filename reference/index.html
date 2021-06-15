@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
   <title>Reference | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/" />
-  <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.448201dae984e04b2579a9ee482b5768bcd23d222184681e69f3a8b1146f3bb2.css" integrity="sha256-RIIB2umE4EsleanuSCtXaLzSPSIhhGgeafOosRRvO7I=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Reference">
@@ -24,13 +23,22 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
+
+
 <body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
         <p class="navbar-item is-size-7">v3.13</p>
-      </a>
+      </a><div class="navbar-item navbar-search-brand">
+        <div class="field has-addons has-addons-centered">
+          <div class="control">
+            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+          </div>
+        </div>
+      </div>
+      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -43,40 +51,37 @@
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item is-active" href="/docs/reference/">Reference</a>
-      </div>
+        <a class="navbar-item is-active" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+              </div>
+            </div>
+          </div></div>
       <div class="navbar-end"><div class="navbar-item">
             <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav>
-<section class="search-container">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="field has-addons has-addons-centered">
-            <div class="control">
-              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: "",
-indexName: "thethingsstack",
-inputSelector: '#search-input',
-debug: false 
-});
-</script>
-<div class="container" role="document">
-  <div class="columns my-0">
-      <div class="column is-one-fifth-tablet is-one-third sidebar-left">
+</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-brand',
+      debug: false 
+    });
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-menu',
+      debug: false 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -159,28 +164,28 @@ debug: false
 
 
       </div>
-      <div class="column sidebar-middle">
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Reference
+          
+        </h1>
+        
+        <div class="content">
+          <p>This section contains reference information for The Things Stack. Here, you&rsquo;ll find API listings, component descriptions, data formats, a glossary of terms, and more.</p>
 
-<div class="docs-content">
-<h1 class="title is-size-2">Reference
-  
-  
-  
-  
-</h1>
-
-<div class="content">
-  <p>This section contains reference information for The Things Stack. Here, you&rsquo;ll find API listings, component descriptions, data formats, a glossary of terms, and more.</p>
-
-</div>
-
-<div class="columns is-multiline">
+        </div>
+        
+          <div class="columns is-multiline">
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/stripe/">Billing with Stripe</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/stripe/">Billing with Stripe</a>
+        </h1>
         
+        <h2 class="subtitle">
           
+            
 
 
 
@@ -209,10 +214,11 @@ debug: false
 </a>
 
 
+          
+          
+          
+        </h2>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This is a reference for the Stripe backend of the Tenant Billing Server.
 It covers the creation of a product, the pricing plans and adding customer subscriptions.
@@ -226,11 +232,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/api/">API</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/api/">API</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This is the reference for the gRPC and HTTP APIs that The Things Stack exposes.
 
@@ -244,11 +248,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/application-packages/">Application Packages</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/application-packages/">Application Packages</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           Application packages specify state machines running both on the end device and the Application Server, as well as signalling messages exchanged between the end device&amp;rsquo;s application layer and the Application Server.
 
@@ -262,11 +264,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/cli/">Command-Line Interface</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/cli/">Command-Line Interface</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This is the reference for the command-line interface of The Things Stack: ttn-lw-cli.
 
@@ -280,11 +280,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/components/">Components</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/components/">Components</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack is composed of a number of components. The core components Network Server, Application Server and Join Server follow the LoRaWAN Network Reference Model. The Things Stack also contains an Identity Server, Gateway Server, Console and Command-line Interface.
  
@@ -298,11 +296,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/configuration/">Configuration</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/configuration/">Configuration</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack binary can be configured with many different options. Those options can be provided as command-line flags, environment variables or using a configuration file.
 
@@ -316,11 +312,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/data-formats/">Data Formats</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/data-formats/">Data Formats</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The streaming data integrations provide multiple formats for the delivery of application uplink messages and downlink queue operations. This section will delve into the common formats used by them.
 
@@ -334,11 +328,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/email-templates/">Email Templates</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/email-templates/">Email Templates</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           Email templates define the contents of the emails that The Things Stack sends to its users. They allow network operators to override the default contents of the emails with their own custom contents.
 
@@ -352,11 +344,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/federated-auth/">Federated Authentication</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/federated-auth/">Federated Authentication</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           Federated Authentication allows network administrators to use the already existing identity providers in order to authenticate users, instead of manually creating and managing the accounts in The Things Stack.
 
@@ -370,11 +360,9 @@ It covers the creation of a product, the pricing plans and adding customer subsc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/">Frequency Plans</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/">Frequency Plans</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This reference contains Frequency Plans that are officially supported by The Things Stack. This list is populated from the lorawan-frequency-plans Github repository.
 Deployments may also have custom frequency plans configured.
@@ -389,11 +377,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/glossary/">Glossary</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/glossary/">Glossary</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This reference contains common terms and definitions to help you find your way around The Things Stack.
 
@@ -407,11 +393,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/">ID and EUI Constraints</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/">ID and EUI Constraints</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This reference explains how The Things Stack deals with IDs and EUIs, including regular expression requirements, uniqueness, and how deletion is handled.
 
@@ -425,11 +409,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/interop-repository/">Interoperability Repository</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/interop-repository/">Interoperability Repository</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack expects the root of interoperability repository to contain config.yml, which contains various interoperablity configuration options.
 
@@ -443,11 +425,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/">LoRaWAN Specification and Regional Parameters</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/">LoRaWAN Specification and Regional Parameters</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack supports versions 1.0.x and 1.1.x of the LoRaWAN specifications.
 
@@ -461,11 +441,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/networking/">Networking</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/networking/">Networking</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack uses a port per protocol, with a TLS counterpart when applicable. Ports can be shared by multiple services using the same protocol, i.e. gRPC services sharing management, data and events services.
 
@@ -479,11 +457,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/packet-broker/">Packet Broker</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/packet-broker/">Packet Broker</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           Exchange traffic with other LoRaWAN networks via peering to share coverage and improve the overall network performance.
         </div>
@@ -496,14 +472,18 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/">Rate Limiting</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/">Rate Limiting</a>
+        </h1>
         
-        
-          <span class="new-in-version">New in 3.12</span>
+        <h2 class="subtitle">
+          
+          
+            <span class="tag is-light">New in 3.12</span>
 
+          
+          
+        </h2>
         
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack supports rate limiting for all outward facing services. Access to each resource is limited by a unique identifier key, and it is possible to define rate limiting classes for fine-grained control.
 
@@ -517,11 +497,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/root-certificates/">Root Certificates</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/root-certificates/">Root Certificates</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This section contains links to common root SSL certificates used in The Things Stack, issued by trusted certificate authorities (CAs).
 
@@ -535,11 +513,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/telemetry/">Telemetry</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/telemetry/">Telemetry</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Things Stack exports Prometheus telemetry on the /metrics endpoint. This reference gives an overview of the most important metrics.
 
@@ -553,11 +529,9 @@ Deployments may also have custom frequency plans configured.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/branding/">Web UI Branding</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/reference/branding/">Web UI Branding</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This reference gives details on how to customize the branding of the login pages and the Console.
 
@@ -570,23 +544,22 @@ Deployments may also have custom frequency plans configured.
   </div>
 </div>
 
-
-<div class="is-clearfix">
+        
+          <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/integrations/storage/">← Storage Integration</a>
 <a class="button is-pulled-right" href="/docs/reference/stripe/">Billing with Stripe →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "" };</script>
+          <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-</div>
-
-
+        </div>
       </div>
-      <div class="column is-hidden-touch is-one-quarter is-one-fifth-widescreen sidebar-right">
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
         <nav class="toc" aria-label="Page navigation">
     <h2 class="title is-size-6">On this page</h2>
     
@@ -596,8 +569,10 @@ Deployments may also have custom frequency plans configured.
   </nav>
 
       </div>
+      
   </div>
 </div>
+
 
 
 <footer class="footer">

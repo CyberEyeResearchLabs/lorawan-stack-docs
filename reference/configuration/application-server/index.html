@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
   <title>Application Server Options | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/configuration/application-server/" />
-  <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.448201dae984e04b2579a9ee482b5768bcd23d222184681e69f3a8b1146f3bb2.css" integrity="sha256-RIIB2umE4EsleanuSCtXaLzSPSIhhGgeafOosRRvO7I=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Application Server Options">
@@ -24,13 +23,22 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
+
+
 <body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
         <p class="navbar-item is-size-7">v3.13</p>
-      </a>
+      </a><div class="navbar-item navbar-search-brand">
+        <div class="field has-addons has-addons-centered">
+          <div class="control">
+            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+          </div>
+        </div>
+      </div>
+      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -43,40 +51,37 @@
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a>
-      </div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+              </div>
+            </div>
+          </div></div>
       <div class="navbar-end"><div class="navbar-item">
             <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav>
-<section class="search-container">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="field has-addons has-addons-centered">
-            <div class="control">
-              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: "",
-indexName: "thethingsstack",
-inputSelector: '#search-input',
-debug: false 
-});
-</script>
-<div class="container" role="document">
-  <div class="columns my-0">
-      <div class="column is-one-fifth-tablet is-one-third sidebar-left">
+</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-brand',
+      debug: false 
+    });
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-menu',
+      debug: false 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -228,18 +233,15 @@ debug: false
 
 
       </div>
-      <div class="column sidebar-middle">
-
-<div class="docs-content">
-<h1 class="title is-size-2">Application Server Options
-  
-  
-  
-  
-</h1>
-
-<div class="content">
-  <h2 id="security-options">Security Options</h2>
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Application Server Options
+          
+        </h1>
+        
+        <div class="content">
+          <h2 id="security-options">Security Options</h2>
 <ul>
 <li><code>as.device-kek-label</code>: Label of KEK used to encrypt device keys at rest</li>
 </ul>
@@ -287,14 +289,15 @@ debug: false
 <li><code>as.fetcher.cache.size</code>: Number of cache entries. In case the cache is full, the Least Frequently Used entry will be evicted. Set to <code>0</code> to disable.</li>
 <li><code>as.fetcher.cache.ttl</code>: Time-To-Live for cache entries.</li>
 </ul>
-<h2 id="formatter-options-hahahugoshortcode-s0-hbhb">Formatter Options <span class="new-in-version">New in 3.13.0</span>
+<h2 id="formatter-options">Formatter Options</h2>
+<p><span class="tag is-light">New in 3.13.0</span>
 
-</h2>
-<p>Application Server can use Javascript payload formatters to decode uplink and encode downlink messages.</p>
+ Application Server can use Javascript payload formatters to decode uplink and encode downlink messages.</p>
 <ul>
 <li><code>as.formatters.max-parameter-length</code>: Maximum length (in bytes) for user-defined payload formatter scripts. A global cap of 16KB is enforced at the API level. This does not affect payload formatter scripts loaded from the <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/device-repo/">Device Repository</a>.</li>
 </ul>
-<h2 id="storage-integration-options">Storage Integration Options 
+<h2 id="storage-integration-options">Storage Integration Options</h2>
+<p>
 
 
 
@@ -332,8 +335,7 @@ debug: false
 </a>
 
 
-</h2>
-<p>The Storage Integration requires a database for storing upstream messages.</p>
+ The Storage Integration requires a database for storing upstream messages.</p>
 <ul>
 <li><code>as.packages.storage.provider</code>: Database backend to use. Currently, only <code>postgres</code> is supported.</li>
 </ul>
@@ -364,23 +366,22 @@ debug: false
 <li><code>as.packages.storage.enable.service-data</code>: Set to <code>true</code> to store <code>ServiceData</code> messages</li>
 </ul>
 
-</div>
-<div class="is-clearfix">
+        </div>
+        <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/reference/configuration/tenant-billing-server/">← Tenant Billing Server Options</a>
 <a class="button is-pulled-right" href="/docs/reference/configuration/cli/">Command-Line Interface Options →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "" };</script>
+        <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-</div>
-
-
+        </div>
       </div>
-      <div class="column is-hidden-touch is-one-quarter is-one-fifth-widescreen sidebar-right">
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
         <nav class="toc" aria-label="Page navigation">
     <h2 class="title is-size-6">On this page</h2>
     
@@ -403,14 +404,22 @@ debug: false
       
       <li><a href='#entity-fetcher-options'>Entity Fetcher Options</a></li>
     
+      
+      <li><a href='#formatter-options'>Formatter Options</a></li>
+    
+      
+      <li><a href='#storage-integration-options'>Storage Integration Options</a></li>
+    
   </ul>
 
 
   </nav>
 
       </div>
+      
   </div>
 </div>
+
 
 
 <footer class="footer">
@@ -439,10 +448,10 @@ debug: false
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Aggelos Kolaitis on 12 May 2021.
+  Last changed by Ben Olayinka on 10 Jun 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/78b9e7991c58be04c0af0639d0cfc383bbd0d792">
-      doc: Document `as.formatters.max-parameter-length` option
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/1088c5144c03928eb7d97c6105895e620eab3d79">
+      Move inline shortcodes to next line (#382)
     </a>
 </p>
 

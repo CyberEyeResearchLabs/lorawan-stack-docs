@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
   <title>Gateways | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/" />
-  <link rel="alternate icon" href="/docs/favicon.ico">
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.448201dae984e04b2579a9ee482b5768bcd23d222184681e69f3a8b1146f3bb2.css" integrity="sha256-RIIB2umE4EsleanuSCtXaLzSPSIhhGgeafOosRRvO7I=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Gateways">
@@ -24,13 +23,22 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
+
+
 <body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
         <p class="navbar-item is-size-7">v3.13</p>
-      </a>
+      </a><div class="navbar-item navbar-search-brand">
+        <div class="field has-addons has-addons-centered">
+          <div class="control">
+            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+          </div>
+        </div>
+      </div>
+      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -43,40 +51,37 @@
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item is-active" href="/docs/gateways/">Gateways</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a>
-      </div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+              </div>
+            </div>
+          </div></div>
       <div class="navbar-end"><div class="navbar-item">
             <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav>
-<section class="search-container">
-    <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="field has-addons has-addons-centered">
-            <div class="control">
-              <input class="input search-bar" id="search-input" type="text" placeholder="Search" type="text">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: "",
-indexName: "thethingsstack",
-inputSelector: '#search-input',
-debug: false 
-});
-</script>
-<div class="container" role="document">
-  <div class="columns my-0">
-      <div class="column is-one-fifth-tablet is-one-third sidebar-left">
+</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-brand',
+      debug: false 
+    });
+    docsearch({
+      apiKey: "",
+      indexName: "thethingsstack",
+      inputSelector: '#search-input-menu',
+      debug: false 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -162,32 +167,27 @@ debug: false
 
 
       </div>
-      <div class="column sidebar-middle">
-
-<div class="docs-content">
-<h1 class="title is-size-2">Gateways
-  
-  
-  
-  
-</h1>
-
-<div class="content">
-  <p>This section contains information to help you work with gateways in The Things Stack. Here, you&rsquo;ll find guides for connecting gateways using LoRa Basics™ Station
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Gateways
+          
+        </h1>
+        
+        <div class="content">
+          <p>This section contains information to help you work with gateways in The Things Stack. Here, you&rsquo;ll find guides for connecting gateways using LoRa Basics™ Station
  or the Semtech UDP Packet Forwarder
 , and instructions for connecting many popular LoRaWAN gateways.</p>
 
-</div>
-
-<div class="columns is-multiline">
+        </div>
+        
+          <div class="columns is-multiline">
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/">Adding Gateways</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/">Adding Gateways</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This section contains instructions for adding Gateways in The Things Stack.
 
@@ -201,11 +201,9 @@ debug: false
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/">LoRa Basics™ Station</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/">LoRa Basics™ Station</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The LoRa Basics™ Station  protocol simplifies management of large scale LoRaWAN networks. LoRa Basics™ Station is the preferred way of connecting Gateways to The Things Stack.
 This section contains information for connecting your gateway to The Things Stack using LoRa Basics™ Station and its subprotocols.
@@ -220,11 +218,9 @@ This section contains information for connecting your gateway to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/">Semtech UDP Packet Forwarder</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/">Semtech UDP Packet Forwarder</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Semtech UDP Packet Forwarder  is the original LoRaWAN packet forwarder, connecting to servers through the Semtech UDP protocol. Many gateways include a pre-compiled version of the Semtech UDP Packet Forwarder , often adapted to the specific gateway.
 Warning: The Semtech UDP Packet Forwarder has many security and scalability drawbacks, so if possible, use LoRa Basics™ Station  to connect your gateway to The Things Stack. 
@@ -238,11 +234,9 @@ Warning: The Semtech UDP Packet Forwarder has many security and scalability draw
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/ciscowirelessgateway/">Cisco Wireless Gateway for LoRaWAN</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/ciscowirelessgateway/">Cisco Wireless Gateway for LoRaWAN</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This page guides you to connecting the Cisco Wireless Gateway for LoRaWAN to The Things Stack.
 
@@ -256,11 +250,9 @@ Warning: The Semtech UDP Packet Forwarder has many security and scalability draw
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-knot/">MikroTik KNOT</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-knot/">MikroTik KNOT</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The MikroTik KNOT LR8/LR9 kit is a universal device with exceptional connectivity options and protocol support. It is an IoT Gateway which can use ethernet or LTE-M (also known as CAT-M) technology as the gateway backhaul.
 
@@ -274,11 +266,9 @@ Warning: The Semtech UDP Packet Forwarder has many security and scalability draw
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/">MikroTik LtAP</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotik-ltap/">MikroTik LtAP</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The LtAP LTE kit is a compact weatherproof wireless access point with a built-in cellular modem that supports 4G (LTE) connectivity.
 Connect to the LtAP’s built-in high power 2.4 GHz 802.11B/G/N wireless and access the LTE network from your phone or any other wireless device. The LtAP LTE kit also has one Gigabit Ethernet LAN port for wired devices.
@@ -293,11 +283,9 @@ Connect to the LtAP’s built-in high power 2.4 GHz 802.11B/G/N wireless and acc
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotikrouterboard/">MikroTik Routerboard wAP LoRa8 kit</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/mikrotikrouterboard/">MikroTik Routerboard wAP LoRa8 kit</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           MikroTik Routerboard wAP LoRa8 kit is a LoRaWAN gateway that contains a pre-installed UDP packet forwarder and an outdoor weatherproof wireless access point with 2.4 GHz WLAN interface and Ethernet port that could be used as a backend.
 This guide shows how to connect this gateway to The Things Stack.
@@ -312,11 +300,9 @@ This guide shows how to connect this gateway to The Things Stack.
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/rak-7240/">RAK7240 WisGate Edge Prime</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/rak-7240/">RAK7240 WisGate Edge Prime</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The RAK7240 (WisGate Edge Prime) is a macro outdoor LoRaWAN gateway, ideal for large scale deployments. It is highly reliable, customizable, and offers a WiFi, LTE and Ethernet backhaul.
 Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stack should be identical as for the RAK7240.  This guide will help you set up the RAK2470 gateway to communicate over The Things Stack.
@@ -331,11 +317,9 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/dragino-lps8/">Dragino LPS8</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/dragino-lps8/">Dragino LPS8</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The Dragino LPS8 is a LoRaWAN indoor gateway based on the OpenWrt Linux system. The hardware includes an SX1308 LoRa concentrator that provides 10 programmable parallel demodulation paths. The gateway has an ethernet and WiFi backhaul and supports EU868, IN865, US915, AU915, AS923, and KR920 ISM bands.
 
@@ -349,9 +333,12 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/gateway-claiming/">Gateway Claiming</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/gateway-claiming/">Gateway Claiming</a>
+        </h1>
         
+        <h2 class="subtitle">
           
+            
 
 
 
@@ -380,13 +367,14 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
 </a>
 
 
-        
-        
-          <span class="new-in-version">New in 3.12.0</span>
+          
+          
+            <span class="tag is-light">New in 3.12.0</span>
 
+          
+          
+        </h2>
         
-        
-        </h3>
         <div class="content has-text-grey">
           Gateway claiming is a mechanism that transfers gateways securely. This enables transfer of ownership between users as well as between tenants. This section provides guides for making gateways claimable and claiming them.
 
@@ -400,11 +388,9 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/kerlinkwirnetistation/">Kerlink Wirnet iStation</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/kerlinkwirnetistation/">Kerlink Wirnet iStation</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The Kerlink Wirnet iStation is an outdoor LoRaWAN gateway that represents an evolution of the legacy Kerlink Wirnet Station gateway. It offers cellular (4G with 3G/2G fallback) and Ethernet backhauls, as well as fully integrated internal GPS, 4G and LoRa antennas.
 
@@ -418,11 +404,9 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/kerlinkwirnetstation/">Kerlink Wirnet Station</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/kerlinkwirnetstation/">Kerlink Wirnet Station</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           Warning: Kerlink announced the Product End of Life in January 2020 for Wirnet Station, so using Kerlink Wirnet iStation is highly recommended.   The Kerlink Wirnet Station is a robust and highly reliable outdoor LoRaWAN gateway. It was the first commercially available LoRaWAN gateway on the global market. It offers Ethernet and cellular (3G/2G) backhauls.
 
@@ -436,11 +420,9 @@ Note: Configuring and connecting RAK7249 and RAK7258 gateways to The Things Stac
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/laird-sentrius/">Laird Sentrius™ RG1xx LoRaWAN Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/laird-sentrius/">Laird Sentrius™ RG1xx LoRaWAN Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The Laird Sentrius™ RG1xx is a secure, scalable, robust LoRaWAN-Enabled Gateway that supports Wi-Fi, Ethernet, and LTE backends.
 This page contains information about connecting the Laird Sentrius™ RG1xx to The Things Stack.
@@ -455,11 +437,9 @@ This page contains information about connecting the Laird Sentrius™ RG1xx to T
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/moko-mkgw2-lw/">MOKOSMART MKGW2-LW LoRaWAN Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/moko-mkgw2-lw/">MOKOSMART MKGW2-LW LoRaWAN Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           MOKOSMART&amp;rsquo;s 8 channel MKGW2 gateway is embedded with Semtech’s high performance multi-channel transceiver SX1301/SX1257 and MTK platform. It is for indoor use and is easy to install.
  Requirements  User account on The Things Stack with rights to create gateways. MOKOSMART MKGW2-LW connected to the internet via Ethernet or WiFi. (For Ethernet and WiFi settings, see sections 5 and 6 of the user manual)  Registration Create a gateway by following the instructions.
@@ -473,11 +453,9 @@ This page contains information about connecting the Laird Sentrius™ RG1xx to T
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/">MultiTech Conduit AEP</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit/">MultiTech Conduit AEP</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The MultiTech MultiConnect® Conduit™ is a configurable, scalable cellular communications gateway for industrial IoT applications.
 This guide will help you set up the Multitech Conduit gateway to communicate over The Things Stack.
@@ -492,11 +470,9 @@ This guide will help you set up the Multitech Conduit gateway to communicate ove
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit-mlinux/">MultiTech Conduit mLinux</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/multitechconduit-mlinux/">MultiTech Conduit mLinux</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The MultiTech MultiConnect® Conduit™ is a configurable, scalable cellular communications gateway for industrial IoT applications. The technical specifications of this Conduit can be found in the software guide in the official documentation page.
 This guide will help you set up the Multitech Conduit mLinux gateway to communicate over The Things Stack.
@@ -511,11 +487,9 @@ This guide will help you set up the Multitech Conduit mLinux gateway to communic
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/nasysoutdoorgateway/">NASys LoRaWAN Outdoor Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/nasysoutdoorgateway/">NASys LoRaWAN Outdoor Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This page guides you to connect NASys LoRaWAN Outdoor Gateway to The Things Stack.
 
@@ -529,11 +503,9 @@ This guide will help you set up the Multitech Conduit mLinux gateway to communic
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/tektelickonamicro/">Tektelic Kona Micro IoT LoRaWAN Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/tektelickonamicro/">Tektelic Kona Micro IoT LoRaWAN Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This page guides you to connect Tektelic Kona Micro IoT LoRaWAN Gateway to The Things Stack.
 
@@ -547,11 +519,9 @@ This guide will help you set up the Multitech Conduit mLinux gateway to communic
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/thethingskickstartergateway/">The Things Kickstarter Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/thethingskickstartergateway/">The Things Kickstarter Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           This page guides you to connect The Things Kickstarter Gateway to The Things Stack.
 
@@ -565,11 +535,9 @@ This guide will help you set up the Multitech Conduit mLinux gateway to communic
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/ursalinkug8x/">Ursalink UG8X IoT LoRaWAN Gateway</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/ursalinkug8x/">Ursalink UG8X IoT LoRaWAN Gateway</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
           The Ursalink UG8X IoT LoRaWAN Gateway is an 8 channel (16 channel optional) configurable, scalable gateway for industrial IoT applications.
   This page contains information about connecting the Ursalink UG8X IoT LoRaWAN Gateway to The Things Stack.
@@ -584,11 +552,9 @@ This guide will help you set up the Multitech Conduit mLinux gateway to communic
   <div class="column is-half is-flex">
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
-        <h3 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/lorix-one/">Wifx LORIX One</a>
+        <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/gateways/lorix-one/">Wifx LORIX One</a>
+        </h1>
         
-        
-        
-        </h3>
         <div class="content has-text-grey">
            The LORIX One is a robust and professional grade outdoor LoRaWAN® gateway in an ultra compact form factor, designed and assembled in Switzerland. The LORIX One supports ethernet, wireless, and cellular backhauls.
 This page will guide you through the steps required to connect the gateway to The Things Stack.
@@ -602,23 +568,22 @@ This page will guide you through the steps required to connect the gateway to Th
   </div>
 </div>
 
-
-<div class="is-clearfix">
+        
+          <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/devices/troubleshooting/">← Troubleshooting Devices</a>
 <a class="button is-pulled-right" href="/docs/gateways/adding-gateways/">Adding Gateways →</a>
 </div>
 
-<script>window.emojicom_widget = { campaign: "" };</script>
+          <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
 <div class='feedback has-vertical-space'>
   <div id="emojicom-widget-inline"></div>
 </div>
-</div>
-
-
+        </div>
       </div>
-      <div class="column is-hidden-touch is-one-quarter is-one-fifth-widescreen sidebar-right">
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
         <nav class="toc" aria-label="Page navigation">
     <h2 class="title is-size-6">On this page</h2>
     
@@ -628,8 +593,10 @@ This page will guide you through the steps required to connect the gateway to Th
   </nav>
 
       </div>
+      
   </div>
 </div>
+
 
 
 <footer class="footer">
