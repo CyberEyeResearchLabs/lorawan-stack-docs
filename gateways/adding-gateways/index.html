@@ -10,7 +10,7 @@
   <title>Adding Gateways | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.eed40414e43dc0d7006e683e6183b33c300bbc447b5ff8372b57562b9b8b0cb1.css" integrity="sha256-7tQEFOQ9wNcAbmg&#43;YYOzPDALvER7X/g3K1dWK5uLDLE=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.25b30cdd256bfe2021b3a162f05871509954bca5cc3a6e85d1f515ea9ed6aa0f.css" integrity="sha256-JbMM3SVr/iAhs6Fi8FhxUJlUvKXMOm6F0fUV6p7Wqg8=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Adding Gateways">
@@ -95,23 +95,20 @@
     
 
 
-<ul class="menu-list">
 
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/adding-gateways/troubleshooting/" class="">Troubleshooting Gateways</a>
     
   </li>
-
-</ul>
-
-
-    
+<li>
+    <a href="https://www.thethingsindustries.com/docs/gateways/gateway-claiming/" class="">Gateway Claiming</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/gateways/troubleshooting/" class="">Troubleshooting Gateways</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/lora-basics-station/" class="">LoRa Basics™ Station</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/semtech-udp-packet-forwarder/" class="">Semtech UDP Packet Forwarder</a>
+    <a href="https://www.thethingsindustries.com/docs/gateways/udp/" class="">Semtech UDP Packet Forwarder</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/ciscowirelessgateway/" class="">Cisco Wireless Gateway for LoRaWAN</a>
@@ -130,9 +127,6 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/dragino-lps8/" class="">Dragino LPS8</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/gateways/gateway-claiming/" class="">Gateway Claiming</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/kerlinkwirnetistation/" class="">Kerlink Wirnet iStation</a>
@@ -157,6 +151,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/tektelickonamicro/" class="">Tektelic Kona Micro IoT LoRaWAN Gateway</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/gateways/thethingsindoorgateway/" class="">The Things Indoor Gateway</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/gateways/thethingskickstartergateway/" class="">The Things Kickstarter Gateway</a>
@@ -210,6 +207,12 @@
 <div class="tab-content content">
   <section data-content="console">
   <h2 id="adding-gateways-using-the-console">Adding Gateways using the Console</h2>
+<p>In addition to the written instructions below, a video with instructions for adding a gateway is available on <a href="https://youtu.be/o6nwc3APXns">The Things Network youtube channel</a>.</p>
+<details><summary>Show video</summary>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/o6nwc3APXns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</details>
 <p>Go to <strong>Gateways</strong> in the top menu, and click <strong>+ Add Gateway</strong> to reach the gateway registration page.</p>
 <p>Fill the <strong>Gateway ID</strong>, <strong>Gateway EUI</strong> (if your gateway has an EUI) and <strong>Frequency Plan</strong>. The other fields are optional. Click <strong>Create Gateway</strong> to finish.</p>
 <figure>
@@ -328,7 +331,7 @@ $ ttn-lw-cli gateways <span class="nb">set</span> <span class="nv">$GTW_ID</span
         
           <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/gateways/">← Gateways</a>
-<a class="button is-pulled-right" href="/docs/gateways/adding-gateways/troubleshooting/">Troubleshooting Gateways →</a>
+<a class="button is-pulled-right" href="/docs/gateways/gateway-claiming/">Gateway Claiming →</a>
 </div>
 
           <script>window.emojicom_widget = { campaign: "" };</script>
@@ -398,10 +401,10 @@ $ ttn-lw-cli gateways <span class="nb">set</span> <span class="nv">$GTW_ID</span
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Nejra on 24 Mar 2021.
+  Last changed by Ben Olayinka on 25 Jun 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/f0cabedc945b4269f4a806c97c119ec1801bb235">
-      doc: Add info about gw location updates
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/5272946e70a82186d3bbec8a94ad275138613dfa">
+      doc: Add videos (#408)
     </a>
 </p>
 
@@ -413,7 +416,7 @@ $ ttn-lw-cli gateways <span class="nb">set</span> <span class="nv">$GTW_ID</span
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.af1cdce2271a42369c7c022fb683df665bf882e1fdc766a89a6ee99196bc4f9e.js" integrity="sha256-rxzc4icaQjacfAIvtoPfZlv4guH9x2aomm7pkZa8T54=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };
