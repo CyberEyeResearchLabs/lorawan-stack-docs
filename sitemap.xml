@@ -44,7 +44,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/api/authentication/</loc>
-    <lastmod>2020-12-02T14:28:55+01:00</lastmod>
+    <lastmod>2021-07-08T13:27:47+02:00</lastmod>
   </url>
   
   <url>
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/creating-webhooks/</loc>
-    <lastmod>2021-06-25T13:08:43+02:00</lastmod>
+    <lastmod>2021-07-06T15:39:08+02:00</lastmod>
   </url>
   
   <url>
@@ -75,11 +75,6 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/configuration/the-things-stack/</loc>
     <lastmod>2021-06-10T09:13:59+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/installation/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
   
   <url>
@@ -133,13 +128,13 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/connect/</loc>
-    <lastmod>2021-05-05T16:08:58+03:00</lastmod>
+    <loc>https://www.thethingsindustries.com/docs/gateways/cloudgate/</loc>
+    <lastmod>2021-07-08T20:26:13+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/console/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
+    <loc>https://www.thethingsindustries.com/docs/reference/packet-broker/connect/</loc>
+    <lastmod>2021-05-05T16:08:58+03:00</lastmod>
   </url>
   
   <url>
@@ -263,11 +258,6 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/cli/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/installation/configuration/</loc>
     <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
@@ -289,7 +279,7 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/format/</loc>
-    <lastmod>2021-04-16T12:39:16+02:00</lastmod>
+    <lastmod>2021-07-06T15:39:08+02:00</lastmod>
   </url>
   
   <url>
@@ -423,11 +413,6 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/upgrading/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/adding_webhook_templates/</loc>
     <lastmod>2020-08-25T10:11:41+02:00</lastmod>
   </url>
@@ -450,11 +435,6 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/migrating/import-devices/</loc>
     <lastmod>2021-04-08T11:26:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/migrating/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
   
   <url>
@@ -488,11 +468,6 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/ttn/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/devices/end-device-templates/assigning-euis/</loc>
     <lastmod>2020-11-25T17:04:08+01:00</lastmod>
   </url>
@@ -523,11 +498,6 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/devices/downlink-queue-ops/</loc>
     <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
@@ -538,22 +508,7 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/aws/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/devices/mac-settings/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/user-management/</loc>
-    <lastmod>2021-06-25T13:08:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/api/</loc>
     <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
   
@@ -573,11 +528,6 @@
   </url>
   
   <url>
-    <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/</loc>
-    <lastmod>2020-10-22T15:15:48+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.thethingsindustries.com/docs/reference/stripe/products/</loc>
     <lastmod>2020-09-21T16:32:35+02:00</lastmod>
   </url>
@@ -590,16 +540,6 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/configuration/tenant-billing-server/</loc>
     <lastmod>2020-09-21T16:32:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/events/</loc>
-    <lastmod>2021-06-25T13:08:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.thethingsindustries.com/docs/getting-started/troubleshooting/</loc>
-    <lastmod>2021-06-10T14:29:28+02:00</lastmod>
   </url>
   
   <url>
@@ -918,6 +858,11 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/cli/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/reference/components/cli/</loc>
     <lastmod>2020-11-26T19:26:14+01:00</lastmod>
   </url>
@@ -983,6 +928,11 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/console/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/reference/components/console/</loc>
     <lastmod>2020-08-17T13:36:56+02:00</lastmod>
   </url>
@@ -994,7 +944,12 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/reference/data-formats/</loc>
-    <lastmod>2021-06-08T15:37:06+03:00</lastmod>
+    <lastmod>2021-07-07T13:26:01+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/reference/data-retention/</loc>
+    <lastmod>2021-07-05T19:04:36+02:00</lastmod>
   </url>
   
   <url>
@@ -1168,6 +1123,11 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/installation/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/reference/interop-repository/</loc>
     <lastmod>2020-04-02T16:23:14+02:00</lastmod>
   </url>
@@ -1230,6 +1190,11 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/cloud-integrations/microsoft-azure/</loc>
     <lastmod>2021-03-01T12:36:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/migrating/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
   </url>
   
   <url>
@@ -1384,12 +1349,27 @@
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/gateways/thethingsindoorgateway/</loc>
-    <lastmod>2021-06-30T18:18:26+02:00</lastmod>
+    <lastmod>2021-07-07T16:17:11+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.thethingsindustries.com/docs/gateways/thethingskickstartergateway/</loc>
     <lastmod>2020-11-25T17:35:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/ttn/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/aws/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
   </url>
   
   <url>
@@ -1413,8 +1393,13 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/troubleshooting/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/getting-started/installation/troubleshooting/</loc>
-    <lastmod>2021-03-31T17:08:36+02:00</lastmod>
+    <lastmod>2021-07-06T20:55:47+08:00</lastmod>
   </url>
   
   <url>
@@ -1425,6 +1410,11 @@
   <url>
     <loc>https://www.thethingsindustries.com/docs/integrations/cloud-integrations/uib/</loc>
     <lastmod>2021-05-26T21:28:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/upgrading/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
   </url>
   
   <url>
@@ -1448,13 +1438,33 @@
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/user-management/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/api/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/reference/branding/</loc>
     <lastmod>2021-05-06T17:02:13+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/</loc>
+    <lastmod>2021-07-06T15:39:08+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.thethingsindustries.com/docs/gateways/lorix-one/</loc>
     <lastmod>2020-12-03T13:32:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.thethingsindustries.com/docs/getting-started/events/</loc>
+    <lastmod>2021-07-06T15:44:46+02:00</lastmod>
   </url>
   
 </urlset>
