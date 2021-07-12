@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.70.0" />
-  <title>Fine-tuning MAC Settings for End Devices | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/migrating/configure-mac-settings/" />
+  <title>LoRa Basics Station Implementation Guide | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
   <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.25b30cdd256bfe2021b3a162f05871509954bca5cc3a6e85d1f515ea9ed6aa0f.css" integrity="sha256-JbMM3SVr/iAhs6Fi8FhxUJlUvKXMOm6F0fUV6p7Wqg8=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <meta name="description" content="The Things Stack for LoRaWAN">
+  <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="Fine-tuning MAC Settings for End Devices">
-  <meta itemprop="description" content="The Things Stack for LoRaWAN">
+  <meta itemprop="name" content="LoRa Basics Station Implementation Guide">
+  <meta itemprop="description" content="">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="Fine-tuning MAC Settings for End Devices">
-  <meta property="og:description" content="The Things Stack for LoRaWAN">
-  <meta property="og:url" content="https://www.thethingsindustries.com/docs/getting-started/migrating/configure-mac-settings/">
-  <meta name="twitter:title" content="Fine-tuning MAC Settings for End Devices" />
-  <meta name="twitter:description" content="The Things Stack for LoRaWAN" />
+  <meta property="og:title" content="LoRa Basics Station Implementation Guide">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/">
+  <meta name="twitter:title" content="LoRa Basics Station Implementation Guide" />
+  <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
 </head>
 
@@ -86,103 +86,78 @@
 
 <nav class="side-navigation" aria-label="Main navigation">
 
-<h2 class="title is-size-5">Getting Started</h2>
+<h2 class="title is-size-5">Reference</h2>
 
 <ul class="menu-list">
-<a href="https://www.thethingsindustries.com/docs/getting-started/" class="">Overview</a>
+<a href="https://www.thethingsindustries.com/docs/reference/" class="">Overview</a>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/" class="">Quick Start</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/stripe/" class="">Billing with Stripe</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/adr/" class="">Adaptive Data Rate</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/" class="">API</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/application-packages/" class="">Application Packages</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
-    
-
-
-<ul class="menu-list">
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/major-changes/" class="">Major Changes In The Things Stack</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/migrating-from-v2/" class="">Migrating End Devices from V2</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/migrate-from-chirpstack/" class="">Migrating End Devices from ChirpStack</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/import-devices/" class="">Import End Devices in The Things Stack</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/migration-tool/" class="">Migration Tool</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/configure-mac-settings/" class="is-active">Fine-tuning MAC Settings for End Devices</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/gateway-migration/" class="">Migrating Gateways</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/device-json/" class="">JSON File Reference</a>
-    
-  </li>
-
-</ul>
-
-
-    
+    <a href="https://www.thethingsindustries.com/docs/reference/cli/" class="">Command-Line Interface</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/" class="">Server Addresses</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/components/" class="">Components</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="">The Things Network</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">The Things Stack AWS Launcher</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/federated-auth/" class="">Federated Authentication</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/api/" class="">Using the API</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/events/" class="">Working with Events</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="is-active">LoRa Basics Station Implementation Guide</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
   </li>
 </ul>
 
@@ -201,24 +176,36 @@
       
       <div class="column is-9 is-8-desktop sidebar-middle">
         <div class="docs-content">
-        <h1 class="title is-size-2">Fine-tuning MAC Settings for End Devices
+        <h1 class="title is-size-2">LoRa Basics Station Implementation Guide
           
         </h1>
         
         <div class="content">
-          <p>MAC settings on The Things Stack are configurable per end device. See the <a href="https://www.thethingsindustries.com/docs/devices/mac-settings/">MAC settings guide</a> for instructions.</p>
-<div class="notification is-warning is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
-  <p>Devices migrated from V2 (The Things Network V2 or The Things Industries V2) are configured with an RX1 delay of 1 second, by default.</p>
-<p>In all The Things Stack deployments, the recommended RX1 delay is 5 seconds to accommodate for high latency backhauls and/or <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/">peering with Packet Broker</a>.</p>
-
-</div>
-
-
+          <p>This guide contains implementation details primarily for gateway manufacturers intending to implement the LoRa Basics™ Station
+protocol.</p>
+<h2 id="use-of-deveui-field-in-downlink-messages">Use of DevEui field in Downlink Messages</h2>
+<p>Gateways using the LoRa Basics™ Station
+protocol report the successful transmission of downlink messages via the Transmit Confirmation (<code>dntxed</code>) message. In order to correlate the confirmation message to a downlink, the LoRa Basics™ Station
+protocol provides two options to the LNS. The LNS is offered the flexibility to implement either of these mechanisms.</p>
+<p>a. Using the <code>DevEui</code> and the <code>diid</code> fields</p>
+<ul>
+<li>In this mode, the LNS uses a per-device downlink counter. Gateways echo the <code>DevEui</code> and <code>diid</code> fields sent on the downlink message on the corresponding Transmit Confirmation message.</li>
+<li>The LNS then forwards the transmit confirmation upstream.</li>
+<li>This is useful for debugging using LoRa Basics™ Station
+gateway logs since the <code>DevEui</code> will be printed. However, this exposes the DevEui of end devices to gateways which is not desirable in cases where the gateway is not owned/operated by the device owner.</li>
+<li>The Things Stack does not use this method to correlate Transmit Confirmations.</li>
+</ul>
+<p>b. Using only the <code>diid</code> field</p>
+<ul>
+<li>The LNS can choose to make the <code>diid</code> field globally unique per gateway (per session). The LNS can then maintain a correlation of the <code>diid</code> values to downlink messages.</li>
+<li>When the gateway sends a Transmit Confirmation message, the LNS can then use the echoed <code>diid</code> value to look up the downlink message and retrieve information on the end device and forward the transmit confirmation upstream.</li>
+<li>In this mode, the <code>DevEui</code> field of the downlink message is not used by the LNS but should be set to a non-zero value.</li>
+<li>This is the approach used by The Things Stack, where the <code>DevEui</code> is set to <code>0000000000000001</code> for all downlink messages.</li>
+</ul>
         </div>
         <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/getting-started/migrating/migration-tool/">← Migration Tool</a>
-<a class="button is-pulled-right" href="/docs/getting-started/migrating/gateway-migration/">Migrating Gateways →</a>
+<a class="button is-pulled-left" href="/docs/reference/interop-repository/">← Interoperability Repository</a>
+<a class="button is-pulled-right" href="/docs/reference/spec-regional-parameters/">LoRaWAN Specification and Regional Parameters →</a>
 </div>
 
         <script>window.emojicom_widget = { campaign: "" };</script>
@@ -235,6 +222,13 @@
     <h2 class="title is-size-6">On this page</h2>
     
 
+
+  <ul class="menu-list">
+    
+      
+      <li><a href='#use-of-deveui-field-in-downlink-messages'>Use of DevEui field in Downlink Messages</a></li>
+    
+  </ul>
 
 
   </nav>
@@ -272,14 +266,14 @@
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Nejra on 08 Apr 2021.
+  Last changed by Krishna Iyer Easwaran on 12 Jul 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/c3e77fa22021ae5fc7213e8f00cf6ebc648aba6c">
-      doc: Rearrange and update migration docs
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/ad26828d1916c3b83d00c9a871983e54d527638d">
+      Document DevEui field in LBS downlinks (#447)
     </a>
 </p>
 
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/getting-started/migrating/configure-mac-settings.md" class="button">Edit on Github</a>
+<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/lbs-implementation-guide/implementation-details.md" class="button">Edit on Github</a>
 </div>
 
       </div>
