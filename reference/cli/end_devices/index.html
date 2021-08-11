@@ -10,7 +10,7 @@
   <title>End Device CLI Commands | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/cli/end_devices/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.25b30cdd256bfe2021b3a162f05871509954bca5cc3a6e85d1f515ea9ed6aa0f.css" integrity="sha256-JbMM3SVr/iAhs6Fi8FhxUJlUvKXMOm6F0fUV6p7Wqg8=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="End Device CLI Commands">
@@ -30,7 +30,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.13</p>
+        <p class="navbar-item is-size-7">v3.14</p>
       </a><div class="navbar-item navbar-search-brand">
         <div class="field has-addons has-addons-centered">
           <div class="control">
@@ -91,9 +91,6 @@
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/reference/" class="">Overview</a>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/stripe/" class="">Billing with Stripe</a>
-  </li>
-<li>
     <a href="https://www.thethingsindustries.com/docs/reference/adr/" class="">Adaptive Data Rate</a>
   </li>
 <li>
@@ -101,6 +98,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/application-packages/" class="">Application Packages</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/stripe/" class="">Billing with Stripe</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/cli/" class="">Command-Line Interface</a>
@@ -155,6 +155,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/cli/troubleshooting/" class="">Troubleshooting CLI</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/cli/users/" class="">User CLI Commands</a>
     
   </li>
@@ -202,9 +207,6 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/reference/packet-broker/" class="">Packet Broker</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
@@ -268,6 +270,19 @@
 
 <h3>Flags for <code>ttn-lw-cli end-devices list</code></h3>
 <dl class="cli-flags">
+<dt><code>--activated-at</code></dt>
+<dd>
+<p>
+type: <code>bool</code>
+</p>
+
+<p>
+default: <code>false</code>
+</p>
+
+<p>select the activated_at field
+</p>
+</dd>
 <dt><code>--all</code></dt>
 <dd>
 <p>
@@ -639,6 +654,19 @@ type: <code>string</code>
 <p>
 </p>
 </dd>
+<dt><code>--dev-eui-counter</code></dt>
+<dd>
+<p>
+type: <code>bool</code>
+</p>
+
+<p>
+default: <code>false</code>
+</p>
+
+<p>select the dev_eui_counter field
+</p>
+</dd>
 <dt><code>--id-contains</code></dt>
 <dd>
 <p>
@@ -730,6 +758,19 @@ default: <code>1</code>
 
 <h3>Flags for <code>ttn-lw-cli end-devices get</code></h3>
 <dl class="cli-flags">
+<dt><code>--activated-at</code></dt>
+<dd>
+<p>
+type: <code>bool</code>
+</p>
+
+<p>
+default: <code>false</code>
+</p>
+
+<p>select the activated_at field
+</p>
+</dd>
 <dt><code>--all</code></dt>
 <dd>
 <p>
@@ -4435,6 +4476,15 @@ default: <code>false</code>
 <p>configure end device as ABP
 </p>
 </dd>
+<dt><code>--activated-at</code></dt>
+<dd>
+<p>
+type: <code>string</code>
+</p>
+
+<p>(YYYY-MM-DDTHH:MM:SSZ)
+</p>
+</dd>
 <dt><code>--application-id</code></dt>
 <dd>
 <p>
@@ -4786,7 +4836,7 @@ type: <code>string</code>
 type: <code>string</code>
 </p>
 
-<p>allowed values: 1.0, 1.0.0, 1.0.1, 1.0.2, 1.0.2-a, 1.0.2-b, 1.0.3-a, 1.1-a, 1.1-b, 1.1.0-a, 1.1.0-b, PHY_UNKNOWN, PHY_V1_0, PHY_V1_0_1, PHY_V1_0_2_REV_A, PHY_V1_0_2_REV_B, PHY_V1_0_3_REV_A, PHY_V1_1_REV_A, PHY_V1_1_REV_B, unknown
+<p>allowed values: 1.0, 1.0.0, 1.0.1, 1.0.2, 1.0.2-a, 1.0.2-b, 1.0.3-a, 1.1-a, 1.1-b, 1.1.0-a, 1.1.0-b, PHY_UNKNOWN, PHY_V1_0, PHY_V1_0_1, PHY_V1_0_2_REV_A, PHY_V1_0_2_REV_B, PHY_V1_0_3_REV_A, PHY_V1_1_REV_A, PHY_V1_1_REV_B, RP001_V1_0_2, RP001_V1_0_2_REV_B, RP001_V1_0_3_REV_A, RP001_V1_1_REV_A, RP001_V1_1_REV_B, RP002_V1_0_0, RP002_V1_0_1, RP002_V1_0_2, RP002_V1_0_3, TS001_V1_0, TS001_V1_0_1, unknown
 </p>
 </dd>
 <dt><code>--lorawan-version</code></dt>
@@ -7006,6 +7056,15 @@ default: <code>false</code>
 
 <h3>Flags for <code>ttn-lw-cli end-devices set</code></h3>
 <dl class="cli-flags">
+<dt><code>--activated-at</code></dt>
+<dd>
+<p>
+type: <code>string</code>
+</p>
+
+<p>(YYYY-MM-DDTHH:MM:SSZ)
+</p>
+</dd>
 <dt><code>--application-id</code></dt>
 <dd>
 <p>
@@ -7344,7 +7403,7 @@ type: <code>string</code>
 type: <code>string</code>
 </p>
 
-<p>allowed values: 1.0, 1.0.0, 1.0.1, 1.0.2, 1.0.2-a, 1.0.2-b, 1.0.3-a, 1.1-a, 1.1-b, 1.1.0-a, 1.1.0-b, PHY_UNKNOWN, PHY_V1_0, PHY_V1_0_1, PHY_V1_0_2_REV_A, PHY_V1_0_2_REV_B, PHY_V1_0_3_REV_A, PHY_V1_1_REV_A, PHY_V1_1_REV_B, unknown
+<p>allowed values: 1.0, 1.0.0, 1.0.1, 1.0.2, 1.0.2-a, 1.0.2-b, 1.0.3-a, 1.1-a, 1.1-b, 1.1.0-a, 1.1.0-b, PHY_UNKNOWN, PHY_V1_0, PHY_V1_0_1, PHY_V1_0_2_REV_A, PHY_V1_0_2_REV_B, PHY_V1_0_3_REV_A, PHY_V1_1_REV_A, PHY_V1_1_REV_B, RP001_V1_0_2, RP001_V1_0_2_REV_B, RP001_V1_0_3_REV_A, RP001_V1_1_REV_A, RP001_V1_1_REV_B, RP002_V1_0_0, RP002_V1_0_1, RP002_V1_0_2, RP002_V1_0_3, TS001_V1_0, TS001_V1_0_1, unknown
 </p>
 </dd>
 <dt><code>--lorawan-version</code></dt>
@@ -9536,6 +9595,19 @@ type: <code>string</code>
 
 <h3>Flags for <code>ttn-lw-cli end-devices reset</code></h3>
 <dl class="cli-flags">
+<dt><code>--activated-at</code></dt>
+<dd>
+<p>
+type: <code>bool</code>
+</p>
+
+<p>
+default: <code>false</code>
+</p>
+
+<p>select the activated_at field
+</p>
+</dd>
 <dt><code>--all</code></dt>
 <dd>
 <p>

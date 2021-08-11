@@ -10,7 +10,7 @@
   <title>Cloud Addresses | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/addresses/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.25b30cdd256bfe2021b3a162f05871509954bca5cc3a6e85d1f515ea9ed6aa0f.css" integrity="sha256-JbMM3SVr/iAhs6Fi8FhxUJlUvKXMOm6F0fUV6p7Wqg8=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Cloud Addresses">
@@ -30,7 +30,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.13</p>
+        <p class="navbar-item is-size-7">v3.14</p>
       </a><div class="navbar-item navbar-search-brand">
         <div class="field has-addons has-addons-centered">
           <div class="control">
@@ -107,6 +107,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/packet-broker/" class="">Packet Broker</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/" class="">Server Addresses</a>
@@ -328,6 +331,13 @@ qr-code-generator-grpc-address: '<span data-content="tenant-id"></span>.<span da
 credentials-id: '<span data-content="tenant-id"></span>'
 </pre>
 <p>See the <a href="https://www.thethingsindustries.com/docs/getting-started/cli/">CLI Getting Started Guide</a> to learn how to get started with the CLI and working with configuration files.</p>
+<h2 id="ip-addresses">IP Addresses</h2>
+<p>The Things Stack Cloud runs on AWS. See the <a href="https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html">AWS IP address range documentation</a> for IP addresses of Cloud clusters.</p>
+<div class="notification is-info is-light has-text-dark">
+  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
+  IP addresses of Cloud clusters are not static, and may change over time. We recommend whitelisting the DNS address of your Cloud cluster if possible.
+</div>
+
 
         </div>
         <div class="is-clearfix">
@@ -367,6 +377,9 @@ credentials-id: '<span data-content="tenant-id"></span>'
       
       <li><a href='#command-line-interface'>Command-line Interface</a></li>
     
+      
+      <li><a href='#ip-addresses'>IP Addresses</a></li>
+    
   </ul>
 
 
@@ -405,10 +418,10 @@ credentials-id: '<span data-content="tenant-id"></span>'
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Johan Stokking on 28 Mar 2021.
+  Last changed by Ben Olayinka on 28 Jul 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/ae37cc9a5f3ca0e2ce3c8a0e164cd2a9586b1b69">
-      doc: Small textual improvements
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/a76da6f521d3572b3018c75dcdaffa5884baa992">
+      doc: Add AWS IP note (#472)
     </a>
 </p>
 

@@ -10,7 +10,7 @@
   <title>Monitoring | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/aws/ecs/monitoring/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.25b30cdd256bfe2021b3a162f05871509954bca5cc3a6e85d1f515ea9ed6aa0f.css" integrity="sha256-JbMM3SVr/iAhs6Fi8FhxUJlUvKXMOm6F0fUV6p7Wqg8=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Monitoring">
@@ -30,7 +30,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.13</p>
+        <p class="navbar-item is-size-7">v3.14</p>
       </a><div class="navbar-item navbar-search-brand">
         <div class="field has-addons has-addons-centered">
           <div class="control">
@@ -107,6 +107,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/packet-broker/" class="">Packet Broker</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/" class="">Server Addresses</a>
@@ -306,6 +309,16 @@
 <ul>
 <li><code>ttn_lw_js_join_accepted_rate:by_tenant_id</code> and <code>ttn_lw_js_join_rejected_rate:by_tenant_id</code> record the rate of accepted and rejected join requests.</li>
 </ul>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Sometimes the monitoring service fails with <code>Essential container in task exited</code> error. This is often caused by insufficient resources. Therefore you can:</p>
+<ol>
+<li>
+<p>Set <code>UseLongTermStorage</code> to <code>false</code> in order to disable Thanos and allow Prometheus use more of the assigned resources.</p>
+</li>
+<li>
+<p>Increase memory available to the Prometheus task. A value of 2GB should be sufficient in almost all cases.</p>
+</li>
+</ol>
         </div>
         
           <div class="is-clearfix">
@@ -334,6 +347,9 @@
     
       
       <li><a href='#metrics'>Metrics</a></li>
+    
+      
+      <li><a href='#troubleshooting'>Troubleshooting</a></li>
     
   </ul>
 
@@ -373,10 +389,10 @@
         <h3 class="title is-6">About this page</h3>
         <div class="content">
 <p class="is-size-7">
-  Last changed by Hylke Visser on 04 Jun 2021.
+  Last changed by Michał Borkowski on 05 Aug 2021.
   <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/a345ea02d97a4f46ee8ff3aa91522be79e467b10">
-      doc: Rename log messages metric (#373)
+  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/b3f7246d309aa673c16b2e5ac41bebe5b4b059bf">
+      doc: Add Prometheus troubleshooting (#502)
     </a>
 </p>
 
