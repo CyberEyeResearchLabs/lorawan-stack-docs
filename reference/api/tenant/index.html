@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Tenant APIs | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/api/tenant/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Tenant APIs">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Tenant APIs">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/api/tenant/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Tenant APIs" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -116,6 +118,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_packages/" class="">Application Package APIs</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/application_pub_sub/" class="">Application Pub/Sub APIs</a>
     
   </li>
@@ -131,12 +138,12 @@
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/client/" class="">Client APIs</a>
     
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device_claiming/" class="">End Device Claiming APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
     
   </li>
 
@@ -161,6 +168,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/network_operations_center/" class="">Network Operations Center APIs</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/network_server/" class="">Network Server APIs</a>
     
   </li>
@@ -177,6 +189,11 @@
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/tenant/" class="is-active">Tenant APIs</a>
+    
+    
+
+
+
     
   </li>
 
@@ -206,10 +223,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -221,28 +238,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -251,7 +277,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -297,7 +323,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -306,6 +332,7 @@
 </a>
 
 
+          
           
           
           
@@ -571,7 +598,352 @@
   </tbody>
 </table>
 
+<h2 id="the-entityregistrysearch-service">The <code>EntityRegistrySearch</code> service</h2>
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>EntityRegistrySearch.SearchTenants</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:SearchTenantsRequest"><code>SearchTenantsRequest</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <a href="#message:Tenants"><code>Tenants</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>GET</code> <code>/api/v3/search/tenants</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="messages">Messages</h2>
+
+<h3 id="message:Configuration.Cluster.IdentityServer.ApplicationLimits">Message <code>Configuration.Cluster.IdentityServer.ApplicationLimits</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "end_devices": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>end_devices</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.IdentityServer.OrganizationLimits">Message <code>Configuration.Cluster.IdentityServer.OrganizationLimits</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "applications": null,
+  "clients": null,
+  "gateways": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>applications</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>clients</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateways</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.IdentityServer.UserLimits">Message <code>Configuration.Cluster.IdentityServer.UserLimits</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "applications": null,
+  "clients": null,
+  "gateways": null,
+  "organizations": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>applications</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>clients</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateways</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>organizations</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt64Value
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
 
 <h3 id="message:Tenant">Message <code>Tenant</code></h3>
 <p>Tenant is the message that defines a Tenant in the network.</p>
@@ -616,6 +988,7 @@
         Type
       </th>
       <td>
+        
         
             
               
@@ -663,6 +1036,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -694,6 +1068,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -727,6 +1102,7 @@
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -759,6 +1135,7 @@
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -790,6 +1167,7 @@
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -815,6 +1193,11 @@
         Type
       </th>
       <td>
+        
+          
+              
+          
+        
         repeated 
   
   <code>
@@ -854,6 +1237,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -896,6 +1280,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -936,6 +1321,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -978,6 +1364,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -1018,6 +1405,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -1060,6 +1448,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -1100,6 +1489,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -1145,6 +1535,7 @@ If state_description is not updated when updating state, state_description is cl
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1180,6 +1571,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1211,6 +1603,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -1249,6 +1642,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1285,6 +1679,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -1334,6 +1729,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1377,6 +1773,13 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1432,6 +1835,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1478,6 +1882,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1521,6 +1926,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -1568,6 +1974,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1612,6 +2019,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1648,6 +2056,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -1698,6 +2107,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
   <code>uint64</code>
 </td>
     </tr>
@@ -1720,6 +2130,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint64</code>
 </td>
@@ -1744,6 +2155,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
   <code>uint64</code>
 </td>
     </tr>
@@ -1766,6 +2178,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint64</code>
 </td>
@@ -1790,6 +2203,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
   <code>uint64</code>
 </td>
     </tr>
@@ -1813,6 +2227,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
   <code>uint64</code>
 </td>
     </tr>
@@ -1835,6 +2250,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint64</code>
 </td>
@@ -1873,6 +2289,7 @@ when also updating <code>state</code>.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1904,6 +2321,7 @@ when also updating <code>state</code>.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -1939,6 +2357,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -1971,6 +2390,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -2015,6 +2435,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2062,6 +2483,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2085,6 +2507,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 <details><summary>Show object example</summary>
 <pre><code>{
   "default_cluster": {},
+  "clusters": {},
   "pb": {},
 }</code></pre>
 </details>
@@ -2105,6 +2528,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2143,6 +2567,53 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Field
       </th>
       <td>
+        <code>clusters</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        map of 
+  <code>string</code>
+ to 
+  
+    
+    <a href="#message:Configuration.Cluster">
+  
+  <code>
+    
+    Configuration.Cluster
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Configuration per cluster (by ID).</p>
+        
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
         <code>pb</code>
       </td>
     </tr>
@@ -2151,6 +2622,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2215,6 +2687,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2252,6 +2725,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2288,6 +2762,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2337,6 +2812,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2362,6 +2838,8 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   "ui": {},
   "is": {},
   "ns": {},
+  "js": {},
+  "noc": {},
 }</code></pre>
 </details>
 
@@ -2381,6 +2859,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2418,6 +2897,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2465,6 +2945,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2481,6 +2962,100 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
     </a>
   
 </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>js</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.JoinServer">
+  
+  <code>
+    
+    Configuration.Cluster.JoinServer
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Join Server</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>noc</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.NetworkOperationsCenter">
+  
+  <code>
+    
+    Configuration.Cluster.NetworkOperationsCenter
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Network Operations Center</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2512,6 +3087,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -2559,6 +3135,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2590,6 +3167,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -2623,6 +3201,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2654,6 +3233,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -2699,6 +3279,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2730,6 +3311,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -2774,6 +3356,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2792,6 +3375,11 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   "end_device_picture": {},
   "user_rights": {},
   "admin_rights": {},
+  "user_login": {},
+  "email": {},
+  "application_limits": {},
+  "organization_limits": {},
+  "user_limits": {},
 }</code></pre>
 </details>
 
@@ -2811,6 +3399,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2849,6 +3438,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2885,6 +3475,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2923,6 +3514,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2960,6 +3552,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2976,6 +3569,226 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
     </a>
   
 </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>user_login</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.UserLogin">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.UserLogin
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>email</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.Email">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.Email
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>application_limits</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.ApplicationLimits">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.ApplicationLimits
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The default limits set on newly created applications.
+Note that these limits do not override the limits of the tenant or the license.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>organization_limits</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.OrganizationLimits">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.OrganizationLimits
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The default limits set on newly created organizations.
+Note that these limits do not override the limits of the tenant or the license.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>user_limits</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.UserLimits">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.UserLimits
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The default limits set on newly created users.
+Note that these limits do not override the limits of the tenant or the license.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -3011,6 +3824,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -3049,6 +3863,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3085,6 +3900,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -3123,6 +3939,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3159,6 +3976,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3204,6 +4022,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3235,6 +4054,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3279,6 +4099,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3321,6 +4142,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3369,6 +4191,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3400,6 +4223,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3433,6 +4257,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3465,6 +4290,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3496,6 +4322,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3541,6 +4368,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3573,6 +4401,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3583,6 +4412,134 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
     BoolValue
   </code>
   
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.IdentityServer.UserLogin">Message <code>Configuration.Cluster.IdentityServer.UserLogin</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "disable_credentials_login": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>disable_credentials_login</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    BoolValue
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.IdentityServer.Email">Message <code>Configuration.Cluster.IdentityServer.Email</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "network": {},
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>network</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.IdentityServer.Email.Network">
+  
+  <code>
+    
+    Configuration.Cluster.IdentityServer.Email.Network
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.IdentityServer.Email.Network">Message <code>Configuration.Cluster.IdentityServer.Email.Network</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "branding_base_url": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>branding_base_url</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
 </td>
     </tr>
     
@@ -3616,6 +4573,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3642,6 +4600,8 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   "create_clients": null,
   "create_gateways": null,
   "create_organizations": null,
+  "update_primary_email_address": null,
+  "update_name": null,
 }</code></pre>
 </details>
 
@@ -3661,6 +4621,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3694,6 +4655,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3726,6 +4688,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3757,6 +4720,73 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    BoolValue
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>update_primary_email_address</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    BoolValue
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>update_name</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
         
             
         
@@ -3801,6 +4831,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3812,6 +4843,53 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </code>
   
 </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.JoinServer">Message <code>Configuration.Cluster.JoinServer</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "join_eui_prefixes": [],
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>join_eui_prefixes</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+        
+        repeated 
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+            <p><code>len</code>: <code>9</code></p>
+        
+      </td>
     </tr>
     
   </tbody>
@@ -3845,6 +4923,9 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>bytes</code>
 </td>
@@ -3855,6 +4936,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Description
       </th>
       <td>
+            <p><code>len</code>: <code>5</code></p>
         
       </td>
     </tr>
@@ -3877,6 +4959,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3910,6 +4993,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -3918,6 +5002,99 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       google.protobuf.
     
     Duration
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.NetworkOperationsCenter">Message <code>Configuration.Cluster.NetworkOperationsCenter</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "access": {},
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>access</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Configuration.Cluster.NetworkOperationsCenter.Access">
+  
+  <code>
+    
+    Configuration.Cluster.NetworkOperationsCenter.Access
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:Configuration.Cluster.NetworkOperationsCenter.Access">Message <code>Configuration.Cluster.NetworkOperationsCenter.Access</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "extended": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>extended</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    BoolValue
   </code>
   
 </td>
@@ -3953,6 +5130,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3969,6 +5147,383 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
   </a>
   
 </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:SearchTenantsRequest">Message <code>SearchTenantsRequest</code></h3>
+<p>This message is used for finding tenants in the EntityRegistrySearch service.</p>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "id_contains": "",
+  "name_contains": "",
+  "description_contains": "",
+  "attributes_contain": {},
+  "state": [],
+  "field_mask": {},
+  "order": "",
+  "limit": 0,
+  "page": 0,
+  "deleted": false,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>id_contains</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find tenants where the ID contains this substring.</p>
+          <p><code>max_len</code>: <code>50</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>name_contains</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find tenants where the name contains this substring.</p>
+          <p><code>max_len</code>: <code>50</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>description_contains</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find tenants where the description contains this substring.</p>
+          <p><code>max_len</code>: <code>50</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>attributes_contain</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        map of 
+  <code>string</code>
+ to 
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find tenants where the given attributes contain these substrings.</p>
+          <p><code>max_pairs</code>: <code>10</code></p>
+            <p><code>max_len</code> (key): <code>36</code></p>
+            <p><code>pattern</code> (key): <code>^[a-z0-9](?:[-]?[a-z0-9]){2,}$</code></p>
+        
+            <p><code>max_len</code> (value): <code>50</code></p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>state</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+              
+          
+        
+        repeated 
+  
+  <code>
+  
+  ttn.lorawan.v3.
+  
+  State
+  </code>
+    
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find tenants where the state is any of these states.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>field_mask</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    FieldMask
+  </code>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>order</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Order the results by this field path (must be present in the field mask).
+Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
+          <p><code>in</code>: <code>[ tenant_id -tenant_id name -name created_at -created_at]</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>limit</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Limit the number of results per page.</p>
+          <p><code>lte</code>: <code>1000</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>page</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Page number for pagination. 0 is interpreted as 1.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>deleted</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bool</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Only return recently deleted tenants.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -4061,6 +5616,26 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 
 	
 
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 
         </div>
         <div class="is-clearfix">
@@ -4092,6 +5667,9 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       <li><a href='#the-tenantregistry-service'>The TenantRegistry service</a></li>
     
       
+      <li><a href='#the-entityregistrysearch-service'>The EntityRegistrySearch service</a></li>
+    
+      
       <li><a href='#messages'>Messages</a></li>
     
       
@@ -4112,45 +5690,29 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Nejra Selimović on 28 Jul 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9d8cffeb3d65851a4e7ce4446abcd9a700ed7bba">
-      doc: Create v3.14.0 release docs, add missing refs (#482)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/api/tenant.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

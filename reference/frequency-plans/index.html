@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Frequency Plans | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="Frequency plans">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Frequency Plans">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Frequency Plans">
   <meta property="og:description" content="Frequency plans">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/frequency-plans/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Frequency Plans" />
   <meta name="twitter:description" content="Frequency plans" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -112,10 +114,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -141,28 +143,37 @@
     
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -171,7 +182,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -197,6 +208,7 @@
         <div class="content">
           <p>This reference contains Frequency Plans that are officially supported by The Things Stack. This list is populated from the <a href="https://github.com/TheThingsNetwork/lorawan-frequency-plans/"><code>lorawan-frequency-plans</code> Github repository</a>.</p>
 <p>Deployments may also have custom frequency plans configured.</p>
+<p>Read more about <a href="https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/">Frequency Plans</a> and see a list of <a href="https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/">Frequency Plans by Country</a>.</p>
 <!-- terms come from /data/frequency-plans. -->
 
 <div class="has-vertical-space">
@@ -205,15 +217,18 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><code>EU_863_870</code></td>
         <td><code>EU_863_870</code></td>
         <td><code>868</code></td>
         <td> Default frequency plan for Europe</td>
@@ -227,9 +242,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -237,8 +254,59 @@
     <tbody>
       <tr>
         <td><code>EU_863_870_TTN</code></td>
+        <td><code>EU_863_870</code></td>
         <td><code>868</code></td>
         <td> TTN Community Network frequency plan for Europe, using SF9 for RX2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="eu_863_870_roaming_draft">Europe 863-870 MHz, 6 channels for roaming (Draft)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>EU_863_870_ROAMING_DRAFT</code></td>
+        <td><code>EU_863_870</code></td>
+        <td><code>868</code></td>
+        <td> European 6 channel plan used by major operators to support LoRaWAN Passive Roaming</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="eu_433">Europe 433 MHz (ITU region 1)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>EU_433</code></td>
+        <td><code>EU_433</code></td>
+        <td><code>433</code></td>
+        <td> Default frequency plan for worldwide 433MHz</td>
       </tr>
     </tbody>
   </table>
@@ -249,9 +317,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -259,6 +329,7 @@
     <tbody>
       <tr>
         <td><code>US_902_928_FSB_1</code></td>
+        <td><code>US_902_928</code></td>
         <td><code>915</code></td>
         <td> Default frequency plan for the United States and Canada, using sub-band 1</td>
       </tr>
@@ -271,9 +342,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -281,8 +354,159 @@
     <tbody>
       <tr>
         <td><code>US_902_928_FSB_2</code></td>
+        <td><code>US_902_928</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for the United States and Canada, using sub-band 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_3">United States 902-928 MHz, FSB 3</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_3</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_4">United States 902-928 MHz, FSB 4</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_4</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 4</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_5">United States 902-928 MHz, FSB 5</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_5</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 5</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_6">United States 902-928 MHz, FSB 6</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_6</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 6</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_7">United States 902-928 MHz, FSB 7</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_7</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 7</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="us_902_928_fsb_8">United States 902-928 MHz, FSB 8</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>US_902_928_FSB_8</code></td>
+        <td><code>US_902_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for the United States and Canada, using sub-band 8</td>
       </tr>
     </tbody>
   </table>
@@ -293,9 +517,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -303,6 +529,7 @@
     <tbody>
       <tr>
         <td><code>AU_915_928_FSB_1</code></td>
+        <td><code>AU_915_928</code></td>
         <td><code>915</code></td>
         <td> Default frequency plan for Australia, using sub-band 1</td>
       </tr>
@@ -315,9 +542,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -325,8 +554,84 @@
     <tbody>
       <tr>
         <td><code>AU_915_928_FSB_2</code></td>
+        <td><code>AU_915_928</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for Australia, using sub-band 2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="au_915_928_fsb_3">Australia 915-928 MHz, FSB 3</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AU_915_928_FSB_3</code></td>
+        <td><code>AU_915_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for Australia, using sub-band 3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="au_915_928_fsb_4">Australia 915-928 MHz, FSB 4</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AU_915_928_FSB_4</code></td>
+        <td><code>AU_915_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for Australia, using sub-band 4</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="au_915_928_fsb_5">Australia 915-928 MHz, FSB 5</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AU_915_928_FSB_5</code></td>
+        <td><code>AU_915_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for Australia, using sub-band 5</td>
       </tr>
     </tbody>
   </table>
@@ -337,9 +642,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -347,6 +654,7 @@
     <tbody>
       <tr>
         <td><code>AU_915_928_FSB_6</code></td>
+        <td><code>AU_915_928</code></td>
         <td><code>915</code></td>
         <td> Frequency plan for Australia, using sub-band 6, which overlaps with Asia 923-925 MHz</td>
       </tr>
@@ -354,14 +662,91 @@
   </table>
 </div>
 <div class="has-vertical-space">
-  <h3 id="cn_470_510_fsb_11">China 470-510 MHz, FSB 11</h3>
+  <h3 id="au_915_928_fsb_7">Australia 915-928 MHz, FSB 7</h3>
   <table class="fixed">
     <thead>
+      <col width="10px" />
       <col width="10px" />
       <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AU_915_928_FSB_7</code></td>
+        <td><code>AU_915_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for Australia, using sub-band 7</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="au_915_928_fsb_8">Australia 915-928 MHz, FSB 8</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AU_915_928_FSB_8</code></td>
+        <td><code>AU_915_928</code></td>
+        <td><code>915</code></td>
+        <td> Default frequency plan for Australia, using sub-band 8</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="cn_470_510_fsb_1">China 470-510 MHz, FSB 1</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>CN_470_510_FSB_1</code></td>
+        <td><code>CN_470_510</code></td>
+        <td><code>470</code></td>
+        <td> Default frequency plan for China, using sub-band 1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="cn_470_510_fsb_11">China 470-510 MHz, FSB 11 (used by TTN)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -369,6 +754,7 @@
     <tbody>
       <tr>
         <td><code>CN_470_510_FSB_11</code></td>
+        <td><code>CN_470_510</code></td>
         <td><code>470</code></td>
         <td> TTN Community Network frequency plan for China, using sub-band 11</td>
       </tr>
@@ -381,15 +767,18 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><code>AS_920_923</code></td>
         <td><code>AS_920_923</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for Asian countries, using frequencies ≤ 923 MHz</td>
@@ -403,9 +792,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -413,6 +804,7 @@
     <tbody>
       <tr>
         <td><code>AS_920_923_LBT</code></td>
+        <td><code>AS_920_923</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for Asian countries, using frequencies ≤ 923 MHz with listen-before-talk</td>
       </tr>
@@ -420,14 +812,143 @@
   </table>
 </div>
 <div class="has-vertical-space">
-  <h3 id="as_923">Asia 923 MHz with only default channels</h3>
+  <h3 id="as_920_923_ttn_jp_1">Japan 920-923 MHz with LBT (channels 31-38)</h3>
   <table class="fixed">
     <thead>
+      <col width="10px" />
       <col width="10px" />
       <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_JP_1</code></td>
+        <td><code></code></td>
+        <td><code>915</code></td>
+        <td> Frequency plan for Japan, using continuous frequencies up to 923.4MHz with LBT.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_920_923_ttn_jp_1_land_mobile">Japan 920-923 MHz with LBT (channels 31-38), Max EIRP 27 dBm</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_JP_1_LAND_MOBILE</code></td>
+        <td><code></code></td>
+        <td><code>915</code></td>
+        <td> Frequency plan for Japanese land mobile station, using continuous frequencies up to 923.4MHz with MAX EIRP 27 dBm and LBT.
+(note) A user who installs land mobile station in Japan must apply to Japanese Ministry of Internal Affairs and Communications.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_920_923_ttn_jp_2">Japan 920-923 MHz with LBT (channels 24-27 and 35-38)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_JP_2</code></td>
+        <td><code></code></td>
+        <td><code>915</code></td>
+        <td> Frequency plan for Japan, using top and bottom frequencies ≤ 923.4 MHz with LBT.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_920_923_ttn_jp_3">Japan 920-923 MHz with LBT (channels 24-31)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_JP_3</code></td>
+        <td><code></code></td>
+        <td><code>915</code></td>
+        <td> Frequency plan for Japan (16 channels), using continuous frequencies from 920.6 MHz, expected to be used with AS_920_923_TTN_JP_1.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_920_923_ttn_jp_3_land_mobile">Japan 920-923 MHz with LBT (channels 24-31), Max EIRP 27 dBm</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_JP_3_LAND_MOBILE</code></td>
+        <td><code></code></td>
+        <td><code>915</code></td>
+        <td> Frequency plan for Japanese land mobile station (16 channels), using continuous frequencies from 920.6 MHz with MAX EIRP 27 dBm and LBT, expected to be used with AS_920_923_TTN_JP_1.
+(note) A user who installs land mobile station in Japan must apply to Japanese Ministry of Internal Affairs and Communications.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923">Asia 915-928 MHz (AS923 Group 1) with only default channels</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -435,8 +956,284 @@
     <tbody>
       <tr>
         <td><code>AS_923</code></td>
+        <td><code>AS_923</code></td>
         <td><code>915</code></td>
-        <td> TTN Community Network frequency plan for Asian countries, using default frequencies of the AS923 band. This is added only for compatibility. Preferrably use the 920-923 or 923-925 variants</td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 923.0-923.5 MHz sub-band</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_2">Asia 920-923 MHz (AS923 Group 2) with only default channels</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_2</code></td>
+        <td><code>AS_923_2</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_3">Asia 915-921 MHz (AS923 Group 3) with only default channels</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_3</code></td>
+        <td><code>AS_923_3</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 916.5-917.0 MHz sub-band</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_4">Asia 917-920 MHz (AS923 Group 4) with only default channels</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_4</code></td>
+        <td><code>AS_923_4</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 917.3-917.5 MHz sub-band</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_ndt">Asia 915-928 MHz (AS923 Group 1) with only default channels and dwell time disabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_NDT</code></td>
+        <td><code>AS_923</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 923.0-923.5 MHz sub-band and dwell time disabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_dt">Asia 915-928 MHz (AS923 Group 1) with only default channels and dwell time enabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_DT</code></td>
+        <td><code>AS_923</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 923.0-923.5 MHz sub-band and dwell time enabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_2_ndt">Asia 920-923 MHz (AS923 Group 2) with only default channels and dwell time disabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_2_NDT</code></td>
+        <td><code>AS_923_2</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time disabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_2_dt">Asia 920-923 MHz (AS923 Group 2) with only default channels and dwell time enabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_2_DT</code></td>
+        <td><code>AS_923_2</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time enabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_3_ndt">Asia 920-923 MHz (AS923 Group 3) with only default channels and dwell time disabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_3_NDT</code></td>
+        <td><code>AS_923_3</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time disabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_3_dt">Asia 920-923 MHz (AS923 Group 3) with only default channels and dwell time enabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_3_DT</code></td>
+        <td><code>AS_923_3</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time enabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_4_ndt">Asia 920-923 MHz (AS923 Group 4) with only default channels and dwell time disabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_4_NDT</code></td>
+        <td><code>AS_923_4</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time disabled</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_4_dt">Asia 920-923 MHz (AS923 Group 4) with only default channels and dwell time enabled</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_923_4_DT</code></td>
+        <td><code>AS_923_4</code></td>
+        <td><code>915</code></td>
+        <td> Compatibility frequency plan for Asian countries with common channels in the 921.4-922.0 MHz sub-band and dwell time enabled</td>
       </tr>
     </tbody>
   </table>
@@ -447,15 +1244,18 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><code>AS_923_925</code></td>
         <td><code>AS_923_925</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for Asian countries, using frequencies ≥ 923 MHz</td>
@@ -469,9 +1269,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -479,6 +1281,7 @@
     <tbody>
       <tr>
         <td><code>AS_923_925_LBT</code></td>
+        <td><code>AS_923_925</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for Asian countries, using frequencies ≥ 923 MHz with listen-before-talk</td>
       </tr>
@@ -486,14 +1289,41 @@
   </table>
 </div>
 <div class="has-vertical-space">
-  <h3 id="as_923_925_ttn_au">Asia 923-925 MHz (used by TTN Australia)</h3>
+  <h3 id="as_920_923_ttn_au">Asia 920-923 MHz (used by TTN Australia)</h3>
   <table class="fixed">
     <thead>
+      <col width="10px" />
       <col width="10px" />
       <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>AS_920_923_TTN_AU</code></td>
+        <td><code>AS_923_925</code></td>
+        <td><code>915</code></td>
+        <td> TTN Community Network frequency plan for Asia 920-923 MHz in Australia</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="as_923_925_ttn_au">Asia 923-925 MHz (used by TTN Australia - secondary channels)</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -501,8 +1331,9 @@
     <tbody>
       <tr>
         <td><code>AS_923_925_TTN_AU</code></td>
+        <td><code>AS_923_925</code></td>
         <td><code>915</code></td>
-        <td> TTN Community Network frequency plan for Asia 923-925 MHz in Australia</td>
+        <td> TTN Community Network frequency plan for Asia 923-925 MHz in Australia. Secondary channels for 16 channel gateways.</td>
       </tr>
     </tbody>
   </table>
@@ -513,9 +1344,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -523,8 +1356,34 @@
     <tbody>
       <tr>
         <td><code>KR_920_923_TTN</code></td>
+        <td><code>KR_920_923</code></td>
         <td><code>915</code></td>
         <td> TTN Community Network frequency plan for South Korea</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="has-vertical-space">
+  <h3 id="ma_869_870_draft">Morocco 869-870 MHz</h3>
+  <table class="fixed">
+    <thead>
+      <col width="10px" />
+      <col width="10px" />
+      <col width="10px" />
+      <col width="20px" />
+      <tr>
+        <th>ID</th>
+        <th>LoRaWAN Band ID</th>
+        <th>Base Frequency</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>MA_869_870_DRAFT</code></td>
+        <td><code>MA_869_870_DRAFT</code></td>
+        <td><code>868</code></td>
+        <td> Draft frequency plan for Morocco, with 4 channels</td>
       </tr>
     </tbody>
   </table>
@@ -535,15 +1394,18 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><code>IN_865_867</code></td>
         <td><code>IN_865_867</code></td>
         <td><code>868</code></td>
         <td> Default frequency plan for India</td>
@@ -557,9 +1419,11 @@
     <thead>
       <col width="10px" />
       <col width="10px" />
+      <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -567,6 +1431,7 @@
     <tbody>
       <tr>
         <td><code>RU_864_870_TTN</code></td>
+        <td><code>RU_864_870</code></td>
         <td><code>868</code></td>
         <td> TTN Community Network frequency plan for Russia</td>
       </tr>
@@ -574,14 +1439,16 @@
   </table>
 </div>
 <div class="has-vertical-space">
-  <h3 id="ism_2400_3ch_draft2">LoRa 2.4 GHz with 3 channels draft 2</h3>
+  <h3 id="ism_2400_3ch_draft2">LoRa 2.4 GHz with 3 channels (Draft 2)</h3>
   <table class="fixed">
     <thead>
+      <col width="10px" />
       <col width="10px" />
       <col width="10px" />
       <col width="20px" />
       <tr>
         <th>ID</th>
+        <th>LoRaWAN Band ID</th>
         <th>Base Frequency</th>
         <th>Description</th>
       </tr>
@@ -589,8 +1456,9 @@
     <tbody>
       <tr>
         <td><code>ISM_2400_3CH_DRAFT2</code></td>
+        <td><code>ISM_2400</code></td>
         <td><code>2450</code></td>
-        <td> LoRa 2.4 GHz plan with 3 channels for global use draft 2</td>
+        <td> Global 3 channel plan for LoRa 2.4 GHz (Draft 2)</td>
       </tr>
     </tbody>
   </table>
@@ -630,45 +1498,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by benolayinka on 10 Nov 2020.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/7c8024c18047638bfe62083d6b3f1de8967d6cf0">
-      util: Make frequency plan ID prominent
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/frequency-plans/_index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

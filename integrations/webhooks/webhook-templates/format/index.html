@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Format | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/format/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Format">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Format">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/format/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Format" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -113,6 +115,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/ifttt/" class="">IFTTT</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/guides/" class="">Guides</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/" class="">Payload Formatters</a>
@@ -153,6 +158,11 @@
   <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/format/" class="is-active">Format</a>
     
+    
+
+
+
+    
   </li>
 
   <li>
@@ -168,6 +178,11 @@
 </ul>
 
 
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/troubleshooting/" class="">Troubleshooting Webhooks</a>
     
   </li>
 
@@ -209,11 +224,7 @@
 <li><code>info-url</code>: The URL of the main page of the service.</li>
 <li><code>documentation-url</code>: The URL of the documentation of the service.</li>
 </ul>
-<div class="notification is-info is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  The difference between <code>documentation-url</code> and <code>info-url</code> is that <code>info-url</code> should lead to the home page of the service (i.e. <code>https://www.thethingsnetwork.org/</code>), while <code>documentation-url</code> should lead directly to the location of the documentation (i.e. <code>https://www.thethingsnetwork.org/docs/applications/example/</code>).
-</div>
-
+<p>The difference between <code>documentation-url</code> and <code>info-url</code> is that <code>info-url</code> should lead to the home page of the service (i.e. <code>https://www.thethingsnetwork.org/</code>), while <code>documentation-url</code> should lead directly to the location of the documentation (i.e. <code>https://www.thethingsnetwork.org/docs/applications/example/</code>).</p>
 <h2 id="template-fields">Template Fields</h2>
 <p>Templates can contain fields which will be filled by the user on instantiation. The fields are provided as a list named <code>fields</code> in the body of the webhook template and contain the following fields:</p>
 <ul>
@@ -230,25 +241,253 @@
 <li><code>format</code>: The format which the endpoint expects. Currently <code>json</code> and <code>protobuf</code> are supported.</li>
 <li><code>headers</code>: A mapping between the names of the headers and their values. The values can contain template fields.</li>
 <li><code>create-downlink-api-key</code>: Controls if an API Key specific to the service should be created on instantiation.</li>
-<li><code>baseurl</code>: The base URL of the endpoint. Can contain template fields.</li>
+<li><code>base-url</code>: The base URL of the endpoint.</li>
 </ul>
 <p>The message paths are provided in the <code>paths</code> object which can contain the following message types:</p>
 <ul>
-<li><code>uplink-message</code>: The path to which uplink messages will be sent. Can contain template fields.</li>
-<li><code>join-accept</code>: The path to which join accept messages will be sent. Can contain template fields.</li>
-<li><code>downlink-ack</code>: The path to which downlink acknowledgements will be sent. Can contain template fields.</li>
-<li><code>downlink-nack</code>: The path to which downlink not-acknowledged messages will be sent. Can contain template fields.</li>
-<li><code>downlink-sent</code>: The path to which downlink sent will be sent. Can contain template fields.</li>
-<li><code>downlink-failed</code>: The path to which downlink failures will be sent. Can contain template fields.</li>
-<li><code>downlink-queued</code>: The path to which downlink queued status will be sent. Can contain template fields.</li>
-<li><code>downlink-queue-invalidated</code>: The path to which downlink queue invalidated event will be sent. Can contain template fields. This is only used when the upstream platform carries out LoRaWAN <code>FRMPayload</code> encryption.</li>
-<li><code>location-solved</code>: The path to which the location of the device will be sent when resolved. Can contain template fields.</li>
-<li><code>service-data</code>: The path to which the data from integrations is sent. Data from services such as LoRa Cloud DAS and GLS will be sent here, for example. Can contain template fields.</li>
+<li><code>uplink-message</code>: The path to which uplink messages will be sent.</li>
+<li><code>uplink-normalized</code>: The path to which normalized uplink payloads will be sent.</li>
+<li><code>join-accept</code>: The path to which join accept messages will be sent.</li>
+<li><code>downlink-ack</code>: The path to which downlink acknowledgements will be sent.</li>
+<li><code>downlink-nack</code>: The path to which downlink not-acknowledged messages will be sent.</li>
+<li><code>downlink-sent</code>: The path to which downlink sent will be sent.</li>
+<li><code>downlink-failed</code>: The path to which downlink failures will be sent.</li>
+<li><code>downlink-queued</code>: The path to which downlink queued status will be sent.</li>
+<li><code>downlink-queue-invalidated</code>: The path to which downlink queue invalidated event will be sent. This is only used when the upstream platform carries out LoRaWAN® <code>FRMPayload</code> encryption.</li>
+<li><code>location-solved</code>: The path to which the location of the device will be sent when resolved.</li>
+<li><code>service-data</code>: The path to which the data from integrations is sent. Data from services such as LoRa Cloud DAS and GLS will be sent here, for example.</li>
 </ul>
 <div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  Not all of the messages types must be handled by the service. By omitting the field in the <code>paths</code> object, the message type will be disabled in the final webhook and the related messages will not be passed to the endpoint.
+  <p>The URL (<code>base-url</code>) and all paths can contain template fields.</p>
+<p>Not all of the messages types must be handled by the service. By omitting the field in the <code>paths</code> object, the message type will be disabled in the instantiated webhook configuration.</p>
+
 </div>
+
+<h2 id="field-mask">Field Mask</h2>
+<p>Field mask can be configured by providing field paths as a list named <code>field-mask</code> in the body of the webhook template and contain the following paths:</p>
+<pre tabindex="0"><code>correlation_ids
+end_device_ids
+end_device_ids.application_ids
+end_device_ids.application_ids.application_id
+end_device_ids.dev_addr
+end_device_ids.dev_eui
+end_device_ids.device_id
+end_device_ids.join_eui
+received_at
+simulated
+up
+up.downlink_ack
+up.downlink_ack.class_b_c
+up.downlink_ack.class_b_c.absolute_time
+up.downlink_ack.class_b_c.gateways
+up.downlink_ack.confirmed
+up.downlink_ack.correlation_ids
+up.downlink_ack.decoded_payload
+up.downlink_ack.decoded_payload_warnings
+up.downlink_ack.f_cnt
+up.downlink_ack.f_port
+up.downlink_ack.frm_payload
+up.downlink_ack.priority
+up.downlink_ack.session_key_id
+up.downlink_failed
+up.downlink_failed.downlink
+up.downlink_failed.downlink.class_b_c
+up.downlink_failed.downlink.class_b_c.absolute_time
+up.downlink_failed.downlink.class_b_c.gateways
+up.downlink_failed.downlink.confirmed
+up.downlink_failed.downlink.correlation_ids
+up.downlink_failed.downlink.decoded_payload
+up.downlink_failed.downlink.decoded_payload_warnings
+up.downlink_failed.downlink.f_cnt
+up.downlink_failed.downlink.f_port
+up.downlink_failed.downlink.frm_payload
+up.downlink_failed.downlink.priority
+up.downlink_failed.downlink.session_key_id
+up.downlink_failed.error
+up.downlink_failed.error.attributes
+up.downlink_failed.error.cause
+up.downlink_failed.error.cause.attributes
+up.downlink_failed.error.cause.correlation_id
+up.downlink_failed.error.cause.message_format
+up.downlink_failed.error.cause.name
+up.downlink_failed.error.cause.namespace
+up.downlink_failed.error.code
+up.downlink_failed.error.correlation_id
+up.downlink_failed.error.details
+up.downlink_failed.error.message_format
+up.downlink_failed.error.name
+up.downlink_failed.error.namespace
+up.downlink_nack
+up.downlink_nack.class_b_c
+up.downlink_nack.class_b_c.absolute_time
+up.downlink_nack.class_b_c.gateways
+up.downlink_nack.confirmed
+up.downlink_nack.correlation_ids
+up.downlink_nack.decoded_payload
+up.downlink_nack.decoded_payload_warnings
+up.downlink_nack.f_cnt
+up.downlink_nack.f_port
+up.downlink_nack.frm_payload
+up.downlink_nack.priority
+up.downlink_nack.session_key_id
+up.downlink_queue_invalidated
+up.downlink_queue_invalidated.downlinks
+up.downlink_queue_invalidated.last_f_cnt_down
+up.downlink_queue_invalidated.session_key_id
+up.downlink_queued
+up.downlink_queued.class_b_c
+up.downlink_queued.class_b_c.absolute_time
+up.downlink_queued.class_b_c.gateways
+up.downlink_queued.confirmed
+up.downlink_queued.correlation_ids
+up.downlink_queued.decoded_payload
+up.downlink_queued.decoded_payload_warnings
+up.downlink_queued.f_cnt
+up.downlink_queued.f_port
+up.downlink_queued.frm_payload
+up.downlink_queued.priority
+up.downlink_queued.session_key_id
+up.downlink_sent
+up.downlink_sent.class_b_c
+up.downlink_sent.class_b_c.absolute_time
+up.downlink_sent.class_b_c.gateways
+up.downlink_sent.confirmed
+up.downlink_sent.correlation_ids
+up.downlink_sent.decoded_payload
+up.downlink_sent.decoded_payload_warnings
+up.downlink_sent.f_cnt
+up.downlink_sent.f_port
+up.downlink_sent.frm_payload
+up.downlink_sent.priority
+up.downlink_sent.session_key_id
+up.join_accept
+up.join_accept.app_s_key
+up.join_accept.app_s_key.encrypted_key
+up.join_accept.app_s_key.kek_label
+up.join_accept.app_s_key.key
+up.join_accept.invalidated_downlinks
+up.join_accept.pending_session
+up.join_accept.received_at
+up.join_accept.session_key_id
+up.location_solved
+up.location_solved.attributes
+up.location_solved.location
+up.location_solved.location.accuracy
+up.location_solved.location.altitude
+up.location_solved.location.latitude
+up.location_solved.location.longitude
+up.location_solved.location.source
+up.location_solved.service
+up.service_data
+up.service_data.data
+up.service_data.service
+up.uplink_message
+up.uplink_message.app_s_key
+up.uplink_message.app_s_key.encrypted_key
+up.uplink_message.app_s_key.kek_label
+up.uplink_message.app_s_key.key
+up.uplink_message.confirmed
+up.uplink_message.consumed_airtime
+up.uplink_message.decoded_payload
+up.uplink_message.decoded_payload_warnings
+up.uplink_message.normalized_payload
+up.uplink_message.normalized_payload_warnings
+up.uplink_message.f_cnt
+up.uplink_message.f_port
+up.uplink_message.frm_payload
+up.uplink_message.last_a_f_cnt_down
+up.uplink_message.locations
+up.uplink_message.network_ids
+up.uplink_message.network_ids.cluster_address
+up.uplink_message.network_ids.cluster_id
+up.uplink_message.network_ids.net_id
+up.uplink_message.network_ids.tenant_address
+up.uplink_message.network_ids.tenant_id
+up.uplink_message.received_at
+up.uplink_message.rx_metadata
+up.uplink_message.session_key_id
+up.uplink_message.settings
+up.uplink_message.settings.coding_rate
+up.uplink_message.settings.concentrator_timestamp
+up.uplink_message.settings.data_rate
+up.uplink_message.settings.data_rate.modulation
+up.uplink_message.settings.data_rate.modulation.fsk
+up.uplink_message.settings.data_rate.modulation.fsk.bit_rate
+up.uplink_message.settings.data_rate.modulation.lora
+up.uplink_message.settings.data_rate.modulation.lora.bandwidth
+up.uplink_message.settings.data_rate.modulation.lora.spreading_factor
+up.uplink_message.settings.data_rate.modulation.lrfhss
+up.uplink_message.settings.data_rate.modulation.lrfhss.coding_rate
+up.uplink_message.settings.data_rate.modulation.lrfhss.modulation_type
+up.uplink_message.settings.data_rate.modulation.lrfhss.operating_channel_width
+up.uplink_message.settings.downlink
+up.uplink_message.settings.downlink.antenna_index
+up.uplink_message.settings.downlink.invert_polarization
+up.uplink_message.settings.downlink.tx_power
+up.uplink_message.settings.enable_crc
+up.uplink_message.settings.frequency
+up.uplink_message.settings.time
+up.uplink_message.settings.timestamp
+up.uplink_message.version_ids
+up.uplink_message.version_ids.band_id
+up.uplink_message.version_ids.brand_id
+up.uplink_message.version_ids.firmware_version
+up.uplink_message.version_ids.hardware_version
+up.uplink_message.version_ids.model_id
+up.uplink_message.version_ids.serial_number
+up.uplink_message.version_ids.vendor_id
+up.uplink_message.version_ids.vendor_profile_id
+up.uplink_normalized
+up.uplink_normalized.confirmed
+up.uplink_normalized.consumed_airtime
+up.uplink_normalized.normalized_payload
+up.uplink_normalized.normalized_payload_warnings
+up.uplink_normalized.f_cnt
+up.uplink_normalized.f_port
+up.uplink_normalized.frm_payload
+up.uplink_normalized.locations
+up.uplink_normalized.network_ids
+up.uplink_normalized.network_ids.cluster_address
+up.uplink_normalized.network_ids.cluster_id
+up.uplink_normalized.network_ids.net_id
+up.uplink_normalized.network_ids.tenant_address
+up.uplink_normalized.network_ids.tenant_id
+up.uplink_normalized.received_at
+up.uplink_normalized.rx_metadata
+up.uplink_normalized.session_key_id
+up.uplink_normalized.settings
+up.uplink_normalized.settings.coding_rate
+up.uplink_normalized.settings.concentrator_timestamp
+up.uplink_normalized.settings.data_rate
+up.uplink_normalized.settings.data_rate.modulation
+up.uplink_normalized.settings.data_rate.modulation.fsk
+up.uplink_normalized.settings.data_rate.modulation.fsk.bit_rate
+up.uplink_normalized.settings.data_rate.modulation.lora
+up.uplink_normalized.settings.data_rate.modulation.lora.bandwidth
+up.uplink_normalized.settings.data_rate.modulation.lora.spreading_factor
+up.uplink_normalized.settings.data_rate.modulation.lrfhss
+up.uplink_normalized.settings.data_rate.modulation.lrfhss.coding_rate
+up.uplink_normalized.settings.data_rate.modulation.lrfhss.modulation_type
+up.uplink_normalized.settings.data_rate.modulation.lrfhss.operating_channel_width
+up.uplink_normalized.settings.downlink
+up.uplink_normalized.settings.downlink.antenna_index
+up.uplink_normalized.settings.downlink.invert_polarization
+up.uplink_normalized.settings.downlink.tx_power
+up.uplink_normalized.settings.enable_crc
+up.uplink_normalized.settings.frequency
+up.uplink_normalized.settings.time
+up.uplink_normalized.settings.timestamp
+up.uplink_normalized.version_ids
+up.uplink_normalized.version_ids.band_id
+up.uplink_normalized.version_ids.brand_id
+up.uplink_normalized.version_ids.firmware_version
+up.uplink_normalized.version_ids.hardware_version
+up.uplink_normalized.version_ids.model_id
+up.uplink_normalized.version_ids.serial_number
+up.uplink_normalized.version_ids.vendor_id
+up.uplink_normalized.version_ids.vendor_profile_id
+</code></pre>
         </div>
         <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/integrations/webhooks/webhook-templates/">← Webhook Templates</a>
@@ -281,6 +520,9 @@
       
       <li><a href='#endpoint'>Endpoint</a></li>
     
+      
+      <li><a href='#field-mask'>Field Mask</a></li>
+    
   </ul>
 
 
@@ -296,45 +538,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Ben Olayinka on 06 Jul 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/819eb8382ea9db336d9dbfca184bdc8354ee0541">
-      Improve webhook docs (#433)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/integrations/webhooks/webhook-templates/format.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Gateway APIs | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/api/gateway/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Gateway APIs">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Gateway APIs">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/api/gateway/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Gateway APIs" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -116,6 +118,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_packages/" class="">Application Package APIs</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/application_pub_sub/" class="">Application Pub/Sub APIs</a>
     
   </li>
@@ -131,12 +138,12 @@
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/client/" class="">Client APIs</a>
     
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device_claiming/" class="">End Device Claiming APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
     
   </li>
 
@@ -148,6 +155,11 @@
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/gateway/" class="is-active">Gateway APIs</a>
     
+    
+
+
+
+    
   </li>
 
   <li>
@@ -157,6 +169,11 @@
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/gateway_server_mqtt/" class="">Gateway Server MQTT</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/network_operations_center/" class="">Network Operations Center APIs</a>
     
   </li>
 
@@ -206,10 +223,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -221,28 +238,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -251,7 +277,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -531,6 +557,161 @@ More or less fields may be returned, depending on the rights of the caller.
       </th>
       <td>
         <p><code>DELETE</code> <code>/api/v3/gateways/{gateway_id}</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayRegistry.Restore</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        <p>Restore a recently deleted gateway. This does not restore the EUI,
+as that was released when deleting the gateway.</p>
+<p>Deployment configuration may specify if, and for how long after deletion,
+entities can be restored.</p>
+
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:GatewayIdentifiers"><code>GatewayIdentifiers</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <code>google.protobuf.Empty</code>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>POST</code> <code>/api/v3/gateways/{gateway_id}/restore</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayRegistry.Purge</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        Purge the gateway. This will release both gateway ID and EUI for reuse.
+The gateway owner is responsible for clearing data from any (external) integrations
+that may store and expose data by gateway ID.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:GatewayIdentifiers"><code>GatewayIdentifiers</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <code>google.protobuf.Empty</code>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>DELETE</code> <code>/api/v3/gateways/{gateway_id}/purge</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayRegistry.GetIdentifiersForEUI</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        Get the identifiers of the gateway that has the given EUI registered.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:GetGatewayIdentifiersForEUIRequest"><code>GetGatewayIdentifiersForEUIRequest</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <a href="#message:GatewayIdentifiers"><code>GatewayIdentifiers</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
       </td>
     </tr>
   </tbody>
@@ -1040,6 +1221,207 @@ The caller is required to have all assigned or/and removed rights.
   </tbody>
 </table>
 
+<h2 id="the-gatewayclaimingserver-service">The <code>GatewayClaimingServer</code> service</h2>
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayClaimingServer.AuthorizeGateway</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        AuthorizeGateway allows a gateway to be claimed.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:AuthorizeGatewayRequest"><code>AuthorizeGatewayRequest</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <code>google.protobuf.Empty</code>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>POST</code> <code>/api/v3/gcls/gateways/{gateway_ids.gateway_id}/authorize</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayClaimingServer.Claim</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        Claims a gateway by claim authentication code or QR code and transfers the gateway to the target user.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:ClaimGatewayRequest"><code>ClaimGatewayRequest</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <a href="#message:GatewayIdentifiers"><code>GatewayIdentifiers</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>POST</code> <code>/api/v3/gcls/claim</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayClaimingServer.GetInfoByGatewayEUI</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        Return whether claiming is available for a given gateway EUI.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:GetInfoByGatewayEUIRequest"><code>GetInfoByGatewayEUIRequest</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <a href="#message:GetInfoByGatewayEUIResponse"><code>GetInfoByGatewayEUIResponse</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>POST</code> <code>/api/v3/gcls/claim/info</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Method
+      </th>
+      <td>
+        <code>GatewayClaimingServer.UnauthorizeGateway</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+        UnauthorizeGateway prevents a gateway from being claimed.
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Request type
+      </th>
+      <td>
+        <a href="#message:GatewayIdentifiers"><code>GatewayIdentifiers</code></a>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Response type
+      </th>
+      <td>
+        <code>google.protobuf.Empty</code>
+        
+      </td>
+    </tr>
+    <tr>
+      <th>
+        HTTP bindings
+      </th>
+      <td>
+        <p><code>DELETE</code> <code>/api/v3/gcls/gateways/{gateway_id}/authorize</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="messages">Messages</h2>
 
 <h3 id="message:APIKey">Message <code>APIKey</code></h3>
@@ -1072,6 +1454,7 @@ The caller is required to have all assigned or/and removed rights.
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -1106,6 +1489,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1139,6 +1523,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1171,6 +1556,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1216,6 +1608,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1248,6 +1641,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1279,6 +1673,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -1331,6 +1726,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1352,6 +1754,469 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:AuthorizeGatewayRequest">Message <code>AuthorizeGatewayRequest</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_ids": {},
+  "api_key": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:GatewayIdentifiers">
+  
+  <code>
+    
+    GatewayIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>api_key</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>min_len</code>: <code>1</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ClaimGatewayRequest">Message <code>ClaimGatewayRequest</code></h3>
+<b>Restrictions:</b>
+<ul>
+  <li>Only one of <code>authenticated_identifiers</code>, <code>qr_code</code> can be set.</li>
+</ul>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "authenticated_identifiers": {},
+  "qr_code": "",
+  "collaborator": {},
+  "target_gateway_id": "",
+  "target_gateway_server_address": "",
+  "cups_redirection": {},
+  "target_frequency_plan_id": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>authenticated_identifiers</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:ClaimGatewayRequest.AuthenticatedIdentifiers">
+  
+  <code>
+    
+    ClaimGatewayRequest.AuthenticatedIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>qr_code</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>max_len</code>: <code>1024</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>collaborator</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:OrganizationOrUserIdentifiers">
+  
+  <code>
+    
+    OrganizationOrUserIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Collaborator to grant all rights on the target gateway.</p>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>target_gateway_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Gateway ID for the target gateway. This must be a unique value.
+If this is not set, the target ID for the target gateway will be set to <code>&lt;gateway-eui&gt;</code>.</p>
+          <p><code>max_len</code>: <code>36</code></p>
+          <p><code>pattern</code>: <code>^[a-z0-9](?:[-]?[a-z0-9]){2,}$|^$</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>target_gateway_server_address</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Target Gateway Server Address for the target gateway.</p>
+          <p><code>pattern</code>: <code>^(?:(?:[a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*(?:[A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])(?::[0-9]{1,5})?$|^$</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>cups_redirection</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:CUPSRedirection">
+  
+  <code>
+    
+    CUPSRedirection
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Parameters to set CUPS redirection for the gateway.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>target_frequency_plan_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Frequency plan ID of the target gateway.
+This equals the first element of the frequency_plan_ids field.</p>
+          <p><code>max_len</code>: <code>64</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ClaimGatewayRequest.AuthenticatedIdentifiers">Message <code>ClaimGatewayRequest.AuthenticatedIdentifiers</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_eui": "",
+  "authentication_code": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_eui</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>authentication_code</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>max_len</code>: <code>2048</code></p>
       </td>
     </tr>
     
@@ -1385,6 +2250,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -1431,6 +2297,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1485,6 +2358,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1507,6 +2387,205 @@ Generated by the Access Server.</p>
       <td>
         
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ContactInfo">Message <code>ContactInfo</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "contact_type": "CONTACT_TYPE_OTHER",
+  "contact_method": "CONTACT_METHOD_OTHER",
+  "value": "",
+  "public": false,
+  "validated_at": "0001-01-01T00:00:00Z",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>contact_type</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#enum:ContactType">
+  
+  <code>
+  
+  ContactType
+  </code>
+    
+  </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>defined_only</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>contact_method</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#enum:ContactMethod">
+  
+  <code>
+  
+  ContactMethod
+  </code>
+    
+  </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>defined_only</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>value</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>max_len</code>: <code>256</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>public</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bool</code>
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>validated_at</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
     </tr>
     
   </tbody>
@@ -1541,6 +2620,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -1588,6 +2668,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1619,6 +2700,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1664,6 +2752,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -1718,6 +2807,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1764,6 +2854,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1789,6 +2880,289 @@ Generated by the Access Server.</p>
       <td>
           <p>Collaborator to grant all rights on the newly created gateway.</p>
           <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:CUPSRedirection">Message <code>CUPSRedirection</code></h3>
+<b>Restrictions:</b>
+<ul>
+  <li>Only one of <code>client_tls</code>, <code>auth_token</code> can be set.</li>
+</ul>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "target_cups_uri": "",
+  "current_gateway_key": "",
+  "target_cups_trust": "",
+  "client_tls": {},
+  "auth_token": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>target_cups_uri</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>CUPS URI for LoRa Basics Station CUPS redirection.</p>
+          <p><code>max_len</code>: <code>256</code></p>
+          <p><code>pattern</code>: <code>^https</code></p>
+          <p><code>uri</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>current_gateway_key</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The key set in the gateway to authenticate itself.</p>
+          <p><code>max_len</code>: <code>2048</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>target_cups_trust</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Optional PEM encoded CA Root certificate. If this field is empty, DCS will attempt to dial the Target CUPS server and fetch the CA.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>client_tls</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:CUPSRedirection.ClientTLS">
+  
+  <code>
+    
+    CUPSRedirection.ClientTLS
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>TODO: Support mTLS (<a href="https://github.com/TheThingsNetwork/lorawan-stack/issues/137">https://github.com/TheThingsNetwork/lorawan-stack/issues/137</a>)</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>auth_token</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The Device Claiming Server will fill this field with a The Things Stack API Key.</p>
+          <p><code>max_len</code>: <code>2048</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:CUPSRedirection.ClientTLS">Message <code>CUPSRedirection.ClientTLS</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "cert": "",
+  "key": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>cert</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>PEM encoded Client Certificate.</p>
+          <p><code>max_len</code>: <code>8192</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>key</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>PEM encoded Client Private Key.</p>
+          <p><code>max_len</code>: <code>8192</code></p>
       </td>
     </tr>
     
@@ -1825,6 +3199,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1847,6 +3222,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -1880,6 +3256,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1902,6 +3279,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -1947,6 +3325,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -1978,6 +3357,8 @@ Generated by the Access Server.</p>
   "description": "",
   "attributes": {},
   "contact_info": [],
+  "administrative_contact": {},
+  "technical_contact": {},
   "version_ids": {},
   "gateway_server_address": "",
   "auto_update": false,
@@ -2019,6 +3400,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2042,6 +3424,7 @@ Generated by the Access Server.</p>
         Description
       </th>
       <td>
+          <p>The identifiers of the gateway. These are public and can be seen by any authenticated user in the network.</p>
           <p><code>required</code></p>
       </td>
     </tr>
@@ -2065,6 +3448,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2076,6 +3460,15 @@ Generated by the Access Server.</p>
   </code>
   
 </td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>When the gateway was created. This information is public and can be seen by any authenticated user in the network.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2097,6 +3490,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2108,6 +3502,15 @@ Generated by the Access Server.</p>
   </code>
   
 </td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>When the gateway was last updated. This information is public and can be seen by any authenticated user in the network.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2129,6 +3532,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2140,6 +3544,15 @@ Generated by the Access Server.</p>
   </code>
   
 </td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>When the gateway was deleted. This information is public and can be seen by any authenticated user in the network.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2161,6 +3574,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2170,6 +3584,7 @@ Generated by the Access Server.</p>
         Description
       </th>
       <td>
+          <p>The name of the gateway. This information is public and can be seen by any authenticated user in the network.</p>
           <p><code>max_len</code>: <code>50</code></p>
       </td>
     </tr>
@@ -2193,6 +3608,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2202,6 +3618,7 @@ Generated by the Access Server.</p>
         Description
       </th>
       <td>
+          <p>A description for the gateway. This information is public and can be seen by any authenticated user in the network.</p>
           <p><code>max_len</code>: <code>2000</code></p>
       </td>
     </tr>
@@ -2224,6 +3641,7 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -2264,6 +3682,13 @@ Generated by the Access Server.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -2284,10 +3709,87 @@ Generated by the Access Server.</p>
         Description
       </th>
       <td>
-          <p>Contact information for this gateway. Typically used to indicate who to contact with technical/security questions about the gateway.</p>
+          <p>Contact information for this gateway. Typically used to indicate who to contact with technical/security questions about the gateway.
+This field is deprecated. Use administrative_contact and technical_contact instead.</p>
           <p><code>max_items</code>: <code>10</code></p>
         
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>administrative_contact</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:OrganizationOrUserIdentifiers">
+  
+  <code>
+    
+    OrganizationOrUserIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>technical_contact</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:OrganizationOrUserIdentifiers">
+  
+  <code>
+    
+    OrganizationOrUserIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
     </tr>
     
   </tbody>
@@ -2309,6 +3811,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -2325,15 +3828,6 @@ Generated by the Access Server.</p>
     </a>
   
 </td>
-    </tr>
-    
-    <tr>
-      <th>
-        Description
-      </th>
-      <td>
-          <p><code>required</code></p>
-      </td>
     </tr>
     
   </tbody>
@@ -2355,6 +3849,7 @@ Generated by the Access Server.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2365,11 +3860,12 @@ Generated by the Access Server.</p>
       </th>
       <td>
           <p>The address of the Gateway Server to connect to.
-The typical format of the address is &ldquo;host:port&rdquo;. If the port is omitted,
+This information is public and can be seen by any authenticated user in the network if status_public is true.
+The typical format of the address is &ldquo;scheme://host:port&rdquo;. The scheme is optional. If the port is omitted,
 the normal port inference (with DNS lookup, otherwise defaults) is used.
 The connection shall be established with transport layer security (TLS).
 Custom certificate authorities may be configured out-of-band.</p>
-          <p><code>pattern</code>: <code>^(?:(?:[a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*(?:[A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])(?::[0-9]{1,5})?$|^$</code></p>
+          <p><code>pattern</code>: <code>^([a-z]{2,5}://)?(?:(?:[a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*(?:[A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])(?::[0-9]{1,5})?$|^$</code></p>
       </td>
     </tr>
     
@@ -2391,6 +3887,7 @@ Custom certificate authorities may be configured out-of-band.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -2414,6 +3911,7 @@ Custom certificate authorities may be configured out-of-band.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -2447,6 +3945,7 @@ Custom certificate authorities may be configured out-of-band.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2457,6 +3956,8 @@ Custom certificate authorities may be configured out-of-band.</p>
       </th>
       <td>
           <p>Frequency plan ID of the gateway.
+This information is public and can be seen by any authenticated user in the network.
+DEPRECATED: use frequency_plan_ids.
 This equals the first element of the frequency_plan_ids field.</p>
           <p><code>max_len</code>: <code>64</code></p>
       </td>
@@ -2480,6 +3981,9 @@ This equals the first element of the frequency_plan_ids field.</p>
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>string</code>
 </td>
@@ -2491,6 +3995,7 @@ This equals the first element of the frequency_plan_ids field.</p>
       </th>
       <td>
           <p>Frequency plan IDs of the gateway.
+This information is public and can be seen by any authenticated user in the network.
 The first element equals the frequency_plan_id field.</p>
           <p><code>max_items</code>: <code>8</code></p>
             <p><code>max_len</code>: <code>64</code></p>
@@ -2516,6 +4021,13 @@ The first element equals the frequency_plan_id field.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -2536,6 +4048,7 @@ The first element equals the frequency_plan_id field.</p>
         Description
       </th>
       <td>
+          <p>Antennas of the gateway. Location information of the antennas is public and can be seen by any authenticated user in the network if location_public=true.</p>
           <p><code>max_items</code>: <code>8</code></p>
         
       </td>
@@ -2559,6 +4072,7 @@ The first element equals the frequency_plan_id field.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -2592,6 +4106,7 @@ The first element equals the frequency_plan_id field.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -2623,6 +4138,7 @@ The first element equals the frequency_plan_id field.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -2659,6 +4175,7 @@ not been transmitted yet.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -2691,6 +4208,7 @@ duty cycle only in controlled research and development environments.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2738,6 +4256,7 @@ duty cycle only in controlled research and development environments.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2779,6 +4298,7 @@ duty cycle only in controlled research and development environments.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -2810,6 +4330,7 @@ duty cycle only in controlled research and development environments.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -2858,6 +4379,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -2908,6 +4430,7 @@ Use the top level field mask <code>claim_authentication_code</code> even when up
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -2942,6 +4465,7 @@ The CUPS Trust field will be automatically fetched from the cert chain presented
         Type
       </th>
       <td>
+        
         
             
               
@@ -2991,6 +4515,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -3022,6 +4547,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -3059,6 +4585,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -3098,6 +4625,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>float</code>
 </td>
     </tr>
@@ -3129,6 +4657,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -3175,6 +4704,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -3214,6 +4744,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -3264,6 +4795,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3297,6 +4829,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -3307,6 +4840,8 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
           <p>Secondary identifier, which can only be used in specific requests.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
       </td>
     </tr>
     
@@ -3339,6 +4874,13 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -3397,6 +4939,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3430,6 +4973,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -3465,6 +5009,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3496,6 +5041,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -3543,6 +5089,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
               
             
@@ -3580,6 +5127,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
         
   
@@ -3611,6 +5159,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
         
@@ -3656,6 +5205,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
               
             
@@ -3692,6 +5242,13 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -3747,6 +5304,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
               
             
@@ -3793,6 +5351,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3836,6 +5395,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -3882,6 +5442,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -3941,6 +5502,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
               
             
@@ -3987,6 +5549,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
             
         
   
@@ -4006,6 +5569,96 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
           <p>The names of the gateway fields that should be returned.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:GetGatewayIdentifiersForEUIRequest">Message <code>GetGatewayIdentifiersForEUIRequest</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "eui": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>eui</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:GetInfoByGatewayEUIRequest">Message <code>GetInfoByGatewayEUIRequest</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "eui": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>eui</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
       </td>
     </tr>
     
@@ -4038,6 +5691,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -4081,6 +5735,13 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -4115,6 +5776,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
 <details><summary>Show object example</summary>
 <pre><code>{
   "gateway_ids": {},
+  "order": "",
   "limit": 0,
   "page": 0,
 }</code></pre>
@@ -4136,6 +5798,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -4174,6 +5837,41 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Field
       </th>
       <td>
+        <code>order</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Order the results by this field path.
+Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
+          <p><code>in</code>: <code>[ api_key_id -api_key_id name -name created_at -created_at expires_at -expires_at]</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
         <code>limit</code>
       </td>
     </tr>
@@ -4182,6 +5880,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -4215,6 +5914,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -4241,6 +5941,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
   "gateway_ids": {},
   "limit": 0,
   "page": 0,
+  "order": "",
 }</code></pre>
 </details>
 
@@ -4260,6 +5961,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -4307,6 +6009,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4340,6 +6043,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4350,6 +6054,41 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
       </th>
       <td>
           <p>Page number for pagination. 0 is interpreted as 1.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>order</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Order the results by this field path (must be present in the field mask).
+Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
+          <p><code>in</code>: <code>[ id -id -rights rights]</code></p>
       </td>
     </tr>
     
@@ -4387,6 +6126,7 @@ Requires the RIGHT_GATEWAY_READ_SECRETS for reading and RIGHT_GATEWAY_WRITE_SECR
         Type
       </th>
       <td>
+        
         
             
               
@@ -4436,6 +6176,7 @@ where the user or organization is collaborator on.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -4477,6 +6218,7 @@ where the user or organization is collaborator on.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -4511,6 +6253,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4544,6 +6287,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4575,6 +6319,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -4623,6 +6368,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>double</code>
 </td>
     </tr>
@@ -4656,6 +6402,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>double</code>
 </td>
@@ -4691,6 +6438,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>int32</code>
 </td>
     </tr>
@@ -4723,6 +6471,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>int32</code>
 </td>
     </tr>
@@ -4754,6 +6503,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -4819,6 +6569,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -4855,6 +6606,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -4904,6 +6656,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -4948,6 +6701,13 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -4983,6 +6743,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 
 <details><summary>Show object example</summary>
 <pre><code>{
+  "query": "",
   "id_contains": "",
   "name_contains": "",
   "description_contains": "",
@@ -5004,6 +6765,40 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Field
       </th>
       <td>
+        <code>query</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Find gateways where the ID, name, description or EUI contains this substring.</p>
+          <p><code>max_len</code>: <code>50</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
         <code>id_contains</code>
       </td>
     </tr>
@@ -5012,6 +6807,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -5046,6 +6842,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5079,6 +6876,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5111,6 +6909,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -5152,6 +6951,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5185,6 +6985,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -5217,6 +7018,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5228,6 +7030,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       <td>
           <p>Order the results by this field path (must be present in the field mask).
 Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
+          <p><code>in</code>: <code>[ gateway_id -gateway_id gateway_eui -gateway_eui name -name created_at -created_at]</code></p>
       </td>
     </tr>
     
@@ -5249,6 +7052,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -5283,6 +7087,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -5314,6 +7119,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -5358,6 +7164,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -5404,6 +7211,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -5464,6 +7272,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -5510,6 +7319,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -5555,6 +7365,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -5609,6 +7420,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -5654,6 +7466,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -5708,6 +7521,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5741,6 +7555,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -5787,6 +7602,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -5819,6 +7635,7 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -5837,6 +7654,71 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 
 
 <h2 id="enums">Enums</h2>
+
+
+<h3 id="enum:ContactType">Enum <code>ContactType</code></h3>
+<table class="api">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CONTACT_TYPE_OTHER</code></td>
+      <td><code>0</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_TYPE_ABUSE</code></td>
+      <td><code>1</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_TYPE_BILLING</code></td>
+      <td><code>2</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_TYPE_TECHNICAL</code></td>
+      <td><code>3</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h3 id="enum:ContactMethod">Enum <code>ContactMethod</code></h3>
+<table class="api">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>CONTACT_METHOD_OTHER</code></td>
+      <td><code>0</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_METHOD_EMAIL</code></td>
+      <td><code>1</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>CONTACT_METHOD_PHONE</code></td>
+      <td><code>2</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 <h3 id="enum:DownlinkPathConstraint">Enum <code>DownlinkPathConstraint</code></h3>
@@ -5959,7 +7841,378 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 
 
 
+<h3 id="enum:Right">Enum <code>Right</code></h3>
+<p>Right is the enum that defines all the different rights to do something in the network.</p>
+<table class="api">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>right_invalid</code></td>
+      <td><code>0</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_INFO</code></td>
+      <td><code>1</code></td>
+      <td> The right to view user information.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_SETTINGS_BASIC</code></td>
+      <td><code>2</code></td>
+      <td> The right to edit basic user settings.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_SETTINGS_API_KEYS</code></td>
+      <td><code>3</code></td>
+      <td> The right to view and edit user API keys.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_DELETE</code></td>
+      <td><code>4</code></td>
+      <td> The right to delete user account.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_AUTHORIZED_CLIENTS</code></td>
+      <td><code>5</code></td>
+      <td> The right to view and edit authorized OAuth clients of the user.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_APPLICATIONS_LIST</code></td>
+      <td><code>6</code></td>
+      <td> The right to list applications the user is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_APPLICATIONS_CREATE</code></td>
+      <td><code>7</code></td>
+      <td> The right to create an application under the user account.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_GATEWAYS_LIST</code></td>
+      <td><code>8</code></td>
+      <td> The right to list gateways the user is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_GATEWAYS_CREATE</code></td>
+      <td><code>9</code></td>
+      <td> The right to create a gateway under the account of the user.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_CLIENTS_LIST</code></td>
+      <td><code>10</code></td>
+      <td> The right to list OAuth clients the user is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_CLIENTS_CREATE</code></td>
+      <td><code>11</code></td>
+      <td> The right to create an OAuth client under the account of the user.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_ORGANIZATIONS_LIST</code></td>
+      <td><code>12</code></td>
+      <td> The right to list organizations the user is a member of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_ORGANIZATIONS_CREATE</code></td>
+      <td><code>13</code></td>
+      <td> The right to create an organization under the user account.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_NOTIFICATIONS_READ</code></td>
+      <td><code>59</code></td>
+      <td> The right to read notifications sent to the user.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_USER_ALL</code></td>
+      <td><code>14</code></td>
+      <td> The pseudo-right for all (current and future) user rights.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_INFO</code></td>
+      <td><code>15</code></td>
+      <td> The right to view application information.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_SETTINGS_BASIC</code></td>
+      <td><code>16</code></td>
+      <td> The right to edit basic application settings.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_SETTINGS_API_KEYS</code></td>
+      <td><code>17</code></td>
+      <td> The right to view and edit application API keys.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_SETTINGS_COLLABORATORS</code></td>
+      <td><code>18</code></td>
+      <td> The right to view and edit application collaborators.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_SETTINGS_PACKAGES</code></td>
+      <td><code>56</code></td>
+      <td> The right to view and edit application packages and associations.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_DELETE</code></td>
+      <td><code>19</code></td>
+      <td> The right to delete application.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_DEVICES_READ</code></td>
+      <td><code>20</code></td>
+      <td> The right to view devices in application.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_DEVICES_WRITE</code></td>
+      <td><code>21</code></td>
+      <td> The right to create devices in application.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_DEVICES_READ_KEYS</code></td>
+      <td><code>22</code></td>
+      <td> The right to view device keys in application.
+Note that keys may not be stored in a way that supports viewing them.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_DEVICES_WRITE_KEYS</code></td>
+      <td><code>23</code></td>
+      <td> The right to edit device keys in application.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_TRAFFIC_READ</code></td>
+      <td><code>24</code></td>
+      <td> The right to read application traffic (uplink and downlink).</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_TRAFFIC_UP_WRITE</code></td>
+      <td><code>25</code></td>
+      <td> The right to write uplink application traffic.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_TRAFFIC_DOWN_WRITE</code></td>
+      <td><code>26</code></td>
+      <td> The right to write downlink application traffic.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_LINK</code></td>
+      <td><code>27</code></td>
+      <td> The right to link as Application to a Network Server for traffic exchange,
+i.e. read uplink and write downlink (API keys only).
+This right is typically only given to an Application Server.
+This right implies RIGHT_APPLICATION_INFO, RIGHT_APPLICATION_TRAFFIC_READ,
+and RIGHT_APPLICATION_TRAFFIC_DOWN_WRITE.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_APPLICATION_ALL</code></td>
+      <td><code>28</code></td>
+      <td> The pseudo-right for all (current and future) application rights.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_CLIENT_ALL</code></td>
+      <td><code>29</code></td>
+      <td> The pseudo-right for all (current and future) OAuth client rights.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_CLIENT_INFO</code></td>
+      <td><code>60</code></td>
+      <td> The right to read client information.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_CLIENT_SETTINGS_BASIC</code></td>
+      <td><code>61</code></td>
+      <td> The right to edit basic client settings.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_CLIENT_SETTINGS_COLLABORATORS</code></td>
+      <td><code>62</code></td>
+      <td> The right to view and edit client collaborators.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_CLIENT_DELETE</code></td>
+      <td><code>63</code></td>
+      <td> The right to delete a client.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_INFO</code></td>
+      <td><code>30</code></td>
+      <td> The right to view gateway information.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_SETTINGS_BASIC</code></td>
+      <td><code>31</code></td>
+      <td> The right to edit basic gateway settings.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_SETTINGS_API_KEYS</code></td>
+      <td><code>32</code></td>
+      <td> The right to view and edit gateway API keys.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_SETTINGS_COLLABORATORS</code></td>
+      <td><code>33</code></td>
+      <td> The right to view and edit gateway collaborators.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_DELETE</code></td>
+      <td><code>34</code></td>
+      <td> The right to delete gateway.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_TRAFFIC_READ</code></td>
+      <td><code>35</code></td>
+      <td> The right to read gateway traffic.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_TRAFFIC_DOWN_WRITE</code></td>
+      <td><code>36</code></td>
+      <td> The right to write downlink gateway traffic.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_LINK</code></td>
+      <td><code>37</code></td>
+      <td> The right to link as Gateway to a Gateway Server for traffic exchange,
+i.e. write uplink and read downlink (API keys only)
+This right is typically only given to a gateway.
+This right implies RIGHT_GATEWAY_INFO.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_STATUS_READ</code></td>
+      <td><code>38</code></td>
+      <td> The right to view gateway status.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_LOCATION_READ</code></td>
+      <td><code>39</code></td>
+      <td> The right to view view gateway location.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_WRITE_SECRETS</code></td>
+      <td><code>57</code></td>
+      <td> The right to store secrets associated with this gateway.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_READ_SECRETS</code></td>
+      <td><code>58</code></td>
+      <td> The right to retrieve secrets associated with this gateway.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_GATEWAY_ALL</code></td>
+      <td><code>40</code></td>
+      <td> The pseudo-right for all (current and future) gateway rights.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_INFO</code></td>
+      <td><code>41</code></td>
+      <td> The right to view organization information.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_SETTINGS_BASIC</code></td>
+      <td><code>42</code></td>
+      <td> The right to edit basic organization settings.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_SETTINGS_API_KEYS</code></td>
+      <td><code>43</code></td>
+      <td> The right to view and edit organization API keys.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_SETTINGS_MEMBERS</code></td>
+      <td><code>44</code></td>
+      <td> The right to view and edit organization members.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_DELETE</code></td>
+      <td><code>45</code></td>
+      <td> The right to delete organization.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_APPLICATIONS_LIST</code></td>
+      <td><code>46</code></td>
+      <td> The right to list the applications the organization is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_APPLICATIONS_CREATE</code></td>
+      <td><code>47</code></td>
+      <td> The right to create an application under the organization.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_GATEWAYS_LIST</code></td>
+      <td><code>48</code></td>
+      <td> The right to list the gateways the organization is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_GATEWAYS_CREATE</code></td>
+      <td><code>49</code></td>
+      <td> The right to create a gateway under the organization.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_CLIENTS_LIST</code></td>
+      <td><code>50</code></td>
+      <td> The right to list the OAuth clients the organization is a collaborator of.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_CLIENTS_CREATE</code></td>
+      <td><code>51</code></td>
+      <td> The right to create an OAuth client under the organization.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_ADD_AS_COLLABORATOR</code></td>
+      <td><code>52</code></td>
+      <td> The right to add the organization as a collaborator on an existing entity.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ORGANIZATION_ALL</code></td>
+      <td><code>53</code></td>
+      <td> The pseudo-right for all (current and future) organization rights.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_SEND_INVITES</code></td>
+      <td><code>54</code></td>
+      <td> The right to send invites to new users.
+Note that this is not prefixed with &ldquo;USER_&rdquo;; it is not a right on the user entity.</td>
+    </tr>
+    <tr>
+      <td><code>RIGHT_ALL</code></td>
+      <td><code>55</code></td>
+      <td> The pseudo-right for all (current and future) possible rights.</td>
+    </tr>
+  </tbody>
+</table>
 
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 
 	
 
@@ -6054,6 +8307,9 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
       <li><a href='#the-configuration-service'>The Configuration service</a></li>
     
       
+      <li><a href='#the-gatewayclaimingserver-service'>The GatewayClaimingServer service</a></li>
+    
+      
       <li><a href='#messages'>Messages</a></li>
     
       
@@ -6074,45 +8330,29 @@ Default ordering is by ID. Prepend with a minus (-) to reverse the order.</p>
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Nejra Selimović on 28 Jul 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9d8cffeb3d65851a4e7ce4446abcd9a700ed7bba">
-      doc: Create v3.14.0 release docs, add missing refs (#482)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/api/gateway.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

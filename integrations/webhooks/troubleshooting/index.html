@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="generator" content="Hugo 0.112.3">
+  <title>Troubleshooting Webhooks | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/webhooks/troubleshooting/" />
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta itemprop="name" content="Troubleshooting Webhooks">
+  <meta itemprop="description" content="">
+  <meta itemprop="keywords" content="">
+  <meta property="og:title" content="Troubleshooting Webhooks">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/integrations/webhooks/troubleshooting/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
+  <meta name="twitter:title" content="Troubleshooting Webhooks" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
+</head>
+
+
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container is-fluid">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
+          </div>
+      <span class="navbar-burger burger" data-target="topMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="topMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script type="text/javascript">
+    docsearch({
+      appId: "",
+      apiKey: "",
+      indexName: "thethingsstack",
+      container: '#search-input-menu',
+      debug: false, 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
+        
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Integrations</h2>
+
+<ul class="menu-list">
+<a href="https://www.thethingsindustries.com/docs/integrations/" class="">Overview</a>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/adding-applications/" class="">Adding Applications</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/adding-integrations/" class="">Adding Integrations</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/" class="">Cloud Integrations</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/mqtt/" class="">MQTT Server</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/pubsub/" class="">Pub/Sub</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/lora-cloud/" class="">LoRa Cloud</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/node-red/" class="">Node-RED</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/ifttt/" class="">IFTTT</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/guides/" class="">Guides</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/" class="">Payload Formatters</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/storage/" class="">Storage Integration</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/" class="">Webhooks</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/creating-webhooks/" class="">Creating Webhooks</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/scheduling-downlinks/" class="">Scheduling Downlinks</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/path-variables/" class="">Webhook Path Variables</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/" class="">Webhook Templates</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/troubleshooting/" class="is-active">Troubleshooting Webhooks</a>
+    
+    
+
+
+
+    
+  </li>
+
+</ul>
+
+
+    
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+      </div>
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Troubleshooting Webhooks
+          
+        </h1>
+        
+        <div class="content">
+          <p>This section provides help for common issues and frequently asked questions you may have when using Webhooks.</p>
+<h2 id="i-see-aswebhookfail-events-in-the-live-data-view-what-does-this-mean">I see <code>as.webhook.fail</code> events in the Live data view. What does this mean?</h2>
+<p>When sending an uplink via Webhooks fails, The Things Stack generates a failure event <code>as.webhook.fail</code>. You can find out about the failure cause by observing the event details. The Things Stack will return the request body up to 1KB.</p>
+<p>Besides the possibility that the Webhook integration might be misconfigured, the most common failure cause is that the user&rsquo;s upstream endpoint cannot handle all uplinks received from The Things Stack fast enough, or cannot process the uplink message in 5 seconds (which is The Things Stack default timeout).</p>
+<p>An example of a Webhook failure event is shown on the image below.</p>
+<figure><img src="../webhook-failed-example.png"
+         alt="Webhook failure"/>
+</figure>
+
+<p>The event details contain a detailed description of a failure cause:</p>
+<pre tabindex="0"><code>&#34;details&#34;:[
+    {
+        &#34;@type&#34;: &#34;type.googleapis.com/google.protobuf.Struct&#34;,
+        &#34;value&#34;: {
+            &#34;body&#34;: &#34;{\&#34;success\&#34;:false,\&#34;error\&#34;:{\&#34;message\&#34;:\&#34;Alias ed2d46a2-00fc-4b2d-98f8-83a9fe7590c not found\&#34;,\&#34;id\&#34;:null}}&#34;,
+            &#34;status_code&#34;: 404,
+            &#34;url&#34;: &#34;https://webhook.site/ed2d46a2-00fc-4b2d-98f8-83a9fe7590c&#34;,
+            &#34;webhook_id&#34;: &#34;test&#34;
+        }
+    }
+]
+</code></pre><p>By inspecting details shown above, you can see that the Webhook failed with a status code <code>404</code>, indicating that the configured BaseURL is not found. To avoid this error, always make sure to check if the upstream endpoint URL is accessible.</p>
+        </div>
+        <div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/integrations/webhooks/webhook-templates/">← Webhook Templates</a>
+</div>
+
+        <script>window.emojicom_widget = { campaign: "" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+
+<div class='feedback has-vertical-space'>
+  <div id="emojicom-widget-inline"></div>
+</div>
+        </div>
+      </div>
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
+
+
+  <ul class="menu-list">
+    
+      
+      <li><a href='#i-see-aswebhookfail-events-in-the-live-data-view-what-does-this-mean'>I see as.webhook.fail events in the Live data view. What does this mean?</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+      
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <nav class="column is-one-third">
+        <h3 class="title is-6">The Things Stack</h3>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
+      </nav>
+      <nav class="column is-one-third">
+        <h3 class="title is-6">Contributing</h3>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
+      </nav>
+      
+      <nav class="column is-one-third">
+        <h3 class="title is-6">About Us</h3>
+        <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
+      </nav>
+      </div>
+  </div>
+</footer>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
+  window.intercomSettings = {
+    app_id: "",
+  };
+</script>
+
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+
+</html>

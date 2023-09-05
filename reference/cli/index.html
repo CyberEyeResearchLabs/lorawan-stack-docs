@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Command-Line Interface | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/cli/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Command-Line Interface">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Command-Line Interface">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/cli/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Command-Line Interface" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,38 +60,31 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
-    });
-  </script><div class="container" role="document">
+  </script>
+
+<div class="container" role="document">
   <div class="columns my-0 ">
-      
-      <div class="column is-3 is-2-desktop sidebar-left">
+      <div class="column is-2 sidebar-left">
         
 
 <nav class="side-navigation" aria-label="Main navigation">
@@ -107,65 +110,6 @@
     
 
 
-<ul class="menu-list">
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/applications/" class="">Application CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/applications_packages/" class="">Application Packages CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/applications_pub_sub/" class="">Application Pub/Sub CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/storage_integration/" class="">Application Storage Integration CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/applications_webhooks/" class="">Application Webhook CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/end_devices/" class="">End Device CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/gateways/" class="">Gateway CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/clients/" class="">OAuth Client CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/organizations/" class="">Organization CLI Commands</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/troubleshooting/" class="">Troubleshooting CLI</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/cli/users/" class="">User CLI Commands</a>
-    
-  </li>
-
-</ul>
-
 
     
   </li>
@@ -176,10 +120,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -191,28 +135,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -221,7 +174,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -237,521 +190,4932 @@
 
 
       </div>
-      
-      <div class="column is-9 is-8-desktop sidebar-middle">
-        <div class="docs-content">
-        <h1 class="title is-size-2">Command-Line Interface
-          
-        </h1>
+      <div class="column is-2">
         
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Command-line Interface</h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli/">ttn-lw-cli
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications/">applications
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_activation-settings/">activation-settings
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_activation-settings_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_activation-settings_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_activation-settings_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys/">api-keys
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_api-keys_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_collaborators/">collaborators
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_collaborators_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_collaborators_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_collaborators_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_collaborators_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_contact-info/">contact-info
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_contact-info_request-validation/">request-validation
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_contact-info_validate/">validate
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_issue-dev-eui/">issue-dev-eui
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_link/">link
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_link_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_link_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_link_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages/">packages
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_associations/">associations
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_associations_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_associations_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_associations_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_associations_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_default-associations/">default-associations
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_default-associations_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_default-associations_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_default-associations_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_default-associations_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_packages_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs/">pubsubs
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs_get-formats/">get-formats
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_pubsubs_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_purge/">purge
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_restore/">restore
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_rights/">rights
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_storage/">storage
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_storage_count/">count
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_storage_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_subscribe/">subscribe
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks/">webhooks
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks_get-formats/">get-formats
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_applications_webhooks_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers/">authentication-providers
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_authentication-providers_update/">update
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients/">clients
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_collaborators/">collaborators
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_collaborators_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_collaborators_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_collaborators_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_collaborators_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_contact-info/">contact-info
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_contact-info_request-validation/">request-validation
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_contact-info_validate/">validate
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_purge/">purge
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_restore/">restore
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_rights/">rights
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_clients_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_config/">config
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices/">end-devices
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_batch-delete/">batch-delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_downlink/">downlink
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_downlink_clear/">clear
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_downlink_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_downlink_push/">push
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_downlink_replace/">replace
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_get-default-mac-settings/">get-default-mac-settings
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_get-dev-addr-prefixes/">get-dev-addr-prefixes
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_get-net-id/">get-net-id
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_list-bands/">list-bands
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_list-frequency-plans/">list-frequency-plans
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_list-phy-versions/">list-phy-versions
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_reset/">reset
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_storage/">storage
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_storage_count/">count
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_storage_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates/">templates
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_assign-euis/">assign-euis
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_execute/">execute
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_extend/">extend
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_from-data/">from-data
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_list-formats/">list-formats
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_map/">map
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_end-devices_use-external-join-server/">use-external-join-server
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_events/">events
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_events_find-related/">find-related
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_external-users/">external-users
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_external-users_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_external-users_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_external-users_get-by-external-id/">get-by-external-id
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_external-users_get-by-user-id/">get-by-user-id
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways/">gateways
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys/">api-keys
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_api-keys_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_claim/">claim
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_claim_authorize/">authorize
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_claim_info/">info
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_claim_unauthorize/">unauthorize
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_collaborators/">collaborators
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_collaborators_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_collaborators_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_collaborators_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_collaborators_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_contact-info/">contact-info
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_contact-info_request-validation/">request-validation
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_contact-info_validate/">validate
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_get-connection-stats/">get-connection-stats
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_list-frequency-plans/">list-frequency-plans
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_purge/">purge
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_restore/">restore
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_rights/">rights
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_login/">login
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_logout/">logout
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_lorawan/">lorawan
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_lorawan_decode/">decode
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_notifications/">notifications
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_notifications_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_notifications_set-status/">set-status
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations/">organizations
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys/">api-keys
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_api-keys_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_collaborators/">collaborators
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_collaborators_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_collaborators_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_collaborators_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_collaborators_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_contact-info/">contact-info
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_contact-info_request-validation/">request-validation
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_contact-info_validate/">validate
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_purge/">purge
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_restore/">restore
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_rights/">rights
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_organizations_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker/">packetbroker
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_deregister/">deregister
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_forwarders/">forwarders
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_forwarders_policies/">policies
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_forwarders_policies_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks/">home-networks
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_gateway-visibilities/">gateway-visibilities
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_gateway-visibilities_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_gateway-visibilities_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_gateway-visibilities_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_policies/">policies
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_policies_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_policies_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_policies_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_home-networks_policies_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_info/">info
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_networks/">networks
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_networks_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_packetbroker_register/">register
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_simulate/">simulate
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_simulate_application-uplink/">application-uplink
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates/">templates
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_assign-euis/">assign-euis
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_execute/">execute
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_extend/">extend
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_from-data/">from-data
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_list-formats/">list-formats
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_templates_map/">map
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants/">tenants
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_get-identifiers-for-billing-identifiers/">get-identifiers-for-billing-identifiers
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_get-identifiers-for-end-device-euis/">get-identifiers-for-end-device-euis
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_get-identifiers-for-gateway-eui/">get-identifiers-for-gateway-eui
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_get-registry-totals/">get-registry-totals
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_tenants_update/">update
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_use/">use
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users/">users
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys/">api-keys
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_api-keys_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_contact-info/">contact-info
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_contact-info_request-validation/">request-validation
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_contact-info_validate/">validate
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_create-login-token/">create-login-token
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_forgot-password/">forgot-password
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_get/">get
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_invitations/">invitations
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_invitations_create/">create
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_invitations_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_invitations_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth/">oauth
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_access-tokens/">access-tokens
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_access-tokens_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_access-tokens_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_authorizations/">authorizations
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_authorizations_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_oauth_authorizations_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_purge/">purge
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_restore/">restore
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_rights/">rights
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_search/">search
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_sessions/">sessions
+      </a>
+      
+    </summary>
+    
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_sessions_delete/">delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_sessions_list/">list
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_set/">set
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_users_update-password/">update-password
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_version/">version
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+    
+  </details>
+
+  
+
+
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      function expandParentDetail(element){
+        let closest = element.closest("details")
+        if(closest) {
+          closest.open = true;
+          expandParentDetail(closest.parentNode)
+        }
+      }
+      let active = document.querySelector("span.is-active")
+      if (active) expandParentDetail(active)
+    });
+</script>
+
+      </div>
+      <div class="column is-8">
+        <div class="docs-content">
         <div class="content">
           <p>This is the reference for the command-line interface of The Things Stack: <code>ttn-lw-cli</code>.</p>
-<h2 id="basic-commands">Basic Commands</h2>
+<p>Expand the command tree to the left to see information about commands.</p>
+<!-- Data stored in content/ttn-lw-cli  -->
 
-<hr>
-<h2 id="command-ttn-lw-cli">Command <code>ttn-lw-cli</code></h2><h3>Description</h3>
-<p>The Things Industries Command-line Interface</p>
-
-<h3>Usage</h3>
-<p><code>ttn-lw-cli [flags]</code>
-
-<h3>Flags for <code>ttn-lw-cli</code></h3>
-<p>The following flags are also available in sub-commands:</p>
-<dl class="cli-flags">
-<dt><code>--allow-unknown-hosts</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Allow sending credentials to unknown hosts
-</p>
-</dd>
-<dt><code>--application-server-enabled</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>true</code>
-</p>
-
-<p>Application Server enabled
-</p>
-</dd>
-<dt><code>--application-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Application Server address
-</p>
-</dd>
-<dt><code>--ca</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>CA certificate file
-</p>
-</dd><dt><code>-c</code></dt>
-<dt><code>--config</code></dt>
-<dd>
-<p>
-type: <code>stringSlice</code>
-</p>
-
-<p>
-default: <code>[.ttn-lw-cli.yml,$HOME/.ttn-lw-cli.yml,$HOME/.config/.ttn-lw-cli.yml]</code>
-</p>
-
-<p>Location of the config files
-</p>
-</dd>
-<dt><code>--credentials-id</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>Credentials ID (if using multiple configurations)
-</p>
-</dd>
-<dt><code>--device-claiming-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Device Claiming Server address
-</p>
-</dd>
-<dt><code>--device-template-converter-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Device Template Converter address
-</p>
-</dd>
-<dt><code>--dump-requests</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>When log level is set to debug, also dump request payload as JSON
-</p>
-</dd>
-<dt><code>--gateway-server-enabled</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>true</code>
-</p>
-
-<p>Gateway Server enabled
-</p>
-</dd>
-<dt><code>--gateway-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Gateway Server address
-</p>
-</dd>
-<dt><code>--identity-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Identity Server address
-</p>
-</dd>
-<dt><code>--input-format</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>json</code>
-</p>
-
-<p>Input format
-</p>
-</dd>
-<dt><code>--insecure</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Connect without TLS
-</p>
-</dd>
-<dt><code>--join-server-enabled</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>true</code>
-</p>
-
-<p>Join Server enabled
-</p>
-</dd>
-<dt><code>--join-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Join Server address
-</p>
-</dd>
-<dt><code>--log.format</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>console</code>
-</p>
-
-<p>Log format to write (console, json)
-</p>
-</dd>
-<dt><code>--log.level</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>info</code>
-</p>
-
-<p>The minimum level log messages must have to be shown
-</p>
-</dd>
-<dt><code>--network-server-enabled</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>true</code>
-</p>
-
-<p>Network Server enabled
-</p>
-</dd>
-<dt><code>--network-server-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Network Server address
-</p>
-</dd>
-<dt><code>--oauth-server-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>https://localhost/oauth</code>
-</p>
-
-<p>OAuth Server address
-</p>
-</dd>
-<dt><code>--output-format</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>json</code>
-</p>
-
-<p>Output format
-</p>
-</dd>
-<dt><code>--packet-broker-agent-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>Packet Broker Agent address
-</p>
-</dd>
-<dt><code>--qr-code-generator-grpc-address</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost:8884</code>
-</p>
-
-<p>QR Code Generator address
-</p>
-</dd>
-<dt><code>--skip-version-check</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Do not perform version checks
-</p>
-</dd>
-</dl>
-
-
-
-<hr>
-<h2 id="command-ttn-lw-cli-use">Command <code>ttn-lw-cli use</code></h2><h3>Description</h3>
-<p>Generate client configuration for The Things Stack</p>
-<h3>Aliases</h3>
-<p> <code>generate-configuration</code> <code>generate-cfg</code></p>
-
-<h3>Usage</h3>
-<p><code>ttn-lw-cli use [flags]</code>
-
-<h3>Flags for <code>ttn-lw-cli use</code></h3>
-<dl class="cli-flags">
-<dt><code>--fetch-ca</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Connect to server and retrieve CA
-</p>
-</dd>
-<dt><code>--grpc-port</code></dt>
-<dd>
-<p>
-type: <code>int</code>
-</p>
-
-<p>
-default: <code>0</code>
-</p>
-
-<p>
-</p>
-</dd>
-<dt><code>--host</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>
-default: <code>localhost</code>
-</p>
-
-<p>Server host name
-</p>
-</dd>
-<dt><code>--overwrite</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Overwrite existing config files
-</p>
-</dd>
-<dt><code>--user</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>Write config file in user config directory
-</p>
-</dd>
-</dl>
-
-<p>This command inherits flags from <code>ttn-lw-cli</code></p>
-
-
-<hr>
-<h2 id="command-ttn-lw-cli-login">Command <code>ttn-lw-cli login</code></h2><h3>Description</h3>
-<p>Login</p>
-
-<h3>Usage</h3>
-<p><code>ttn-lw-cli login [flags]</code>
-
-<h3>Flags for <code>ttn-lw-cli login</code></h3>
-<dl class="cli-flags">
-<dt><code>--api-key</code></dt>
-<dd>
-<p>
-type: <code>string</code>
-</p>
-
-<p>API key to login with (instead of using OAuth)
-</p>
-</dd>
-<dt><code>--callback</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>true</code>
-</p>
-
-<p>use local OAuth callback endpoint
-</p>
-</dd>
-</dl>
-
-<p>This command inherits flags from <code>ttn-lw-cli</code></p>
-
-
-<hr>
-<h2 id="command-ttn-lw-cli-logout">Command <code>ttn-lw-cli logout</code></h2><h3>Description</h3>
-<p>Logout</p>
-
-<h3>Usage</h3>
-<p><code>ttn-lw-cli logout [flags]</code>
-
-<h3>Flags for <code>ttn-lw-cli logout</code></h3>
-<p>This command inherits flags from <code>ttn-lw-cli</code></p>
-
-
-<hr>
-<h2 id="command-ttn-lw-cli-config">Command <code>ttn-lw-cli config</code></h2><h3>Description</h3>
-<p>View the current configuration</p>
-
-<h3>Usage</h3>
-<p><code>ttn-lw-cli config [flags]</code>
-
-<h3>Flags for <code>ttn-lw-cli config</code></h3>
-<dl class="cli-flags">
-<dt><code>--env</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>print as environment
-</p>
-</dd>
-<dt><code>--yml</code></dt>
-<dd>
-<p>
-type: <code>bool</code>
-</p>
-
-<p>
-default: <code>false</code>
-</p>
-
-<p>print as yml
-</p>
-</dd>
-</dl>
-
-<p>This command inherits flags from <code>ttn-lw-cli</code></p>
         </div>
-        
-          <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/reference/stripe/customers/">← Customers</a>
-<a class="button is-pulled-right" href="/docs/reference/cli/applications/">Application CLI Commands →</a>
-</div>
-
           <script>window.emojicom_widget = { campaign: "" };</script>
 <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
 
@@ -760,40 +5124,6 @@ default: <code>false</code>
 </div>
         </div>
       </div>
-      
-      <div class="column is-hidden-touch is-2-desktop sidebar-right">
-        <nav class="toc" aria-label="Page navigation">
-    <h2 class="title is-size-6">On this page</h2>
-    
-
-
-  <ul class="menu-list">
-    
-      
-      <li><a href='#basic-commands'>Basic Commands</a></li>
-    
-      
-      <li><a href='#command-ttn-lw-cli'>Command ttn-lw-cli</a></li>
-    
-      
-      <li><a href='#command-ttn-lw-cli-use'>Command ttn-lw-cli use</a></li>
-    
-      
-      <li><a href='#command-ttn-lw-cli-login'>Command ttn-lw-cli login</a></li>
-    
-      
-      <li><a href='#command-ttn-lw-cli-logout'>Command ttn-lw-cli logout</a></li>
-    
-      
-      <li><a href='#command-ttn-lw-cli-config'>Command ttn-lw-cli config</a></li>
-    
-  </ul>
-
-
-  </nav>
-
-      </div>
-      
   </div>
 </div>
 
@@ -802,45 +5132,29 @@ default: <code>false</code>
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Hylke Visser on 26 Feb 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/8afc30f8cedb6881ec8b9438c3729419d7e22200">
-      doc,util: Add CLI Reference
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/cli/_index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

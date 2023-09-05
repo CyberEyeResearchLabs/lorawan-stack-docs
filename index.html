@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Home | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Home">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Home">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Home" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,216 +60,261 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script>
 
-<div class="section">
-  <h1 class="title is-size-2 title-intro has-vertical-space">Build end-to-end secured LoRaWAN® networks with 99,9%+ availability</h1>
-  <div class="content-intro">
-    <p>
-      The Things Stack is a robust yet flexible LoRaWAN Network Server that caters to the needs of demanding LoRaWAN deployments, from covering the essentials to advanced security configurations and device life cycle management.
-    </p>
-  </div>
-</div>
+<div>
 
-<div class="section">
-  <div class="container is-max-desktop">
-    <div class="homepage-icons">
-  <a href="/docs/devices" class="icon-button">
-  <figure>
-    <img width="100px" src="/docs/img/icon-device.svg">
-    <figcaption>Devices</figcaption>
-  </figure>
-</a>
+  <section class="section-doc-home-page-hero ttui-container grid pt-ls-xl pb-ls-xl">
 
-  <a href="/docs/gateways" class="icon-button">
-  <figure>
-    <img width="100px" src="/docs/img/icon-gateway.svg">
-    <figcaption>Gateways</figcaption>
-  </figure>
-</a>
-
-  <a href="/docs/getting-started" class="icon-button">
-  <figure>
-    <img width="100px" src="/docs/img/icon-network-server.svg">
-    <figcaption>The Things Stack</figcaption>
-  </figure>
-</a>
-
-  <a href="/docs/integrations" class="icon-button">
-  <figure>
-    <img width="100px" src="/docs/img/icon-integration.svg">
-    <figcaption>Integrations</figcaption>
-  </figure>
-</a>
-
-  <a href="/docs/integrations" class="icon-button">
-  <figure>
-    <img width="100px" src="/docs/img/icon-application.svg">
-    <figcaption>Applications</figcaption>
-  </figure>
-</a>
-
-</div>
-
-  </div>
-</div>
-
-<div class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column">
-        
-<div class="whats-new">
-  <div class="whats-new-content">
-    <div class="whats-new-header">
-      <h2 class="whats-new-title"><a href=https://www.thethingsindustries.com/docs/whats-new/3.14.0/>What's new in V3.14.0</a></h2>
-      <a href="https://www.thethingsindustries.com/docs/whats-new/"><p class="see-more">See all release notes →</p></a>
+    <div class="item-5 md:item-12 grid sm:mb-ls-l">
+      <div class="mb-ls-l item-12 md:item-6 sm:item-8 xs:item-12">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body p-sides-cs-s pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">v3.27.0</p>
+        <h1 class="mb-cs-s c-interactive-03">The Things Stack Documentation</h1>
+        <p class="ttui-body fs-l mb-cs-xl">The Things Stack is a robust, yet flexible LoRaWAN® Network Server that caters to the needs of demanding LoRaWAN deployments, from covering the essentials to advanced security configurations and device life cycle management.</p>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="item-12 md:item-6 sm:item-12">
+        <p class="ttui-body fs-l fw-bolder mb-cs-xl">Try it out</p>
+        <div class="container-whats-new-list flex-column b-line-02 br-l">
+          
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="/docs/getting-started/lorawan-basics/">
+            <div class="d-flex j-between">
+              <p>Get to know LoRaWAN®</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="/docs/getting-started/setup-first-network/">
+            <div class="d-flex j-between">
+              <p>Set up your first LoRaWAN® network</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="/docs/gateways/concepts/adding-gateways/">
+            <div class="d-flex j-between">
+              <p>Connect your first gateway</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="/docs/devices/adding-devices/">
+            <div class="d-flex j-between">
+              <p>Add your first device</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="https://www.thethingsnetwork.org/achievements">
+            <div class="d-flex j-between">
+              <p>Get certified</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
+        </div>
+      </div>
     </div>
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.14.0/">
-      <div class="whats-new-body">
-        <div class="whats-new-items-shadow whats-new-items-fade">
-          <div class="whats-new-items">
-            <h3 id="added">Added</h3>
-<ul>
-<li>Gateway antenna placement; unknown, indoor or outdoor. This can now be specified with CLI, e.g. for the first antenna: <code>ttn-lw-cli gateways set &lt;gateway-id&gt; --antenna.index 0 --antenna.placement OUTDOOR</code>. The antenna placement will be reported to Packet Broker Mapper.
-<ul>
-<li>This requires a database schema migration (<code>ttn-lw-stack is-db migrate</code>) because of the added columns.</li>
-</ul>
-</li>
-<li>Payload formatter length validation in the Console.</li>
-<li>User session management (listing and deleting) in the Identity Server and the CLI.</li>
-<li>Improved logging for the OAuth server.</li>
-<li>LR-FHSS modulation
-<ul>
-<li>Additional fields for the Gateway and Rx Metadata API. This requires a database schema migration (<code>ttn-lw-stack is-db migrate</code>) because of the added columns.</li>
-<li>Support for LR-FHSS fields when translating uplink messages with the UDP protocol.</li>
-</ul>
-</li>
-<li>Network Server now appends network identifiers in forwarded uplink messages. These are populated from the <code>ns.net-id</code> and the new <code>ns.cluster-id</code> configuration option.
-<ul>
-<li>See the new <code>uplink_message.network_identifiers.net_id</code>, <code>uplink_message.network_identifiers.cluster_id</code> and <code>uplink_message.network_identifiers.tenant_id</code> fields.</li>
-<li>This can be useful for HTTP webhooks to determine the Network Server that received and forwarded an uplink message.</li>
-</ul>
-</li>
-<li><code>GetDefaultMACSettings</code> RPC for requesting the default and desired MAC settings for a Band (Frequency Plan) and LoRaWAN regional parameters version.</li>
-<li>Error handling for missing templates in device repository form in the Console.</li>
-<li>Cache gateway entity responses for requests made to the IS by the GS. See the new <code>gs.entity-registry-cache.size</code> and <code>gs.entity-registry-cache.timeout</code> configuration options.</li>
-<li>API for searching tenants.</li>
-<li>End device first activation timestamp in the Identity Server end device store.
-<ul>
-<li>This requires a database schema migration (<code>ttn-lw-stack is-db migrate</code>) because of the added columns.</li>
-</ul>
-</li>
-<li>Azure IoT Hub integration via an application package.</li>
-<li>Resilience to flakiness in upstream servers during gateway claiming.</li>
-<li>Opt out of Packet Broker for individual gateways, see the new <code>disable_packet_broker_forwarding</code> gateway option.
-<ul>
-<li>This requires a database schema migration (<code>ttn-lw-stack is-db migrate</code>) because of the added columns.</li>
-<li>This is only relevant when Packet Broker is enabled and configured by the network operator.</li>
-</ul>
-</li>
-<li>Gateways are now disconnected when settings affecting the connection with Gateway Server change. Use the <code>gs.fetch-gateway-interval</code> and <code>gs.fetch-interval-jitter</code> to configure how often the gateway is fetched from the entity registry.</li>
-<li>Small UX improvements to the LoRaCloud DAS forms in the Console.</li>
-<li>End device first activation timestamp in the Identity Server end device store.
-<ul>
-<li>This requires a database schema migration (<code>ttn-lw-stack is-db migrate</code>) because of the added columns.</li>
-</ul>
-</li>
-<li><code>AppJs</code> interface for applications to get the LoRaWAN AppSKey directly from the Join Server.</li>
-<li>Console support for DevEUI generation from the configured DevEUI address block.
-<ul>
-<li>This requires <code>console.ui.dev-eui-issuing-enabled</code> and <code>console.ui.dev-eui-app-limit</code> to be set with the same values as in the Identity Server configuration.</li>
-</ul>
-</li>
-</ul>
-<h3 id="changed">Changed</h3>
-<ul>
-<li>When a gateway uplink message contains duplicate data uplinks, only the one with the highest RSSI are forwarded.</li>
-<li>The HTTP port now allows HTTP/2 connections over cleartext (h2c).</li>
-<li><code>ttn-lw-stack ns-db migrate</code> command records the schema version and only performs migrations if on a newer version.
-<ul>
-<li>Use the <code>--force</code> flag to force perform migrations.</li>
-</ul>
-</li>
-<li>Any authenticated user in the network can now list the collaborators of entities in the network.</li>
-<li>The search RPCs no longer require fields to be specified in the field mask when those fields are already specified as filters.</li>
-<li>When generating client configuration with the CLI <code>use</code> command, automatically set the correct Identity Server and OAuth Server addresses for The Things Stack Cloud and The Things Stack Community Edition.</li>
-</ul>
-<h3 id="removed">Removed</h3>
-<ul>
-<li>The <code>old</code> log format.</li>
-</ul>
-<h3 id="fixed">Fixed</h3>
-<ul>
-<li>Network Server ADR algorithm data rate adjustment behavior on negative margin.</li>
-<li>CLI <code>gateway set --antenna.remove</code> command failing to remove gateway antennas in some cases.</li>
-<li>CLI <code>gateway set --antenna.gain &lt;gain&gt;</code> command crashing when no gateway antennas are present.</li>
-<li>Webhook template path variable expansion of query parameters.</li>
-<li>LBS LNS Auth Secret displays garbage value when updated.</li>
-<li>Transmit confirmation messages for LoRa Basics Station gateways.</li>
-<li>Instability and frequent crashes when internet connection is lost in the Console.</li>
-<li>Rate limiting for <code>TenantRegistry.GetTenantIdentifiersForGatewayEUI</code> is now applied per gateway EUI.</li>
-<li>Rate limiting for <code>TenantRegistry.GetTenantIdentifiersForEndDeviceEUIs</code> is now applied per end device EUI.</li>
-<li>Panic in GCS when CUPS rotation is set without a key.</li>
-<li>Rate limiting for <code>GatewayRegistry.GetGatewayIdentifiersForEUI</code> is now applied per gateway EUI.</li>
-<li>Network Server ensures that the Band ID in the end device version identifiers match the configured Frequency Plan of the device.</li>
-</ul>
 
+    
+    
+    
+    
+    
+    
+    
+    <div class="container-doc-home-page-browse item-6 item-start-7 md:item-12 md:item-start-1">
+      <p class="ttui-body fs-l fw-bolder mb-cs-xl">Browse by section</p>
+      <div class="container-doc-home-page-cards grid grid--center">
+        
+        <a href="/docs/getting-started/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #002B9E">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">Getting started</p>
+            <p class="ttui-body fs-m c-white">Get started with The Things Stack. If you’re new to The Things Stack and/or LoRaWAN, this is the place to start.</p>
           </div>
-        </div>
-        <div class="more-updates">
-          <div class="circle-more-updates">
-            <p class="news-number"></p>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
           </div>
-        </div>
+        </a>
+        
+        <a href="/docs/devices/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #1E5DFF">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">End Devices</p>
+            <p class="ttui-body fs-m c-white">Learn how to configure and manage LoRaWAN End Devices in The Things Stack.</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
+        <a href="/docs/gateways/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #4275FF">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">Gateways</p>
+            <p class="ttui-body fs-m c-white">Learn to connect and manage various LoRaWAN Gateways on The Things Stack.</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
+        <a href="/docs/integrations/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #1F52D8">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">Integrations</p>
+            <p class="ttui-body fs-m c-white">Learn how to work with End Device data on The Things Stack and how to integrate with external systems.</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
+        <a href="/docs/the-things-stack/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #073DCB">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">The Things Stack</p>
+            <p class="ttui-body fs-m c-white">Learn about the different flavours of The Things Stack and how to install/access them.</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
+        <a href="/docs/reference/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #001958">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">Reference</p>
+            <p class="ttui-body fs-m c-white">Curated list of advanced topics for The Things Stack. Leverage the full customization capabilities of The Things Stack.</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+
+  </section>
+
+
+  
+
+
+<section class="section-whats-new ttui-container grid pt-ls-xl pb-ls-xl">
+
+<div class="container-whats-new item-12 br-l p-ls-s">
+  <p class="ttui-body fs-xl fw-bolder mb-cs-xl c-text-01">What's new in v3.27.0</p>
+  <div class="grid mb-cs-xl">
+    
+    
+    
+
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Added</p>
+        <p class="ttui-body fs-m">RPCs and CLI command to delete a batch of end devices within an application.</p>
+      </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
       </div>
     </a>
-  </div>
-</div>
 
-<a href="https://www.thethingsindustries.com/docs/whats-new/">
-  <div class="whats-new-800">
-    <div class="whats-new-header-800">
-      <p>See what's new in V3.14.0</p>
-      <p>-></p>
-    </div>
-  </div>
-</a>
+    
 
-
-
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Added</p>
+        <p class="ttui-body fs-m">Identity Server configuration to optionally restrict administrative and technical contacts of entities</p>
       </div>
-    </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
+      </div>
+    </a>
+
+    
+    
+    
+
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Changed</p>
+        <p class="ttui-body fs-m">Instead of retrying application downlinks indefinitely, the Application Server now retries them for a configured number of times</p>
+      </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
+      </div>
+    </a>
+
+    
+
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Changed</p>
+        <p class="ttui-body fs-m">Packet Broker Agent now subscribes as Home Network to all DevAddr prefixes. This is to support NetID delegation where DevAddr blocks of other NetIDs should be routed to the cluster of a different NetID</p>
+      </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
+      </div>
+    </a>
+
+    
+    
+    
+
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Fixed</p>
+        <p class="ttui-body fs-m">The gateway data rate utilization panel in Network Operations Center now includes all gateway uplink traffic, not just traffic that has been processed for an end device.</p>
+      </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
+      </div>
+    </a>
+
+    
+
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+      <div class="item-10">
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Fixed</p>
+        <p class="ttui-body fs-m">End device data stream not being closed when navigating away from end device pages, which could cause event streams stopping to work due to too many open connections.</p>
+      </div>
+      <div class="item-1 item-start-12 d-flex al-center j-center">
+        <p class="ttui-body fs-l">&#8594</p>
+      </div>
+    </a>
+
+    
+    
   </div>
+  <a href='https://www.thethingsindustries.com/docs/whats-new/' class="ttui-body c-text-01"><u>See all release notes &#8594</u></a>
 </div>
+</section>
 
 
 
@@ -269,66 +324,6 @@
 
 
 
-<div class="section">
-  <div class="container is-max-desktop">
-    <div class="columns">
-      
-        <div class="column is-flex">
-          <div class="card is-fullwidth">
-            <div class="card-content">
-              <div class="title-content">
-                <h2 class="title is-size-5 has-text-centered">Features</h2>
-                <div class="content">
-                    <p>The Things Stack is comprised of an architecture of loosely coupled components which ensures the security, data routing and battery optimization of LoRaWAN end devices.</p>
-<p>The Things Stack is a complete and open source LoRaWAN Network Server designed for various deployment scenarios, supporting all existing LoRaWAN versions (including 1.1), operation modes A, B and C, and all regional parameters as released by the LoRa Alliance.</p>
-
-                </div>
-              </div>
-              <div class="buttons is-centered">
-                <a href="/docs/download/" class="button is-primary is-outlined">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column is-flex">
-          <div class="card is-fullwidth">
-            <div class="card-content">
-              <div class="title-content">
-                <h2 class="title is-size-5 has-text-centered">Documentation</h2>
-                <div class="content">
-                    <p>The Things Stack is an open source LoRaWAN Network Server suitable for global, geo-distributed public and private deployments as well as for small, local networks. The architecture follows the LoRaWAN Network Reference Model for standards compliancy and interoperability. This project is actively maintained by <a href="https://www.thethingsindustries.com/">The Things Industries</a>.</p>
-<p>LoRaWAN is a protocol for low-power wide area networks. It allows for large scale Internet of Things deployments where low-powered devices efficiently communicate with Internet-connected applications over long range wireless connections.</p>
-
-                </div>
-              </div>
-              <div class="buttons is-centered">
-                <a href="/docs/getting-started/" class="button is-primary is-outlined">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column is-flex">
-          <div class="card is-fullwidth">
-            <div class="card-content">
-              <div class="title-content">
-                <h2 class="title is-size-5 has-text-centered">Community</h2>
-                <div class="content">
-                    <p>Thanks to a large developer community, The Things Stack is continuously being improved. There are many ways to contribute to the project, thinking of reporting issues, requesting and implementing new features and writing documentation. Read more on how to contribute in the <a href="https://github.com/TheThingsNetwork/lorawan-stack">LoRaWAN stack repository</a>.</p>
-<p>Hosted solutions, as well as commercial support and consultancy are offered by <a href="https://www.thethingsindustries.com/">The Things Industries</a>.</p>
-
-                </div>
-              </div>
-              <div class="buttons is-centered">
-                <a href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3" class="button is-primary is-outlined">Developer Forum</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </div>
 </div>
 
 
@@ -336,45 +331,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Ben Olayinka on 10 Jun 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/0b47e80c5b5e8c1e36ed00d29ada0f63afc629f5">
-      Restructure layout (#390)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/_index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

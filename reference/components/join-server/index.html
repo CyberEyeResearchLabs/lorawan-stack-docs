@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Join Server | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/components/join-server/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Join Server">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Join Server">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/components/join-server/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Join Server" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -155,6 +157,16 @@
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/components/join-server/" class="is-active">Join Server</a>
     
+    
+
+
+
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/components/network-operations-center/" class="">Network Operations Center</a>
+    
   </li>
 
   <li>
@@ -164,11 +176,6 @@
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/components/packet-broker-agent/" class="">Packet Broker Agent</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/components/qr-code-generator/" class="">QR Code Generator</a>
     
   </li>
 
@@ -186,10 +193,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -201,28 +208,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -231,7 +247,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -255,7 +271,7 @@
         </h1>
         
         <div class="content">
-          <p>The Join Server handles the LoRaWAN join flow, including Network and Application Server authentication and session key generation.</p>
+          <p>The Join Server handles the LoRaWAN® join flow, including Network and Application Server authentication and session key generation.</p>
 <h2 id="join-procedure">Join procedure</h2>
 <p>Join Servers receive join-requests from <a href="https://www.thethingsindustries.com/docs/reference/components/network-server/">Network Servers</a> via gRPC and issue join-accepts for registered devices if join-request validation passes.</p>
 <p>In case a join-request is accepted, the Join Server derives session security context, which contains the session keys and is identified by a session key ID. Join Servers encrypt derived network and application session keys using key encryption keys(KEKs) shared between <a href="https://www.thethingsindustries.com/docs/reference/components/network-server/">Network Servers</a> and <a href="https://www.thethingsindustries.com/docs/reference/components/application-server/">Application Servers</a> respectively and include the session keys in the join-accepts in encrypted form.</p>
@@ -269,7 +285,7 @@
         </div>
         <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/reference/components/identity-server/">← Identity Server</a>
-<a class="button is-pulled-right" href="/docs/reference/components/network-server/">Network Server →</a>
+<a class="button is-pulled-right" href="/docs/reference/components/network-operations-center/">Network Operations Center →</a>
 </div>
 
         <script>window.emojicom_widget = { campaign: "" };</script>
@@ -316,45 +332,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by benolayinka on 17 Aug 2020.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/fe0841efcf178987102ef2e60152e754effa8d71">
-      doc: Add hugo aliases for broken links
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/components/join-server.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

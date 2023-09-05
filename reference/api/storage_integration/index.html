@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Storage Integration API | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/api/storage_integration/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Storage Integration API">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Storage Integration API">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/api/storage_integration/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Storage Integration API" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -116,6 +118,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/application_packages/" class="">Application Package APIs</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/application_pub_sub/" class="">Application Pub/Sub APIs</a>
     
   </li>
@@ -131,12 +138,12 @@
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/client/" class="">Client APIs</a>
     
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device_claiming/" class="">End Device Claiming APIs</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/end_device/" class="">End Device APIs</a>
     
   </li>
 
@@ -161,6 +168,11 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/api/network_operations_center/" class="">Network Operations Center APIs</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/network_server/" class="">Network Server APIs</a>
     
   </li>
@@ -172,6 +184,11 @@
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/api/storage_integration/" class="is-active">Storage Integration API</a>
+    
+    
+
+
+
     
   </li>
 
@@ -206,10 +223,10 @@
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/" class="">Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -221,28 +238,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -251,7 +277,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -343,6 +369,7 @@
   "order": "",
   "field_mask": {},
   "last": "0s",
+  "continuation_token": "",
 }</code></pre>
 </details>
 
@@ -362,6 +389,7 @@
         Type
       </th>
       <td>
+        
         
             
               
@@ -409,6 +437,7 @@
       </th>
       <td>
         
+        
             
               
             
@@ -455,6 +484,7 @@
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -465,7 +495,7 @@
       </th>
       <td>
           <p>Query upstream messages of a specific type. If not set, then all upstream messages are returned.</p>
-          <p><code>in</code>: <code>[ uplink_message join_accept downlink_ack downlink_nack downlink_sent downlink_failed downlink_queued downlink_queue_invalidated location_solved service_data]</code></p>
+          <p><code>in</code>: <code>[ uplink_message uplink_normalized join_accept downlink_ack downlink_nack downlink_sent downlink_failed downlink_queued downlink_queue_invalidated location_solved service_data]</code></p>
       </td>
     </tr>
     
@@ -487,6 +517,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -529,6 +560,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -569,6 +601,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -611,6 +644,7 @@
       </th>
       <td>
         
+        
             
         
   
@@ -652,6 +686,7 @@
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -684,6 +719,7 @@
         Type
       </th>
       <td>
+        
         
             
         
@@ -727,6 +763,7 @@ for allowed field names for each type of upstream message.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -746,6 +783,40 @@ for allowed field names for each type of upstream message.</p>
       </th>
       <td>
           <p>Query upstream messages that have arrived in the last minutes or hours. Cannot be used in conjunction with after and before.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>continuation_token</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The continuation token, which is used to retrieve the next page. If provided, other fields are ignored.</p>
+          <p><code>max_len</code>: <code>16000</code></p>
       </td>
     </tr>
     
@@ -778,6 +849,7 @@ for allowed field names for each type of upstream message.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -827,6 +899,7 @@ for allowed field names for each type of upstream message.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -859,6 +932,7 @@ for allowed field names for each type of upstream message.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -905,6 +979,13 @@ for allowed field names for each type of upstream message.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -949,6 +1030,7 @@ for allowed field names for each type of upstream message.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -982,6 +1064,7 @@ rejoin-request.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -1001,6 +1084,7 @@ rejoin-request.</p>
       </th>
       <td>
           <p>Server time when the Network Server received the message.</p>
+          <p><code>required</code></p>
       </td>
     </tr>
     
@@ -1023,6 +1107,7 @@ rejoin-request.</p>
   "class_b_c": {},
   "priority": "LOWEST",
   "correlation_ids": [],
+  "confirmed_retry": {},
 }</code></pre>
 </details>
 
@@ -1042,6 +1127,7 @@ rejoin-request.</p>
         Type
       </th>
       <td>
+        
         
   <code>bytes</code>
 </td>
@@ -1076,6 +1162,7 @@ rejoin-request.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -1085,7 +1172,6 @@ rejoin-request.</p>
         Description
       </th>
       <td>
-          <p><code>gte</code>: <code>1</code></p>
           <p><code>lte</code>: <code>255</code></p>
           <p><code>not_in</code>: <code>[224]</code></p>
       </td>
@@ -1110,6 +1196,7 @@ rejoin-request.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -1132,6 +1219,7 @@ rejoin-request.</p>
         Type
       </th>
       <td>
+        
         
   <code>bytes</code>
 </td>
@@ -1166,6 +1254,7 @@ is true.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -1210,6 +1299,9 @@ When reading downlink (listing the queue, downlink message events, etc), this fi
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>string</code>
 </td>
@@ -1244,6 +1336,7 @@ When reading downlink (listing the queue, downlink message events, etc), this fi
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -1266,6 +1359,7 @@ When reading downlink (listing the queue, downlink message events, etc), this fi
         Type
       </th>
       <td>
+        
         
             
               
@@ -1315,6 +1409,7 @@ If not set, this downlink message may be transmitted in class A, B and C.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -1361,6 +1456,9 @@ If not set, this downlink message may be transmitted in class A, B and C.</p>
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>string</code>
 </td>
@@ -1374,6 +1472,44 @@ If not set, this downlink message may be transmitted in class A, B and C.</p>
             <p><code>max_len</code>: <code>100</code></p>
         
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>confirmed_retry</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:ApplicationDownlink.ConfirmedRetry">
+  
+  <code>
+    
+    ApplicationDownlink.ConfirmedRetry
+  </code>
+  
+    </a>
+  
+</td>
     </tr>
     
   </tbody>
@@ -1406,14 +1542,21 @@ If not set, this downlink message may be transmitted in class A, B and C.</p>
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
-    <a href="#message:GatewayAntennaIdentifiers">
+    <a href="#message:ClassBCGatewayIdentifiers">
   
   <code>
     
-    GatewayAntennaIdentifiers
+    ClassBCGatewayIdentifiers
   </code>
   
     </a>
@@ -1426,10 +1569,11 @@ If not set, this downlink message may be transmitted in class A, B and C.</p>
         Description
       </th>
       <td>
-          <p>Possible gateway identifiers and antenna index to use for this downlink message.
+          <p>Possible gateway identifiers, antenna index, and group index to use for this downlink message.
 The Network Server selects one of these gateways for downlink, based on connectivity, signal quality, channel utilization and an available slot.
 If none of the gateways can be selected, the downlink message fails.
-If empty, a gateway and antenna is selected automatically from the gateways seen in recent uplinks.</p>
+If empty, a gateway and antenna is selected automatically from the gateways seen in recent uplinks.
+If group index is set, gateways will be grouped by the index for the Network Server to select one gateway per group.</p>
         
       </td>
     </tr>
@@ -1453,6 +1597,7 @@ If empty, a gateway and antenna is selected automatically from the gateways seen
       </th>
       <td>
         
+        
             
         
   
@@ -1475,6 +1620,96 @@ If empty, a gateway and antenna is selected automatically from the gateways seen
 This requires the gateway to have GPS time synchronization.
 If the time is in the past or if there is a scheduling conflict, the downlink message fails.
 If null, the time is selected based on slot availability. This is recommended in class B mode.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ApplicationDownlink.ConfirmedRetry">Message <code>ApplicationDownlink.ConfirmedRetry</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "attempt": 0,
+  "max_attempts": null,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>attempt</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The number of attempted confirmed downlink acknowledgements.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>max_attempts</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    UInt32Value
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The maximum number of confirmed downlink acknowledgement attempts.
+If null, the Application Server configuration is used instead.</p>
+          <p><code>gt</code>: <code>0</code></p>
+          <p><code>lte</code>: <code>100</code></p>
       </td>
     </tr>
     
@@ -1508,6 +1743,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -1554,6 +1790,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -1613,6 +1850,13 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -1656,6 +1900,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -1678,6 +1923,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
   <code>bytes</code>
 </td>
@@ -1724,6 +1970,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1746,6 +1993,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -1792,6 +2040,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -1844,6 +2093,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -1867,6 +2117,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
         
   
@@ -1889,7 +2140,7 @@ If null, the time is selected based on slot availability. This is recommended in
 <p>Application uplink message.</p>
 <b>Restrictions:</b>
 <ul>
-  <li>Only one of <code>uplink_message</code>, <code>join_accept</code>, <code>downlink_ack</code>, <code>downlink_nack</code>, <code>downlink_sent</code>, <code>downlink_failed</code>, <code>downlink_queued</code>, <code>downlink_queue_invalidated</code>, <code>location_solved</code>, <code>service_data</code> can be set.</li>
+  <li>Only one of <code>uplink_message</code>, <code>uplink_normalized</code>, <code>join_accept</code>, <code>downlink_ack</code>, <code>downlink_nack</code>, <code>downlink_sent</code>, <code>downlink_failed</code>, <code>downlink_queued</code>, <code>downlink_queue_invalidated</code>, <code>location_solved</code>, <code>service_data</code> can be set.</li>
 </ul>
 
 <details><summary>Show object example</summary>
@@ -1898,6 +2149,7 @@ If null, the time is selected based on slot availability. This is recommended in
   "correlation_ids": [],
   "received_at": "0001-01-01T00:00:00Z",
   "uplink_message": {},
+  "uplink_normalized": {},
   "join_accept": {},
   "downlink_ack": {},
   "downlink_nack": {},
@@ -1927,6 +2179,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -1973,6 +2226,9 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>string</code>
 </td>
@@ -2006,6 +2262,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
         
@@ -2048,6 +2305,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
               
             
@@ -2076,6 +2334,44 @@ If null, the time is selected based on slot availability. This is recommended in
         Field
       </th>
       <td>
+        <code>uplink_normalized</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:ApplicationUplinkNormalized">
+  
+  <code>
+    
+    ApplicationUplinkNormalized
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
         <code>join_accept</code>
       </td>
     </tr>
@@ -2084,6 +2380,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -2122,6 +2419,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
               
             
@@ -2158,6 +2456,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -2196,6 +2495,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
               
             
@@ -2232,6 +2532,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -2270,6 +2571,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
               
             
@@ -2306,6 +2608,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -2344,6 +2647,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
             
               
             
@@ -2380,6 +2684,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
             
               
@@ -2418,6 +2723,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -2446,6 +2752,8 @@ If null, the time is selected based on slot availability. This is recommended in
   "frm_payload": "",
   "decoded_payload": {},
   "decoded_payload_warnings": [],
+  "normalized_payload": [],
+  "normalized_payload_warnings": [],
   "rx_metadata": [],
   "settings": {},
   "received_at": "0001-01-01T00:00:00Z",
@@ -2475,6 +2783,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
   <code>bytes</code>
 </td>
@@ -2509,6 +2818,7 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -2518,6 +2828,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Description
       </th>
       <td>
+          <p>LoRaWAN FPort of the uplink message.</p>
           <p><code>lte</code>: <code>255</code></p>
           <p><code>not_in</code>: <code>[224]</code></p>
       </td>
@@ -2542,8 +2853,18 @@ If null, the time is selected based on slot availability. This is recommended in
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>LoRaWAN FCntUp of the uplink message.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2564,6 +2885,7 @@ If null, the time is selected based on slot availability. This is recommended in
         Type
       </th>
       <td>
+        
         
   <code>bytes</code>
 </td>
@@ -2598,6 +2920,7 @@ is true, which is indicated by the presence of the app_s_key field.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -2640,6 +2963,9 @@ This field is set by the message processor that is configured for the end device
         Type
       </th>
       <td>
+        
+          
+        
         repeated 
   <code>string</code>
 </td>
@@ -2665,6 +2991,90 @@ This field is set by the message processor that is configured for the end device
         Field
       </th>
       <td>
+        <code>normalized_payload</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+              
+          
+        
+        repeated 
+  
+  <code>
+    
+      google.protobuf.
+    
+    Struct
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The normalized frame payload of the uplink message.
+This field is set by the message processor that is configured for the end device (see formatters) or application (see default_formatters).
+If the message processor is a custom script, there is no uplink normalizer script and the decoded output is valid
+normalized payload, this field contains the decoded payload.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>normalized_payload_warnings</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+        
+        repeated 
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Warnings generated by the message processor while normalizing the decoded payload.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
         <code>rx_metadata</code>
       </td>
     </tr>
@@ -2673,6 +3083,13 @@ This field is set by the message processor that is configured for the end device
         Type
       </th>
       <td>
+        
+          
+              
+                
+              
+          
+        
         repeated 
   
     
@@ -2717,6 +3134,7 @@ This field is set by the message processor that is configured for the end device
       </th>
       <td>
         
+        
             
               
             
@@ -2740,7 +3158,7 @@ This field is set by the message processor that is configured for the end device
         Description
       </th>
       <td>
-          <p>Settings for the transmission.</p>
+          <p>Transmission settings used by the end device.</p>
           <p><code>required</code></p>
       </td>
     </tr>
@@ -2763,6 +3181,7 @@ This field is set by the message processor that is configured for the end device
         Type
       </th>
       <td>
+        
         
             
         
@@ -2804,6 +3223,7 @@ This field is set by the message processor that is configured for the end device
         Type
       </th>
       <td>
+        
         
             
               
@@ -2854,6 +3274,7 @@ Can be used to decrypt uplink payloads and encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -2889,8 +3310,18 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Indicates whether the end device used confirmed data uplink.</p>
+      </td>
     </tr>
     
   </tbody>
@@ -2912,6 +3343,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
             
         
   
@@ -2930,7 +3362,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Description
       </th>
       <td>
-          <p>Consumed airtime for the transmission of the uplink message. Calculated by Network Server using the RawPayload size and the transmission settings.</p>
+          <p>Consumed airtime for the transmission of the uplink message. Calculated by Network Server using the raw payload size and the transmission settings.</p>
       </td>
     </tr>
     
@@ -2952,6 +3384,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Type
       </th>
       <td>
+        
         map of 
   <code>string</code>
  to 
@@ -2999,6 +3432,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3045,6 +3479,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3070,6 +3505,712 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       <td>
           <p>Network identifiers, set by the Network Server that handles the message.</p>
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ApplicationUplinkNormalized">Message <code>ApplicationUplinkNormalized</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "session_key_id": "",
+  "f_port": 0,
+  "f_cnt": 0,
+  "frm_payload": "",
+  "normalized_payload": {},
+  "normalized_payload_warnings": [],
+  "rx_metadata": [],
+  "settings": {},
+  "received_at": "0001-01-01T00:00:00Z",
+  "confirmed": false,
+  "consumed_airtime": "0s",
+  "locations": {},
+  "version_ids": {},
+  "network_ids": {},
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>session_key_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Join Server issued identifier for the session keys used by this uplink.</p>
+          <p><code>max_len</code>: <code>2048</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>f_port</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>LoRaWAN FPort of the uplink message.</p>
+          <p><code>gte</code>: <code>1</code></p>
+          <p><code>lte</code>: <code>255</code></p>
+          <p><code>not_in</code>: <code>[224]</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>f_cnt</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>LoRaWAN FCntUp of the uplink message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>frm_payload</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The frame payload of the uplink message.
+This field is always decrypted with AppSKey.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>normalized_payload</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Struct
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>The normalized frame payload of the uplink message.
+This field is set for each item in normalized_payload in the corresponding ApplicationUplink message.</p>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>normalized_payload_warnings</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+        
+        repeated 
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>This field is set to normalized_payload_warnings in the corresponding ApplicationUplink message.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>rx_metadata</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+              
+                
+              
+          
+        
+        repeated 
+  
+    
+    <a href="#message:RxMetadata">
+  
+  <code>
+    
+    RxMetadata
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>A list of metadata for each antenna of each gateway that received this message.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>settings</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:TxSettings">
+  
+  <code>
+    
+    TxSettings
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Transmission settings used by the end device.</p>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>received_at</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Server time when the Network Server received the message.</p>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>confirmed</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bool</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Indicates whether the end device used confirmed data uplink.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>consumed_airtime</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Duration
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Consumed airtime for the transmission of the uplink message. Calculated by Network Server using the raw payload size and the transmission settings.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>locations</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        map of 
+  <code>string</code>
+ to 
+  
+    
+    <a href="#message:Location">
+  
+  <code>
+    
+    Location
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>End device location metadata, set by the Application Server while handling the message.</p>
+        
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>version_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:EndDeviceVersionIdentifiers">
+  
+  <code>
+    
+    EndDeviceVersionIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>End device version identifiers, set by the Application Server while handling the message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>network_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:NetworkIdentifiers">
+  
+  <code>
+    
+    NetworkIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Network identifiers, set by the Network Server that handles the message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:ClassBCGatewayIdentifiers">Message <code>ClassBCGatewayIdentifiers</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_ids": {},
+  "antenna_index": 0,
+  "group_index": 0,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:GatewayIdentifiers">
+  
+  <code>
+    
+    GatewayIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>antenna_index</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>group_index</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
     </tr>
     
   </tbody>
@@ -3108,6 +4249,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3145,6 +4287,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -3181,6 +4324,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -3234,6 +4378,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3266,6 +4411,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -3313,6 +4459,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -3323,6 +4470,8 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
           <p>The LoRaWAN DevEUI.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
       </td>
     </tr>
     
@@ -3345,6 +4494,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -3355,6 +4505,8 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
           <p>The LoRaWAN JoinEUI (AppEUI until LoRaWAN 1.0.3 end devices).</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
       </td>
     </tr>
     
@@ -3377,6 +4529,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -3387,6 +4540,8 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
           <p>The LoRaWAN DevAddr.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>4</code></p>
       </td>
     </tr>
     
@@ -3425,6 +4580,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3458,6 +4614,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -3493,6 +4650,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3525,6 +4683,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3556,6 +4715,7 @@ Can be used with app_s_key to encrypt downlink payloads.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -3609,6 +4769,7 @@ The messages (for translation) are stored as &ldquo;error:<namespace>:<name>&rdq
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3640,6 +4801,7 @@ The messages (for translation) are stored as &ldquo;error:<namespace>:<name>&rdq
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -3673,6 +4835,7 @@ The messages (for translation) are stored as &ldquo;error:<namespace>:<name>&rdq
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3705,6 +4868,7 @@ This is also used if the client does not have a translation for the error.</p>
         Type
       </th>
       <td>
+        
         
             
         
@@ -3748,6 +4912,7 @@ can be displayed as error details.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -3780,6 +4945,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -3827,6 +4993,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -3858,6 +5025,11 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
+          
+              
+          
+        
         repeated 
   
   <code>
@@ -3910,6 +5082,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -3921,6 +5094,170 @@ traces the network may (or may not) store about recent errors.</p>
       <td>
           <p>Bit rate (bps).</p>
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:GatewayIdentifiers">Message <code>GatewayIdentifiers</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_id": "",
+  "eui": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>max_len</code>: <code>36</code></p>
+          <p><code>pattern</code>: <code>^[a-z0-9](?:[-]?[a-z0-9]){2,}$</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>eui</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Secondary identifier, which can only be used in specific requests.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:GatewayAntennaIdentifiers">Message <code>GatewayAntennaIdentifiers</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_ids": {},
+  "antenna_index": 0,
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:GatewayIdentifiers">
+  
+  <code>
+    
+    GatewayIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>antenna_index</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
     </tr>
     
   </tbody>
@@ -3955,6 +5292,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -3965,6 +5303,8 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
           <p>The unencrypted AES key.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>16</code></p>
       </td>
     </tr>
     
@@ -3986,6 +5326,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -4020,6 +5361,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -4044,6 +5386,7 @@ traces the network may (or may not) store about recent errors.</p>
 <pre><code>{
   "bandwidth": 0,
   "spreading_factor": 0,
+  "coding_rate": "",
 }</code></pre>
 </details>
 
@@ -4063,6 +5406,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -4096,7 +5440,32 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>coding_rate</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
 </td>
     </tr>
     
@@ -4134,6 +5503,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>double</code>
 </td>
     </tr>
@@ -4167,6 +5537,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>double</code>
 </td>
@@ -4202,6 +5573,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>int32</code>
 </td>
     </tr>
@@ -4234,6 +5606,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>int32</code>
 </td>
     </tr>
@@ -4265,6 +5638,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -4299,12 +5673,1462 @@ traces the network may (or may not) store about recent errors.</p>
 
 
 
+<h3 id="message:PacketBrokerMetadata">Message <code>PacketBrokerMetadata</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "message_id": "",
+  "forwarder_net_id": "",
+  "forwarder_tenant_id": "",
+  "forwarder_cluster_id": "",
+  "forwarder_gateway_eui": "",
+  "forwarder_gateway_id": null,
+  "home_network_net_id": "",
+  "home_network_tenant_id": "",
+  "home_network_cluster_id": "",
+  "hops": [],
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>message_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Message identifier generated by Packet Broker Router.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>forwarder_net_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>LoRa Alliance NetID of the Packet Broker Forwarder Member.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>3</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>forwarder_tenant_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Tenant ID managed by the Packet Broker Forwarder Member.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>forwarder_cluster_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Forwarder Cluster ID of the Packet Broker Forwarder.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>forwarder_gateway_eui</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Forwarder gateway EUI.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>8</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>forwarder_gateway_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    StringValue
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Forwarder gateway ID.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>home_network_net_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>LoRa Alliance NetID of the Packet Broker Home Network Member.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>3</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>home_network_tenant_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Tenant ID managed by the Packet Broker Home Network Member.
+This value is empty if it cannot be determined by the Packet Broker Router.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>home_network_cluster_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Home Network Cluster ID of the Packet Broker Home Network.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>hops</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+          
+              
+                
+              
+          
+        
+        repeated 
+  
+    
+    <a href="#message:PacketBrokerRouteHop">
+  
+  <code>
+    
+    PacketBrokerRouteHop
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Hops that the message passed. Each Packet Broker Router service appends an entry.</p>
+        
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:PacketBrokerRouteHop">Message <code>PacketBrokerRouteHop</code></h3>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "received_at": "0001-01-01T00:00:00Z",
+  "sender_name": "",
+  "sender_address": "",
+  "receiver_name": "",
+  "receiver_agent": "",
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>received_at</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Time when the service received the message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>sender_name</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Sender of the message, typically the authorized client identifier.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>sender_address</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Sender IP address or host name.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>receiver_name</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Receiver of the message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>receiver_agent</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Receiver agent.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+<h3 id="message:RxMetadata">Message <code>RxMetadata</code></h3>
+<p>Contains metadata for a received message. Each antenna that receives
+a message corresponds to one RxMetadata.</p>
+
+<details><summary>Show object example</summary>
+<pre><code>{
+  "gateway_ids": {},
+  "packet_broker": {},
+  "antenna_index": 0,
+  "time": "0001-01-01T00:00:00Z",
+  "timestamp": 0,
+  "fine_timestamp": 0,
+  "encrypted_fine_timestamp": "",
+  "encrypted_fine_timestamp_key_id": "",
+  "rssi": 0,
+  "signal_rssi": null,
+  "channel_rssi": 0,
+  "rssi_standard_deviation": 0,
+  "snr": 0,
+  "frequency_offset": 0,
+  "location": {},
+  "downlink_path_constraint": "DOWNLINK_PATH_CONSTRAINT_NONE",
+  "uplink_token": "",
+  "channel_index": 0,
+  "hopping_width": 0,
+  "frequency_drift": 0,
+  "gps_time": "0001-01-01T00:00:00Z",
+  "received_at": "0001-01-01T00:00:00Z",
+  "advanced": {},
+}</code></pre>
+</details>
+
+<p><b>Fields:</b></p>
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gateway_ids</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:GatewayIdentifiers">
+  
+  <code>
+    
+    GatewayIdentifiers
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><code>required</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>packet_broker</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:PacketBrokerMetadata">
+  
+  <code>
+    
+    PacketBrokerMetadata
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>antenna_index</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>time</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Timestamp at the end of the transmission, provided by the gateway. The accuracy is undefined.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>timestamp</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Gateway concentrator timestamp when the Rx finished (microseconds).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>fine_timestamp</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint64</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Gateway&rsquo;s internal fine timestamp when the Rx finished (nanoseconds).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>encrypted_fine_timestamp</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Encrypted gateway&rsquo;s internal fine timestamp when the Rx finished (nanoseconds).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>encrypted_fine_timestamp_key_id</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>rssi</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>float</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Received signal strength indicator (dBm).
+This value equals <code>channel_rssi</code>.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>signal_rssi</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    FloatValue
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Received signal strength indicator of the signal (dBm).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>channel_rssi</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>float</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Received signal strength indicator of the channel (dBm).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>rssi_standard_deviation</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>float</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Standard deviation of the RSSI during preamble.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>snr</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>float</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Signal-to-noise ratio (dB).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>frequency_offset</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>int64</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Frequency offset (Hz).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>location</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#message:Location">
+  
+  <code>
+    
+    Location
+  </code>
+  
+    </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Antenna location; injected by the Gateway Server.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>downlink_path_constraint</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+              
+            
+        
+  
+    
+    <a href="#enum:DownlinkPathConstraint">
+  
+  <code>
+  
+  DownlinkPathConstraint
+  </code>
+    
+  </a>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Gateway downlink path constraint; injected by the Gateway Server.</p>
+          <p><code>defined_only</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>uplink_token</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>bytes</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Uplink token to be included in the Tx request in class A downlink; injected by gateway, Gateway Server or fNS.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>channel_index</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Index of the gateway channel that received the message.</p>
+          <p><code>lte</code>: <code>255</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>hopping_width</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>uint32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Hopping width; a number describing the number of steps of the LR-FHSS grid.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>frequency_drift</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>int32</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Frequency drift in Hz between start and end of an LR-FHSS packet (signed).</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>gps_time</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Timestamp at the end of the transmission, provided by the gateway.
+Guaranteed to be based on a GPS PPS signal, with an accuracy of 1 millisecond.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>received_at</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Timestamp
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Timestamp at which the Gateway Server has received the message.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>advanced</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+            
+        
+  
+  <code>
+    
+      google.protobuf.
+    
+    Struct
+  </code>
+  
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p><p>Advanced metadata fields</p>
+<ul>
+<li>can be used for advanced information or experimental features that are not yet formally defined in the API</li>
+<li>field names are written in snake_case</li>
+</ul>
+</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
 <h3 id="message:LRFHSSDataRate">Message <code>LRFHSSDataRate</code></h3>
 
 <details><summary>Show object example</summary>
 <pre><code>{
   "modulation_type": 0,
   "operating_channel_width": 0,
+  "coding_rate": "",
 }</code></pre>
 </details>
 
@@ -4324,6 +7148,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint32</code>
 </td>
@@ -4348,6 +7173,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4357,8 +7183,32 @@ traces the network may (or may not) store about recent errors.</p>
         Description
       </th>
       <td>
-          <p>Operating Channel Width (kHz).</p>
+          <p>Operating Channel Width (Hz).</p>
       </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>coding_rate</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
     </tr>
     
   </tbody>
@@ -4374,6 +7224,8 @@ traces the network may (or may not) store about recent errors.</p>
   "net_id": "",
   "tenant_id": "",
   "cluster_id": "",
+  "cluster_address": "",
+  "tenant_address": "",
 }</code></pre>
 </details>
 
@@ -4394,6 +7246,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>bytes</code>
 </td>
     </tr>
@@ -4404,6 +7257,8 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
           <p>LoRa Alliance NetID.</p>
+          <p><code>ignore_empty</code></p>
+          <p><code>len</code>: <code>3</code></p>
       </td>
     </tr>
     
@@ -4425,6 +7280,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>string</code>
 </td>
@@ -4460,6 +7316,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>string</code>
 </td>
     </tr>
@@ -4471,6 +7328,74 @@ traces the network may (or may not) store about recent errors.</p>
       <td>
           <p>Cluster identifier of the Network Server.</p>
           <p><code>max_len</code>: <code>64</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>cluster_address</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Cluster address of the Network Server.</p>
+          <p><code>max_len</code>: <code>256</code></p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>tenant_address</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>string</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Optional tenant address for multi-tenant deployments.</p>
+          <p><code>max_len</code>: <code>256</code></p>
       </td>
     </tr>
     
@@ -4507,6 +7432,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4538,6 +7464,7 @@ traces the network may (or may not) store about recent errors.</p>
         Type
       </th>
       <td>
+        
         
   <code>float</code>
 </td>
@@ -4571,6 +7498,7 @@ traces the network may (or may not) store about recent errors.</p>
       </th>
       <td>
         
+        
   <code>bool</code>
 </td>
     </tr>
@@ -4597,13 +7525,12 @@ On downlink, this is a scheduled transmission.</p>
 <details><summary>Show object example</summary>
 <pre><code>{
   "data_rate": {},
-  "data_rate_index": "DATA_RATE_0",
-  "coding_rate": "",
   "frequency": 0,
   "enable_crc": false,
   "timestamp": 0,
   "time": "0001-01-01T00:00:00Z",
   "downlink": {},
+  "concentrator_timestamp": 0,
 }</code></pre>
 </details>
 
@@ -4623,6 +7550,7 @@ On downlink, this is a scheduled transmission.</p>
         Type
       </th>
       <td>
+        
         
             
               
@@ -4662,85 +7590,6 @@ On downlink, this is a scheduled transmission.</p>
         Field
       </th>
       <td>
-        <code>data_rate_index</code>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Type
-      </th>
-      <td>
-        
-            
-              
-            
-        
-  
-    
-    <a href="#enum:DataRateIndex">
-  
-  <code>
-  
-  DataRateIndex
-  </code>
-    
-  </a>
-  
-</td>
-    </tr>
-    
-    <tr>
-      <th>
-        Description
-      </th>
-      <td>
-          <p>LoRaWAN data rate index.</p>
-          <p><code>defined_only</code></p>
-      </td>
-    </tr>
-    
-  </tbody>
-</table>
-
-<table class="api">
-  <tbody>
-    <tr>
-      <th style="width: 150px">
-        Field
-      </th>
-      <td>
-        <code>coding_rate</code>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        Type
-      </th>
-      <td>
-        
-  <code>string</code>
-</td>
-    </tr>
-    
-    <tr>
-      <th>
-        Description
-      </th>
-      <td>
-          <p>LoRa coding rate.</p>
-      </td>
-    </tr>
-    
-  </tbody>
-</table>
-
-<table class="api">
-  <tbody>
-    <tr>
-      <th style="width: 150px">
-        Field
-      </th>
-      <td>
         <code>frequency</code>
       </td>
     </tr>
@@ -4749,6 +7598,7 @@ On downlink, this is a scheduled transmission.</p>
         Type
       </th>
       <td>
+        
         
   <code>uint64</code>
 </td>
@@ -4760,6 +7610,7 @@ On downlink, this is a scheduled transmission.</p>
       </th>
       <td>
           <p>Frequency (Hz).</p>
+          <p><code>gte</code>: <code>100000</code></p>
       </td>
     </tr>
     
@@ -4781,6 +7632,7 @@ On downlink, this is a scheduled transmission.</p>
         Type
       </th>
       <td>
+        
         
   <code>bool</code>
 </td>
@@ -4814,6 +7666,7 @@ On downlink, this is a scheduled transmission.</p>
       </th>
       <td>
         
+        
   <code>uint32</code>
 </td>
     </tr>
@@ -4846,6 +7699,7 @@ On downlink, set timestamp to 0 and time to null to use immediate scheduling.</p
         Type
       </th>
       <td>
+        
         
             
         
@@ -4889,6 +7743,7 @@ For downlink, this requires the gateway to have GPS time synchronization.</p>
       </th>
       <td>
         
+        
             
               
             
@@ -4913,6 +7768,41 @@ For downlink, this requires the gateway to have GPS time synchronization.</p>
       </th>
       <td>
           <p>Transmission settings for downlink.</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table class="api">
+  <tbody>
+    <tr>
+      <th style="width: 150px">
+        Field
+      </th>
+      <td>
+        <code>concentrator_timestamp</code>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        Type
+      </th>
+      <td>
+        
+        
+  <code>int64</code>
+</td>
+    </tr>
+    
+    <tr>
+      <th>
+        Description
+      </th>
+      <td>
+          <p>Concentrator timestamp for the downlink as calculated by the Gateway Server scheduler.
+This value takes into account necessary offsets such as the RTT (Round Trip Time) and TOA (Time Of Arrival).
+This field is set and used only by the Gateway Server.</p>
       </td>
     </tr>
     
@@ -5012,6 +7902,36 @@ For downlink, this requires the gateway to have GPS time synchronization.</p>
       <td><code>DATA_RATE_15</code></td>
       <td><code>15</code></td>
       <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h3 id="enum:DownlinkPathConstraint">Enum <code>DownlinkPathConstraint</code></h3>
+<table class="api">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>DOWNLINK_PATH_CONSTRAINT_NONE</code></td>
+      <td><code>0</code></td>
+      <td> Indicates that the gateway can be selected for downlink without constraints by the Network Server.</td>
+    </tr>
+    <tr>
+      <td><code>DOWNLINK_PATH_CONSTRAINT_PREFER_OTHER</code></td>
+      <td><code>1</code></td>
+      <td> Indicates that the gateway can be selected for downlink only if no other or better gateway can be selected.</td>
+    </tr>
+    <tr>
+      <td><code>DOWNLINK_PATH_CONSTRAINT_NEVER</code></td>
+      <td><code>2</code></td>
+      <td> Indicates that this gateway will never be selected for downlink, even if that results in no available downlink path.</td>
     </tr>
   </tbody>
 </table>
@@ -5180,6 +8100,20 @@ For downlink, this requires the gateway to have GPS time synchronization.</p>
 
 	
 
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 
         </div>
         <div class="is-clearfix">
@@ -5228,45 +8162,29 @@ For downlink, this requires the gateway to have GPS time synchronization.</p>
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Nejra Selimović on 28 Jul 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/9d8cffeb3d65851a4e7ce4446abcd9a700ed7bba">
-      doc: Create v3.14.0 release docs, add missing refs (#482)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/api/storage_integration.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

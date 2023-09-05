@@ -6,39 +6,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
-  <title>Enable | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/storage/enable/" />
+  <meta name="generator" content="Hugo 0.112.3">
+  <title>Enable/Disable | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/storage/enable/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="Enable">
+  <meta itemprop="name" content="Enable/Disable">
   <meta itemprop="description" content="">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="Enable">
+  <meta property="og:title" content="Enable/Disable">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/integrations/storage/enable/">
-  <meta name="twitter:title" content="Enable" />
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
+  <meta name="twitter:title" content="Enable/Disable" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -115,6 +117,9 @@
     <a href="https://www.thethingsindustries.com/docs/integrations/ifttt/" class="">IFTTT</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/guides/" class="">Guides</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/" class="">Payload Formatters</a>
   </li>
 <li>
@@ -130,12 +135,17 @@
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/integrations/storage/enable/" class="is-active">Enable</a>
+    <a href="https://www.thethingsindustries.com/docs/integrations/storage/enable/" class="is-active">Enable/Disable</a>
+    
+    
+
+
+
     
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/integrations/storage/retrieve/" class="">Retrieve messages</a>
+    <a href="https://www.thethingsindustries.com/docs/integrations/storage/retrieve/" class="">Retrieve Messages</a>
     
   </li>
 
@@ -164,7 +174,7 @@
       
       <div class="column is-9 is-8-desktop sidebar-middle">
         <div class="docs-content">
-        <h1 class="title is-size-2">Enable
+        <h1 class="title is-size-2">Enable/Disable
           
         </h1>
         
@@ -172,7 +182,9 @@
           <p>The Storage Integration is implemented as an <a href="https://www.thethingsindustries.com/docs/reference/application-packages/">Application Package</a>.</p>
 <div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  Enabling Storage Integration for applications can be done using The Things Stack Console or CLI. Enabling Storage Integration for individual end devices is available only via CLI.
+  <p>Enabling/disabling Storage Integration for applications can be done using The Things Stack Console or CLI. Enabling/disabling Storage Integration for individual end devices is available only via CLI.</p>
+<p>Note that the instructions for CLI here are following generic instructions for <a href="https://www.thethingsindustries.com/docs/reference/application-packages/using-the-cli/">using the CLI</a> to manage application packages, just specified for the <code>storage-integration</code> application package.</p>
+
 </div>
 
 <h2 id="enable-for-an-application">Enable for an Application</h2>
@@ -197,21 +209,20 @@
   <section data-content="console">
   <p>Navigate to <strong>Applications</strong> in the top menu and then select your application. On the left side, click <strong>Integrations</strong> and then <strong>Storage Integration</strong>.</p>
 <p>Click on <strong>Activate Storage Integration</strong> to enable the storage integration for your application.</p>
-<figure>
-    <img src="activate-storage-integration.png"
-         alt="Activate Storage Integration screen"/> 
+<figure><img src="activate-storage-integration.png"
+         alt="Activate Storage Integration screen"/>
 </figure>
 </section>
 <section data-content="cli">
   <p>Set up a default association between the desired application and the <code>storage-integration</code> package.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli applications packages default-associations <span class="nb">set</span> <span class="s2">&#34;app1&#34;</span> <span class="m">100</span> --package-name storage-integration
-</code></pre></div><div class="notification is-info is-light has-text-dark">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages default-associations <span class="nb">set</span> &lt;application-id&gt; &lt;f_port&gt; --package-name storage-integration
+</span></span></code></pre></div><div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  The <code>f_port</code> for the default association is set to <code>100</code>. This value is irrelevant. <strong>The storage integration will receive and store all uplink messages, regardless of <code>f_port</code></strong>. The <code>f_port</code> value is only needed because of the way application packages work with The Things Stack.
+  The <code>f_port</code> for the default association is set to <code>100</code>. This value is irrelevant, i.e. the storage integration will receive and store all uplink messages, regardless of <code>f_port</code>. The <code>f_port</code> value is only needed because of the way application packages work with The Things Stack.
 </div>
 <div class="notification is-warning is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
-  <strong>Do not configure more than one default association for the same application</strong>, since that will lead to storing duplicate messages in the persistent storage.
+  Do not configure more than one default association for the same application, since that will lead to storing duplicate messages in the persistent storage.
 </div>
 </section>
 
@@ -222,29 +233,27 @@
   <h3 class="title has-text-dark mb-1">Command-line interface only</h3>
   <p>The instructions below use the command-line interface (CLI).</p>
   
+  <p>Make sure that the CLI is up-to-date and uses an updated configuration file: <code>ttn-lw-cli use...</code></p>
+  
+  
   <div class="buttons">
-    <a class="button is-dark is-outlined" href="https://www.thethingsindustries.com/docs/getting-started/cli/installing-cli/">Learn how to install the CLI</a>
+    <a class="button is-dark is-outlined" href="https://www.thethingsindustries.com/docs/the-things-stack/interact/cli/installing-cli/">Learn how to install or upgrade the CLI</a>
   </div>
 </div>
 
-<div class="notification is-warning is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
-  You may need to update the CLI to use the new features. See instructions in <a href="https://www.thethingsindustries.com/docs/getting-started/cli/installing-cli/">Installing the CLI</a>.
-</div>
-
 <p>Set up an association between the desired end device and the <code>storage-integration</code> package.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli applications packages associations <span class="nb">set</span> <span class="s2">&#34;app1&#34;</span> <span class="s2">&#34;dev1&#34;</span> <span class="m">100</span> --package-name storage-integration
-</code></pre></div><div class="notification is-info is-light has-text-dark">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages associations <span class="nb">set</span> &lt;application-id&gt; &lt;device-id&gt; &lt;f_port&gt; --package-name storage-integration
+</span></span></code></pre></div><div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
   The <code>f_port</code> value is irrelevant.
 </div>
 
 <div class="notification is-warning is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Warning:</h5>
-  <strong>Do not configure multiple associations for the same end device</strong>, since that will lead to storing duplicate uplinks in the persistent storage.
+  Do not configure multiple associations for the same end device, since that will lead to storing duplicate uplinks in the persistent storage.
 </div>
 
-<h2 id="disable-the-storage-integration">Disable the Storage Integration</h2>
+<h2 id="disable-for-an-application">Disable for an Application</h2>
 <div class="tabs is-boxed">
   <ul>
     
@@ -265,41 +274,79 @@
 <div class="tab-content content">
   <section data-content="console">
   <p>To disable the integration, you only need to click the <strong>Deactivate Storage Integration</strong> button:</p>
-<figure>
-    <img src="activated-storage-integration.png"
-         alt="Activated Storage Integration screen"/> 
+<figure><img src="activated-storage-integration.png"
+         alt="Activated Storage Integration screen"/>
 </figure>
 </section>
 <section data-content="cli">
-  <p>To disable the integration, delete the package association, or the default association:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># List default associations</span>
-$ ttn-lw-cli applications packages default-associations list <span class="s2">&#34;app1&#34;</span>
-<span class="o">{</span>
-  <span class="s2">&#34;defaults&#34;</span>: <span class="o">[</span>
-    <span class="o">{</span>
-      <span class="s2">&#34;ids&#34;</span>: <span class="o">{</span>
-        <span class="s2">&#34;application_ids&#34;</span>: <span class="o">{</span>
-          <span class="s2">&#34;application_id&#34;</span>: <span class="s2">&#34;app1&#34;</span>
-        <span class="o">}</span>,
-        <span class="s2">&#34;f_port&#34;</span>: <span class="m">100</span>
-      <span class="o">}</span>,
-      <span class="s2">&#34;created_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
-      <span class="s2">&#34;updated_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
-      <span class="s2">&#34;package_name&#34;</span>: <span class="s2">&#34;storage-integration&#34;</span>
-    <span class="o">}</span>
-  <span class="o">]</span>
-<span class="o">}</span>
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ttn-lw-cli applications packages default-associations delete <span class="s2">&#34;app1&#34;</span> <span class="m">100</span>
-</code></pre></div>
+  <p>To disable the integration, delete the package association or the default association.</p>
+<p>To list associations:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages default-associations list <span class="nv">$APP_ID</span>
+</span></span></code></pre></div><p>The output will be something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;defaults&#34;</span>: <span class="o">[</span>
+</span></span><span class="line"><span class="cl">    <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;ids&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;application_ids&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;application_id&#34;</span>: <span class="s2">&#34;app1&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;f_port&#34;</span>: <span class="m">100</span>
+</span></span><span class="line"><span class="cl">      <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;created_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;updated_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;package_name&#34;</span>: <span class="s2">&#34;storage-integration&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Then delete the association with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages default-associations delete &lt;application-id&gt; &lt;f_port&gt;
+</span></span></code></pre></div>
 </section>
 
 </div>
 
+<h2 id="disable-for-an-end-device">Disable for an End Device</h2>
+<div class="notification is-primary is-light has-text-dark">
+  <h3 class="title has-text-dark mb-1">Command-line interface only</h3>
+  <p>The instructions below use the command-line interface (CLI).</p>
+  
+  
+  <div class="buttons">
+    <a class="button is-dark is-outlined" href="https://www.thethingsindustries.com/docs/the-things-stack/interact/cli/installing-cli/">Learn how to install the CLI</a>
+  </div>
+</div>
+
+<p>To disable the integration, delete the association.</p>
+<p>To list associations:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages associations list <span class="nv">$APP_ID</span> <span class="nv">$DEVICE_ID</span>
+</span></span></code></pre></div><p>The output will be something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;associations&#34;</span>: <span class="o">[</span>
+</span></span><span class="line"><span class="cl">    <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;ids&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;end_device_ids&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;device_id&#34;</span>: <span class="s2">&#34;dev1&#34;</span>,
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;application_ids&#34;</span>: <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;application_id&#34;</span>: <span class="s2">&#34;app1&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;f_port&#34;</span>: <span class="m">100</span>
+</span></span><span class="line"><span class="cl">      <span class="o">}</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;created_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;updated_at&#34;</span>: <span class="s2">&#34;2020-08-24T21:09:44.649890166Z&#34;</span>,
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;package_name&#34;</span>: <span class="s2">&#34;storage-integration&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Delete the association with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-cli applications packages associations delete &lt;application-id&gt; &lt;device-id&gt; &lt;f_port&gt;
+</span></span></code></pre></div><h2 id="enable-and-disable-using-the-api">Enable and Disable using the API</h2>
+<p>See instructions on how to create/delete associations and default associations with the <code>storage-integration</code> application package <a href="https://www.thethingsindustries.com/docs/reference/application-packages/using-the-api/">using the API</a>.</p>
 
         </div>
         <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/integrations/storage/configuration/">← Configuration</a>
-<a class="button is-pulled-right" href="/docs/integrations/storage/retrieve/">Retrieve messages →</a>
+<a class="button is-pulled-right" href="/docs/integrations/storage/retrieve/">Retrieve Messages →</a>
 </div>
 
         <script>window.emojicom_widget = { campaign: "" };</script>
@@ -326,7 +373,13 @@ $ ttn-lw-cli applications packages default-associations list <span class="s2">&#
       <li><a href='#enable-for-an-end-device'>Enable for an End Device</a></li>
     
       
-      <li><a href='#disable-the-storage-integration'>Disable the Storage Integration</a></li>
+      <li><a href='#disable-for-an-application'>Disable for an Application</a></li>
+    
+      
+      <li><a href='#disable-for-an-end-device'>Disable for an End Device</a></li>
+    
+      
+      <li><a href='#enable-and-disable-using-the-api'>Enable and Disable using the API</a></li>
     
   </ul>
 
@@ -343,45 +396,29 @@ $ ttn-lw-cli applications packages default-associations list <span class="s2">&#
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Aggelos Kolaitis on 10 Jun 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/a4c844ab2c8699bf605743864189567e0ee818f3">
-      doc: Document enabling storage integration via Console (#391)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/integrations/storage/enable.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

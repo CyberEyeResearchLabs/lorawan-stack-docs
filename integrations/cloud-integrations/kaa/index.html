@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="generator" content="Hugo 0.112.3">
+  <title>Kaa | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/kaa/" />
+  <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <meta name="description" content="Kaa IoT platform">
+  <meta name="keywords" content="">
+  <meta itemprop="name" content="Kaa">
+  <meta itemprop="description" content="Kaa IoT platform">
+  <meta itemprop="keywords" content="">
+  <meta property="og:title" content="Kaa">
+  <meta property="og:description" content="Kaa IoT platform">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/kaa/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
+  <meta name="twitter:title" content="Kaa" />
+  <meta name="twitter:description" content="Kaa IoT platform" />
+  <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
+</head>
+
+
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container is-fluid">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/docs/">
+        <img class="logo" src="/docs/img/TTS-logo.svg">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
+          </div>
+      <span class="navbar-burger burger" data-target="topMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="topMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
+        <a class="navbar-item" href="/docs/devices/">Devices</a>
+        <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
+        <a class="navbar-item" href="/docs/integrations/">Integrations</a>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
+      <div class="navbar-end"><div class="navbar-item">
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script type="text/javascript">
+    docsearch({
+      appId: "",
+      apiKey: "",
+      indexName: "thethingsstack",
+      container: '#search-input-menu',
+      debug: false, 
+    });
+  </script><div class="container" role="document">
+  <div class="columns my-0 ">
+      
+      <div class="column is-3 is-2-desktop sidebar-left">
+        
+
+<nav class="side-navigation" aria-label="Main navigation">
+
+<h2 class="title is-size-5">Integrations</h2>
+
+<ul class="menu-list">
+<a href="https://www.thethingsindustries.com/docs/integrations/" class="">Overview</a>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/adding-applications/" class="">Adding Applications</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/adding-integrations/" class="">Adding Integrations</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/" class="">Cloud Integrations</a>
+    
+
+
+<ul class="menu-list">
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/akenza/" class="">akenza</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/allthingstalk/" class="">AllThingsTalk Maker</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/anyviz/" class="">AnyViz</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/aws-iot/" class="">AWS IoT</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/azure-iot-central/" class="">Azure IoT Central</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/azure-iot-hub/" class="">Azure IoT Hub</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/blockbax/" class="">Blockbax</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/cayenne/" class="">Cayenne</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/cloudstudio/" class="">Cloud Studio</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/daizy/" class="">Daizy</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/" class="">Datacake</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/delmation/" class="">Delmation Products</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/dezem/" class="">deZem</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/homey/" class="">Homey</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/influxdb-cloud/" class="">InfluxDB Cloud 2.0</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/iotinabox/" class="">IoT in a Box</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/kaa/" class="is-active">Kaa</a>
+    
+    
+
+
+
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/losant/" class="">Losant IoT Platform</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/mclimate/" class="">MClimate</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/my-iot-open-tech/" class="">my IoT open Tech</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/qubitro/" class="">Qubitro</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tagoio/" class="">TagoIO</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/telemetry2u/" class="">Telemetry2U</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tellsens/" class="">Tellsens</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thethingsio/" class="">thethings.iO</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thinger-io/" class="">Thinger.io</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thingsboard/" class="">ThingsBoard</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thingspeak/" class="">ThingSpeak</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ttnmapper/" class="">TTN Mapper</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ubidots/" class="">Ubidots</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/uib/" class="">UIB</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/unaconnect/" class="">UnaConnect</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/widgelix/" class="">Widgelix</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/withthegrid/" class="">Withthegrid</a>
+    
+  </li>
+
+</ul>
+
+
+    
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/mqtt/" class="">MQTT Server</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/pubsub/" class="">Pub/Sub</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/lora-cloud/" class="">LoRa Cloud</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/node-red/" class="">Node-RED</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/ifttt/" class="">IFTTT</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/guides/" class="">Guides</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/" class="">Payload Formatters</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/storage/" class="">Storage Integration</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/" class="">Webhooks</a>
+  </li>
+</ul>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+      </div>
+      
+      <div class="column is-9 is-8-desktop sidebar-middle">
+        <div class="docs-content">
+        <h1 class="title is-size-2">Kaa
+          
+        </h1>
+        
+        <div class="content">
+          <p><a href="https://www.kaaiot.com/">Kaa</a> is an IoT platform that provides device management, data collection, data processing and analytics, alerts, data visualization, configuration management, command execution, over-the-air updates and more. Kaa provides comprehensive multi-tenancy with full isolation of each tenant&rsquo;s data, users, permissions, dashboards, solutions, etc. It is modular by design and built upon cloud-native microservices that you can easily swap, customize, or integrate with third-party solutions. Also, Kaa features a modern-looking, intuitive, and fully customizable web dashboard.</p>
+<p>This tutorial shows how to integrate The Things Stack with the Kaa platform for observing your device&rsquo;s telemetry on the Kaa UI.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>A user account in the <a href="https://cloud.kaaiot.com/login">Kaa Cloud</a>. Click <a href="https://www.kaaiot.com/free-trial">here</a> to register for free.</li>
+</ol>
+<h2 id="setup-the-things-stack">Setup The Things Stack</h2>
+<p>Go to the <strong>MQTT</strong> integration section on the left hand menu in The Things Stack and generate an API key to access The Things Stack application from Kaa.</p>
+<figure><img src="ttn-generate-api-key.png"
+         alt="Generate API key"/>
+</figure>
+
+<p>Set the rights for the API key by selecting <strong>Grant all current and future rights</strong>. The Kaa platform requires this level of access in order to be able to query The Things Stack for application parameters and information on registered devices in that application.</p>
+<p>After that, go to the <strong>Payload formatters</strong> section on the left hand menu in The Things Stack, select <strong>Uplink</strong> and choose the <strong>Custom Javascript formatter</strong>. Leave the formatter code as it is suggested by default:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">decodeUplink</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">bytes</span><span class="o">:</span> <span class="nx">input</span><span class="p">.</span><span class="nx">bytes</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">warnings</span><span class="o">:</span> <span class="p">[],</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">errors</span><span class="o">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="setup-kaa">Setup Kaa</h2>
+<h3 id="create-application">Create Application</h3>
+<p>First, you need to create an application in the Kaa Cloud, that will correspond to the application inside The Things Stack.</p>
+<p>To do so, navigate to the <strong>Device management → Applications</strong> and add a new application by clicking the <strong>Add application</strong> button.</p>
+<p>Next, create at least one version of that application by clicking the plus button.</p>
+<figure><img src="kaa-create-application.png"
+         alt="Create Kaa application"/>
+</figure>
+
+<h3 id="create-application-integration">Create Application Integration</h3>
+<p>Next, you can create the integration between Kaa and The Things Stack applications.</p>
+<p>Navigate to the <strong>Device management → Integrations</strong> and click the <strong>Add integration</strong> button. Fill in the following fields:</p>
+<ul>
+<li>TTN username - The Things Stack MQTT username</li>
+<li>TTN API key - the API key that you created in steps above</li>
+<li>Identity Server Host - The Things Stack Identity Server host address (see the <a href="https://www.thethingsindustries.com/docs/the-things-stack/concepts/server-addresses/">Server Addresses section</a> for more info)</li>
+<li>MQTT Server Host - The Things Stack MQTT public address</li>
+</ul>
+<figure><img src="kaa-create-app-integration.png"
+         alt="Create application integration"/>
+</figure>
+
+<h3 id="create-device-integration">Create Device Integration</h3>
+<p>Now, you need to create device integration, i.e. mappings between The Things Stack devices and Kaa <a href="https://docs.kaaiot.io/KAA/docs/v1.4.0/Kaa-concepts/#endpoints">endpoints</a>.</p>
+<p>Go to the created application integration and create a device integration by choosing the application version and The Things Stack device that you want to integrate. You can see the device integration in the <strong>Devices</strong> list after its creation.</p>
+<figure><img src="kaa-dev-integration.png"
+         alt="Device integrations"/>
+</figure>
+
+<p>By navigating to <strong>Device management → Devices</strong>, you will find the Kaa endpoint that was automatically created during the device integration creation.
+All incoming data from The Things Stack device will be ingested under that endpoint.</p>
+<figure><img src="kaa-created-endpoint.png"
+         alt="Created endpoint"/>
+</figure>
+
+<h2 id="visualize-device-data">Visualize Device Data</h2>
+<p>Next, you can visualize data coming from The Things Stack on Kaa UI.</p>
+<p>Edit the application configuration for the <a href="https://docs.kaaiot.io/KAA/docs/v1.4.0/Features/Data-collection/EPTS">Endpoint Time Series service (EPTS)</a>. EPTS is a Kaa platform component responsible for transforming raw <a href="https://docs.kaaiot.io/KAA/docs/v1.4.0/Kaa-concepts/#data-sample">data samples</a> into well-structured time series. It also stores the time series data and provides access to API for other services, including the <a href="https://docs.kaaiot.io/KAA/docs/v1.4.0/Features/Visualization/WD">Web Dashboard</a>.</p>
+<p>Go to the <strong>Device management → Applications</strong>, expand the application used for integration, click on EPTS and enable auto-extraction.</p>
+<figure><img src="kaa-epts-enable-auto-extraction.png"
+         alt="Enable time series auto extract"/>
+</figure>
+
+<p>With this function enabled, Kaa will automatically create a time series for each numeric field that it encounters at the root of data samples submitted by your endpoints.
+You will then be able to view these time series in the Kaa UI, with no extra configuration required.</p>
+<p>Now navigate to the device details page of the endpoint created in previous steps. To do that, go to the <strong>Devices</strong> page in the <strong>Device management</strong> section and click on the corresponding row. The data coming from The Things Stack device will be displayed on the <strong>Device telemetry</strong> widget.</p>
+<figure><img src="kaa-endpoint-no-data.png"
+         alt="Endpoint with no telemetry data"/>
+</figure>
+
+<p>Let&rsquo;s assume that The Things Stack device is sending temperature measurements in the next format:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span><span class="nt">&#34;temp&#34;</span><span class="p">:</span><span class="mi">20</span><span class="p">}</span>
+</span></span></code></pre></div><p>Convert this payload to a byte array in HEX (<code>7B 22 74 65 6D 70 22 3A 32 30 7D</code>), go to the <strong>End devices → your device&rsquo;s Overview page → Messaging</strong> in The Things Stack Console and paste the byte array into the <strong>Payload</strong> field.</p>
+<p>As a result, you should be able to see the data on Kaa UI.</p>
+<figure><img src="kaa-endpoint-data.png"
+         alt="Endpoint with telemetry data"/>
+</figure>
+
+<p>Congratulations, you have successfully integrated The Things Stack with Kaa and visualized your data on the Kaa UI!</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Explore more Kaa features by completing the <a href="https://docs.kaaiot.io/KAA/docs/v1.4.0/Tutorials/getting-started/">Getting Started tutorials cycle</a> with short tutorials on the main Kaa features.</p>
+        </div>
+        
+          <div class="is-clearfix">
+<a class="button is-pulled-left" href="/docs/integrations/cloud-integrations/iotinabox/">← IoT in a Box</a>
+<a class="button is-pulled-right" href="/docs/integrations/cloud-integrations/losant/">Losant IoT Platform →</a>
+</div>
+
+          <script>window.emojicom_widget = { campaign: "" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+
+<div class='feedback has-vertical-space'>
+  <div id="emojicom-widget-inline"></div>
+</div>
+        </div>
+      </div>
+      
+      <div class="column is-hidden-touch is-2-desktop sidebar-right">
+        <nav class="toc" aria-label="Page navigation">
+    <h2 class="title is-size-6">On this page</h2>
+    
+
+
+  <ul class="menu-list">
+    
+      
+      <li><a href='#prerequisites'>Prerequisites</a></li>
+    
+      
+      <li><a href='#setup-the-things-stack'>Setup The Things Stack</a></li>
+    
+      
+      <li><a href='#setup-kaa'>Setup Kaa</a></li>
+    
+      
+      <li><a href='#visualize-device-data'>Visualize Device Data</a></li>
+    
+      
+      <li><a href='#next-steps'>Next Steps</a></li>
+    
+  </ul>
+
+
+  </nav>
+
+      </div>
+      
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <nav class="column is-one-third">
+        <h3 class="title is-6">The Things Stack</h3>
+        <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
+        <p><a class="" href="/docs/devices/">Devices</a></p>
+        <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
+        <p><a class="" href="/docs/integrations/">Integrations</a></p>
+        <p><a class="" href="/docs/reference/">Reference</a></p>
+      </nav>
+      <nav class="column is-one-third">
+        <h3 class="title is-6">Contributing</h3>
+        <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
+      </nav>
+      
+      <nav class="column is-one-third">
+        <h3 class="title is-6">About Us</h3>
+        <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
+      </nav>
+      </div>
+  </div>
+</footer>
+<script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
+  window.intercomSettings = {
+    app_id: "",
+  };
+</script>
+
+<script>
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+</body>
+
+</html>

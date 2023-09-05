@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Getting Started | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/getting-started/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Getting Started">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Getting Started">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/getting-started/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Getting Started" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item is-active" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -91,52 +93,16 @@
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/getting-started/" class="is-active">Overview</a>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/" class="">Quick Start</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/lorawan-basics/" class="">LoRaWAN</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="">What Is The Things Stack?</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/the-things-stack-basics/" class="">The Things Stack</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="">Command-line Interface</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/setup-first-network/" class="">Setup Your First LoRaWAN Network</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="">Console</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="">Installing The Things Stack</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="">Migrating to The Things Stack</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/packet-broker/" class="">Packet Broker</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/" class="">Server Addresses</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="">The Things Network</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="">The Things Stack AWS Launcher</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="">The Things Stack Cloud</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="">Troubleshooting Getting Started</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="">Upgrading The Things Stack</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="">Users and Organizations</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/api/" class="">Using the API</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/getting-started/events/" class="">Working with Events</a>
+    <a href="https://www.thethingsindustries.com/docs/getting-started/next-steps/" class="">Next steps</a>
   </li>
 </ul>
 
@@ -160,7 +126,12 @@
         </h1>
         
         <div class="content">
-          <p>This section contains information to help you get started with The Things Stack. Here, you&rsquo;ll find guides for installing and upgrading The Things Stack, migrating from other network servers, using the console, and much more.</p>
+          <p>The Things Stack is an enterprise-grade LoRaWAN® Network Server that provides services and tools to securely install and manage millions of LoRaWAN devices in production.</p>
+<p>This getting started section is divided into the following parts. You can either read these sequentially or skip ahead to the specific guide that you are looking for.</p>
+<p>We first introduce basic <a href="/docs/getting-started/lorawan-basics/">LoRaWAN</a> concepts. If you are very new to LoRaWAN, this is the place to start.</p>
+<p>We then introduce <a href="/docs/getting-started/the-things-stack-basics/">The Things Stack</a> and its numerous features.</p>
+<p>With these basics covered, we can now <a href="/docs/getting-started/setup-first-network/">setup your first LoRaWAN network</a>.</p>
+<p>Finally, since LoRaWAN and The Things Stack are deep topics, we provide suggestions on the <a href="/docs/getting-started/next-steps/">next steps</a>.</p>
 
         </div>
         
@@ -169,393 +140,78 @@
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
         <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/">Quick Start</a>
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/lorawan-basics/">LoRaWAN</a>
           </h1>
           
           <div class="content has-text-grey">
-            This section contains everything you need to know to get you up and running on The Things Stack.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/quick-start/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/">What Is The Things Stack?</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            Welcome to The Things Stack! In this section, we help you to understand how to use The Things Stack, who makes it, and common acronyms like TTS, TTI, and TTN.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/what-is-tts/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/cli/">Command-line Interface</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            Although the web interface of The Things Stack (the Console) currently has support for all basic features of The Things Stack, for some actions, you need to use the Command-Line Interface (CLI). The CLI allows you to manage all features of The Things Stack.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/cli/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/console/">Console</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            The Console is the management application of The Things Stack for LoRaWAN. It is a web application which can be used to register applications, end devices or gateways, monitor network traffic, or configure network related options, among other things.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/console/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/installation/">Installing The Things Stack</a>
-          </h1>
-          
-          <h2 class="subtitle">
             
-              
-
-
-
-
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-  
-
-  
-
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Enterprise and Open Source Only">
-
-  <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
-
-  <img class="badge" src="/docs/img/tts_frames/frame_open_source.svg"></img>
-
-</a>
-
+            This guide briefly explains the architecture and key concepts of a LoRaWAN® network.
 
             
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://www.thethingsindustries.com/docs/getting-started/lorawan-basics/" class="button is-primary is-outlined">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half is-flex">
+    <div class="card has-radius is-fullwidth">
+      <div class="card-content">
+        <div class="title-content">
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/the-things-stack-basics/">The Things Stack</a>
+          </h1>
+          
+          <div class="content has-text-grey">
             
-            
-          </h2>
-          
-          <div class="content has-text-grey">
-            This is a guide for installing The Things Stack Enterprise or Open Source on your own hardware, to run your own private LoRaWAN network server.
-To use The Things Stack in the cloud without installing it on your own hardware, see The Things Stack Cloud (our professional, SLA-backed offering) or Community Edition (our free-to-use community edition).
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/installation/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/migrating/">Migrating to The Things Stack</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            This guide documents the process of migrating end devices and gateways to The Things Stack.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/migrating/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/packet-broker/">Packet Broker</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            Exchange traffic with other LoRaWAN networks via peering to share coverage and improve the overall network performance.
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/packet-broker/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/">Server Addresses</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            To access the Console, register a command line client, connect gateways, or schedule uplinks via webhooks, it is necessary to know the server address of your The Things Stack instance. This section contains information about addresses for different The Things Stack deployments.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/server-addresses/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/ttn/">The Things Network</a>
-          </h1>
-          
-          <h2 class="subtitle">
-            
-              
-
-  
-
-
-
-
-
-  
-    
-  
-
-
-
-  
-
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Community Only">
-
-  <img class="badge" src="/docs/img/tts_frames/frame_ttn.svg"></img>
-
-</a>
-
+            The Things Stack is a LoRaWAN® Network Server stack which is the critical component for any LoRaWAN solution. This guide quickly gets the reader up to speed with the basics of The Things Stack.
 
             
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://www.thethingsindustries.com/docs/getting-started/the-things-stack-basics/" class="button is-primary is-outlined">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half is-flex">
+    <div class="card has-radius is-fullwidth">
+      <div class="card-content">
+        <div class="title-content">
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/setup-first-network/">Setup Your First LoRaWAN Network</a>
+          </h1>
+          
+          <div class="content has-text-grey">
             
-            
-          </h2>
-          
-          <div class="content has-text-grey">
-             The Things Network is a global collaborative Internet of Things ecosystem that creates networks, devices and solutions using LoRaWAN.
-The Things Network runs The Things Stack Community Edition, which is a crowdsourced, open and decentralized LoRaWAN network. This network is a great way to get started testing devices, applications, and integrations, and get familiar with LoRaWAN.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/ttn/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/aws/">The Things Stack AWS Launcher</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            The Things Stack is currently available as an AWS CloudFormation stack that can be purchased at the AWS Marketplace, and as a set of CloudFormation templates that can be deployed to build a highly available cluster for large-scale deployments.
-For getting started, we recommend AWS Marketplace AMI deployment method.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/aws/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/">The Things Stack Cloud</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            The Things Industries offers The Things Enterprise Stack as hosted software as a service (SaaS).
-This guide explains what that means and shows how to work with The Things Industries Cloud.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/cloud-hosted/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/">Troubleshooting Getting Started</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            This section provides help for common issues and frequently asked questions you may have when getting started with The Things Stack.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/troubleshooting/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/">Upgrading The Things Stack</a>
-          </h1>
-          
-          <h2 class="subtitle">
-            
-              
-
-
-
-
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-  
-
-  
-
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Enterprise and Open Source Only">
-
-  <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
-
-  <img class="badge" src="/docs/img/tts_frames/frame_open_source.svg"></img>
-
-</a>
-
+            Now that you are familiar with LoRaWAN® and The Things Stack, let us set up your first LoRaWAN Network.
 
             
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://www.thethingsindustries.com/docs/getting-started/setup-first-network/" class="button is-primary is-outlined">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half is-flex">
+    <div class="card has-radius is-fullwidth">
+      <div class="card-content">
+        <div class="title-content">
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/next-steps/">Next steps</a>
+          </h1>
+          
+          <div class="content has-text-grey">
             
+            Once you have your first LoRaWAN® Network setup, here are the next steps.
+
             
-          </h2>
-          
-          <div class="content has-text-grey">
-            This section contains instructions to upgrade a The Things Stack Enterprise or Open Source deployment, that was installed using the installation guide.
-The Things Stack Cloud and Community Edition are updated automatically (you do not need to do anything!)
-
           </div>
         </div>
         <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/upgrading/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/user-management/">Users and Organizations</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            This section explains how to manage users and organizations, and how to grant rights over entities.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/user-management/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/api/">Using the API</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            While we recommend using the Console or CLI to manage your applications and devices in The Things Stack, we also expose HTTP and gRPC APIs which you can interact directly with. This section contains information about using the HTTP API, and examples.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/api/" class="button is-primary is-outlined">Read</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half is-flex">
-    <div class="card has-radius is-fullwidth">
-      <div class="card-content">
-        <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/getting-started/events/">Working with Events</a>
-          </h1>
-          
-          <div class="content has-text-grey">
-            The Things Stack generates lots of events that allow you to get insight in what is going on. You can subscribe to application, gateway, end device events, as well as to user, organization and OAuth client events.
-This guide shows how to view events in the console and to subscribe to events with the CLI or HTTP API.
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="https://www.thethingsindustries.com/docs/getting-started/events/" class="button is-primary is-outlined">Read</a>
+          <a href="https://www.thethingsindustries.com/docs/getting-started/next-steps/" class="button is-primary is-outlined">Read</a>
         </div>
       </div>
     </div>
@@ -565,7 +221,7 @@ This guide shows how to view events in the console and to subscribe to events wi
         
           <div class="is-clearfix">
 <a class="button is-pulled-left" href="/docs/">← Home</a>
-<a class="button is-pulled-right" href="/docs/getting-started/quick-start/">Quick Start →</a>
+<a class="button is-pulled-right" href="/docs/getting-started/lorawan-basics/">LoRaWAN →</a>
 </div>
 
           <script>window.emojicom_widget = { campaign: "" };</script>
@@ -596,45 +252,29 @@ This guide shows how to view events in the console and to subscribe to events wi
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class=" is-active" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Ben Olayinka on 16 Feb 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/083e256faffc2a9f99fcf512fc2be7e79df2ab36">
-      doc: Add descriptions to root sections
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/getting-started/_index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

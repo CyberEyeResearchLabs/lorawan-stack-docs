@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Identity Server Options | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/configuration/identity-server/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Identity Server Options">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Identity Server Options">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/reference/configuration/identity-server/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Identity Server Options" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -158,10 +160,20 @@
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/identity-server/" class="is-active">Identity Server Options</a>
     
+    
+
+
+
+    
   </li>
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/reference/configuration/join-server/" class="">Join Server Options</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/configuration/network-operations-center/" class="">Network Operations Center Options</a>
     
   </li>
 
@@ -181,10 +193,10 @@
     
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-formats/" class="">Data Formats</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/data-retention/" class="">Data Retention and Privacy</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/device-claiming-repository/" class="">Device Claiming Configuration</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/email-templates/" class="">Email Templates</a>
@@ -196,28 +208,37 @@
     <a href="https://www.thethingsindustries.com/docs/reference/frequency-plans/" class="">Frequency Plans</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/reference/fuota/" class="">FUOTA</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/gateway-rtt/" class="">Gateway RTT</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/reference/glossary/" class="">Glossary</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/id-eui-constraints/" class="">ID and EUI Constraints</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">Interoperability Repository</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/spec-regional-parameters/" class="">LoRaWAN Specification and Regional Parameters</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/networking/" class="">Networking</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/pb-routing/" class="">Packet Broker Routing</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/purge/" class="">Purging Entities</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/packet-forwarder/" class="">Packet Forwarders</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/rate-limiting/" class="">Rate Limiting</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/reference/resource-limiting/" class="">Resource Limiting</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/root-certificates/" class="">Root Certificates</a>
@@ -226,7 +247,7 @@
     <a href="https://www.thethingsindustries.com/docs/reference/telemetry/" class="">Telemetry</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/branding/" class="">Web UI Branding</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/ttn/" class="">The Things Network</a>
   </li>
 </ul>
 
@@ -250,10 +271,76 @@
         </h1>
         
         <div class="content">
-          <h2 id="database-options">Database Options</h2>
+          <h2 id="general-options">General Options</h2>
+<ul>
+<li><code>is.delete.restore</code>: Defines how long after soft-deletion an entity can be restored</li>
+</ul>
+<h2 id="database-options">Database Options</h2>
 <p>The Identity Server needs to be connected to a PostgreSQL-compatible database. Details for the form of the URI can be found in the <a href="https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING">PostgreSQL documentation</a>.</p>
 <ul>
 <li><code>is.database-uri</code>: Database connection URI</li>
+<li><code>is.database-max-idle-conns</code> 
+
+
+
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+  
+
+  
+
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+
+  <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
+
+  <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
+
+</a>
+
+
+: Maximum number of idle database connections (default <code>10</code>)</li>
+<li><code>is.database-max-open-conns</code> 
+
+
+
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+  
+
+  
+
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+
+  <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
+
+  <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
+
+</a>
+
+
+: Maximum number of open database connections (default <code>20</code>)</li>
 <li><code>is.read-database-uri</code> 
 
 
@@ -275,7 +362,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -287,7 +374,7 @@
 : Read-Only database connection URI</li>
 </ul>
 <h2 id="email-options">Email Options</h2>
-<p>The Identity Server can be configured with different providers for sending emails. Currently the <code>sendgrid</code> and <code>smtp</code> providers are implemented.</p>
+<p>The Identity Server can be configured with different providers for sending emails. Currently the <code>sendgrid</code>, <code>smtp</code> and <code>dir</code> providers are implemented.</p>
 <ul>
 <li><code>is.email.provider</code>: Email provider to use</li>
 </ul>
@@ -303,6 +390,10 @@
 <li><code>is.email.smtp.password</code>: Password to authenticate with</li>
 <li><code>is.email.smtp.connections</code>: Maximum number of connections to the SMTP server</li>
 </ul>
+<p>When <code>dir</code> is used as provider, provide the path to the local directory where email messages should be written to.</p>
+<ul>
+<li><code>is.email.dir</code>: Path to the local directory where email messages should be written to</li>
+</ul>
 <p>The email address and name of the sender should be configured regardless of the provider that is used.</p>
 <ul>
 <li><code>is.email.sender-address</code>: The address of the sender</li>
@@ -314,29 +405,45 @@
 <li><code>is.email.network.identity-server-url</code>: The URL of the Identity Server</li>
 <li><code>is.email.network.console-url</code>: The URL of the Console</li>
 </ul>
-<p>Although The Things Stack comes with a number of builtin email templates, it is possible to override those with custom templates. You can specify the source where to load templates from, and options for that source. For more information on email templates, see the <a href="https://www.thethingsindustries.com/docs/reference/email-templates/">email templates reference</a>.</p>
+<p>Although The Things Stack comes with a number of builtin email templates, it is possible to override those with custom templates. You can specify the source where to load templates from, and options for that source. For more information on email templates, see the <a href="https://www.thethingsindustries.com/docs/reference/email-templates/">email templates reference</a>. <span class="tag is-danger is-light">Removed in 3.19</span>
+
+</p>
 <ul>
-<li><code>is.email.templates.source</code>: Source of the email template files (directory, url, blob)</li>
-<li><code>is.email.templates.directory</code>: Directory on the filesystem where email templates are located</li>
-<li><code>is.email.templates.url</code>: URL where email templates are located</li>
-<li><code>is.email.templates.blob.bucket</code>: Bucket where email templates are located</li>
-<li><code>is.email.templates.blob.path</code>: Path within the bucket.</li>
+<li><code>is.email.templates.source</code>: Source of the email template files (directory, url, blob) <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
+<li><code>is.email.templates.directory</code>: Directory on the filesystem where email templates are located <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
+<li><code>is.email.templates.url</code>: URL where email templates are located <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
+<li><code>is.email.templates.blob.bucket</code>: Bucket where email templates are located <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
+<li><code>is.email.templates.blob.path</code>: Path within the bucket <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
 </ul>
 <p>If your custom templates rely on other files, such as headers or footers, those files need to be included.</p>
 <ul>
-<li><code>is.email.templates.includes</code>: The email templates that will be preloaded on startup</li>
+<li><code>is.email.templates.includes</code>: The email templates that will be preloaded on startup <span class="tag is-danger is-light">Deprecated in 3.19</span>
+
+</li>
 </ul>
 <h2 id="oauth-ui-options">OAuth UI Options</h2>
 <p>The OAuth user interface needs to be configured with at least the canonical URL and the base URL of the Identity Server&rsquo;s HTTP API. The canonical URL needs to be the full URL of the UI, and looks like <code>https://thethings.example.com/oauth</code>. The base URL of the Identity Server&rsquo;s HTTP API looks like <code>https://thethings.example.com/api/v3</code>.</p>
 <ul>
 <li><code>is.oauth.ui.canonical-url</code>: The page canonical URL</li>
+<li><code>is.oauth.ui.console-url</code>: The URL that points to the root of the Console</li>
 <li><code>is.oauth.ui.is.base-url</code>: Base URL to the HTTP API</li>
+<li><code>is.oauth.ui.is.enabled</code>: Enable this API (default <code>true</code>)</li>
 </ul>
 <p>If you do not want to serve the OAuth user interface on <code>/oauth</code>, you may customize the mount path.</p>
 <ul>
 <li><code>is.oauth.mount</code>: Path on the server where the OAuth server will be served</li>
 </ul>
-<p>If page assets for the OAuth UI are served from a CDN or on a different path on the server, the base URL needs to be customized as well. If you want to <a href="https://www.thethingsindustries.com/docs/reference/branding/">customize the branding</a> of the OAuth UI, you can set the base URL for where your branding assets are located.</p>
+<p>If page assets for the OAuth UI are served from a CDN or on a different path on the server, the base URL needs to be customized as well. If you want to <a href="https://www.thethingsindustries.com/docs/the-things-stack/management/branding/">customize the branding</a> of the OAuth UI, you can set the base URL for where your branding assets are located.</p>
 <ul>
 <li><code>is.oauth.ui.assets-base-url</code>: The base URL to the page assets</li>
 <li><code>is.oauth.ui.branding-base-url</code>: The base URL to the branding assets</li>
@@ -361,7 +468,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -392,7 +499,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -427,6 +534,10 @@
 <li><code>is.oauth.ui.support-plan-applies</code>: The applicable support plan of this deployment, e.g. <code>priority</code>, <code>24h</code></li>
 <li><code>is.oauth.ui.support-plan-information-url</code>: A URL with information about the support plan applicable for this deployment</li>
 </ul>
+<p>It is possible to configure Identity Server to use Sentry for monitoring events.</p>
+<ul>
+<li><code>is.oauth.ui.sentry-dsn</code>: The Sentry DSN</li>
+</ul>
 <h2 id="profile-picture-storage-options">Profile Picture Storage Options</h2>
 <p>The profile pictures that users upload for their accounts are stored in a blob bucket. The global <a href="/docs/reference/configuration/the-things-stack/#blob-options">blob configuration</a> is used for this. In addition to those options, specify the name of the bucket and the public URL to the bucket.</p>
 <ul>
@@ -454,11 +565,10 @@
 <h2 id="user-registration-options">User Registration Options</h2>
 <p>By default, users can register their own user accounts. User accounts can also be registered by admin users in the network. The user registration process can be customized by requiring approval by admin users, requiring email validation or by requiring new users to be invited by existing users.</p>
 <ul>
-<li><code>is.user-registration.enabled</code> <span class="tag is-light">New in 3.11</span>
-
-: Enable user registration. If user registration is disabled, admin users can still create users.</li>
+<li><code>is.user-registration.enabled</code>: Enable user registration. If user registration is disabled, admin users can still create users.</li>
 <li><code>is.user-registration.admin-approval.required</code>: Require admin approval for new users</li>
 <li><code>is.user-registration.contact-info-validation.required</code>: Require contact info validation for new users</li>
+<li><code>is.user-registration.contact-info-validation.token-ttl</code>: TTL of contact info validation tokens</li>
 <li><code>is.user-registration.invitation.required</code>: Require invitations for new users</li>
 <li><code>is.user-registration.invitation.token-ttl</code>: TTL of user invitation tokens</li>
 </ul>
@@ -469,12 +579,42 @@
 <li><code>is.user-registration.password-requirements.min-length</code>: Minimum password length</li>
 <li><code>is.user-registration.password-requirements.min-special</code>: Minimum number of special characters</li>
 <li><code>is.user-registration.password-requirements.min-uppercase</code>: Minimum number of uppercase letters</li>
-<li><code>is.user-registration.password-requirements.reject-common</code> <span class="tag is-light">New in 3.12.1</span>
+<li><code>is.user-registration.password-requirements.reject-common</code>: Reject common passwords</li>
+<li><code>is.user-registration.password-requirements.reject-user-id</code>: Reject passwords that contain user ID</li>
+</ul>
+<p>There is also an option to disable login with credentials. In that case, The Things Stack will only allow a login with configured external (OpenID Connect) providers.</p>
+<ul>
+<li><code>is.user-login.disable-credentials-login</code> 
 
-: Reject common passwords</li>
-<li><code>is.user-registration.password-requirements.reject-user-id</code> <span class="tag is-light">New in 3.12.1</span>
 
-: Reject passwords that contain user ID</li>
+
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+  
+
+  
+
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+
+  <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
+
+  <img class="badge" src="/docs/img/tts_frames/frame_enterprise.svg"></img>
+
+</a>
+
+
+: Disable login with credentials</li>
 </ul>
 <h2 id="user-rights-options">User Rights Options</h2>
 <p>By default users can create applications, gateways, organizations and OAuth clients. With the following configuration options it is possible to restrict this, in which case only admin users are allowed to create these entities. By adding users to organizations, and assigning the appropriate rights, they can still create these entities in the organization.</p>
@@ -483,6 +623,18 @@
 <li><code>is.user-rights.create-clients</code>: Allow non-admin users to create OAuth clients in their user account</li>
 <li><code>is.user-rights.create-gateways</code>: Allow non-admin users to create gateways in their user account</li>
 <li><code>is.user-rights.create-organizations</code>: Allow non-admin users to create organizations in their user account</li>
+</ul>
+<h2 id="entity-limits-options">Entity Limits Options</h2>
+<p>By default, users can create an unlimited number of applications, gateways, organizations and OAuth clients. With the following configuration options, it is possible to restrict this. These configuration options apply to <em>newly created</em> applications, organizations and users. Limits for existing applications, organizations and users can be modified by admin users.</p>
+<ul>
+<li><code>is.application-limits.end-devices</code>: The end devices limit for newly created applications.</li>
+<li><code>is.organization-limits.applications</code>: The applications limit for newly created organizations.</li>
+<li><code>is.organization-limits.clients</code>: The clients limit for newly created organizations.</li>
+<li><code>is.organization-limits.gateways</code>: The gateways limit for newly created organizations.</li>
+<li><code>is.user-limits.applications</code>: The applications limit for newly created users; this limit applies to direct memberships, not to indirect memberships through organizations.</li>
+<li><code>is.user-limits.clients</code>: The clients limit for newly created users; this limit applies to direct memberships, not to indirect memberships through organizations.</li>
+<li><code>is.user-limits.gateways</code>: The gateways limit for newly created users; this limit applies to direct memberships, not to indirect memberships through organizations.</li>
+<li><code>is.user-limits.organizations</code>: The organizations limit for newly created users.</li>
 </ul>
 <h2 id="admin-rights-options">Admin Rights Options</h2>
 <p>By default admins are granted <em>almost</em> all rights on all entities in the network. The default configuration does not allow admins to read secrets, such as the root keys of end devices, and the CUPS/LNS secrets of gateways. This also means that admins can not assign those rights to others. The following option can be used to grant admin users all possible rights.</p>
@@ -515,7 +667,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -547,7 +699,7 @@
 
   
 
-<a href="/docs/download" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
+<a href="/docs/getting-started/what-is-tts#the-things-stack-deployments" target="_blank" class="badge-stack has-tooltip has-tooltip-arrow has-tooltip-light" data-tooltip="Cloud and Enterprise Only">
 
   <img class="badge" src="/docs/img/tts_frames/frame_cloud.svg"></img>
 
@@ -557,6 +709,29 @@
 
 
 : Keys that can be used for tenant administration (16, 24 or 32 hex-encoded bytes)</li>
+</ul>
+<h2 id="cache-options">Cache Options</h2>
+<ul>
+<li><code>is.auth-cache.membership-ttl</code>: TTL of membership caches</li>
+</ul>
+<h2 id="deveui-issuer-options">DevEUI Issuer Options</h2>
+<ul>
+<li><code>is.dev-eui-block.enabled</code>: Enable DevEUI address issuing from IEEE MAC block</li>
+<li><code>is.dev-eui-block.application-limit</code>: Maximum DevEUI addresses to be issued per application</li>
+<li><code>is.dev-eui-block.init-counter</code>: Initial counter value for the addresses to be issued (default 0)</li>
+<li><code>is.dev-eui-block.prefix</code>: DevEUI block prefix (default &ldquo;0000000000000000/0&rdquo;)</li>
+</ul>
+<h2 id="login-tokens">Login Tokens</h2>
+<p>The Things Stack allows using login tokens (magic login links) for password-less login.</p>
+<ul>
+<li><code>is.login-tokens.enabled</code>: Enable users requesting login tokens</li>
+<li><code>is.login-tokens.token-ttl</code>: TTL of login tokens</li>
+</ul>
+<h2 id="network-options">Network Options</h2>
+<p>The Things Stack Identity Server supports LoRaWAN® Backend Interfaces, so it is possible to obtain an end device&rsquo;s NetID, Tenant ID and Network Server address with the use of a vendor-specific extension.</p>
+<ul>
+<li><code>is.network.net-id</code>: The NetID of the network. When running a Network Server, this needs to be the same value as <code>ns.net-id</code>.</li>
+<li><code>is.network.tenant-id</code>: The Tenant ID in the host NetID. Leave blank if the used NetID is dedicated for this Identity Server.</li>
 </ul>
 
         </div>
@@ -583,6 +758,9 @@
   <ul class="menu-list">
     
       
+      <li><a href='#general-options'>General Options</a></li>
+    
+      
       <li><a href='#database-options'>Database Options</a></li>
     
       
@@ -604,6 +782,9 @@
       <li><a href='#user-rights-options'>User Rights Options</a></li>
     
       
+      <li><a href='#entity-limits-options'>Entity Limits Options</a></li>
+    
+      
       <li><a href='#admin-rights-options'>Admin Rights Options</a></li>
     
       
@@ -611,6 +792,18 @@
     
       
       <li><a href='#tenant-administration-options'>Tenant Administration Options</a></li>
+    
+      
+      <li><a href='#cache-options'>Cache Options</a></li>
+    
+      
+      <li><a href='#deveui-issuer-options'>DevEUI Issuer Options</a></li>
+    
+      
+      <li><a href='#login-tokens'>Login Tokens</a></li>
+    
+      
+      <li><a href='#network-options'>Network Options</a></li>
     
   </ul>
 
@@ -627,45 +820,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Ben Olayinka on 10 Jun 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/1088c5144c03928eb7d97c6105895e620eab3d79">
-      Move inline shortcodes to next line (#382)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/reference/configuration/identity-server.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

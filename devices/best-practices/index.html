@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Best Practices | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/devices/best-practices/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Best Practices">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Best Practices">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/devices/best-practices/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Best Practices" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -91,10 +93,10 @@
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/devices/" class="">Overview</a>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/abp-vs-otaa/" class="">ABP vs OTAA</a>
+    <a href="https://www.thethingsindustries.com/docs/devices/adding-devices/" class="">Adding Devices</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/adding-devices/" class="">Adding Devices</a>
+    <a href="https://www.thethingsindustries.com/docs/devices/abp-vs-otaa/" class="">ABP vs OTAA</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/best-practices/" class="is-active">Best Practices</a>
@@ -117,19 +119,25 @@
     <a href="https://www.thethingsindustries.com/docs/devices/downlink-queue-ops/" class="">Downlink Queue Operations</a>
   </li>
 <li>
+    <a href="https://www.thethingsindustries.com/docs/devices/confirmed-downlinks-behavior/" class="">Confirmed Downlinks Behavior</a>
+  </li>
+<li>
     <a href="https://www.thethingsindustries.com/docs/devices/mac-settings/" class="">MAC Settings</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/atecc608a/" class="">ATECC608A/B Secure Elements</a>
+    <a href="https://www.thethingsindustries.com/docs/devices/atecc608a/" class="">ATECC608 Secure Elements</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/device-claiming/" class="">Device Claiming</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/end-device-templates/" class="">End Device Templates</a>
+    <a href="https://www.thethingsindustries.com/docs/devices/generic-node-se/" class="">Generic Node Sensor Edition</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/devices/generate-qr-code/" class="">Generating a QR Code</a>
+    <a href="https://www.thethingsindustries.com/docs/devices/the-things-node/" class="">The Things Node</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/devices/the-things-uno/" class="">The Things Uno</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/devices/troubleshooting/" class="">Troubleshooting Devices</a>
@@ -157,7 +165,7 @@
         
         <div class="content">
           <p>This section contains best practices for building connected devices which use The Things Stack as a Network Server.</p>
-<p>LoRaWAN devices should always comply to the <a href="https://www.lora-alliance.org/lorawan-for-developers">LoRaWAN specification</a>.</p>
+<p>LoRaWAN® devices should always comply to the <a href="https://www.lora-alliance.org/lorawan-for-developers">LoRaWAN® specification</a>.</p>
 <p>The goal of these best practices is to optimize individual devices (especially for power) and the network as a whole (to reliably and efficiently serve more devices with the same number of gateways).</p>
 <h2 id="lorawan-certified">LoRaWAN Certified</h2>
 <p>Use devices which are LoRaWAN Certified to be ensured of proper implementation of the LoRaWAN standard. <a href="https://lora-alliance.org/showcase/search/?_sfm_lorawan_certified_device=certified">Click here</a> to find an overview of certified LoRaWAN devices.</p>
@@ -171,11 +179,11 @@
 <p>Avoid confirmed uplink messages. Confirmed uplinks should only be used in the case where 100% assurance of transmission is necessary, e.g. alarms.</p>
 <p>The duty cycle of radio devices is often regulated by government. If this is the case, the duty cycle is commonly set to 1%, but make sure to check the regulations of your local government to be sure.</p>
 <p>For example, in Europe, duty cycles are regulated by section 7.2.3 of the ETSI EN300.220 standard.</p>
-<p>Additionally, the LoRaWAN specification dictates duty cycles for the join frequencies, the frequencies devices of all LoRaWAN-compliant devices use for over-the-air activation (OTAA). In most regions this duty cycle is set to 1%.</p>
+<p>Additionally, the LoRaWAN specification dictates duty cycles for the join frequencies, the frequencies devices of all LoRaWAN-compliant devices use for over-the-air activation (OTAA). In most regions this duty cycle is set to 1%. Learn more about duty cycles in <a href="https://www.thethingsnetwork.org/docs/lorawan/duty-cycle/">The Things Network LoRaWAN documentation</a>.</p>
 <h2 id="expect-packet-loss">Expect Packet Loss</h2>
 <p>You should expect packet loss up to 10%. Implement Forward Error Correction if that&rsquo;s a problem.</p>
 <h2 id="synchronization-backoff-and-jitter">Synchronization, Backoff, and Jitter</h2>
-<p>(<a href="https://lora-alliance.org/sites/default/files/2018-07/lorawan1.0.3.pdf">See LoRaWAN Specification 1.0.3, line 1065</a>).</p>
+<p><a href="https://lora-alliance.org/wp-content/uploads/2020/11/lorawan1.0.3.pdf">See LoRaWAN Specification 1.0.3, line 1065</a></p>
 <p>Synchronization of devices happens if end devices respond to a large-scale external event - for example, hundreds of end devices that are connected to the same power source and the power is switched off and on again, or hundreds of end devices that are connected to the same gateway, and the firmware of the gateway needs to be updated.</p>
 <p>Let’s take an example device that starts in Join mode when it powers on, and reverts to Join mode after being disconnected from the network. There are hundreds of such devices in a field, and one gateway that covers this field.</p>
 <p>The power source for the devices is switched on, and the gateway immediately receives the noise of hundreds of simultaneous Join requests. LoRaWAN gateways can deal quite well with noise, but this is just too much, and the gateway can’t make any sense of it. No Join requests are decoded, so no Join requests are forwarded to the network and no Join requests are accepted.</p>
@@ -188,19 +196,20 @@
 <p>An implementation like this prevents persistent failures of sites and the network as a whole and helps speed up recovery after outages.</p>
 <h2 id="use-a-good-random-number-generator">Use a Good Random Number Generator</h2>
 <p>True randomness in a device&rsquo;s random number generator is especially important for preventing network congestion. If devices share a seed for a pseudorandom number generator, they will choose the same random numbers. Devices should use a unique seed such as the device address.</p>
-<p>Bad randomization will result in an uneven distribution of channels selected for random channel selection, causing subpar network performance. (<a href="https://lora-alliance.org/sites/default/files/2018-07/lorawan1.0.3.pdf">LoRaWAN Specification 1.0.3, line 244</a>).</p>
-<p>Bad randomization will also result in transmission synchronization if devices respond to a large scale external event (for example, if they are all powered on at the same time).</p>
+<p>Bad randomization will result in an uneven distribution of channels selected for random channel selection, causing subpar network performance. Bad randomization will also result in transmission synchronization if devices respond to a large scale external event (for example, if they are all powered on at the same time).</p>
+<p>See <a href="https://lora-alliance.org/wp-content/uploads/2020/11/lorawan1.0.3.pdf">LoRaWAN Specification 1.0.3, line 244</a></p>
 <h2 id="use-adr-for-stationary-devices">Use ADR for Stationary Devices</h2>
+<p>See <a href="https://lora-alliance.org/wp-content/uploads/2020/11/lorawan1.0.3.pdf">LoRaWAN Specification 1.0.3, line 438</a></p>
 <p>For devices that don&rsquo;t move, the LoRaWAN specification recommends allowing the Network Server to control the data rate to minimize power consumption.</p>
-<p>For moving devices, ADR should not be used since RF conditions will likely change, but since many moving devices are temporarily stationary, it is possible to save additional power by requesting ADR only during the time a device is stationary. (<a href="https://lora-alliance.org/sites/default/files/2018-07/lorawan1.0.3.pdf">LoRaWAN Specification 1.0.3, line 438</a>).</p>
-<p>You may also use application specific knowledge to predict when ADR is appropriate. A tracking device can detect when it is moving, for example. A parked car sensor can detect when a parked car will affect RF conditions, and should fall back to another strategy.</p>
+<p>For moving devices, ADR should not be used since RF conditions will likely change, but since many moving devices are temporarily stationary, it is possible to save additional power by requesting ADR only during the time a device is stationary.</p>
+<p>You may also use application specific knowledge to predict when ADR is appropriate. A tracking device can detect when it is moving, for example. A parked car sensor can detect when a parked car will affect RF conditions, and should fall back to another strategy. <a href="https://www.thethingsindustries.com/docs/reference/adr/">Learn more about how ADR is implemented in The Things Stack</a>.</p>
 <h2 id="use-otaa">Use OTAA</h2>
 <p>OTAA devices perform a join-procedure with the network, during which a dynamic Device Address is assigned and security keys are negotiated with the device. Activation by Personalization (ABP) requires hardcoding the Device Address as well as the security keys in the device, which is insecure. ABP also has the downside that devices can not switch network providers without manually changing keys in the device.</p>
 <h2 id="power-cycles">Power Cycles</h2>
 <p>Devices should save network parameters between regular power cycles. This includes session parameters like <code>DevAddr</code>, session keys, <code>FCnt</code>, and nonces. This allows the device to easily Join, as keys and counters remain synchronized.</p>
-<p>Devices should also randomize initial power on delay (i.e. Join). See <a href="#synchronization-backoff-jitter">Synchronization, Backoff, and Jitter</a></p>
+<p>Devices should also randomize initial power on delay (i.e. Join). See <a href="https://www.thethingsindustries.com/docs/devices/best-practices/#synchronization-backoff-and-jitter">Synchronization, Backoff, and Jitter</a>.</p>
 <h2 id="frame-counters">Frame Counters</h2>
-<p>Devices must increment the frame counter after each uplink and downlink. Devices should use 32 bit counters for FCntUp and FCntDwn to prevent replay attacks.</p>
+<p>Devices must increment the frame counter after each uplink and downlink. Devices should use 32 bit counters for FCntUp and FCntDwn to prevent replay attacks. <a href="https://www.thethingsnetwork.org/docs/lorawan/security/#frame-counters">Learn more about frame counters in The Things Network LoRaWAN documentation</a>.</p>
 <h2 id="ack">Ack</h2>
 <p>It is possible that you will not receive an ACK for every confirmed uplink or downlink. A good rule of thumb is to wait for at least <strong>three</strong> missed ACK&rsquo;s to assume link loss.</p>
 <p>In the case of link loss, do the following:</p>
@@ -216,7 +225,7 @@
         </div>
         
           <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/devices/adding-devices/">← Adding Devices</a>
+<a class="button is-pulled-left" href="/docs/devices/abp-vs-otaa/">← ABP vs OTAA</a>
 <a class="button is-pulled-right" href="/docs/devices/class-b/">Class B →</a>
 </div>
 
@@ -288,45 +297,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Laurens Slats on 20 Jul 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/3f9a938bbb70457d5280aea089b83b852a5028f4">
-      doc: Additions to LoRaWAN Best Practices (#460)
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/devices/best-practices/_index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };

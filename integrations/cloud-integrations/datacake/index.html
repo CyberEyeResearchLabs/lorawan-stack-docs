@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.112.3">
   <title>Datacake | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.294c77c74f918a8f5064a76731a816bd0b67f9a72689b5b3e1426b114bf7b43a.css" integrity="sha256-KUx3x0&#43;Rio9QZKdnMagWvQtn&#43;acmibWz4UJrEUv3tDo=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Datacake">
@@ -19,26 +19,36 @@
   <meta property="og:title" content="Datacake">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/">
+  <meta property="og:image" content="/docs/docs-thumbnail.png"/>
   <meta name="twitter:title" content="Datacake" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:card" content="summary" />
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','');</script>
+
+
+
+  <link rel="stylesheet" href="https://ttui.thethingsindustries.com/release/1.7.2/main.css" />
 </head>
 
 
-<body><nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body class="theme-tts">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="container is-fluid">
     <div class="navbar-brand">
       <a class="navbar-item" href="/docs/">
         <img class="logo" src="/docs/img/TTS-logo.svg">
-        <p class="navbar-item is-size-7">v3.14</p>
-      </a><div class="navbar-item navbar-search-brand">
-        <div class="field has-addons has-addons-centered">
-          <div class="control">
-            <input id="search-input-brand" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
+      </a><div class="navbar-item navbar-search-menu" id="search-input-menu">
           </div>
-        </div>
-      </div>
-      
       <span class="navbar-burger burger" data-target="topMenu">
         <span></span>
         <span></span>
@@ -50,33 +60,25 @@
         <a class="navbar-item" href="/docs/getting-started/">Getting Started</a>
         <a class="navbar-item" href="/docs/devices/">Devices</a>
         <a class="navbar-item" href="/docs/gateways/">Gateways</a>
+        <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
-        <a class="navbar-item" href="/docs/reference/">Reference</a><div class="navbar-item navbar-search-menu">
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input id="search-input-menu" class="input search-bar" type="text" placeholder="Search the docs..." type="text">
-              </div>
-            </div>
-          </div></div>
+        <a class="navbar-item" href="/docs/reference/">Reference</a>
+
+      </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="/docs/download/">Get The Things Stack</a>
+            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
           </div>
       </div>
     </div>
   </div>
-</nav><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+</nav><script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
   <script type="text/javascript">
     docsearch({
+      appId: "",
       apiKey: "",
       indexName: "thethingsstack",
-      inputSelector: '#search-input-brand',
-      debug: false 
-    });
-    docsearch({
-      apiKey: "",
-      indexName: "thethingsstack",
-      inputSelector: '#search-input-menu',
-      debug: false 
+      container: '#search-input-menu',
+      debug: false, 
     });
   </script><div class="container" role="document">
   <div class="columns my-0 ">
@@ -104,17 +106,37 @@
 <ul class="menu-list">
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/aws-iot/" class="">AWS IoT</a>
-    
-  </li>
-
-  <li>
-    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/akenza-core/" class="">Akenza Core</a>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/akenza/" class="">akenza</a>
     
   </li>
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/allthingstalk/" class="">AllThingsTalk Maker</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/anyviz/" class="">AnyViz</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/aws-iot/" class="">AWS IoT</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/azure-iot-central/" class="">Azure IoT Central</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/azure-iot-hub/" class="">Azure IoT Hub</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/blockbax/" class="">Blockbax</a>
     
   </li>
 
@@ -129,7 +151,22 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/daizy/" class="">Daizy</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/" class="is-active">Datacake</a>
+    
+    
+
+
+
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/delmation/" class="">Delmation Products</a>
     
   </li>
 
@@ -154,7 +191,22 @@
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/microsoft-azure/" class="">Microsoft Azure</a>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/kaa/" class="">Kaa</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/losant/" class="">Losant IoT Platform</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/mclimate/" class="">MClimate</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/my-iot-open-tech/" class="">my IoT open Tech</a>
     
   </li>
 
@@ -169,7 +221,22 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/telemetry2u/" class="">Telemetry2U</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tellsens/" class="">Tellsens</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thethingsio/" class="">thethings.iO</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thinger-io/" class="">Thinger.io</a>
     
   </li>
 
@@ -184,12 +251,32 @@
   </li>
 
   <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ttnmapper/" class="">TTN Mapper</a>
+    
+  </li>
+
+  <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ubidots/" class="">Ubidots</a>
     
   </li>
 
   <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/uib/" class="">UIB</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/unaconnect/" class="">UnaConnect</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/widgelix/" class="">Widgelix</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/withthegrid/" class="">Withthegrid</a>
     
   </li>
 
@@ -212,6 +299,9 @@
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/ifttt/" class="">IFTTT</a>
+  </li>
+<li>
+    <a href="https://www.thethingsindustries.com/docs/integrations/guides/" class="">Guides</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/integrations/payload-formatters/" class="">Payload Formatters</a>
@@ -251,16 +341,14 @@
 </ol>
 <h2 id="setup-datacake">Setup Datacake</h2>
 <p>First, create a <strong>Workspace</strong> on Datacake by navigating to the <strong>Create Workspace</strong> button in the upper left corner.</p>
-<figure>
-    <img src="datacake-workspace.png"
-         alt="Add workspace on Datacake"/> 
+<figure><img src="datacake-workspace.png"
+         alt="Add workspace on Datacake"/>
 </figure>
 
 <p>On the left hand menu, click <strong>Devices</strong>. To add a new device, click the <strong>Add Device</strong> button on the right.</p>
 <p>In the <strong>Add Device</strong> pop-up menu, choose <strong>LoRaWAN</strong> → <strong>Generic LoRa Device</strong>. When asked <strong>Which device are you missing?</strong>, just click <strong>Skip</strong> and then select <strong>The Things Industries</strong> adapter.</p>
-<figure>
-    <img src="datacake-tti-adapter.png"
-         alt="Datacake TTI adapter"/> 
+<figure><img src="datacake-tti-adapter.png"
+         alt="Datacake TTI adapter"/>
 </figure>
 
 <p>After selecting your subscription plan, fill in <strong>Name</strong> and <strong>DevEUI</strong> for your device, then click on <strong>Add Device</strong> to finish.</p>
@@ -268,53 +356,38 @@
 <p>In the <strong>Configuration</strong> tab, you can find the <strong>LoRaWAN</strong> section, where you can configure <strong>Network</strong> settings, choose to <strong>Authenticate Webhook</strong> or define <strong>Payload Decoder</strong>.</p>
 <p>Under <strong>Network</strong>, choose <strong>The Things Industries</strong> from the drop-down menu.</p>
 <p>Paste your device&rsquo;s <strong>End device ID</strong> from The Things Stack in the <strong>TTI Dev Id</strong> field.</p>
-<p>The <strong>TTI Server Url</strong> field should contain the URL of your The Things Stack deployment.</p>
+<p>The <strong>TTI Server Url</strong> field should contain the URL of your The Things Stack deployment. See the <a href="https://www.thethingsindustries.com/docs/the-things-stack/concepts/server-addresses/">Server Addresses section</a> for more info.</p>
 <p>Paste your <strong>Application ID</strong> from The Things Stack in the <strong>TTI App Id</strong> field.</p>
 <p>In The Things Stack, navigate to <strong>API keys</strong> on the left hand menu, click the <strong>Add API key</strong> button, give it a <strong>Name</strong> and confirm that you have copied it to finish. Paste the copied API key into the <strong>TTI Api Key</strong> field on Datacake.</p>
-<figure>
-    <img src="lorawan-settings.png"
-         alt="LoRaWAN settings"/> 
+<figure><img src="lorawan-settings.png"
+         alt="LoRaWAN settings"/>
 </figure>
 
 <h2 id="configure-the-things-stack">Configure The Things Stack</h2>
 <p>After finishing Datacake setup, use the <strong>Datacake</strong> <a href="https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/">Webhook template</a> to create a Webhook integration on The Things Stack.</p>
 <p>To integrate, you only need to fill out the <strong>Webhook ID</strong> field and provide an <a href="https://docs.datacake.de/api/generate-access-token">API token</a> from Datacake for the authorization.</p>
-<figure>
-    <img src="tts-datacake-webhook.png"
-         alt="Datacake webhook"/> 
+<figure><img src="tts-datacake-webhook.png"
+         alt="Datacake webhook"/>
 </figure>
 
-<div class="notification is-info is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  To see the values of all parameters of the Datacake integration, click on the integration after you created it with the Webhook template.
-</div>
-
+<p>To see the values of all parameters of the Datacake integration, click on the integration after you created it with the Webhook template.</p>
 <p>Once the setup is finished, you can navigate to device&rsquo;s <strong>Debug</strong> tab on Datacake, where you can see the incoming messages and manipulate or monitor your data.</p>
-<div class="notification is-info is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  Check the official Datacake documentation to learn how to <a href="https://docs.datacake.de/lorawan/payload-decoders">decode the payload</a> received from The Things Stack.
-</div>
-
+<p>Check the official Datacake documentation to learn how to <a href="https://docs.datacake.de/lorawan/payload-decoders">decode the payload</a> received from The Things Stack.</p>
 <h2 id="scheduling-downlinks">Scheduling Downlinks</h2>
 <p>In addition to forwarding messages from The Things Stack to Datacake, you can also schedule downlink messages to be sent from Datacake to your end device.</p>
 <p>Enter your device&rsquo;s settings page on Datacake and go to the <strong>Downlinks</strong> tab.</p>
 <p>Click the <strong>Add Downlink</strong> button.</p>
 <p>Next, fill in the <strong>Name</strong> field, define the <strong>Payload encoder</strong> and click <strong>Save Downlink</strong>.</p>
-<div class="notification is-info is-light has-text-dark">
-  <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  Learn to write payload decoders in the <a href="https://docs.datacake.de/lorawan/downlinks#writing-a-downlink-encoder">official Datacake documentation</a>.
-</div>
-
-<figure>
-    <img src="downlink-configuration.png"
-         alt="Configuring downlink"/> 
+<p>Learn to write payload decoders in the <a href="https://docs.datacake.de/lorawan/downlinks#writing-a-downlink-encoder">official Datacake documentation</a>.</p>
+<figure><img src="downlink-configuration.png"
+         alt="Configuring downlink"/>
 </figure>
 
 <p>Now simply click the <strong>Send Downlink</strong> button to schedule a downlink and check your device&rsquo;s logs to see the incoming message.</p>
         </div>
         <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/integrations/cloud-integrations/cloudstudio/">← Cloud Studio</a>
-<a class="button is-pulled-right" href="/docs/integrations/cloud-integrations/dezem/">deZem →</a>
+<a class="button is-pulled-left" href="/docs/integrations/cloud-integrations/daizy/">← Daizy</a>
+<a class="button is-pulled-right" href="/docs/integrations/cloud-integrations/delmation/">Delmation Products →</a>
 </div>
 
         <script>window.emojicom_widget = { campaign: "" };</script>
@@ -361,45 +434,29 @@
 <footer class="footer">
   <div class="container">
     <div class="columns">
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">The Things Stack</h3>
         <p><a class="" href="/docs/getting-started/">Getting Started</a></p>
         <p><a class="" href="/docs/devices/">Devices</a></p>
         <p><a class="" href="/docs/gateways/">Gateways</a></p>
+        <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
       </nav>
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
         <p><a class="" href="https://github.com/TheThingsIndustries/lorawan-stack-docs">GitHub</a></p>
-        <p><a class="" href="https://www.thethingsnetwork.org/forum/c/network-and-routing/v3">Forum</a></p>
       </nav>
       
-      <nav class="column is-one-quarter">
+      <nav class="column is-one-third">
         <h3 class="title is-6">About Us</h3>
-        <p><a class="" href="https://www.thethingsnetwork.org">The Things Network</a></p>
         <p><a class="" href="https://www.thethingsindustries.com">The Things Industries</a></p>
       </nav>
-      <div class="column is-one-quarter">
-        <h3 class="title is-6">About this page</h3>
-        <div class="content">
-<p class="is-size-7">
-  Last changed by Nejra on 01 Mar 2021.
-  <br>
-  <a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/commit/8b8db812793525ad8423784706b1fd86aaab1a40">
-      doc: Fix cloud integrations
-    </a>
-</p>
-
-<a href="https://github.com/TheThingsIndustries/lorawan-stack-docs/blob/master/doc/content/integrations/cloud-integrations/datacake/index.md" class="button">Edit on Github</a>
-</div>
-
       </div>
-    </div>
   </div>
 </footer>
 <script src="https://www.thethingsindustries.com/docs/js/vendor/basicLightbox.min.js"></script>
-<script src="https://www.thethingsindustries.com/docs/js/theme.min.79500656c3860a54b3b38e5f5770a5130bc57306ebb67ca9b057e494f6f4b454.js" integrity="sha256-eVAGVsOGClSzs45fV3ClEwvFcwbrtnypsFfklPb0tFQ=" crossorigin="anonymous"></script><script>
+<script src="https://www.thethingsindustries.com/docs/js/theme.min.4a22f0dea0620048bc258cf6dedbdfbec40f3b5dba1dcdc6536e61e7bc20a5bf.js" integrity="sha256-SiLw3qBiAEi8JYz23tvfvsQPO126Hc3GU25h57wgpb8=" crossorigin="anonymous"></script><script>
   window.intercomSettings = {
     app_id: "",
   };
