@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="generator" content="Hugo 0.112.3">
-  <title>3.26.0 | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/whats-new/3.26.0/" />
+  <title>3.27.1 | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/whats-new/3.27.1/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
   <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.1734e98fc0eb35f5e3b9f3f9a27d19d7cc102b4737ff72b5111ea78f3e79eb15.css" integrity="sha256-FzTpj8DrNfXjufP5on0Z18wQK0c3/3K1ER6njz556xU=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="The Things Stack for LoRaWAN">
   <meta name="keywords" content="">
-  <meta itemprop="name" content="3.26.0">
+  <meta itemprop="name" content="3.27.1">
   <meta itemprop="description" content="The Things Stack for LoRaWAN">
   <meta itemprop="keywords" content="">
-  <meta property="og:title" content="3.26.0">
+  <meta property="og:title" content="3.27.1">
   <meta property="og:description" content="The Things Stack for LoRaWAN">
-  <meta property="og:url" content="https://www.thethingsindustries.com/docs/whats-new/3.26.0/">
+  <meta property="og:url" content="https://www.thethingsindustries.com/docs/whats-new/3.27.1/">
   <meta property="og:image" content="/docs/docs-thumbnail.png"/>
-  <meta name="twitter:title" content="3.26.0" />
+  <meta name="twitter:title" content="3.27.1" />
   <meta name="twitter:description" content="The Things Stack for LoRaWAN" />
   <meta name="twitter:card" content="summary" />
   
@@ -93,7 +93,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <ul class="menu-list">
 <a href="https://www.thethingsindustries.com/docs/whats-new/" class="">Overview</a>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.1/" class="">3.27.1</a>
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.1/" class="is-active">3.27.1</a>
+    
+
+
+
+    
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/whats-new/3.27.0/" class="">3.27.0</a>
@@ -105,12 +110,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="https://www.thethingsindustries.com/docs/whats-new/3.26.1/" class="">3.26.1</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.26.0/" class="is-active">3.26.0</a>
-    
-
-
-
-    
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.26.0/" class="">3.26.0</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/whats-new/3.25.2/" class="">3.25.2</a>
@@ -303,58 +303,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       <div class="column is-9 is-8-desktop sidebar-middle">
         <div class="docs-content">
-        <h1 class="title is-size-2">3.26.0
+        <h1 class="title is-size-2">3.27.1
           
         </h1>
         
         <div class="content">
           <h3 id="added">Added</h3>
 <ul>
-<li><code>tti-lw-stack dcs-db purge</code> command to remove authorized entities from the DCS registry.</li>
-<li>Support for scanning a QR code that only contains the hexadecimal encoded DevEUI.</li>
-<li>Experimental flag <code>ns.adr.auto_narrow_steer</code>. When enabled, end devices which do not have an explicit channel steering mode will be steered towards the LoRa narrow channels.</li>
-<li>Add a NOC button in the application and end-device views in the Console.</li>
-<li>The storage integration now supports iterating pages of uplinks, instead of retrieving all of the uplinks at once.
-<ul>
-<li>The Application Server will now return a <em>continuation token</em> via the <code>X-Continuation-Token</code> header. The continuation token can be provided to a subsequent request in order to continue the iteration from the last retrieved uplink, using the <code>continuation_token</code> parameter.</li>
-<li>The continuation token replaces any other filtering options such as the <code>type</code>, <code>limit</code>, <code>after</code>, <code>before</code>, <code>f_port</code>, <code>order</code> or <code>field_mask</code>. These have to be provided only in the initial request - subsequent iterations no longer need to provide them, as they are saved as part of the token.</li>
-<li>This requires a storage integration database migration (<code>ttn-lw-stack storage-db migrate</code>).</li>
-</ul>
-</li>
-</ul>
-<h3 id="changed">Changed</h3>
-<ul>
-<li>The Network Operations Center applications and end devices insights are no longer experimental.</li>
-</ul>
-<h3 id="removed">Removed</h3>
-<ul>
-<li>Device claiming that transfers devices between applications is now removed.
-<ul>
-<li>Related fields in the <code>ClaimEndDeviceRequest</code> message are reserved.</li>
-<li>RPCs <code>AuthorizeApplication</code> and <code>UnauthorizeApplication</code> of the Device Claiming Server will now return an <code>Unimplemented</code> error code.</li>
-<li><code>ttn-lw-cli end-devices claim</code>, <code>ttn-lw-cli applications claim</code>, <code>ttn-lw-cli applications claim authorize</code> and <code>ttn-lw-cli applications claim unauthorize</code> commands are no longer supported and will return an error.</li>
-<li><code>--with-claim-authentication-code</code> option for <code>ttn-lw-cli end-devices create</code> is no longer supported.</li>
-<li>If the DCS does not support claiming for the provided JoinEUI, <code>ttn-lw-cli end-devices create</code> will no longer fallback to create devices in the Cluster Join Server and instead error.</li>
-<li><code>tti-lw-stack dcs-db migrate</code> and <code>tti-lw-stack dcs-db clean</code> commands are removed.</li>
-<li>The deprecated Claim App (by default available via <code>/claim</code>) has been removed and now redirects to the Console.</li>
-</ul>
-</li>
+<li>Add support for <code>administrative_contact</code> and <code>technical_contact</code> in the Console.</li>
+<li>Reimplement move away prompt in payload formatter views in the Console.</li>
+<li>Add telemetry collection for the CLI. A background process was added to the CLI in order to send the following information: Operating System, Architecture, Binary version and Golang version. The message is sent every 24 hours and it contains an unique random number as an identifier. It is enabled by default and in order to disable it, set <code>telemetry.enable</code> to false in the CLI configuration. For more information, consult the documentation <a href="https://www.thethingsindustries.com/docs/reference/telemetry/cli">here</a>.</li>
+<li>Add telemetry collection for the IdentityServer. A background task was added in the Identity Server which is responsible for collecting information regarding the amount of each entity in the database, this has the purpose of allowing us to better understand how users are interacting with the system, an example being if tenants are using Organizations or just Users. All information is sent every 24 hours and it contains an identifier composed of the URLs present in the following configuration fields <code>console.ui.[is|gs|ns|as|js].base-url</code>. It is enabled by default and in order to disable it, set <code>telemetry.enable</code> to false in the Stack configuration. For more information, consult the documentation <a href="https://www.thethingsindustries.com/docs/reference/telemetry/identity_server">here</a>.</li>
 </ul>
 <h3 id="fixed">Fixed</h3>
 <ul>
-<li>Console not applying webhook field masks when creating a webhook from a template that has field masks set.</li>
-<li>LoRa Basics Station <code>PONG</code> messages will now contain the application payload of the associated <code>PING</code>, as required by the WebSockets specification.
-<ul>
-<li>This fix enables <code>PING</code>/<code>PONG</code> behavior for non reference implementations of the LNS protocol.</li>
-</ul>
-</li>
-<li>Fix crash of &ldquo;Edit webhook&rdquo; view due to invalid Authorization header encoding in the Console.</li>
+<li>OAuth clients created by an admin no longer trigger an email requesting approval from one of the tenant&rsquo;s admins.</li>
+<li>Broken network routing policy links in the Packet Broker panel of the admin panel in the Console.</li>
+<li>Application Server downlink related events now contain the complete set of end device identifiers, and the received at timestamp is now provided at all times.</li>
+<li>Wrong order of breadcrumbs in the device views of the Console.</li>
 </ul>
 
         </div>
         <div class="is-clearfix">
-<a class="button is-pulled-left" href="/docs/whats-new/3.26.1/">← 3.26.1</a>
-<a class="button is-pulled-right" href="/docs/whats-new/3.25.2/">3.25.2 →</a>
+<a class="button is-pulled-left" href="/docs/whats-new/">← Release Notes</a>
+<a class="button is-pulled-right" href="/docs/whats-new/3.27.0/">3.27.0 →</a>
 </div>
 
         <script>window.emojicom_widget = { campaign: "" };</script>
