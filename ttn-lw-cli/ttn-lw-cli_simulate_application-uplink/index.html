@@ -10,7 +10,7 @@
   <title>ttn-lw-cli simulate application-uplink | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_simulate_application-uplink/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.fd3d59eb4852f5cc339297cb0cb5a6af3c7895bf80bc7bc02db7b78eadec7102.css" integrity="sha256-/T1Z60hS9cwzkpfLDLWmrzx4lb&#43;AvHvALbe3jq3scQI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.0311ffa632efefdf2c4bfeff8ca5fb6eea8bdaf8cefc6bbe13c2ee3990abce82.css" integrity="sha256-AxH/pjLv798sS/7/jKX7buqL2vjO/Gu&#43;E8LuOZCrzoI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="The Things Stack for LoRaWAN">
   <meta name="keywords" content="">
   <meta itemprop="name" content="ttn-lw-cli simulate application-uplink">
@@ -2641,6 +2641,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
   <details>
+    <summary class="no-arrow">
+      
+      <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_batch-delete/">batch-delete
+      </a>
+      
+    </summary>
+    
+  </details>
+
+      
+        
+  
+  
+  
+  
+  
+  
+  <details>
     <summary class="">
       
       <a href="https://www.thethingsindustries.com/docs/ttn-lw-cli/ttn-lw-cli_gateways_claim/">claim
@@ -5114,29 +5132,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Simulate an application-layer uplink message from an end device, sent directly to the Application Server</p>
 <pre tabindex="0"><code>ttn-lw-cli simulate application-uplink [application-id] [device-id] [flags]
 </code></pre><h3 id="options">Options</h3>
-<pre tabindex="0"><code>      --app-s-key.encrypted-key bytesHex      
-      --app-s-key.kek-label string            
-      --app-s-key.key 16-bytes                
-      --application-id string                 
-      --confirmed                             
-      --consumed-airtime duration             
-      --decoded-payload-warnings strings      
-      --dev-eui string                        (hex)
-      --device-id string                      
-      --f-cnt uint32                          
-      --f-port uint32                         
-      --frm-payload bytesBase64               
-  -h, --help                                  help for application-uplink
-      --join-eui string                       (hex)
-      --last-a-f-cnt-down uint32              
-      --normalized-payload-warnings strings   
-      --received-at timestamp                 
-      --session-key-id bytesBase64            
-      --version-ids.band-id string            
-      --version-ids.brand-id string           
-      --version-ids.firmware-version string   
-      --version-ids.hardware-version string   
-      --version-ids.model-id string           
+<pre tabindex="0"><code>      --app-s-key.encrypted-key bytesHex                                      
+      --app-s-key.kek-label string                                            
+      --app-s-key.key 16-bytes                                                
+      --application-id string                                                 
+      --confirmed                                                             
+      --consumed-airtime duration                                             
+      --decoded-payload-warnings strings                                      
+      --dev-eui string                                                        (hex)
+      --device-id string                                                      
+      --f-cnt uint32                                                          
+      --f-port uint32                                                         
+      --frm-payload bytesBase64                                               
+  -h, --help                                                                  help for application-uplink
+      --join-eui string                                                       (hex)
+      --last-a-f-cnt-down uint32                                              
+      --network-ids.cluster-address string                                    
+      --network-ids.cluster-id string                                         
+      --network-ids.net-id 3-bytes                                            
+      --network-ids.ns-id 8-bytes                                             
+      --network-ids.tenant-address string                                     
+      --network-ids.tenant-id string                                          
+      --normalized-payload-warnings strings                                   
+      --received-at timestamp                                                 
+      --session-key-id bytesBase64                                            
+      --settings.concentrator-timestamp int                                   
+      --settings.data-rate.modulation.fsk.bit-rate uint32                     
+      --settings.data-rate.modulation.lora.bandwidth uint32                   
+      --settings.data-rate.modulation.lora.coding-rate string                 
+      --settings.data-rate.modulation.lora.spreading-factor uint32            
+      --settings.data-rate.modulation.lrfhss.coding-rate string               
+      --settings.data-rate.modulation.lrfhss.modulation-type uint32           
+      --settings.data-rate.modulation.lrfhss.operating-channel-width uint32   
+      --settings.downlink.antenna-index uint32                                
+      --settings.downlink.invert-polarization                                 
+      --settings.downlink.tx-power float32                                    
+      --settings.enable-crc                                                   
+      --settings.frequency uint                                               
+      --settings.time timestamp                                               
+      --settings.timestamp uint32                                             
+      --version-ids.band-id string                                            
+      --version-ids.brand-id string                                           
+      --version-ids.firmware-version string                                   
+      --version-ids.hardware-version string                                   
+      --version-ids.model-id string                                           
 </code></pre><h3 id="options-inherited-from-parent-commands">Options inherited from parent commands</h3>
 <pre tabindex="0"><code>      --allow-unknown-hosts                             Allow sending credentials to unknown hosts
       --application-server-enabled                      Application Server enabled (default true)
