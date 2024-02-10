@@ -10,7 +10,7 @@
   <title>Packet Broker Requirements for End Device Migration | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migrating-from-v2/packet-broker-requirements/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.0311ffa632efefdf2c4bfeff8ca5fb6eea8bdaf8cefc6bbe13c2ee3990abce82.css" integrity="sha256-AxH/pjLv798sS/7/jKX7buqL2vjO/Gu&#43;E8LuOZCrzoI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Packet Broker Requirements for End Device Migration">
@@ -227,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <tbody>
 <tr>
 <td>The Things Industries V2</td>
-<td style="text-align:left">The Things Stack Community Edition</td>
+<td style="text-align:left">The Things Stack Sandbox</td>
 <td style="text-align:left">Only without persisting active device sessions</td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Remember that The Things Stack Enterprise and The Things Stack Open Source can also be configured to connect to Packet Broker. If using those deployments, end devices can be migrated from V2 via Packet Broker without persisting active sessions.</p>
 <h2 id="devices-address-devaddr">Devices Address (DevAddr)</h2>
 <p><strong>V2 DevAddr of your end device needs to be routable by Packet Broker.</strong></p>
-<p>OTAA devices migrated without an active session will acquire a new <strong>DevAddr</strong> from The Things Stack during the join procedure. Packet Broker will always be able to route the traffic with DevAddrs assigned by The Things Stack Community Edition or The Things Stack Cloud.</p>
+<p>OTAA devices migrated without an active session will acquire a new <strong>DevAddr</strong> from The Things Stack during the join procedure. Packet Broker will always be able to route the traffic with DevAddrs assigned by The Things Stack Sandbox or The Things Stack Cloud.</p>
 <p>When registering ABP devices on The Things Stack, it is possible to auto-generate new <strong>DevAddr</strong> which can be routed by Packet Broker. ABP devices can be re-programmed to use this new <strong>DevAddr</strong>. This implies breaking their existing session on V2.</p>
 <p>Migrating OTAA and ABP devices with their active sessions implies keeping their <strong>DevAddr</strong> values from V2. Packet Broker will be able to route traffic for these <strong>DevAddr</strong> values only if these devices were registered on <strong>The Things Industries V2 (SaaS)</strong> and you are migrating them to <strong>The Things Stack Cloud</strong>. If you are not using these deployments and you still want your traffic to be routed by Packet Broker, end devices can only be migrated without their active sessions. The alternative option is to migrate your gateway instead of using Packet Broker.</p>
 <h2 id="rx1-delay">RX1 Delay</h2>

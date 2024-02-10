@@ -10,7 +10,7 @@
   <title>Deployment Guide | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/integrations/cloud-integrations/aws-iot/deployment-guide/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.0311ffa632efefdf2c4bfeff8ca5fb6eea8bdaf8cefc6bbe13c2ee3990abce82.css" integrity="sha256-AxH/pjLv798sS/7/jKX7buqL2vjO/Gu&#43;E8LuOZCrzoI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Deployment Guide">
@@ -452,9 +452,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </a>
     </li>
     
-    <li data-tab="community">
+    <li data-tab="sandbox">
       <a>
-        <span>Community</span>
+        <span>Sandbox</span>
       </a>
     </li>
     
@@ -511,7 +511,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <p><a href="https://s3.amazonaws.com/thethingsindustries/integration-aws/latest/selfhosted.template.json">View template</a></p>
 </section>
-<section data-content="community">
+<section data-content="sandbox">
   <p><a data-content="aws-deploy-cloudformation" data-path="thethingsindustries/integration-aws/latest/community.template.json" target="_blank" class="button is-primary"></a></p>
 <script>
   window.addEventListener('load', function(e) {
@@ -575,7 +575,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><strong>Thing Name Scheme</strong>: The name that is given to AWS IoT things when they are created by the integration.
 <ul>
 <li>When using <code>DevEUI</code>, the name will appear as the numeric DevEUI, i.e 1122334455667788.</li>
-<li>When using <code>DeviceID</code>, the thing name will be a combination of the CloudFormation stack name and the device ID as registered in  The Things Stack, i.e. <code>&lt;stackName&gt;_&lt;DeviceID&gt;</code>.</li>
+<li>When using <code>DeviceID</code>, the thing name will be a combination of the CloudFormation stack name and the device ID as registered in The Things Stack, i.e. <code>&lt;stackName&gt;_&lt;DeviceID&gt;</code>.</li>
 </ul>
 </li>
 <li><strong>Thing Shadow Metrics</strong>: Enable or disable updating the thing shadow with metrics.</li>
@@ -602,7 +602,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Click <strong>Create stack</strong>.</p>
 <div class="notification is-info is-light has-text-dark">
   <h5 class="title is-family-sans-serif has-text-dark mb-1">Note:</h5>
-  Creating all resources can take up to five minutes.  ☕
+  Creating all resources can take up to five minutes. ☕
 </div>
 
 <p>When the deployment is done, you&rsquo;ll see the status <code>CREATE_COMPLETE</code>.</p>

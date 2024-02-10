@@ -10,7 +10,7 @@
   <title>Database Operations | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/the-things-stack/host/aws/ecs/database-operations/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.0311ffa632efefdf2c4bfeff8ca5fb6eea8bdaf8cefc6bbe13c2ee3990abce82.css" integrity="sha256-AxH/pjLv798sS/7/jKX7buqL2vjO/Gu&#43;E8LuOZCrzoI=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Database Operations">
@@ -269,7 +269,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">aws ecs run-task <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --task-definition TASK_DEFINITION <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --cluster CLUSTER_NAME <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --launch-type EC2 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --launch-type FARGATE <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --network-configuration <span class="s1">&#39;{
 </span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;awsvpcConfiguration&#34;:{
 </span></span></span><span class="line"><span class="cl"><span class="s1">      &#34;subnets&#34;:[
