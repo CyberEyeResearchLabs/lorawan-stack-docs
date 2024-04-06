@@ -10,7 +10,7 @@
   <title>Migration Tool | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.5ba0be8f5f0e953584382f5875ae6ec65f7a9a9cda0dea27bd9ddb1025d10fa5.css" integrity="sha256-W6C&#43;j18OlTWEOC9Yda5uxl96mpzaDeonvZ3bECXRD6U=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Migration Tool">
@@ -63,10 +63,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
         <a class="navbar-item" href="/docs/reference/">Reference</a>
+        <a class="navbar-item" href="/docs/api/">API</a>
 
       </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
+            <a class="button is-primary" href="https://www.thethingsindustries.com/stack/plans/">Get The Things Stack</a>
           </div>
       </div>
     </div>
@@ -133,7 +134,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </li>
 
   <li>
-    <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/" class="">Export End Devices from ChirpStack</a>
+    <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack-v3/" class="">Export End Devices from ChirpStack v3</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/" class="">Export End Devices from ChirpStack v4</a>
+    
+  </li>
+
+  <li>
+    <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-wanesy/" class="">Export End Devices from Wanesy</a>
     
   </li>
 
@@ -256,35 +267,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <h2 id="usage">Usage</h2>
 <p>To use the <code>ttn-lw-migrate</code> tool after successful installation, use your terminal or command prompt to navigate to the folder where it is installed and run the commands from there. Run <code>ttn-lw-migrate help</code> to see all available commands and flags.</p>
-<p>To list available sources that you can migrate your end devices and applications from:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ttn-lw-migrate sources
-</span></span></code></pre></div><p>Currently, there are three available sources listed in the table below. For detailed migration instructions using these three sources, check the linked sections.</p>
-<blockquote>
-<p>The <code>tts</code> source can be used for migrating devices between applications in the same The Things Stack tenant, migrating between different tenants, or migrating between different The Things Stack deployments.</p>
-</blockquote>
+<p>Currently, there are three available sources listed in the table below. For detailed migration instructions using these three sources, check the linked sections.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Source</th>
-<th style="text-align:left">Section</th>
-<th style="text-align:left">Used for</th>
+<th style="text-align:left">Option</th>
+<th>Used for</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><code>tts</code></td>
-<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-tts/">Export Devices from The Things Stack</a></td>
-<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migrating-between-tts-distributions/">Migrating between The Things Stack distributions</a></td>
+<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-tts/"><code>tts</code></a></td>
+<td>Migrating between The Things Stack distributions, tenants, and/or applications</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>chirpstack</code></td>
-<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/">Export Devices from ChirpStack</a></td>
-<td style="text-align:left">Migrating devices from ChirpStack</td>
+<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/"><code>chirpstack</code></a></td>
+<td>Migrating devices from ChirpStack version 4</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack-v3/"><code>chirpstack</code> (v3)</a></td>
+<td>Migrating devices from ChirpStack version 3</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-firefly/"><code>firefly</code></a></td>
+<td>Migrating devices from Digimondo&rsquo;s Firefly</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-wanesy/"><code>wanesy</code></a></td>
+<td>Migrating devices from Kerlink&rsquo;s Firefly</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>ttnv2</code></td>
-<td style="text-align:left">Discontinued</td>
-<td style="text-align:left">Migrating from legacy V2 deployments</td>
+<td>(Discontinued ) Migrating from legacy V2 deployments</td>
 </tr>
 </tbody>
 </table>
@@ -314,18 +328,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="card has-radius is-fullwidth">
       <div class="card-content">
         <div class="title-content">
-          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/">Export End Devices from ChirpStack</a>
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack-v3/">Export End Devices from ChirpStack v3</a>
           </h1>
           
           <div class="content has-text-grey">
             
-            This section contains instructions on how to configure migration tool and use it to export end devices from ChirpStack, that can later be imported in The Things Stack. This is a base for migrating end devices from ChirpStack to The Things Stack.
+            This section contains instructions on how to configure migration tool and use it to export end devices from ChirpStack v3, that can later be imported in The Things Stack. This is a base for migrating end devices from ChirpStack to The Things Stack.
+
+            
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack-v3/" class="button is-primary is-outlined">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half is-flex">
+    <div class="card has-radius is-fullwidth">
+      <div class="card-content">
+        <div class="title-content">
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/">Export End Devices from ChirpStack v4</a>
+          </h1>
+          
+          <h2 class="subtitle">
+            
+            
+              <span class="tag is-light">New in v0.12.0</span>
+
+            
+            
+            
+          </h2>
+          
+          <div class="content has-text-grey">
+            
+            This section contains instructions on how to configure migration tool and use it to export end devices from ChirpStack v4, that can later be imported in The Things Stack. This is a base for migrating end devices from ChirpStack to The Things Stack.
 
             
           </div>
         </div>
         <div class="buttons">
           <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-chirpstack/" class="button is-primary is-outlined">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half is-flex">
+    <div class="card has-radius is-fullwidth">
+      <div class="card-content">
+        <div class="title-content">
+          <h1 class="title is-size-5 is-uppercase"><a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-wanesy/">Export End Devices from Wanesy</a>
+          </h1>
+          
+          <h2 class="subtitle">
+            
+            
+              <span class="tag is-light">New in v0.11.0</span>
+
+            
+            
+            
+          </h2>
+          
+          <div class="content has-text-grey">
+            
+            This section contains instructions on how to configure migration tool and use it to convert end device information exported from Kerlink&amp;rsquo;s Wanesy Management Center, into The Things Stack end device format.
+
+            
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/export-from-wanesy/" class="button is-primary is-outlined">Read</a>
         </div>
       </div>
     </div>
@@ -413,6 +487,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
+        <p><a class="" href="/docs/api/">API</a></p>
       </nav>
       <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>

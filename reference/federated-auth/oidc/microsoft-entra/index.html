@@ -10,7 +10,7 @@
   <title>Microsoft Entra | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/reference/federated-auth/oidc/microsoft-entra/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.5ba0be8f5f0e953584382f5875ae6ec65f7a9a9cda0dea27bd9ddb1025d10fa5.css" integrity="sha256-W6C&#43;j18OlTWEOC9Yda5uxl96mpzaDeonvZ3bECXRD6U=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Microsoft Entra">
@@ -63,10 +63,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
         <a class="navbar-item" href="/docs/reference/">Reference</a>
+        <a class="navbar-item" href="/docs/api/">API</a>
 
       </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
+            <a class="button is-primary" href="https://www.thethingsindustries.com/stack/plans/">Get The Things Stack</a>
           </div>
       </div>
     </div>
@@ -94,9 +95,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a href="https://www.thethingsindustries.com/docs/reference/" class="">Overview</a>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/adr/" class="">Adaptive Data Rate</a>
-  </li>
-<li>
-    <a href="https://www.thethingsindustries.com/docs/reference/api/" class="">API</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/application-packages/" class="">Application Packages</a>
@@ -182,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="https://www.thethingsindustries.com/docs/reference/last-activity/" class="">Last Activity</a>
   </li>
 <li>
-    <a href="https://www.thethingsindustries.com/docs/reference/lbs-implementation-guide/implementation-details/" class="">LoRa Basics Station Implementation Guide</a>
+    <a href="https://www.thethingsindustries.com/docs/reference/lbs/" class="">LoRa Basics Station Implementation Guide</a>
   </li>
 <li>
     <a href="https://www.thethingsindustries.com/docs/reference/interop-repository/" class="">LoRaWAN Join Server Configuration</a>
@@ -287,7 +285,7 @@ Admins must make sure that users who login to The Things Stack do not have acces
 <li><strong>Redirect URI</strong>: From the dropdown choose <strong>Web</strong> as the type and for the value use <code>https://&lt;server-address&gt;/oauth/login/&lt;provider-id&gt;/callback</code>. <code>server-address</code> is the address where The Things Stack is hosted.</li>
 </ul>
 <p>Select <strong>Register</strong>.</p>
-<p>Open your app registration. Note the <strong>Directory (tenant) ID</strong>. This will be of the format <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code>.</p>
+<p>Open your app registration. Note the <strong>Directory (tenant) ID</strong>. This will be of the format <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code>. Also, note the <strong>Application (client) ID</strong>.</p>
 <p>In the registration, navigate to the <strong>Authentication</strong> panel. For the <code>Select the tokens you would like to be issued by the authorization endpoint:</code> section, choose <code>ID tokens (used for implicit and hybrid flows)</code>.</p>
 <p>In the <strong>Certificates and Secrets</strong> panel, select the <strong>Client Secrets</strong> tab and select <strong>+ New Client Secret</strong>. Add a description and an expiry date. Note the <strong>Secret ID</strong> and <strong>Value</strong>.</p>
 <p>In the <strong>Token Configuration</strong> tab, click <strong>+ Add Optional Claim</strong>, Select <strong>ID</strong> as the <strong>Token type</strong> and select the <strong>email</strong> field.</p>
@@ -296,8 +294,8 @@ Admins must make sure that users who login to The Things Stack do not have acces
 <p>Register the provider. Set the following values</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">OIDC_PROVIDER_ID</span><span class="o">=</span><span class="s2">&#34;provider ID&#34;</span>                                <span class="c1"># Provider ID from above.</span>
 </span></span><span class="line"><span class="cl"><span class="nv">OIDC_PROVIDER_NAME</span><span class="o">=</span><span class="s2">&#34;My OIDC Provider&#34;</span>                         <span class="c1"># Name used to display on the Console.</span>
-</span></span><span class="line"><span class="cl"><span class="nv">OIDC_CLIENT_ID</span><span class="o">=</span><span class="s2">&#34;client123&#34;</span>                                    <span class="c1"># Client ID is the Secret ID above.</span>
-</span></span><span class="line"><span class="cl"><span class="nv">OIDC_CLIENT_SECRET</span><span class="o">=</span><span class="s2">&#34;secret123&#34;</span>                                <span class="c1"># Client Secret is the secret Value from above..</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OIDC_CLIENT_ID</span><span class="o">=</span><span class="s2">&#34;client123&#34;</span>                                    <span class="c1"># Client ID is the Application (client) ID from above.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">OIDC_CLIENT_SECRET</span><span class="o">=</span><span class="s2">&#34;secret123&#34;</span>                                <span class="c1"># Client Secret is the secret Value from above.</span>
 </span></span><span class="line"><span class="cl"><span class="nv">OIDC_MICROSOFT_TENANT</span><span class="o">=</span><span class="s2">&#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">OIDC_ALLOWED_EMAIL_DOMAINS</span><span class="o">=</span><span class="s2">&#34;example.com&#34;</span>                      <span class="c1"># This is a required field to skip email verification.</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ tti-lw-cli ap create <span class="nv">$OIDC_PROVIDER_ID</span> <span class="se">\
@@ -387,6 +385,7 @@ Admins must make sure that users who login to The Things Stack do not have acces
         <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
+        <p><a class="" href="/docs/api/">API</a></p>
       </nav>
       <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>

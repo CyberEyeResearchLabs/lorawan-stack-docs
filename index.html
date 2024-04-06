@@ -10,7 +10,7 @@
   <title>Home | The Things Stack for LoRaWAN</title><link rel="canonical" href="https://www.thethingsindustries.com/docs/" />
   <link rel="alternate icon" type="image/png" href="/docs/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/docs/favicon.svg">
-  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.352ede3cf707e33d0e7305991a2a3d6da56e6f8a602acb8c295497963535ecdc.css" integrity="sha256-NS7ePPcH4z0OcwWZGio9baVub4pgKsuMKVSXljU17Nw=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="https://www.thethingsindustries.com/docs/css/theme.min.5ba0be8f5f0e953584382f5875ae6ec65f7a9a9cda0dea27bd9ddb1025d10fa5.css" integrity="sha256-W6C&#43;j18OlTWEOC9Yda5uxl96mpzaDeonvZ3bECXRD6U=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta itemprop="name" content="Home">
@@ -63,10 +63,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a class="navbar-item" href="/docs/the-things-stack/">The Things Stack</a>
         <a class="navbar-item" href="/docs/integrations/">Integrations</a>
         <a class="navbar-item" href="/docs/reference/">Reference</a>
+        <a class="navbar-item" href="/docs/api/">API</a>
 
       </div>
       <div class="navbar-end"><div class="navbar-item">
-            <a class="button is-primary" href="https://accounts.thethingsindustries.com/fee-calculator">Get The Things Stack</a>
+            <a class="button is-primary" href="https://www.thethingsindustries.com/stack/plans/">Get The Things Stack</a>
           </div>
       </div>
     </div>
@@ -88,10 +89,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="item-5 md:item-12 grid sm:mb-ls-l">
       <div class="mb-ls-l item-12 md:item-6 sm:item-8 xs:item-12">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body p-sides-cs-s pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">v3.28.2</p>
+        <p class="bg-tts-primary-main d-inline-block c-white ttui-body p-sides-cs-s pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">v3.29.1</p>
         <h1 class="mb-cs-s c-interactive-03">The Things Stack Documentation</h1>
         <p class="ttui-body fs-l mb-cs-xl">The Things Stack is a robust, yet flexible LoRaWAN® Network Server that caters to the needs of demanding LoRaWAN deployments, from covering the essentials to advanced security configurations and device life cycle management.</p>
       </div>
+      
       
       
       
@@ -142,10 +144,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </a>
           <div class="whats-new-separation-line"></div>
           
+          <a class="ttui-link ttui-link--highlight p-cs-m" href="/docs/api/">
+            <div class="d-flex j-between">
+              <p>Explore The Things Stack API</p>
+              <p>&#8594</p>
+            </div>
+          </a>
+          <div class="whats-new-separation-line"></div>
+          
         </div>
       </div>
     </div>
 
+    
     
     
     
@@ -217,6 +228,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </a>
         
+        <a href="/docs/api/" class="whats-new-hero-card item-6 xxs:item-12 h-full flex-column p-cs-l br-l" style="background-color: #1e47ff">
+          <div class="mb-cs-l">
+            <p class="ttui-body fs-l fw-bolder mb-cs-xs c-white">API</p>
+            <p class="ttui-body fs-m c-white">Explore The Things Stack API</p>
+          </div>
+          <div>
+            <button class="ttui-btn ttui-btn--primary default fs-s">Learn more &#8594</button>
+          </div>
+        </a>
+        
       </div>
     </div>
 
@@ -229,16 +250,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section class="section-whats-new ttui-container grid pt-ls-xl pb-ls-xl">
 
 <div class="container-whats-new item-12 br-l p-ls-s">
-  <p class="ttui-body fs-xl fw-bolder mb-cs-xl c-text-01">What's new in v3.28.2</p>
+  <p class="ttui-body fs-xl fw-bolder mb-cs-xl c-text-01">What's new in v3.29.1</p>
   <div class="grid mb-cs-xl">
     
     
     
 
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.29.1/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
       <div class="item-10">
         <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Added</p>
-        <p class="ttui-body fs-m">Rate limiting classes for individual HTTP paths.</p>
+        <p class="ttui-body fs-m">Option to store rate limits in Redis.</p>
       </div>
       <div class="item-1 item-start-12 d-flex al-center j-center">
         <p class="ttui-body fs-l">&#8594</p>
@@ -247,74 +268,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     
 
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
+    <a href="https://www.thethingsindustries.com/docs/whats-new/3.29.1/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
       <div class="item-10">
         <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Added</p>
-        <p class="ttui-body fs-m">Rate limiting keys for HTTP endpoints now contain the caller API key ID when available.</p>
-      </div>
-      <div class="item-1 item-start-12 d-flex al-center j-center">
-        <p class="ttui-body fs-l">&#8594</p>
-      </div>
-    </a>
-
-    
-
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
-      <div class="item-10">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Added</p>
-        <p class="ttui-body fs-m">Console support for setting multiple frequency plans in the same band.</p>
-      </div>
-      <div class="item-1 item-start-12 d-flex al-center j-center">
-        <p class="ttui-body fs-l">&#8594</p>
-      </div>
-    </a>
-
-    
-    
-    
-
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
-      <div class="item-10">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Changed</p>
-        <p class="ttui-body fs-m">Server side events replaced with single socker connection using the native WS API.</p>
-      </div>
-      <div class="item-1 item-start-12 d-flex al-center j-center">
-        <p class="ttui-body fs-l">&#8594</p>
-      </div>
-    </a>
-
-    
-
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
-      <div class="item-10">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Changed</p>
-        <p class="ttui-body fs-m">Gateways now disconnect if the Gateway Server address is changed.</p>
-      </div>
-      <div class="item-1 item-start-12 d-flex al-center j-center">
-        <p class="ttui-body fs-l">&#8594</p>
-      </div>
-    </a>
-
-    
-
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
-      <div class="item-10">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Changed</p>
-        <p class="ttui-body fs-m">LoRa Basics Station discovery endpoint now verifies caller authorization credentials .</p>
-      </div>
-      <div class="item-1 item-start-12 d-flex al-center j-center">
-        <p class="ttui-body fs-l">&#8594</p>
-      </div>
-    </a>
-
-    
-    
-    
-
-    <a href="https://www.thethingsindustries.com/docs/whats-new/3.28.2/" class="item-whats-new b-line-01 item-6 md:item-12 br-l p-cs-l grid">
-      <div class="item-10">
-        <p class="bg-tts-primary-main d-inline-block c-white ttui-body fs-s pl-cs-m pr-cs-m pt-cs-xxs pb-cs-xxs br-xxl mb-cs-m">Fixed</p>
-        <p class="ttui-body fs-m">Batch gateway rights assertions when multiple membership chains are available.</p>
+        <p class="ttui-body fs-m">Possibility for users to search for accounts that are not attached to their collaborator list.</p>
       </div>
       <div class="item-1 item-start-12 d-flex al-center j-center">
         <p class="ttui-body fs-l">&#8594</p>
@@ -351,6 +308,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p><a class="" href="/docs/the-things-stack/">The Things Stack</a></p>
         <p><a class="" href="/docs/integrations/">Integrations</a></p>
         <p><a class="" href="/docs/reference/">Reference</a></p>
+        <p><a class="" href="/docs/api/">API</a></p>
       </nav>
       <nav class="column is-one-third">
         <h3 class="title is-6">Contributing</h3>
