@@ -65,6 +65,9 @@
     <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/path-variables/</loc>
     <lastmod>2020-06-23T12:18:48+02:00</lastmod>
   </url><url>
+    <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/queue/</loc>
+    <lastmod>2024-04-30T10:42:49+02:00</lastmod>
+  </url><url>
     <loc>https://www.thethingsindustries.com/docs/devices/concepts/abp-vs-otaa/</loc>
     <lastmod>2023-11-13T14:42:26+01:00</lastmod>
   </url><url>
@@ -186,7 +189,7 @@
     <lastmod>2023-12-21T13:26:05+01:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/the-things-stack/cloud/billing-and-subscription-management/</loc>
-    <lastmod>2024-04-22T01:21:01+05:30</lastmod>
+    <lastmod>2024-04-28T21:47:48+02:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/the-things-stack/interact/console/tenant-settings/</loc>
     <lastmod>2023-04-19T08:14:44+02:00</lastmod>
@@ -1452,10 +1455,13 @@
     <lastmod>2022-09-12T15:30:57+02:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thingsboard/</loc>
-    <lastmod>2024-04-22T02:09:54+05:30</lastmod>
+    <lastmod>2024-04-28T21:47:15+02:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thingspeak/</loc>
     <lastmod>2023-04-19T08:14:44+02:00</lastmod>
+  </url><url>
+    <loc>https://www.thethingsindustries.com/docs/the-things-stack/migrating/migration-tool/troubleshooting/</loc>
+    <lastmod>2024-04-29T01:23:33+05:30</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/the-things-stack/packet-broker/troubleshooting/</loc>
     <lastmod>2023-04-19T08:14:44+02:00</lastmod>
@@ -1470,7 +1476,7 @@
     <lastmod>2023-04-19T08:14:44+02:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/integrations/webhooks/troubleshooting/</loc>
-    <lastmod>2024-04-22T01:20:47+05:30</lastmod>
+    <lastmod>2024-04-28T21:47:15+02:00</lastmod>
   </url><url>
     <loc>https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ttnmapper/</loc>
     <lastmod>2023-04-19T08:14:44+02:00</lastmod>
